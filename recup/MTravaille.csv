@@ -1,0 +1,2132 @@
+"idTravaille";"Personne";"SalaireArgent";"SalaireNatureQt";"SalaireNatureObj";"NombreAides";"DesignationAides";"SalaireAides";"Tache";"Duree";"DateTravaille";"Remarques";"Facon_et_etoffe"
+3;3;99;;;;;;"broderie et batture";;;"façon de la chambre, payée en 2 fois (40+60 francs)";0
+4;27;125;;;;;;"tonte";;;;0
+5;3;135;;;;;;"broderie et batture";;;;0
+6;3;138;;;;;;"broderie et batture";;;;0
+15;35;;;;;;;;;;;0
+16;33;;;;;;;"couture";;;;0
+18;42;160;;;;;;"tonte";;;;0
+19;46;168;;;;;;"tonte";;;;0
+20;42;177;;;;;;"tonte";;;;0
+21;27;200;;;;;;"tonte";;;;0
+22;42;205;;;;;;"tonte";;;;0
+23;59;212;;;;;;"appareillier peaux";;;;0
+24;60;;;;;;;"appareillier peaux";;;;0
+25;35;235;;;;;;"couture";;;;1
+26;35;236;;;;;;"couture";;;;1
+27;35;255;;;;;;"couture";;;;0
+29;35;256;;;;;;"couture";;;"couture et étoffe";0
+30;35;240;;;;;;"couture";;;"étoffe et façon";0
+31;35;257;;;;;;"couture";;;;1
+32;35;;;;;;;"couture";;;;0
+33;35;258;;;;;;"couture";;;;1
+34;35;;;;;;;"couture";;;;0
+35;35;254;;;;;;"couture";;;;0
+37;35;259;;;;;;"couture";;;;1
+38;35;;;;;;;;;;;1
+41;35;;;;;;;"couture";;;;1
+42;73;;;"vin";;;;"fourrure";;;;0
+43;74;274;;;;;;"couture";;;;1
+44;74;;;;;;;"couture";;;;1
+45;74;275;;;;;;;;;;1
+46;74;;;;;;;"fourrure";;;;1
+47;74;;;;;;;"couture";;;;1
+48;74;276;;;;;;"couture";;;;0
+49;74;277;;;;;;"couture";;;;0
+50;74;279;;;;;;"couture";;;;0
+51;74;281;;;;;;"couture";;;;0
+52;74;284;;;;;;"couture";;;;0
+53;74;286;;;;;;"couture";;;;0
+54;74;288;;;;;;"couture";;;;0
+55;74;290;;;;;;"couture";;;;0
+57;76;;;"vin";;;;"couture";;;;0
+60;76;292;;"vin";;;;"couture";;;;0
+61;46;308;;;;;;"tonte";;;;0
+64;85;324;;;;;;"tonte";;;;0
+66;85;;;;;;;"couture";;;;0
+68;74;;;;;;;"couture";;;;0
+69;74;;;;;;;"couture";;;;0
+71;74;;;;;;;"couture";;;;1
+73;74;;;;;;;"couture";;;;1
+74;74;;;;;;;"couture";;;;1
+77;74;369;;;;;;"couture";;;;0
+78;33;;;;;;;"couture";;;;0
+79;74;391;;;;;;"couture";;;;1
+80;27;393;;;;;;"tonte";;;;0
+81;33;425;;;;;;"couture";;;"toyle fil et façon";1
+82;27;463;;;;;;"tonte";;;"42 aunes à 4 d. f. l'aune";0
+83;33;468;;;;;;"couture";;;;1
+84;3;480;;;;;;"broderie et batture";;;;0
+85;74;485;;;;;;"couture";;;;1
+86;27;492;;;;;;"tonte";;;"26 aunes de drap";0
+87;74;501;;"vin";;;;"couture";;;"6 d. g. pour le vin";1
+88;74;509;;;;;;"couture";;;;1
+89;133;512;;;;;;"couture";;;;0
+90;3;516;;;;;;"broderie";;;;0
+91;35;521;;;;;;"couture";;;;1
+92;35;523;;;;;;"couture";;;;0
+93;27;566;;;;;;"tonte";;;;0
+94;155;;;;;;;"couture";;;"inclus la garnison";0
+95;156;590;;;;;;"tonte";;;"drap vert";0
+96;155;593;;;;;;"couture";;;;0
+97;160;608;;;;;;"tonte";;;;0
+98;33;610;;;;;;"couture";;;;1
+99;61;;;;;;;"appareillier peaux";;;;0
+100;74;624;;;;;;"couture";;;;1
+101;27;731;;;;;;"tonte";;;"280 aunes de drap de Bruxelles, Montivilliers, Malines et Rouens à 4 d. l'aune et 789 autres à 3 d. g. l'aune.
+Je n'arrive pas à retrouver ces chiffres: autres: 749 et les premiers: 264
+La somme pour le prix est fausse: 14 l. 10 s. 7 d. et pas 36 s. 4 d.";0
+102;203;;;;1;"valet";;"couture";;;"que le paiement du déplacement 18 d. g.";0
+103;27;743;;;;;;"tonte";;;"26 aunes de drap";0
+104;27;770;;;;;;"tonte";;;;0
+105;27;800;;;;;;"tonte";;;;0
+106;42;801;;;;;;"tonte";;;;0
+107;42;807;;;;;;"tonte";;;;0
+108;27;810;;;;;;"tonte";;;"10 aunes tondue";0
+109;160;835;;;;;;"tonte";;;;0
+110;229;837;;;;;;"tonte";;;;0
+111;35;851;;;;;;"couture";;;;1
+112;33;861;;;;;;"couture";;;"inclus fil et soie";1
+113;27;868;;;;;;"tonte";;;;0
+114;61;871;;;;;;"couture";;;;0
+115;74;876;;;;;;"couture";;;"façon et garnison";1
+116;27;893;;;;;;"tonte";;;"1 drap entier de Malines, 1 drap entier d'Ypres, 4 demis draps d'Abbeville.";0
+117;74;901;;;;;;"couture";;;;0
+118;74;903;;;;;;"couture";;;;0
+119;74;905;;;;;;"couture";;;;0
+120;244;921;;;;;;"fourrure";;;"il ne fait que fourrer un couturier est chargé de coudre ensuite";0
+121;74;923;;;;;;;;;;0
+122;85;925;;;;;;;;;;0
+123;35;928;;;;;;"couture";;;;1
+124;85;938;;;;;;"batre coton";;;;0
+125;255;952;;;;;;"tissage";;;;0
+126;3;;;;;;;"broderie";;;;0
+127;74;967;;;;;;"couture";;;;0
+128;74;969;;;;;;"couture";;;;0
+129;74;971;;;;;;"couture";;;;0
+133;3;984;;;;;;"broderie";;;"déscription de broderie";0
+135;27;993;;;;;;"tonte";;;;0
+137;33;995;;;;;;"couture";;;;0
+139;27;1043;;;;;;"tonte";;;"25 aunes de drap";0
+141;27;1054;;;;;;"tissage";;;;0
+143;26;1070;;;;;;"tonte";;;;0
+145;255;1077;;;;;;"tissage";;;;0
+147;33;;;;;;;"couture";;;;1
+149;42;1088;;;;;;"tonte";;;;0
+151;292;1092;;;;;;"couture";;;;0
+153;33;1094;;;;;;"couture";;;;0
+154;85;;;;;;;"couture";;;;0
+155;85;;;;;;;"couture";;;;0
+156;85;;;;;;;"couture";;;;0
+157;296;;;;;;;"couture";;;;0
+159;74;1109;;;;;;"couture";;;;0
+161;74;;;;;;;"couture";;;;1
+162;74;;;;;;;"couture";;;;1
+164;74;1117;;;;;;"couture";;;;1
+165;74;;;;;;;"couture";;;;1
+168;27;;;;;;;"tonte";;;;0
+171;3;;;;;;;"broderie";;;;0
+174;3;1146;;;;;;"broderie";;;;0
+176;27;1151;;;;;;"tonte";;;;0
+178;35;1155;;;;;;"couture";;;;1
+180;42;1160;;;;;;"tonte";;;;0
+182;42;1169;;;;;;"tonte";;;;0
+184;74;1171;;;;;;"couture";;;;0
+186;74;1183;;;;;;"couture";;;;0
+189;326;1190;;;;;;"couture";;;;0
+191;329;1198;;;;;;"broderie";;;;0
+194;3;;;;;;;"couture";;;;0
+196;326;;;;;;;"couture";;;;0
+198;326;1226;;;;;;"couture";;;;0
+200;74;1231;;;;;;"couture";;;;0
+202;74;1233;;;;;;"couture";;;;0
+204;74;1235;;;;;;"couture";;;;1
+206;74;1238;;;;;;"couture";;;;0
+208;74;1240;;;;;;"couture";;;;0
+210;74;1242;;;;;;"couture";;;;1
+212;3;1244;;;;;;"broderie";;;"le comte lui doit en tout 530 fr.";0
+214;27;1266;;;;;;"tonte";;;;0
+216;27;1283;;;;;;"tissage";;;"ratachement";0
+218;74;1289;;;;;;"couture";;;;0
+220;74;1291;;;;;;"couture";;;;0
+222;74;1293;;;;;;"couture";;;;0
+224;27;1310;;;;;;"tonte";;;;0
+226;74;1320;;;;;;"couture";;;;0
+228;95;;;;;;;"orfévrerie";;;"argent possé tout au tour de la capeline";0
+230;74;1330;;;;;;"couture";;;;0
+232;42;1350;;;;;;"tonte";;;"24 aunes";0
+236;33;1353;;;;;;"couture";;;;1
+238;101;1355;;;;;;"fourrure";;;;0
+240;390;;;;;;;"tonte";;;"19 aunes de drap rouge";0
+242;391;;;;;;;"tonte";;;"20 aunes et demi de drap rouge";0
+244;392;1400;;;;;;"couture";;;;1
+246;394;1402;;;;;;"couture";;;;1
+248;46;1406;;;;;;"tonte";;;;0
+250;85;1418;;;;;;"tonte";;;;0
+252;400;1421;;;;;;"fourrure";;;"3 opérations";0
+254;404;1423;;;;;;"couture";;;;0
+256;85;1447;;;;;;"tonte";;;;0
+258;46;1467;;;;;;"tonte";;;;0
+260;429;1474;;;;;;"tonte";;;"55.5 aunes";0
+262;435;1488;;;;;;"cordonerie";;;;0
+264;3;1490;;;;;;"inconnue";;;;0
+266;445;1505;;;;;;"fourrure";;;;0
+268;447;1507;;;;;;"fourrure";;;;0
+270;160;1532;;;;;;"tonte";;;;0
+272;475;;;;;;;"inconnue";;;;0
+273;474;;;;;;;"inconnue";;;;0
+275;474;;;;;;;"inconnue";;;;0
+278;473;;;;;;;"inconnue";;;;0
+282;27;1651;;;;;;"tonte";;;;0
+284;85;1678;;;;;;"tonte";;;;0
+286;27;1686;;;;;;"tonte";;;;0
+288;85;1755;;;;;;"tonte";;;;0
+290;85;;;;;;;"couture";;;;1
+291;85;;;;;;;"tonte";;;;0
+293;608;1858;;;;;;"tonte";;;"40 aunes de drap coloré";0
+295;429;1869;;;;;;"tonte";;;;0
+297;404;1881;;;;;;"tonte";;;"peut-être n'est-il qu'un intermédiaire";0
+299;627;;;;;;;"couture";;;;0
+302;628;1894;;;;;;"doublure";;;;1
+304;625;1899;;;;;;"tonte";;;;0
+306;627;1901;;;;;;"couture";;;;0
+308;633;1903;;;;;;"fourrure";30;30/5/1380 00:00:00;"1.5 d. par jour";0
+309;634;1904;;;;;;"fourrure";30;30/5/1380 00:00:00;;0
+312;27;1923;;;;;;"tonte";;;;0
+314;31;1929;;;;;;;;;;1
+316;642;1939;;;;;;"couture";10;;"aide Simond le tailleur de Bonne de Bourbon";0
+318;85;;;;;;;"couture";;;"peut-être que la façon est de Johan costantin";1
+320;85;1952;;;;;;"couture";;;;0
+323;3;1954;;;;;;"broderie";;;"Lions vert";0
+325;429;1962;;;;;;"couture";;;;0
+328;447;1967;;;;;;"doublure";;;;0
+335;674;1974;;;;;;"tonte";;;"tont 358 aunes de drap";0
+337;642;1976;;;;;;"couture";34;;"aide simond le tailleur de bonne de bourbon, 14 d. par jour acord avec Amédée VI";0
+341;89;1978;;;;;;"couture";;;;1
+343;27;2004;;;;;;"tonte";;;;0
+345;27;2033;;;;;;"tonte";;;;0
+347;27;2059;;;;;;"tonte";;;;0
+349;409;;;;;;;"sellerie";;;;0
+351;712;2150;;;;;;"tonte";;;"137 aunes de draps rouge blanc vert et deguisat";0
+353;85;2156;;;;;;"couture";;;;1
+355;85;;;;;;;"couture";;;;1
+357;85;2162;;;;;;"couture";;;;0
+360;132;2164;;;;;;"couture";;;;1
+362;85;2167;;;;;;"couture";;;;1
+364;85;2183;;;;;;"tonte";;;;0
+366;85;2187;;;;;;"tonte";;;;0
+369;85;2193;;;;;;"tonte";;;;0
+371;85;2199;;;;;;"tonte";;;;0
+373;85;2205;;;;;;"couture";;;;0
+375;14;2212;;;;;;"couture";;;"travaille à Chambéry, Yvrée et Turin";1
+377;85;2214;;;;;;"couture";;;;1
+379;329;2221;;;;;;"bature";;;;0
+382;3;2228;;;;;;"broderie";;;;0
+392;85;2251;;;;;;"tonte";;;;0
+394;85;2253;;;;;;"couture";;;;0
+397;85;2257;;;;;;"tonte";;;;0
+399;85;2270;;;;;;"couture";;;;0
+401;85;2274;;;;;;"tonte";;;;0
+403;748;2281;;;;;;"broderie";;;;0
+412;748;2282;;;;;;"broderie";;;;0
+415;748;;;;;;;"broderie";;;;0
+418;748;2285;;;;;;"broderie";;;;0
+421;751;2293;;;;;;"fourrure";;;;0
+423;753;2297;;;;;;;;;;0
+427;85;2300;;;;;;"tonte";;;"27 aunes, pour magler et tondre";0
+429;85;2307;;;;;;"couture";;;;0
+438;753;2321;;;;;;"couture";;;;0
+442;752;2324;;;;;;"couture";;;;0
+444;748;2330;;;;;;"broderie";;;;0
+447;753;2353;;;;;;"couture";;;;0
+449;765;2363;;;;;;"couture";;;;0
+452;767;2375;;"vin";;;2374;"couture";;;;0
+454;768;2377;;"vin";;;;;;;;0
+457;85;2379;;;;;;"tonte";;;;0
+459;85;2382;;;;;;"tonte";;;"&é s. ad 35 pro duc.";0
+461;85;2384;;;;;;"tonte";;;;0
+463;85;2387;;;;;;"tonte";;;;0
+465;85;2389;;;;;;"couture";;;;0
+467;774;;;;;;;"teinture";;;"en noir 1 sarge, 1 couverture, 5 chaperon, 5 cannes de drap de Malines, 1 mantel double, 1 paire de gant et autre";0
+469;775;2392;;;;;;"teinture";;;"pour teinture en noir de 4 tabards";0
+471;85;2395;;;;;;"couture";;;;0
+473;779;;;;;;;"teinture";;;"11 canne de drap pour litière et les chvaux qui portent le corp, 3 cannes pour Louis de Savois, 18 cannes pour les muletier";0
+475;780;;;;;;;"teinture";;;"11 canne de drap pour litière et les chvaux qui portent le corp, 3 cannes pour Louis de Savois, 18 cannes pour les muletier";0
+478;85;2406;;;;;;"tonte";;;;0
+480;785;2415;;;;;;"couture";;;;0
+483;788;2419;;;;;;"couture";;;;0
+485;85;;;;;;;"tonte";;;;0
+489;85;;;;;;;"couture";;;;0
+491;85;2443;;;;;;"tonte";;;;0
+493;794;2445;;;;;;"couture";;;"attention 1432 que les 2 houpelandes";0
+495;751;2449;;;;;;"fourrure";;;"pour 1426 et 1432 que les houpelandes";0
+497;751;2451;;;;;;"fourrure";;;"1426 que le sac";0
+499;751;2453;;;;;;"fourrure";;;"que pour les houpelande";0
+502;85;2454;;;;;;"broderie";;;"1426 que la jacque de velours, brodée de faucons blancs";0
+504;85;2457;;;;;;"broderie";;;"pour 1426 que le sac en satin rouge, brodée de fleur de lis";0
+506;85;2459;;;;;;"broderie";;;"fleurs et herbes";0
+508;85;2462;;;;;;"couture";;;;0
+510;85;2464;;;;;;"couture";;;"1433 que les chausses";0
+512;751;2468;;;;;;"fourrure";;;;0
+514;808;2490;;;;;;"tonte";;;"55.75 aunes grandes de Bruxelles pour 0.5 d. g. t. l'aune, 117 aunes petites de Bruxelles pour 1/3 d. g. t. et 135.24 d'autres pour 0.25 d. g. t.";0
+518;85;;;;;;;"retonte";;;;0
+520;85;;;;;;;"retonte";;;;0
+522;836;2523;;;;;;"couture";;;;0
+524;814;2526;;;1;"valet";;"couture";;;"soie cendal et fil";1
+527;85;2530;;;;;;"retonte";;;;0
+529;85;2541;;;;;;"retonte";;;;0
+531;85;2543;;;;;;"couture";;;;0
+533;85;2553;;;;;;"tonte";;;;0
+535;85;2555;;;;;;"couture";;;;0
+537;85;2564;;;;;;"tonte";;;;0
+539;85;2568;;;;;;"couture";12;17/3/1352 00:00:00;" 4 codurerio 1 d. g. t. par jour";0
+541;85;2569;;;;;;"fourrure";12;17/3/1352 00:00:00;" 2 pelletier 1 d. g. t. par jour";0
+543;85;2570;;;;;;"fourrure";5;17/3/1352 00:00:00;"1 pellipario 1 d. g. t.par jour";0
+545;85;;;;;;;"fourrure";2;17/3/1352 00:00:00;"1 pelletier à 1.5 d. g. t. par jour";0
+548;85;2600;;;;;;"tonte";;;;0
+550;902;2609;;;;;;"couture";;;;0
+553;85;2622;;;;;;"tonte";;;;0
+555;85;2631;;;;;;"tonte";;;;0
+557;85;2634;;;;;;"couture";;;;0
+559;814;;;;;;;"couture";;;"cendale fil futaine et soie";1
+561;85;2662;;;;;;"tonte";;;;0
+563;811;2680;;;;;;"couture";;;;0
+565;916;2689;;;;"valettis";;"couture";;;;0
+567;808;2729;;;;;;"tonte";;;;0
+569;811;;;;;;;"couture";;;;0
+571;85;2742;;;29;"codurei";;"couture";1;15/4/1355 00:00:00;"1 d. ob. g. t. par jour et par personne";0
+573;85;2749;;;35;"pellipario";;"fourrure";1;15/4/1355 00:00:00;"1 d. ob. g. t. par jour et par personne";0
+575;85;2751;;;;;;"couture";;;;0
+577;85;;;"vin";;;;"couture";;;" couturier de bourg";0
+579;814;2766;;;;;;"ouvrage";;;;0
+581;808;2784;;;;;;"tonte";;;;0
+583;808;2812;;;;;;"tonte";;;"5 d. v. pour l'aune";0
+586;836;2825;;;;;;"couture";;;;0
+588;814;;;;2;"vallet";2833;"couture";5;2/4/1355 00:00:00;;0
+590;85;2946;;;;;;"couture";;;;0
+592;85;2948;;;;;;;;;;0
+594;85;2953;;;;;;"couture";;;;0
+596;768;2972;;;;"femme";;"couture";;;;0
+598;808;2990;;;;;;"tonte";;;"6 d. v. l'aune soit 21.5 aunes";0
+600;85;2995;;;;;;"couture";;;"0.5 aune de cendal pour la couture";0
+602;85;3008;;;;;;"couture";;;;0
+604;836;3010;;;;;;"couture";;;;0
+606;85;;;;;;;"couture";;;;0
+608;85;;;;;;;"tonte";;;;0
+610;155;3077;;;;;;"couture";22;;"au bourget";0
+612;808;3079;;;;;;"tonte";;;;0
+614;1022;;;;;;;"tressage";;;;0
+616;76;3100;;;8;;;"couture";;;;0
+619;1023;3103;;;;;;"tonte";;;"24,5 aunes";0
+622;155;3142;;;;;;"couture";;;;0
+625;1022;3150;;;;;;"tressage";;;;0
+627;808;3163;;;;;;"tonte";;;"pour 35 aunes mais le compte n'y est pas car 39 aunes répertorié";0
+629;1023;3165;;;;;;"tonte";;;"pour 18 aunes";0
+631;1030;3207;;;;;;"peinture";;;"peint la devise du comte, semble être ici des neudx";0
+634;1033;3218;;;;;;"armurerie";;;;0
+637;1035;3246;;;;;;"couture";;;;0
+639;1037;3258;;;;;;;;;"doit faire des embout en argent ou en autre métal";0
+641;155;3280;;;;;;"couture";;;;0
+643;1030;3283;;"vin";;"valet";;"peinture";;;;0
+646;1038;3285;;;;;;"couture";;;"couture de rubant sur l'ensemble du harnais";0
+648;811;3287;;;;;;"armurerie";;;;0
+650;811;3298;;;;;;"couture et bature";;;;0
+652;808;3338;;;;;;"tonte";;;"84 aunes à 3 d. fort esc. l'aune, 50 aunes à 2 d. fort esc. pour les valet et 21 aunes de brunete à 3 d. fort esc.";0
+654;1052;;;;;;;"couture";;;;0
+655;1054;;;;;;;"couture";;;;0
+656;1056;;;;;;;"couture";;;;0
+659;1057;;;;;;;"couture";;;;0
+661;1053;;;;;;;"couture";;;;0
+663;1055;;;;;;;"couture";;;;0
+665;1058;3361;;;;;;"couture";;;;0
+671;85;3502;;;;;;"tonte";;;;0
+673;85;3506;;;;;;"couture";;;;0
+676;808;3521;;;;;;"tonte";;;"pour 32.5 aunes";0
+678;1091;3558;;;;;;"fourrure";8;;"2 d. g. t. par jour";0
+680;1092;3559;;;;;;"fourrure";8;;"2 d. g. t. par jour";0
+682;1052;3582;;;;;;"couture";;;;0
+684;808;3594;;;;;;"tonte";;;;0
+686;1118;3616;;;;;;"broderie";;;;0
+688;814;3618;;;;;;"couture";;;;0
+690;156;;;;;;;"tonte";;;"tonte plus cotonendis";0
+692;814;3674;;;;;;"couture";;;;0
+694;85;;;;;;;"fourrure";;;;0
+696;1009;3689;;;;;;"inconnue";;;;0
+699;1145;3696;;;;;;"couture";;;;0
+701;1135;3706;;;;;;"couture";;;;0
+703;1148;3712;;;;;;"couture";;;;0
+705;156;;;;;;;"tonte";;;;0
+706;155;;;;;;;"couture";;;;0
+708;1135;3720;;;;;;"couture";;;;0
+710;1147;3727;;;;;;"fabrication";;;;0
+712;886;3728;;;;;;"fabrication";;;;0
+714;155;;;;;;;"couture";;;;0
+716;85;3740;;;;;;"fourrure";;;;0
+718;156;3759;;;;;;"tonte";;;;0
+720;85;3769;;;;;;"fourrure";;;;0
+722;1009;3788;;;;;;"couture";;;;0
+723;155;;;;;;;"couture";;;;0
+726;521;3804;;;;;;"fourrure";;;;0
+728;808;3806;;;;;;"tonte";;;;0
+730;85;3808;;;;;;"broderie";;;;0
+732;85;;;;;;;"broderie";;;;0
+734;85;3811;;;;;;"tonte";;;;0
+736;1196;3875;;;;;;"tonte";;;;0
+738;1202;;;;;;;;;;;0
+741;76;;;;18;"valet";;"couture";;;;0
+743;156;3900;;;;;;"tonte";;;;0
+745;814;3905;;;;;;"ouvrage";;;;0
+747;155;3928;;;;;;"couture";;;;0
+749;156;3946;;;;;;"tonte";;;;0
+751;814;3959;;;;"sertori";;"couture";;;;0
+753;156;3967;;;;;;"tonte";;;;0
+755;329;4022;;;;;;"broderie";;;;0
+757;85;4067;;;;;;"fourrure";;;;0
+759;85;4090;;;;;;"fourrure";;;"2 pelletier";0
+761;155;4092;;;20;"codurei";;;;;;0
+763;329;4096;;;;;;"broderie";;;;0
+765;811;;;;;;;"ouvrage";;;;0
+767;1234;4121;;;;;;"armurerie";;;;0
+769;521;4123;;;;;;"fourrure";;;;0
+771;85;4132;;;;;;"couture";;;;0
+773;61;4140;;;;;;"fourrure";;;;0
+775;85;;;;;;;"couture";;;;0
+777;85;;;;;;;"tonte";;;;0
+779;156;4243;;;;;;"tonte";;;;0
+781;156;4245;;;;;;"tonte";;;;0
+783;156;;;;;;;"tonte";;;;0
+785;505;;;;;;;"couture";;;;0
+787;156;4290;;;;;;"tonte";;;;0
+789;156;4298;;;;;;"tonte";;;;0
+791;85;4299;;;;;;"couture";;;"le fil la toile et la soie et même le cotonsont comprit dans le prix";0
+794;156;;;;;;;"tonte";;;;0
+796;85;;;;;;;"couture";;;;0
+798;156;;;;;;;"tonte";;;;0
+800;85;;;;;;;"couture";;;;0
+802;31;;;;;;;"couture";;;;0
+804;521;;;;1;"valet";;"fourrure";;;;0
+806;1075;4390;;;;;;;;;;0
+808;1118;4400;;;;;;"broderie";;;;0
+810;1315;4402;;;;;;"couture";;;;0
+812;203;4443;;;;;;"couture";;;;0
+814;1341;4444;;;;;;"couture";;;;0
+815;1342;4445;;;;;;"couture";;;;0
+816;1343;4446;;;1;"valet";;"couture";;;;0
+817;1345;4447;;;;;;"couture";;;;0
+818;35;4448;;;;;;"couture";;;;0
+819;1346;4449;;;;;;"couture";;;;0
+820;1347;4450;;;;;;"couture";;;;0
+821;1348;4451;;;;;;"couture";;;;0
+823;31;4476;;;;;;"couture";;;;0
+825;156;4504;;;;;;"tonte";;;;0
+827;156;4525;;;;;;"tonte";;;;0
+829;85;;;;;;;"couture";;;;0
+831;156;;;;;;;"tonte";;;;0
+833;156;;;;;;;"tonte";;;;0
+835;811;;;;;;;"ouvrage";;;;0
+836;239;;;;;;;"ouvrage";;;;0
+838;156;4611;;;;;;"tonte";;;;0
+840;156;4621;;;;;;"tonte";;;;0
+842;85;4625;;;;;;"couture";;;;0
+844;1148;4632;;;;;;"couture";;;;0
+846;85;;;;;;;"couture";;;;0
+847;156;;;;;;;"tonte";;;;0
+850;156;4699;;;;;;"tonte";;;;0
+853;85;4708;;;;;;"fourrure";;;;0
+855;155;4710;;;;;;"couture";;;;0
+857;155;4712;;;;;;"couture";;;;1
+859;156;4730;;;;;;"tonte";;;;0
+861;156;4747;;;;;;"tonte";;;;0
+863;1427;4749;;;;;;"couture";;;;1
+865;156;4752;;;;;;"tonte";;;;0
+869;27;4833;;;;;;"tonte";;;;0
+871;229;4835;;;;;;"tonte";;;;0
+873;814;4877;;;;;;"couture";;;;0
+875;27;4932;;;;;;"tonte";;;;0
+877;27;4937;;;;;;"tonte";;;;0
+879;229;4938;;;;;;"tonte";;;;0
+881;27;4970;;;;;;"tonte";;;;0
+883;27;5033;;;;;;"tonte";;;;0
+887;229;5034;;;;;;"tonte";;;;0
+889;42;5035;;;;;;"tonte";;;;0
+891;46;5036;;;;;;"tonte";;;;0
+893;1487;5037;;;;;;"tonte";;;;0
+895;27;5097;;;;;;"tonte";;;;0
+897;61;5126;;;;;;"fourrure";;;;0
+899;1506;5148;;;;;;"couture";;;"inclus fil toile et coton";1
+901;27;5153;;;;;;"tonte";;;;0
+903;1511;5159;;;;;;"couture";;;;0
+905;85;5179;;;;;;"tonte";;;;0
+907;27;5202;;;;;;"retonte";;;"845.5 aunes de drap de brucelle écarlate et autre à l'aune 7 d. V. esc.";0
+909;85;5267;;;;;;"fourrure";;;;0
+910;85;5268;;;;;;"confection fourrure";;;;0
+913;292;5275;;;;;;"couture";;;;0
+915;811;5285;;;;;;"couture";;;;0
+917;1009;5295;;;;;;"couture";;;;0
+919;156;5303;;;;;;"tonte";;;;0
+921;156;5324;;;;;;"tonte";;;;0
+923;156;5337;;;;;;"tonte";;;;0
+924;85;;;;;;;"couture";;;;0
+927;156;5346;;;;;;"tonte";;;;0
+929;156;5356;;;;;;"tonte";;;;0
+931;156;5464;;;;;;"tonte";;;;0
+933;811;5475;;;;;;"couture";;;;0
+935;1568;5478;;;;;;"couture";;;;0
+937;1568;5480;;;;;;"couture";;;;0
+939;1568;5482;;;;;;"couture";;;;0
+941;156;5550;;;;;;"tonte";;;;0
+943;156;5642;;;;;;"tonte";;;;0
+945;1596;;;;;;;"couture";;;;0
+947;1597;;;;;;;"couture";;;;0
+949;1601;5723;;;;;;"tissage";;;;0
+951;1075;5790;;;;;;"couture";;;;0
+953;156;5818;;;;;;"tonte";;;;0
+955;329;5830;;;;;;"broderie";;;;0
+958;85;;;;;;;"couture";;;;0
+961;160;5896;;;;;;"tonte";;;"pour 8 aune";0
+963;1075;;;;;;;"inconnue";;;;0
+965;1641;5922;;;;;;"couture";;;;0
+967;27;;;;;;;"tonte";;;;0
+969;229;;;;;;;"tonte";;;;0
+971;329;6122;;;;;;"broderie";;;;0
+973;27;6153;;;;;;"tonte";;;;0
+975;61;;;;;;;"fourrure";;;;0
+977;1658;;;"vin";;;;"fourrure";;;;0
+979;475;6170;;;;;;"couture";;;;0
+981;475;6173;;;;;;"couture";;;;0
+983;156;6196;;;;;;"tonte";;;;0
+985;85;6211;;;;;;"couture";;;;0
+987;85;6213;;;;;;"couture";;;;0
+989;85;6225;;;;;;"couture";;;;0
+991;85;6231;;;;;;"bature";;;;0
+993;85;6232;;;;;;"bature";;;;0
+996;814;6242;;;2;"codurerio";;"couture";9;;;0
+998;229;6264;;;;;;"tonte";;;"pour 8 aunes de drap";0
+1000;85;6267;;;;;;"couture";;;;0
+1002;85;6287;;;;;;"couture";;;;0
+1004;1645;6290;;;;;;"couture";;;;0
+1006;156;6313;;;;;;"tonte";;;;0
+1009;1698;6324;;;;;;"couture";;;"inclus toile soie et fil";1
+1011;1698;6326;;;;;;"tonte";;;"21 aunes de drap brun";0
+1013;156;6332;;;;;;"tonte";;;"pour 28 aunes";0
+1015;1699;6335;;;;;;"couture";;;;0
+1017;156;6381;;;;;;"tonte";;;;0
+1019;27;6458;;;;;;"tonte";;;;0
+1022;160;6460;;;;;;"tonte";;;;0
+1024;229;6462;;;;;;"tonte";;;;0
+1026;1487;6464;;;;;;"tonte";;;;0
+1028;46;6466;;;;;;"tonte";;;;0
+1030;61;6486;;;;;;"fourrure";;;;0
+1032;27;6490;;;;;;"tonte";;;;0
+1034;61;6507;;;;;;"fourrure";;;;0
+1036;61;6509;;;;;;"fourrure";;;;0
+1038;61;6525;;;;;;"fourrure";;;;0
+1040;27;6559;;;;;;"tonte";;;;0
+1042;1148;6599;;;;;;"couture";;;;0
+1044;27;6661;;;;;;"tonte";;;;0
+1046;27;6789;;;;;;"tonte";;;;0
+1048;378;6823;;;;;;"tonte";;;;0
+1050;27;6878;;;;;;"tonte";;;;0
+1052;1148;6932;;;;;;"couture";;;;0
+1054;1148;6935;;;;;;"couture";;;;0
+1056;1148;6937;;;;;;"couture";;;;0
+1058;1148;6939;;;;;;"couture";;;;0
+1060;1148;6941;;;;;;"couture";;;;0
+1062;1148;6943;;;;;;"couture";;;;0
+1064;1148;6947;;;;;;"couture";;;;0
+1066;27;6990;;;;;;"tonte";;;;0
+1068;61;;;;;;;"fourrure";;;;0
+1070;1115;7031;;;;;;"couture et broderie";;;;0
+1072;27;7054;;;;;;"tonte";;;;0
+1074;849;7231;;;;;;"peinture";;;;0
+1076;61;7265;;"vin";;"valet";;"fourrure";;;;0
+1078;1148;7309;;;;;;"couture";;;;0
+1080;27;7315;;;;;;"tonte";;;;0
+1082;27;7438;;;;;;"tonte";;;;0
+1084;3;7444;;;;;;"broderie";;;;0
+1086;1148;7492;;;;;;"couture";;;;1
+1088;3;7538;;;;;;"broderie";;;;0
+1090;156;7642;;;;;;"tonte";;;;0
+1092;1645;7671;;;;;;"inconnue";;;;0
+1094;1336;7677;;;;;;"couture";;;;1
+1096;1030;7679;;;;;;"peinture";;;;0
+1098;394;7683;;;;;;"couture";;;;0
+1100;1827;7687;;;;;;"couture";;;;0
+1105;292;7691;;;;;;"couture";;;;1
+1107;3;7693;;;;;;"broderie";;;;0
+1109;1148;7704;;;;;;"couture";;;;0
+1111;1148;7706;;;;;;"couture";;;;0
+1113;1148;7708;;;;;;"couture";;;;0
+1115;1148;7714;;;;;;"couture";;;;0
+1117;1148;7717;;;;;;"couture";;;;0
+1119;85;7805;;;;;;"couture";;;;0
+1121;1836;7815;;;2;"valet";;"couture";;;;0
+1123;76;7819;;;;;;"couture";;;;0
+1125;1836;7820;;"vin";;;;"fourrure";;;;0
+1127;27;7824;;;;;;"tonte";;;"80 aunes";0
+1129;27;7834;;;;;;"tonte";;;;0
+1131;85;7885;;;;;;"couture";;;;1
+1134;85;7887;;;;;;"couture";;;;1
+1136;156;8032;;;;;;"tonte";;;;0
+1138;156;;;;;;;"tonte";;;;0
+1140;156;8070;;;;;;"tonte";;;;0
+1142;156;8077;;;;;;"tonte";;;;0
+1144;27;8095;;;;;;"tonte";;;;0
+1146;1877;8101;;;;;;"couture";31;7/12/1376 00:00:00;"1 d. g. t. par jour";0
+1148;1875;8102;;;;;;"couture";25;7/12/1376 00:00:00;;0
+1150;1876;8103;;;;;;"couture";;;"1 d. g. t. par joue";0
+1152;85;;;;;;;"couture";;;;0
+1154;27;8145;;;;;;"tonte";;;"pour 28 aunes";0
+1156;429;;;;;;;"tonte";;;;0
+1158;429;;;;;;;"couture";;;;1
+1160;85;8224;;;;;;"couture";;;;0
+1162;85;8244;;;;;;"couture";;;;0
+1164;85;8245;;;;;;"couture";;;;0
+1166;85;8253;;;;;;"couture";;;;0
+1168;85;8255;;;;;;"couture";;;;0
+1170;156;8279;;;;;;"tonte";;;;0
+1172;27;8308;;;;;;"tondeur";;;;0
+1174;229;8309;;;;;;"tondeur";;;;0
+1176;27;8323;;;;;;"tondeur";;;;0
+1178;1903;;;;;;;"orfévrerie";;;;0
+1180;329;8366;;;;;;"broderie";;;;0
+1183;326;8370;;;;;;"couture";;;;0
+1185;85;8380;;;;;;"couture";;;;0
+1187;3;8382;;;;;;"broderie";;;;0
+1188;257;8383;;;;;;"broderie";;;;0
+1191;61;8457;;;;;;"fourrure";;;;0
+1193;3;8459;;;;;;"broderie";;;;0
+1195;3;8463;;;;;;"broderie";;;;0
+1197;156;8467;;;;;;"tondeur";;;;0
+1199;33;8469;;;;;;"couture";;;;1
+1201;33;8471;;;;;;"couture";;;;0
+1203;3;8473;;;;;;"broderie";;;"c'est un relicat du salaire";0
+1205;85;8495;;;;;;"couture";;;;0
+1207;33;8499;;;;;;"couture";;;"comprend toile fil soie et coton";1
+1209;156;8500;;;;;;"tondeur";;;;0
+1211;1896;8523;;;;;;"couture";;;;0
+1213;27;8525;;;;;;"tondeur";;;;0
+1215;156;8543;;;;;;"tondeur";;;"25 brasses de drap vert";0
+1217;1035;8547;;;;;;"couture";;;;0
+1219;85;8551;;;;;;;;;;0
+1221;155;8585;;;;;;"couture";;;;0
+1223;85;8593;;;;;;"couture";;;;0
+1225;85;8596;;;;;;"couture";;;;0
+1227;85;8599;;;;;;"couture";;;;0
+1229;27;;;;;;;"tondeur";;;"6 aunes d'écarlate, 60 aunes de rouge de Malines, plusieurs draps blanc et rouge d'Abbeville et Vilvord pour la livrée d'Amédée VII";0
+1231;74;8673;;;;;;"couture";;;;0
+1233;27;;;;;;;"tondeur";;;;0
+1235;229;;;;;;;"tondeur";;;;0
+1237;42;;;;;;;"tondeur";;;;0
+1239;85;8795;;;;;;"couture";;;;0
+1242;1959;8735;;;;;;"teinture";;;"teinture en noir";0
+1244;1959;8739;;;;;;"teinture";;;"teinture en noir";0
+1248;27;8781;;;;;;"tonte";;;"631 aunes";0
+1251;27;8809;;;;;;"tonte";;;;0
+1253;27;8857;;;;;;"tonte";;;"18 aunes";0
+1255;33;8863;;;;;;"couture";;;;0
+1257;811;8865;;;;;;"couture";;;;0
+1259;1975;8873;;;;;;"tondeur";;;;0
+1261;42;8877;;;;;;"tondeur";;;"16 aunes de noir";0
+1263;27;8884;;;;;;"tondeur";;;;0
+1265;42;8890;;;;;;"tondeur";;;;0
+1267;74;8893;;;;;;"couture";;;;0
+1270;74;8895;;;;;;"couture";;;;0
+1272;74;8899;;;;;;"couture";;;;0
+1274;74;8901;;;;;;"couture";;;;0
+1276;74;8905;;;;;;"couture";;;;0
+1279;74;8906;;;;;;"couture";;;;0
+1281;74;8908;;;;;;"couture";;;;0
+1283;74;8912;;"vin";;"valet";;"couture";;;;0
+1285;27;8928;;;;;;"tondeur";;;;0
+1287;3;;;;;;;"broderie";;;;0
+1289;27;8945;;;;;;"tondeur";;;;0
+1291;147;;;;;;;"fourrure";;;;0
+1293;3;8953;;;;;;"broderie et batture";;;;0
+1295;74;8955;;;;;;"couture";;;;0
+1297;85;8994;;;;;;"tissage";;;;0
+1299;74;9006;;;;;;"couture";;;;0
+1301;33;9012;;;;;;"couture";;;;1
+1303;156;9014;;;;;;"tonte";;;;0
+1305;33;9018;;;;;;"couture";;;;0
+1307;27;9068;;;;;;"tondeur";;;;0
+1309;27;9075;;;;;;"tonte";;;"29.75 aunes";0
+1311;85;;;;;;;"couture";;;;1
+1313;257;;;;;;;"orfévrerie";;;;0
+1315;3;;;;;;;;;;;0
+1317;27;9129;;;;;;"tonte";;;"42 aunes";0
+1319;74;9164;;;;;;"couture";;;;1
+1321;1975;9166;;;;;;"tondeur";;;"23.5 aunes";0
+1323;42;9210;;;;;;"tondeur";;;"1 d. pour 1 aune de bruxelle";0
+1325;42;9212;;;;;;"tondeur";;;"0.5 d. pour 1 aune de Maline, Vilvord et Rouen";0
+1327;42;9214;;;;;;"tondeur";;;"3 d. fort pour 1 aune d'Abbeville, Bourge, Bernay";0
+1329;27;9216;;;;;;"tondeur";;;"0.5 d. g. t. pour 1 aune de malines";0
+1331;27;9218;;;;;;"tondeur";;;"164 aunes d'abeville, bourge et bernay à 3 d. fort l'aune";0
+1333;2020;9236;;;;;;"teinture";;;;0
+1335;27;9247;;;;;;"tondeur";;;;0
+1337;2026;9301;;;;;;"tissage";;;;0
+1339;303;9345;;;;;;"teinture";;;"peaux de chamoix en rouge";0
+1341;2030;9346;;;;;;"teinture";;;"10 peaux de chamoix en rouge";0
+1343;147;9349;;;;;;"fourrure";;;;0
+1345;147;9352;;;;;;"préparer";;;;0
+1347;1029;9364;;;;;;"préparer";;;"12 peaux de chamoix";0
+1350;2031;9366;;;;;;"tissage";;;;0
+1352;27;9396;;;;;;"tondeur";;;"17 aunes d'écarlate à 1 d. g. par aune, 239 aunes de drap fin 0.5 d. l'aune, 240 aunes d'autre drap 3 d. fort l'aune";0
+1354;42;9397;;;;;;"tondeur";;;"17 aunes d'écarlate à 1 d. g. par aune, 239 aunes de drap fin 0.5 d. l'aune, 240 aunes d'autre drap 3 d. fort l'aune";0
+1356;3;9407;;;;;;"broderie";;;;0
+1358;85;9425;;;;;;"cordonerie";;;;0
+1360;74;9450;;;;;;"couture";;;"pour du travail d'un An";0
+1362;156;9455;;;;;;"tondeur";;;;0
+1364;156;9461;;;;;;"tonte";;;;0
+1366;85;9463;;;;;;"couture";;;;0
+1368;85;9468;;;;;;"couture";;;;0
+1370;42;9512;;;;;;"tondeur";;;;0
+1372;27;9513;;;;;;"tonte";;;;0
+1374;2030;9517;;;;;;"teinture";;;"2 peaux de chamoix en graine";0
+1376;85;9540;;;;;;"couture";;;;0
+1378;2099;9550;;;;;;"broderie";;;;0
+1380;2111;;;;;;;"couture";;;;0
+1382;85;9568;;;;;;"couture";;;;0
+1384;156;9581;;;;;;"tonte";;;;0
+1386;156;9597;;;;;;"tonte";;;"1 d. pour 1 aune";0
+1388;2099;9606;;;;;;"broderie";;;;0
+1390;2128;9610;;;;;;"préparer";;;"prépare 6 douzaine de peaux de chamois";0
+1392;811;9614;;;;;;"couture";;;;0
+1394;2129;9615;;;;;;"couture";;;;0
+1396;27;9623;;;;;;"tonte";;;;0
+1398;2130;9637;;;;;;"tonte";;;;0
+1400;33;9639;;;;;;"couture";;;;0
+1402;990;9676;;;;;;"couture";;;"retard de paiement";0
+1404;424;9678;;;;;;"broderie";;;;0
+1406;2149;9711;;;;;;"couture";;;;0
+1409;27;9730;;;;;;"tonte";;;;0
+1411;2154;9740;;;;;;"couture";;;;0
+1413;2168;;;;;;;"fourrure";;;;0
+1415;2168;;;;;;;"fourrure";;;;0
+1417;2172;9859;;;;;;"tonte";;;;0
+1419;2173;9861;;;;;;"couture";;;;0
+1421;2186;9882;;;;;;"couture";;;;0
+1423;3;9887;;;;;;"broderie";;;;0
+1425;85;9889;;;;;;"broderie";;;;0
+1427;85;9907;;;;;;"broderie";;;;0
+1429;74;;;;;;;"couture";;;;1
+1431;74;9920;;;;;;"couture";;;;1
+1433;3;9925;;;;;;"broderie";;;;0
+1435;1029;9939;;;;;;"pareur";;;;0
+1437;85;9941;;"vin";;"vallet";;"fourrure";;;;0
+1439;42;9967;;;;;;"tonte";;;;0
+1441;27;9969;;;;;;"tondeur";;;;0
+1443;27;9975;;;;;;"retonte";;;;0
+1445;2206;9989;;;;;;"broderie";;;;0
+1447;147;10018;;;;;;"fourrure";;;;0
+1449;147;10020;;;;;;"fourrure";;;;0
+1451;147;;;;;;;"teinture";;;"teinture en rouge de peau de chamoix";0
+1454;147;10027;;;;;;"fourrure";;;;0
+1456;147;10029;;;;;;"fourrure";;;;0
+1458;74;10084;;;;;;"couture";;;;0
+1460;74;10087;;;;;;"couture";;;;0
+1462;74;10092;;;;;;"couture";;;;1
+1464;74;;;;;;;"couture";;;;0
+1466;40;10104;;;;;;"couture";;;;1
+1468;74;10120;;;;;;"couture";;;;1
+1470;74;10127;;;;;;"couture";;;;1
+1472;3;10129;;;;;;"broderie";;;;0
+1474;147;10138;;;;;;"fourrure";;;;0
+1476;74;10155;;;;;;"couture";;;;0
+1478;2233;10178;;;;;;"bature";;;;0
+1480;2099;10180;;;;;;"broderie";;;;0
+1482;2123;10182;;;;;;"broderie";;;;0
+1484;156;;;;;;;"tonte";;;;0
+1486;156;10240;;;;;;"tonte";;;"pour 16 aunes d'écarlate";0
+1488;42;10242;;;;;;"tonte";;;"33 aunes de drap";0
+1490;42;10244;;;;;;"tondeur";;;"42 aunes de brunete à 0.5 d. g. T. par aune";0
+1492;1975;10253;;;;;;"tonte";;;"16 aunes d'Yraigne à 4 d. fort l'aune et 13 aunes de drap blanc à 2 d. f. l'aune";0
+1494;2248;10255;;;;;;"tonte";;;"28 aunes d'yraigne 2 d. fort à l'aune";0
+1496;42;10257;;;;;;"tonte";;;"11 aunes d'écarlate et 15 aunes de brunette à 2 d. fort l'aune";0
+1498;690;10266;;;1;"valet";;"couture";;;;1
+1500;3;10286;;;;;;"broderie";;;;0
+1502;27;10304;;;;;;"tondeur";;;"6 aunes d'écarlate et 3 aunes de Malines";0
+1504;74;10327;;;;;;"couture";;;;0
+1506;85;10333;;;;;;"couture";;;;0
+1508;85;;;;;;;"tonte";;;;0
+1509;85;;;;;;;"couture";;;;0
+1512;156;10354;;;;;;"tonte";;;"4 aunes de drap rouge de Malines";0
+1514;2099;10384;;;;;;"broderie";;;;0
+1516;42;10386;;;;;;"tonte";;;;0
+1518;2268;10403;;;;;;"broderie";;;;0
+1520;2268;10405;;;;;;"broderie";;;;0
+1522;85;10407;;;;;;"appareillier peaux";;;"chamoix";0
+1524;61;10410;;;;;;"fourrure";;;;0
+1526;156;10467;;;;;;"tonte";;;"54 aunes de drap à 4 d. fort l'aune";0
+1528;85;10491;;;;;;"couture";;;;0
+1530;27;10534;;;;;;"tonte";;;"27.5 aunes d'écarlate à 1 d. g. l'aune, 983 aunes de drap fin 0.5 d. l'aune, 749.5 aunes de drap 3 d. fort l'aune";0
+1532;2268;10558;;;;;;"broderie";;;;0
+1534;3;10563;;;;;;"broderie";;;;0
+1536;85;10566;;;;;;"couture";;;;0
+1538;85;10624;;;;;;"tonte";;;"15 aunes d'ecarlate et de blanc de vilvord à 1 d. g. 192 drap fin de Bruxelle , de Montivilliers, de Malines à 0.5 g. et 13 aune à 3 d. fort l'aune.";0
+1540;690;10635;;;;;;"couture";;;;0
+1542;3;10649;;;;;;"broderie";;;;0
+1544;27;10675;;;;;;"tonte";;;"66 aunes de drap fin de Bruxelle, Malines et Ypres à 0.5 d. g. t. pour 1 aune, 37 aunes de saint-Loup et Saint-James à 3 d. fort";0
+1546;3;10677;;;;;;"broderie";;;;0
+1548;27;10710;;;;;;"tonte";;;;0
+1550;85;10723;;;;;;"tondeur";;;;0
+1552;85;10742;;;;;;"tonte";;;;0
+1554;85;10775;;;;;;"tonte";;;;0
+1556;85;10777;;;;;;"couture";;;;0
+1558;85;10781;;;;;;"tonte";;;;0
+1561;85;10788;;;;;;"fourrure";;;;0
+1563;85;10792;;;;;;"tonte";;;;0
+1565;147;10813;;;;;;"fourrure";;;;0
+1567;85;10846;;;;;;"tonte";;;;0
+1569;85;10848;;;;;;"broderie de perle";;;;0
+1571;1030;10851;;;;;;"peinture";;;;0
+1573;85;10859;;;;;;"tonte";;;;0
+1575;2099;10871;;;;;;"broderie";;;;0
+1577;3;10878;;;;;;"broderie";;;;0
+1579;2099;10900;;;;;;"broderie";;;;0
+1581;85;10909;;;;;;"tonte";;;"plus 6 aunes de blanc";0
+1583;85;;;;;;;"couture";;;;0
+1585;85;;;;;;;"couture";;;;0
+1587;2099;10945;;;;;;"broderie";;;;0
+1589;2363;10969;;;;;;"tissage";;;;0
+1591;27;10998;;;;;;"tonte";;;;0
+1593;85;11044;;;;;;"tonte";;;"100 aunes de drap à 0.5 d. g. l'aune";0
+1595;74;11074;;;;;;"couture";;;;1
+1597;85;11078;;;;;;"tonte";;;;0
+1599;3;11094;;;;;;"broderie";;;;0
+1601;3;11140;;;;;;"broderie";;;;0
+1603;3;11142;;;;;;"broderie";;;;0
+1605;74;11150;;;;;;"couture";;;;0
+1607;74;11152;;;;;;"couture";;;;0
+1609;74;11155;;;;;;"couture";;;;0
+1611;74;11157;;;;;;"couture";;;;0
+1613;74;11159;;;;;;"couture";;;;0
+1615;74;11162;;;;;;"couture";;;;1
+1617;74;11164;;;;;;"couture";;;;1
+1619;74;11166;;;;;;"couture";;;;1
+1621;74;11177;;;;;;"couture";;;;0
+1624;74;11184;;;;;;"couture";;;;0
+1626;74;11186;;;;;;"couture";;;;0
+1628;74;11190;;;;;;"couture";;;;0
+1630;74;11193;;;;;;"couture";;;;1
+1632;74;11196;;;;;;"couture";;;;1
+1634;74;11198;;;;;;"couture";;;;0
+1636;74;11201;;;;;;"couture";;;;0
+1638;74;11204;;;;;;"couture";;;;0
+1640;74;11207;;;;;;"couture";;;;0
+1642;74;11219;;;;;;"couture";;;;0
+1644;74;11222;;;;;;"couture";;;;0
+1646;74;11226;;;;;;"couture";;;;0
+1648;74;11232;;;;;;"couture";;;;0
+1650;74;11235;;;;;;"couture";;;;0
+1652;2416;11238;;;;;;"couture";;;;0
+1654;74;11245;;;;;;"couture";;;;0
+1656;74;11247;;;;;;"couture";;;;0
+1658;74;11249;;;;;;"couture";;;;0
+1660;74;11252;;;;;;"couture";;;;0
+1662;147;11293;;;;;;"confection fourrure";;;;0
+1664;521;;;;;;;"fourrure";;;;0
+1666;147;;;;;;;"fourrure";;;;0
+1668;85;;;;;;;"couture";;;;0
+1670;85;;;;;;;"tonte";;;;0
+1672;85;11415;;;;;;"fourrure";;;;0
+1674;156;;;;;;;"tonte";;;;0
+1676;3;11470;;;;;;"broderie";;;;0
+1678;2450;11629;;;;;;"fourrure";;;;0
+1680;2447;11631;;;;;;"fourrure";;;;0
+1682;2451;11635;;;;;;"couture";;;;0
+1684;3;;;;;;;"broderie";;;;0
+1686;89;;;;;;;"couture";;;;0
+1688;3;11782;;;;;;"broderie";;;;0
+1690;3;11794;;;;;;"couture";;;;0
+1692;2512;11793;;;;;;"teinture";;;"en noir";0
+1695;2512;;;;;;;"teinture";;;"en noir";0
+1697;2512;11807;;;;;;"teinture";;;"12 tapis pers en noir";0
+1699;2512;11809;;;;;;"teinture";;;"9 sarge pers et rouge en noir";0
+1701;85;11910;;;;;;"couture";;;;0
+1703;27;;;;;;;"tonte";;;"941 aunes de drap fin  avec 0.5 d. g. t. par aune et 840 aunes de drap avec 0.375 d. g. t.";0
+1704;42;;;;;;;"tonte";;;"941 aunes de drap fin  avec 0.5 d. g. t. par aune et 840 aunes de drap avec 0.375 d. g. t.";0
+1707;1975;;;;;;;"tondeur";;;"941 aunes de drap fin  avec 0.5 d. g. t. par aune et 840 aunes de drap avec 0.375 d. g. t.";0
+1709;2540;;;;;;;"tondeur";;;"941 aunes de drap fin  avec 0.5 d. g. t. par aune et 840 aunes de drap avec 0.375 d. g. t.";0
+1712;3;12039;;;;;;"broderie";;;;0
+1714;3;12044;;;;;;"broderie";;;"ourle de tresse noir";0
+1716;2446;12126;;;;;;"fourrure";;;;0
+1718;1975;12180;;;;;;"tonte";;;;0
+1720;2524;12220;;;;;;"couture";;;;0
+1722;2550;12224;;;;;;"appareillier peaux";;;;0
+1724;2451;12228;;;;;;"couture";;;;0
+1726;521;;;;;;;"fourrure";;;;0
+1728;147;;;;;;;"fourrure";;;;0
+1730;3;12245;;;;;;"broderie";;;;0
+1732;3;12247;;;;;;"broderie";;;;0
+1734;2099;12249;;;;;;"broderie";;;;0
+1736;690;12251;;;;;;"fourrure";;;;0
+1738;27;;;;;;;"tonte";;;"213 aunes de drap fin entre le 13/07/1392 et le 23/12/1392 à 0.5 d. g. l'aune";0
+1740;42;;;;;;;"tonte";;;"213 aunes de drap fin entre le 13/07/1392 et le 23/12/1392 à 0.5 d. g. l'aune";0
+1742;2540;;;;;;;"tonte";;;"213 aunes de drap fin entre le 13/07/1392 et le 23/12/1392 à 0.5 d. g. l'aune";0
+1745;27;;;;;;;"tonte";;;"298 aunes de drap de saint-loup, louviers, bernay, et plusieurs même draperie entre le 13/07/1392 et le 23/12/1392 à 0.375 d. g. l'aune";0
+1747;42;;;;;;;"tonte";;;"298 aunes de drap de saint-loup, louviers, bernay, et plusieurs même draperie entre le 13/07/1392 et le 23/12/1392 à 0.375 d. g. l'aune";0
+1749;2540;;;;;;;"tonte";;;"298 aunes de drap de saint-loup, louviers, bernay, et plusieurs même draperie entre le 13/07/1392 et le 23/12/1392 à 0.375 d. g. l'aune";0
+1751;27;;;;;;;"tonte";;;"tous 48 aunes de drap";0
+1752;1975;;;;;;;"tondeur";;;"tous 48 aunes de drap";0
+1755;2451;;;;;;;"tonte";;;"tous 48 aunes de drap";0
+1757;85;12370;;;;;;"couture";;;;0
+1759;85;12373;;;;;;"couture";;;;0
+1763;2565;;;"vin";;;;"fourrure";;;;0
+1765;3;;;;;;;"broderie";;;;0
+1768;85;;;;;;;"tonte";;;;0
+1770;85;;;;;;;"couture";;;;0
+1772;2539;12393;;;;;;"tondeur";;;;0
+1774;3;;;;;;;"broderie";;;;0
+1776;85;12405;;;;;;"couture";;;;0
+1778;424;12415;;;;;;"broderie";;;;0
+1780;2576;12448;;;;;;"couture";;;;0
+1782;3;;;;;;;"broderie";;;;0
+1784;85;12457;;;;;;"couture";;;;0
+1786;2660;12493;;;;;;"couture";;;;0
+1788;2677;12513;;;;;;"couture";;;;0
+1790;2677;12515;;;;;;"couture";;;;0
+1792;2677;12521;;;;;;"couture";;;;0
+1794;2677;12527;;;;;;"couture";;;;0
+1796;2677;12529;;;;;;"couture";;;;0
+1798;2677;12534;;;;;;"couture";;;;0
+1800;2677;12538;;;;;;"couture";;;;0
+1802;2677;12542;;;;;;"couture";;;;0
+1804;2677;12546;;;;;;"couture";;;;0
+1806;2677;12550;;;;;;"couture";;;;0
+1808;2677;12553;;;;;;"couture";;;;0
+1810;2677;12558;;;;;;"couture";;;;0
+1812;2685;;;;;;;"fourrure";;;;0
+1814;2692;12612;;;;;;"tonte";;;;0
+1817;2677;12622;;;;;;"couture";;;"façon et fil";1
+1820;2677;12624;;;;;;"couture";;;;0
+1824;2694;12645;;;;;;"couture";;;;0
+1826;2692;12677;;;;;;"tonte";;;;0
+1828;156;12695;;;;;;"tonte";;;;0
+1830;1185;12779;;;;;;"tonte";;;"en fr. ad 16, 288.5 aunes pour drap de Lière, Malines, Montivilliers, Rouen, et autres drapperies. Pour 29.5 d'écarlate et 1 pièce de cordellier de Montivilliers";0
+1833;2731;12781;;;;;;"couture";;;"mission et étoffes, fr. ad 16";1
+1835;1185;12785;;;;;;"couture";;;"fr. ad 16";0
+1837;2731;12788;;;;;;"couture";;;"fr. ad 16";0
+1839;2731;12791;;;;;;"couture";;;;0
+1841;2731;12793;;;;;;"couture";;;"fr. ad 16";0
+1844;2731;12795;;;;;;"couture";;;;0
+1846;2731;12797;;;;;;"couture";;;"fr. ad 16";0
+1848;2731;12799;;;;;;"couture";;;"fr. ad 16";0
+1850;2731;12801;;;;;;"couture";;;"fr. ad 16";0
+1852;2731;12803;;;;;;"couture";;;"fr. ad 16";0
+1856;2732;12890;;;;;;"broderie";;;"fr. ad 16";0
+1858;2732;;;;;;;"broderie";;;;0
+1860;2733;;;;;;;"broderie";;;;0
+1863;156;12908;;;;;;"tonte";;;;0
+1865;2744;12913;;;;;;"couture";;;;0
+1868;2660;12919;;;;;;"couture";;;;0
+1870;156;12922;;;;;;"tonte";;;"pour 1 aunes de rouge de Malines";0
+1872;2753;12926;;;;;;"cordonerie";;;;0
+1874;2732;12943;;;;;;"broderie";;;"1 aubépine et 3 nœud de monseigneur sur la manche gauche";0
+1876;2732;12945;;;;;;"broderie";;;"1 nœud de monseigneur sur la manche";0
+1878;2732;12947;;;;;;"broderie";;;;0
+1880;156;12950;;;;;;"tonte";;;;0
+1883;2762;12979;;;;;;"sellerie";;;;0
+1885;2692;12981;;;;;;"tonte";;;;0
+1887;2677;12983;;;;;;"freppe et frenge";;;;0
+1891;2767;13001;;;;;;"tonte";;;;0
+1894;2767;13029;;;;;;"tonte";;;"18 aunes de drap blanc";0
+1896;156;;;;;;;"tonte";;;;0
+1898;2767;13049;;;;;;"tonte";;;;0
+1900;3;13055;;;;;;"broderie";;;"fr. ad 15, brode la devise du noeud";0
+1902;2745;13063;;;;;;"fourrure";;;;0
+1904;2692;13138;;;;;;"tonte";;;"fr; ad 16, 6 blanc pour 1 aune d'écarlate et 2 blanc pour les autre drap";0
+1907;2168;13150;;;;;;"fourrure";;;"fr. ad 16";0
+1909;2168;13171;;;;;;"appareillier peaux";;;"fr. ad 16";0
+1911;2801;13236;;;;;;"couture";;;"fr. ad 16";1
+1914;2801;13238;;;;;;"couture";;;;1
+1916;2802;13240;;;;;;"fourrure";;;"fr. ad 16";0
+1919;2565;13250;;;;;;"fourrure";;;;0
+1921;2767;13254;;;;;;"tonte";;;"318 aunes de différentes draperie à 0.5 d. l'aune";0
+1923;2767;13258;;;;;;"tonte";;;;0
+1925;3;13260;;;;;;"broderie";;;"fr. ad 15, nœud de monseigneur en escharpe et escuees de pluseurs noux d'or scuees aussi de roses. Brodée or pour 8 et oddon de villar et argent pour Aymé d'Aspremont.";0
+1928;2732;13269;;;;;;"broderie";;;"fr. ad 16, 3 nœud d'or fin de la devise de Monseigneur mis et assis sur 3 robe";0
+1930;2732;13271;;;;;;"broderie";;;"fr. ad 16, brodéees sur les assises des manches a nous entour des dictes assises faictes d'or et d'argent";0
+1932;2732;13273;;;;;;"broderie";;;"fr. ad 16, brodées chascunes sur la manche senestre d'on grand aubespin";0
+1935;2732;13275;;;;;;"broderie";;;"fr. ad 16, brodees les manges tout entour et le collet de aubespins et de bois a ovrage d'or";0
+1937;2732;13277;;;;;;"broderie";;;"fr. ad 16, 4 nœud d'or chacun pour odon de villard, 8 et 4 nœud d'argent pour Aymé d'aspremontet";0
+1940;123;13279;;;;;;"broderie";;;"fr. ad 16, 3 petit noux d'or fin";0
+1943;2732;;;;;;;"broderie";;;"brodée a grand noux d'or";0
+1945;2732;;;;;;;"broderie";;;"fere broder pluseur manges de la devise de monseigneur de sa livrée";0
+1947;3;13318;;;;;;"broderie";;;"fr. ad 16, devise de monseigneur";0
+1949;85;13325;;;;;;"brodeur";;;"devise";0
+1951;2732;13356;;;;;;"broderie";;;"devise de savoie";0
+1952;2732;13357;;;;;;"broderie";;;"devise devise de savoie";0
+1955;2732;13360;;;;;;"broderie";;;"motif de chasse";0
+1958;2732;13363;;;;;;"broderie";;;"chataignier mises sur robe don les dues manges et le collet devant et derier";0
+1960;2732;13365;;;;;;"broderie";;;"sc. Ad 18, faucon";0
+1962;2853;13368;;;;;;"broderie";;;"fr. ad 16";0
+1965;2858;;;;;;;"broderie";;;;0
+1966;2859;;;;;;;"broderie";;;;0
+1969;2860;;;;;;;"broderie";;;;0
+1971;2801;;;;;;;"couture";;;;0
+1973;2901;13488;;;;;;"couture";;;;1
+1975;2901;13490;;;;;;"couture";;;;1
+1978;2901;13492;;;;;;"couture";;;;1
+1980;2901;13494;;;;;;"couture";;;;1
+1982;2901;13496;;;;;;"couture";;;;1
+1984;2901;13498;;;;;;"couture";;;;1
+1986;2901;13500;;;;;;"couture";;;;1
+1988;2901;13502;;;;;;"couture";;;;1
+1990;2901;13504;;;;;;"couture";;;;1
+1992;2901;13506;;;;;;"couture";;;;1
+1994;2901;13508;;;;;;"couture";;;;1
+1996;2901;13510;;;;;;"couture";;;;1
+1998;2901;13512;;;;;;"couture";;;;1
+2000;2901;13514;;;;;;"couture";;;;1
+2002;2901;13516;;;;;;"couture";;;;1
+2004;2901;13518;;;;;;"couture";;;;1
+2006;2901;13520;;;;;;"couture";;;;1
+2009;2901;13522;;;;;;"couture";;;;1
+2011;2901;13524;;;;;;"couture";;;;1
+2014;2901;13526;;;;;;"couture";;;;1
+2016;2901;13528;;;;;;"couture";;;;1
+2018;751;13565;;;;;;"fourrure";;;"13 fourrure de robe et une refourrures à 1 fr. par robe";0
+2023;155;13679;;;;;;"couture";;;"travail avec nicolet le chambrier";0
+2025;2767;13681;;;;;;"tonte";;;"50 aunes de drap";0
+2027;2945;13687;;;;;;"broderie";;;"devise sur la manche";0
+2030;85;13718;;;;;;"teinture";;;;0
+2032;2732;13725;;;;;;"broderie";;;"manche";0
+2035;2960;;;;;;;"refourrer";;;;0
+2037;2692;13767;;;;;;"tonte";;;;0
+2039;2731;13769;;;;;;"couture";;;;0
+2041;2731;13772;;;;;;"couture";;;;0
+2043;2731;13774;;;;;;"couture";;;;0
+2045;42;13837;;;;;;"tonte";;;;0
+2047;3;13843;;;;;;"broderie";;;;0
+2049;42;13866;;;;;;"tonte";;;"32 aune à 0.75 d. g. et 26 à 0.5 d. g.";0
+2052;2989;13874;;;;;;"préparer";;;"car robes mouiller, 12 d. par Robe plus une autre réparation";0
+2054;2989;13877;;;;;;"fourrure";;;;0
+2056;156;13892;;;;;;"tonte";;;;0
+2058;42;13976;;;;;;"tonte";;;;0
+2060;155;13978;;;;;;"couture";;;"4 personne";0
+2062;35;13982;;;;;;"couture";;;;0
+2064;155;13984;;;;;;"couture";1;;;0
+2066;303;13990;;;;;;"freppe";;;;0
+2068;155;14015;;;;;;"couture";;;;0
+2070;303;14057;;;;;;"cordonerie";;;;0
+2072;3016;14065;;;;;;"couture";;;;0
+2074;2409;14078;;;;;;"couture";;;;1
+2076;303;14088;;;;;;"freppe";;;;0
+2078;2732;14104;;;;;;"broderie";;;;0
+2080;1568;14118;;;;;;"couture";;;;0
+2082;2732;14125;;;;;;"broderie";;;;0
+2084;3028;14139;;;;;;"couture";8;;;0
+2086;42;14141;;;;;;"tonte";;;"6 aunes d'écarlate à 1 d. l'aune, 8 aunes de Brunette à 0.5 d. l'aune, 15 aunes de vert perdu à 0.5 d. l'aune, 1' aunes de vert de Rouens à 0.5 d. l'aune et 51 aunes de draps pour vallets de cuisine et autres à 0.16 d. l'aune.";0
+2088;2732;14145;;;;;;"broderie";;;;0
+2090;3005;;;;;;;"sellerie";;;;0
+2092;85;14151;;;;;;"découpure";;;;0
+2094;3030;;;;;;;"couture";;;;0
+2096;3037;14202;;;;;;"tondeur";;;;0
+2098;2732;14204;;;;;;"broderie";;;;0
+2100;2732;14206;;;;;;"broderie";;;;0
+2102;2732;14208;;;;;;"broderie";;;;0
+2104;2732;14216;;;;;;"broderie";;;;0
+2106;3;14229;;;;;;"broderie";;;;0
+2108;3041;14238;;;;;;"chaussetier";;;;0
+2110;2767;14241;;;;;;"tonte";;;;0
+2112;3040;14243;;;;;;"semellure de chausse";;;;0
+2114;3042;14247;;;;;;"tondeur";;;;0
+2116;2767;14259;;;;;;"tonte";;;;0
+2118;2767;14263;;;;;;"tonte";;;;0
+2120;2767;14267;;;;;;"tondeur";;;;0
+2122;3049;14283;;;;;;"couture";;;;0
+2124;3054;14287;;;;;;"couture";;;;0
+2127;3;14311;;;;;;"broderie";;;"avance sur le travail";0
+2129;155;14323;;;;;;"couture";;;"aident janin peyraud tailleur de 8";0
+2131;2086;14336;;;;;;"couture";;;;0
+2133;42;14347;;;;;;"tonte";;;;0
+2135;155;14351;;;;;;"couture";;;;0
+2137;303;14355;;;;;;"découpure et freppe";;;;0
+2139;3;14375;;;;;;"broderie";;;;0
+2141;42;14379;;;;;;"tonte";;;;0
+2143;3;14387;;;;;;"broderie";;;;0
+2146;2732;14394;;;;;;"broderie";;;"manche semées de branches de pommiers et pomme au fil d'or";0
+2148;2732;14396;;;;;;"broderie";;;"assise et manche avec du fil d'or en noeud";0
+2150;2732;14398;;;;;;"broderie";;;"Nœud d'or en bande devant et derrière soit 24 noeuds";0
+2152;2732;14400;;;;;;"broderie";;;;0
+2155;2732;14402;;;;;;"broderie";;;"colet et manche à écailles d'or";0
+2157;2732;14404;;;;;;"broderie";;;"semées de noeds d'or en manière de branche d'olivier soit 111 noeuds";0
+2159;2732;14406;;;;;;"broderie";;;"une manche ouvrée d'un terrasse avec une fourmilière ou il faut le jouz e les fourmis";0
+2161;2732;14408;;;;;;"broderie";;;"nœuds autour des assises avec raies de soleil qui montent";0
+2163;2732;14410;;;;;;"broderie";;;"ouvrées es manches d'aviron au bout dessous et ou collet";0
+2165;2732;14411;;;;;;"broderie";;;"manche senestre 2 nœuds de froment qui sunt d'or";0
+2167;2732;14414;;;;;;"broderie";;;"ouvrée en les manches tout au long de pomier d'aubepin";0
+2169;3;14419;;;;;;"broderie";;;;0
+2171;42;14429;;;;;;"tonte";;;"7.25 brunette de malines";0
+2173;155;14451;;;;;;"couture";;;;0
+2175;85;14459;;;;;;"adober";;;;0
+2177;2997;14476;;;;;;"couture";;;;0
+2181;2780;14502;;;;;;"couture";;;;0
+2183;2732;14504;;;;;;"broderie";;;;0
+2185;303;14517;;;;;;"découpure";;;;0
+2188;3083;14519;;;;;;"fourrure";;;;0
+2190;42;14522;;;;;;"tonte";;;;0
+2193;85;14593;;;;;;"couture";;;;0
+2195;2997;14599;;;;;;"couture";;;;0
+2198;3037;14604;;;;;;"tonte";;;;0
+2205;3111;14606;;;;;;"tonte";;;;0
+2207;3112;14608;;;;;;"couture";;;;0
+2209;3113;14610;;;;;;"tonte";;;;0
+2211;3114;14612;;;;;;"tonte";;;;0
+2214;3030;14615;;;;;;"couture";;;;0
+2216;3117;14618;;;;;;"couture";;;;0
+2221;3119;14620;;;;;;"broderie";;;;0
+2223;3118;14622;;;;;;"couture";;;;0
+2225;2450;14643;;;;;;"fourrure";;;;0
+2227;2409;14649;;;;;;"couture";;;;0
+2229;3125;14672;;;;;;"tondeur";;;"12 aunes de blanc de Malines et 12 aunes de vert de Rouen";0
+2231;2547;14680;;;;;;"tonte";;;;0
+2234;42;14682;;;;;;"tonte";;;;0
+2236;303;14691;;;;;;"freppe";;;;0
+2238;42;14698;;;;;;"tonte";;;;0
+2240;303;14706;;;;;;"freppe";;;;0
+2242;155;;;;;;;"couture";;;;0
+2244;42;14725;;;;;;"tonte";;;"45 aunes à 0.75 d. g. t. et 17 aunes à 0.5 d. g. t.";0
+2246;42;14727;;;;;;"tonte";;;"0.75 d. g. t.  l'aune";0
+2248;42;14733;;;;;;"tonte";;;"0.75 d. t. t. par aune";0
+2250;303;14737;;;;;;"freppe";;;;0
+2252;303;14764;;;;;;"freppe";;;;0
+2254;2732;14775;;;;;;"broderie";;;;0
+2256;2732;14785;;;;;;"broderie";;;;1
+2259;2732;14801;;;;;;"broderie";;;;0
+2263;3155;14807;;;;;;"semellure de chausse";;;;0
+2265;42;14818;;;;;;"tonte";;;;0
+2268;42;14832;;;;;;"tonte";;;"0.75 d. g. t. pour 1 aune";0
+2270;42;14850;;;;;;"tonte";;;"1 d. g. t. par aune";0
+2272;3160;14856;;;;;;"teinture";;;"en noir";0
+2274;156;14860;;;;;;"tonte";;;;0
+2276;3032;14868;;;;;;"couture";;;;0
+2278;3037;14870;;;;;;"tonte";;;"ob. G. t. pour 1 aunes";0
+2280;1919;14874;;;;;;"tonte";;;;0
+2282;85;14904;;;;;;"couture";;;;0
+2284;85;14905;;;;;;"tonte";;;;0
+2286;3;14910;;;;;;"broderie";;;;0
+2288;42;14914;;;;;;"tonte";;;;0
+2290;42;14916;;;;;;"tonte";;;;0
+2292;3;14986;;;;;;"broderie";;;;0
+2294;3205;14994;;;;;;"tonte";;;;0
+2296;3210;15000;;;;;;"couture";;;;0
+2298;155;15003;;;;;;"couture";;;;0
+2300;3213;15011;;;;;;"semellure de chausse";;;;0
+2302;42;15017;;;;;;"tonte";;;"0.75 d. par aune";0
+2304;303;;;;;;;"freppe";;;;0
+2306;85;15039;;;;;;"tonte";;;;0
+2309;3222;15044;;;;;;"couture";;;;0
+2311;156;15061;;;;;;"tonte";;;;0
+2313;2767;15063;;;;;;"tondeur";;;"1 aune pour mayle d. quart g.";0
+2315;2767;15071;;;;;;"tonte";;;"0.25 d. pour une aune";0
+2317;2767;15082;;;;;;"tonte";;;"0.75 d. g. t. par aune";0
+2319;42;15092;;;;;;"tonte";;;"1 d. g. t. pour 1 aune";0
+2322;147;15099;;;;;;"fourrure";;;;0
+2324;42;15103;;;;;;"tonte";;;"0.375 d. g. t. pour 1 aune de drap de Louvier ou d'auberton";0
+2326;2767;15111;;;;;;"tondeur";;;;0
+2329;155;15113;;;;;;"couture";;;;0
+2331;2767;15119;;;;;;"tondeur";;;"1 aune de brunette de Lierre pour 0.5 d. g. t.";0
+2334;42;15139;;;;;;"tondeur";;;"14 aunes brunete de malines";0
+2336;42;15146;;;;;;"tonte";;;"0.625 d. g. t. pour 1 aunes de brunete de Maline à l'aune de Chambéry";0
+2338;147;15149;;;;;;"fourrure";;;;0
+2340;3242;15166;;;;;;"tonte";;;;0
+2342;42;15173;;;;;;"tonte";;;;0
+2344;2451;15184;;;;;;"tonte";;;"1/8 d. g. t. pour 1 aune de vert gay de Rouen";0
+2346;155;15190;;;;;;"couture";;;;1
+2348;42;15203;;;;;;"tonte";;;"0.5 d. g. t. pour 1 aune de vert gay de Rouen";0
+2350;3018;15205;;;;;;"sellerie";;;;0
+2352;3018;15207;;;;;;"sellerie";;;;0
+2356;3246;15209;;;;;;"freppe";;;"2 d. g. t. par garnison";0
+2358;3032;15220;;;;;;"couture";;;;0
+2360;3032;15222;;;;;;"couture";;;;0
+2362;3032;15224;;;;;;"couture";;;;0
+2364;3248;15228;;;;;;"tonte";;;;0
+2366;3;15235;;;;;;"broderie";;;;0
+2368;155;15240;;;;;;"couture";;;;0
+2370;3251;15247;;;;;;"couture";;;;0
+2373;42;15250;;;;;;"tonte";;;;0
+2375;2539;15256;;;;;;"tonte";;;"1/8 de d. g. t. pour 1 aune de gris de Montivilliers";0
+2378;2997;15275;;;;;;"couture";;;;0
+2380;2732;15277;;;;;;"broderie";;;;0
+2382;2732;15279;;;;;;"broderie";;;;0
+2384;2732;15287;;;;;;"broderie";;;"paiement en plusieurs fois";0
+2386;3274;15297;;;;;;"couture";;;"payé en plusieurs fois";0
+2389;3274;15302;;;;;;"couture";;;"paiemant en plusieurs fois  : 34fl. Et 1 d. g. t.";0
+2392;3274;15304;;;;;;"couture";;;"paiemant en plusieurs fois  : 34fl. Et 1 d. g. t.";0
+2394;3274;15306;;;;;;"couture";;;"paiemant en plusieurs fois  : 34fl. Et 1 d. g. t.";0
+2396;3274;15308;;;;;;"couture";;;"paiemant en plusieurs fois  : 34fl. Et 1 d. g. t.";0
+2398;3274;15310;;;;;;"couture";;;"paiemant en plusieurs fois  : 34fl. Et 1 d. g. t.";0
+2400;3274;15312;;;;;;"couture";;;"paiemant en plusieurs fois  : 34fl. Et 1 d. g. t.";0
+2402;3274;15314;;;;;;"couture";;;"paiemant en plusieurs fois  : 34fl. Et 1 d. g. t.";0
+2405;3274;15317;;;;;;"couture";;;"paiemant en plusieurs fois  : 34fl. Et 1 d. g. t.";0
+2407;42;15327;;;;;;"tonte";;;"0.375 d. g. t. pour 1 aune";0
+2409;2732;15337;;;;;;"broderie";;;"voir dans les descriptions du glossaire";0
+2411;2291;15357;;;;;;"couture";;;;1
+2413;3296;15359;;;;;;"tondeur";;;"32 aunes à 0.25 d. g. t.";0
+2415;3251;15361;;;;;;"couture";;;;0
+2419;2732;15371;;;;;;"broderie";;;;0
+2421;156;15384;;;;;;"tonte";;;;0
+2423;155;15385;;;;;;"couture";;;;0
+2425;2780;15389;;;;;;"adober";;;;0
+2427;3296;15398;;;;;;"tonte";;;;0
+2429;3251;15400;;;;;;"couture";;;;0
+2431;155;15402;;;;;;"couture";;;;0
+2433;42;15435;;;;;;"tonte";;;"0.375 d. g. t. par aune";0
+2435;2539;15445;;;;;;"tondeur";;;;0
+2438;1945;15480;;;;;;"couture";;;;0
+2440;521;15485;;;;;;"refourrer";;;;0
+2442;3251;15487;;;;;;"couture";;;;0
+2444;3329;15489;;;;;;"freppe";;;;0
+2447;3251;15493;;;;;;"couture";;;;0
+2449;2149;15495;;;;;;"couture";;;;0
+2451;3251;15508;;;;;;"couture";;;;0
+2453;42;15520;;;;;;"tonte";;;;0
+2455;3;15528;;;;;;"broderie";;;;0
+2458;3339;15588;;;;;;"tonte";;;"0.375 d. g. t. pour 1 aune";0
+2460;156;15592;;;;;;"tonte";;;;0
+2462;85;15630;;;;;;"fourrure";;;;0
+2464;3251;15635;;;;;;"couture";;;;0
+2466;2780;;;;;;;"couture";;;;0
+2468;2732;15671;;;;;;"broderie";;;;0
+2470;147;15677;;;;;;"fourrure";;;;0
+2472;2732;15688;;;;;;"broderie";;;;0
+2474;85;15698;;;;;;"fourrure";;;;0
+2476;85;15710;;;;;;"pareur";;;;0
+2478;155;15713;;;;;;"couture";;;;0
+2480;42;15756;;;;;;"tonte";;;;0
+2482;156;15792;;;;;;"tonte";;;;0
+2484;156;15836;;;;;;"tonte";;;;0
+2486;3397;15838;;;;;;"broderie";;;;0
+2488;2732;15842;;;;;;"doublure";;;;0
+2490;3087;15846;;;;;;"couture";;;;0
+2492;42;15852;;;;;;"tonte";;;;0
+2494;42;15860;;;;;;"tonte";;;;0
+2496;42;15875;;;;;;"tonte";;;;0
+2498;85;15877;;;;;;"freppe";;;;0
+2500;42;15881;;;;;;"tonte";;;"1 d. g. t. pour 1 aune d'écarlate, 0.5 d. g. t. pour 1 aune de brunette";0
+2502;3251;15897;;;;;;"freppe et couture";;;;0
+2504;3251;15899;;;;;;"couture";;;"1 gipon pour 2 fl.";1
+2506;42;15908;;;;;;"tonte";;;;0
+2508;2732;15916;;;;;;"broderie";;;;0
+2510;2732;15918;;;;;;"broderie";;;"feuilles d'orfèvrerie";0
+2514;2732;15920;;;;;;"broderie";;;"broderie d'orfévrerie en losange et en feuille";0
+2516;2732;15922;;;;;;"broderie";;;"faucon";0
+2518;2732;15926;;;;;;"broderie";;;"branche de mai devant et derrière la robe couché d'or";0
+2521;2732;15928;;;;;;"broderie";;;;0
+2523;2732;15930;;;;;;"broderie";;;"manche seméé de pures folles qui sont nerres d'or et sont branlans et a dessoubt chescunes feulle une autre feulle forméee d'or et tout autour de perles et de noux d'or";0
+2525;2732;15935;;;;;;"broderie";;;;0
+2528;2732;15937;;;;;;"broderie";;;"faucon et branche d'aubépine couchée d'or";0
+2530;2732;15939;;;;;;"broderie";;;;0
+2532;2732;15942;;;;;;"broderie";;;;0
+2534;2732;15944;;;;;;"broderie";;;;0
+2536;2732;15946;;;;;;"broderie";;;;0
+2538;2732;15948;;;;;;"broderie";;;;0
+2540;156;16004;;;;;;"tonte";;;;0
+2542;3;16006;;;;;;"broderie";;;"mettre bollion sur le chapiron";0
+2544;3251;16015;;;;;;"couture";;;;1
+2546;42;16017;;;;;;"tonte";;;;0
+2548;1945;16087;;;;;;"couture";;;;0
+2550;1945;16092;;;2;"ouvrier";;"couture";;;"6 g. pour les ouvrier";0
+2552;3463;16096;;;2;;;"couture";;;;0
+2556;156;16098;;;;;;"tonte";;;;0
+2558;3251;16139;;;;;;"couture";;;;0
+2560;3251;16141;;;;;;"couture";;;;0
+2562;155;16165;;;;;;"couture";;;;0
+2564;3296;16171;;;;;;"tondeur";;;"20 aunes de Brunete";0
+2566;3251;16176;;;;;;"couture";;;;0
+2568;3251;16179;;;;;;"couture";;;;0
+2570;3251;16182;;;;;;"couture";;;;0
+2572;3251;16185;;;;;;"couture";;;;0
+2575;3251;16188;;;;;;"couture";;;;0
+2577;42;16195;;;;;;"tonte";;;;0
+2580;733;16203;;;5;"ouvrier";;"doublure";;;;0
+2582;42;16213;;;;;;"tonte";;;;0
+2584;42;16240;;;;;;"tonte";;;;0
+2586;3;16253;;;;;;"broderie";;;;0
+2588;147;;;;;;;"fourrure";;;;0
+2590;2450;;;;;;;"fourrure";;;;0
+2592;3;16279;;;;;;"bature";;;;0
+2594;3251;16289;;;;;;"couture";;;;0
+2596;42;16291;;;;;;"tonte";;;"89 aunes";0
+2598;3251;16295;;;;;;"couture";;;;0
+2600;3251;16297;;;;;;"couture";;;;0
+2602;3233;16301;;;;;;"freppe";;;;0
+2604;3;16303;;;;;;"broderie";;;;0
+2606;742;16305;;;;;;"freppe";;;;0
+2609;155;;;;1;"valet";;"couture";;;;0
+2611;3503;16309;;;;;;"fourrure";;;;0
+2613;3503;16311;;;;;;"fourrure";;;;0
+2615;155;16337;;;;"valet";;"couture";;;;0
+2617;3329;16339;;;;;;"freppe";;;;0
+2619;156;16342;;;;;;"tonte";;;;0
+2621;42;16355;;;;;;"tonte";;;;0
+2623;3251;16361;;;;;;"couture";;;;0
+2625;42;16367;;;;;;"tondeur";;;;0
+2627;1945;16372;;;;;;"couture";;;;0
+2631;3512;16386;;;;;;"broderie";;;;0
+2633;2732;16390;;;;;;"broderie";;;;0
+2635;42;16406;;;;;;"tonte";;;;0
+2637;3251;16420;;;;;;"couture";;;;0
+2639;3;16437;;;;;;"couture";;;;0
+2641;42;16479;;;;;;"tonte";;;"7 aunes d'écarlate";0
+2643;3512;16481;;;;;;"broderie";;;;0
+2646;1945;16488;;;;;;"couture";;;;0
+2648;3528;16494;;;;;;"tondeur";;;;0
+2650;3535;16507;;;;;;"tonte";;;"12.5 aunes";0
+2652;3512;;;;;;;"broderie";;;;0
+2654;3512;;;;;;;"freppe";;;;0
+2656;42;16519;;;;;;"tonte";;;;0
+2658;3540;16521;;;;;;"tondeur";;;;0
+2660;2732;16552;;;;;;"broderie";;;;0
+2662;2732;16554;;;;;;"broderie";;;;0
+2664;2852;16555;;;;;;"broderie";;;;0
+2666;2732;;;;;;;"broderie";;;;0
+2668;2852;;;;;;;"broderie";;;;0
+2671;2732;16563;;;;;;"broderie";;;;0
+2673;2732;;;;;;;"broderie";;;;0
+2675;2732;16565;;;;;;"broderie";;;;0
+2677;2732;16567;;;;;;"broderie";;;;0
+2679;2732;16569;;;;;;"broderie";;;;0
+2682;1945;16584;;;;;;"couture";;;;0
+2684;1945;16587;;;;;;"couture";;;;0
+2686;1945;16589;;;;;;"couture";;;;0
+2688;3555;16593;;;;;;"fourrure";;;;0
+2690;3119;16599;;;;;;"broderie";;;;0
+2692;2450;16601;;;;;;"fourrure";;;;0
+2694;2450;16603;;;;"compagnon";;"fourrure";;;;0
+2696;2450;16605;;;;;;"fourrure";;;;0
+2699;3540;16641;;;;;;"tonte";;;;0
+2701;2732;16647;;;;;;"broderie";;;;0
+2703;3575;16651;;;;;;"broderie";;;;0
+2706;3251;16671;;;;;;"couture";;;;1
+2708;3573;16678;;;;;;"tonte";;;;0
+2710;3540;16680;;;;;;"tonte";;;;0
+2712;3573;16688;;;;;;;;;;0
+2714;156;16694;;;;;;"tonte";;;"16 aunes de gris de feugère et 4.5 aunes de blanc de claustre à 0.25 d. par aune";0
+2716;1945;16696;;;;;;"coupe";;;;0
+2720;3586;16697;;;;;;"couture";;;;0
+2722;3512;16719;;;;;;"broderie";;;"paiement en plusieurs fois";0
+2724;3540;16727;;;;;;"couture";;;;1
+2726;155;16730;;;;;;"couture";;;;0
+2728;42;16756;;;;;;"tonte";;;"252 aunes de drap  : 113 aunes de fin et grand à 0.5 d. g. par aune et les autres 3 d. fort par aunes";0
+2730;156;16792;;;;;;"tonte";;;;0
+2732;42;16802;;;;;;"tonte";;;;0
+2734;42;16821;;;;;;"tonte";;;;0
+2736;2896;;;;;;;;;;;0
+2738;3617;16823;;;;;;"freppe";;;;0
+2740;521;16828;;;;;;"fourrure";;;;0
+2742;156;16841;;;;;;"tonte";;;"10 aunes de rouge de Bruxelles";0
+2744;3619;16847;;;;;;"tonte";;;;0
+2746;3619;16854;;;;;;"tonte";;;;0
+2748;156;16856;;;;;;"tonte";;;;0
+2750;3639;16861;;;;;;"fourrure";;;;0
+2754;42;16867;;;;;;"tonte";;;;0
+2756;2732;16869;;;;;;"broderie";;;;0
+2758;2732;16877;;;;;;"broderie";;;;0
+2760;3653;16879;;;;;;"broderie";;;;0
+2762;3652;16881;;;;;;"broderie";;;;0
+2764;1945;16905;;;;;;"couture";;;;0
+2766;1945;16907;;;;;;"couture";;;;0
+2768;1945;16910;;;;;;"couture";;;;0
+2770;1945;16912;;;;;;"couture";;;;0
+2772;1945;16914;;;;;;"couture";;;;0
+2774;1945;16916;;;;;;"couture";;;;0
+2776;1945;16952;;;;;;"couture";;;;0
+2778;1945;16969;;;;;;"couture";;;;0
+2780;1945;16974;;;;;;"couture";;;;0
+2782;42;16980;;;;;;"tonte";;;"0.5 d. par aune recto et verso";0
+2784;3251;16982;;;;;;"entretaille";;;;0
+2786;3680;16995;;;2;;;"fourrure";4;;"2 d. par jour pendant 4 jours";0
+2788;3680;16997;;;;;;"fourrure";6;;"2 d. par jour pendant 6 jours";0
+2791;3680;16999;;;;;;"réparation";6;;"2 d. par jours pendant 6 jours
+réparation d'une fourrure de martre";0
+2793;3683;17006;;;;;;"tondeur";;;;0
+2795;3575;17008;;;;;;"broderie";;;;0
+2797;3686;17027;;;;;;"teinture";;;"teindre en noir";0
+2800;1945;17029;;;;;;"couture";;;;0
+2802;1945;17052;;;;;;"couture";;;;0
+2804;1945;17060;;;;;;"couture";;;;0
+2806;1945;17062;;;;;;"couture";;;;1
+2808;1945;17065;;;;;;"couture";;;;0
+2810;2732;17107;;;;;;"broderie";;;;0
+2812;3653;17125;;;;;;"broderie";;;;0
+2816;3652;17126;;;;;;"broderie";;;;0
+2818;3652;17128;;;;;;"broderie";;;;0
+2820;3653;17129;;;;;;"broderie";;;;0
+2823;3652;17131;;;;;;"broderie";;;;0
+2825;3653;17132;;;;;;"broderie";;;;0
+2827;3652;17150;;;;;;"broderie";;;;0
+2829;3741;17195;;;;;;"sellerie";;;;0
+2831;3744;17197;;;;;;"broderie";;;;0
+2833;3745;17199;;;;;;"couture";;;"coud aussi de l'orfèvrerie";0
+2837;3765;17216;;;;;;"couture";;;;0
+2840;2565;17222;;;6;;;"fourrure";;;;0
+2842;2149;17224;;;;;;"couture";;;;0
+2844;156;17226;;;;;;"tonte";;;;0
+2846;156;17231;;;;;;"tonte";;;;0
+2848;3793;17264;;;;;;"couture";;;;0
+2850;42;17271;;;;;;"tonte";;;"12 aunes";0
+2852;155;17280;;;;;;"couture";;;;0
+2854;1945;17290;;;;;;"couture";;;;1
+2858;3652;;;;;;;"broderie";;;;0
+2860;155;17301;;;;;;"couture";;;;0
+2862;2565;17304;;;;;;"fourrure";;;;0
+2864;2565;17308;;;;;;"fourrure";;;;0
+2867;3799;17309;;;;;;"réparation";;;;0
+2870;2565;17312;;;;;;"fourrure";;;;0
+2873;3652;17362;;;;;;"broderie";;;;0
+2875;3653;17363;;;;;;"broderie";;;;0
+2877;3652;17365;;;;;;"broderie";;;;0
+2879;3653;17366;;;;;;"broderie";;;;0
+2881;2732;17389;;;;;;"broderie";;;;0
+2883;2565;17413;;;2;"compagnon";;"fourrure";15;;"3 d. par jour et par personne";0
+2885;608;17465;;;;;;"tonte";;;;0
+2887;3540;17469;;;;;;"tonte";;;"3 pièce de drap";0
+2892;521;17494;;;;;;"fourrure";;;"3 d. par jour et par personne pendant 10 jours";0
+2894;3609;17495;;;2;"compagnon";;"fourrure";10;;"3 d. par jour et par personne pendant 10 jours";0
+2897;1945;17497;;;;;;"couture";;;;1
+2899;1945;17499;;;;;;"couture";;;;1
+2901;1945;17501;;;;;;"couture";;;;1
+2903;1945;17503;;;;"compagnon";;"couture";;;;0
+2905;1945;17505;;;;"compagnon";;"couture";;;;0
+2908;1945;17507;;;;;;"couture";;;;0
+2910;1945;17509;;;;;;"couture";;;;0
+2912;1945;17512;;;;;;"couture";;;;0
+2914;42;17524;;;;;;"tonte";;;;0
+2916;42;17526;;;;;;"tonte";;;;0
+2918;42;17528;;;;;;"tonte";;;;0
+2920;42;17530;;;;;;"tonte";;;;0
+2922;42;17532;;;;;;"tonte";;;;0
+2924;3251;17533;;;;;;"coupe";;;;0
+2926;3251;17535;;;;;;"couture";;;;0
+2928;3251;17537;;;;;;"couture";;;;0
+2930;3251;17539;;;;;;"couture";;;;0
+2932;3251;17545;;;;;;"couture";;;;0
+2935;3251;17553;;;;;;"couture";;;;0
+2937;3251;17555;;;;;;"couture";;;;0
+2939;3877;17559;;;;;;"réparation";;;;0
+2941;3540;17577;;;;;;"tonte";;;"1/3 d. g. pour 1 aunes";0
+2943;3883;17578;;;;;;"tonte";;;;0
+2945;1945;17579;;;;;;"couture";;;;0
+2947;3653;17605;;;;;;"broderie";;;;1
+2949;2539;17623;;;;;;"tonte";;;;0
+2951;3251;17624;;;;;;"couture";;;;0
+2953;156;17629;;;;;;"tonte";;;;0
+2955;2539;17651;;;;;;"tonte";;;"1/2 d. pour 1 aune";0
+2957;155;17664;;;;;;"couture";;;;0
+2959;3251;17674;;;;;;"couture";;;;1
+2961;3141;;;;;;;;;;;0
+2963;3898;17696;;;;;;"fourrure";;;;0
+2965;1945;17698;;;;;;"couture";;;;0
+2967;2732;17704;;;;;;"broderie";;;;0
+2968;2852;17705;;;;;;"broderie";;;;0
+2971;2732;17708;;;;;;"broderie";;;;0
+2973;2732;17710;;;;;;"broderie";;;;0
+2975;2732;17712;;;;;;"broderie";;;;0
+2977;2732;17714;;;;;;"bature";;;;0
+2979;2732;17716;;;;;;"bature";;;;0
+2981;2732;17718;;;;;;"broderie";;;;0
+2983;2732;17720;;;;;;"broderie";;;;0
+2986;2732;17722;;;;;;"broderie";;;;0
+2988;2732;17724;;;;;;"broderie";;;;0
+2990;2732;17726;;;;;;"broderie";;;;0
+2992;2732;17728;;;;;;"broderie";;;;0
+2994;2732;17730;;;;;;"broderie";;;;0
+2996;3903;17734;;;;;;"broderie";14;;;0
+2998;3904;17735;;;;;;"broderie";12;;;0
+3000;3905;17736;;;;;;"broderie";12;;;0
+3002;3905;17738;;;;;;"broderie";14;;;0
+3004;3903;17739;;;;;;"broderie";14;;;0
+3006;3904;17740;;;;;;"broderie";14;;;0
+3008;531;17831;;;;;;"tondeur";;;;0
+3010;3953;17833;;;;;;"tonte";;;;0
+3012;1945;17834;;;;;;"couture";;;;0
+3014;3653;17836;;;;;;"broderie";;;;0
+3016;3767;17840;;;;;;"fourrure";;;;0
+3021;3386;17843;;;;;;"freppe";;;;0
+3023;3956;17850;;;;;;"couture";;;;0
+3026;155;17857;;;;;;"couture";;;;0
+3028;3953;17880;;;;;;"tonte";;;;0
+3030;3573;17881;;;;;;"tonte";;;;0
+3033;155;17885;;;;;;"couture";;;;0
+3035;155;17889;;;;;;"inconnue";;;;0
+3038;2732;17891;;;;;;"broderie";;;;0
+3040;156;17898;;;;;;"tonte";;;;0
+3042;1945;17900;;;;;;"couture";;;;1
+3045;3573;17927;;;;;;"tonte";;;;0
+3047;3573;17929;;;;;;"tonte";;;"49 aunes de drap";0
+3049;3765;17931;;;;;;"couture";;;;0
+3051;3765;17933;;;;;;"couture";;;;0
+3053;3765;17935;;;;;;"couture";;;;0
+3057;3652;17939;;;;;;"broderie";;;;0
+3059;3765;17945;;;;;;"couture";;;;0
+3063;3970;17949;;;;;;"peinture";;;;0
+3067;3972;17953;;;;;;"teinture";;;"36 aune de cordes";0
+3069;42;17969;;;;;;"tonte";;;;0
+3071;155;17973;;;;;;"couture";;;;0
+3073;1945;17975;;;;;;"couture";;;;0
+3075;1945;17977;;;;;;"couture";;;;1
+3077;3765;17979;;;;;;"couture";4;;"2 d. par jour";0
+3079;3652;17986;;;;;;"broderie";;;;0
+3083;3609;17993;;;;;;"fourrure";;;;0
+3085;3987;18017;;;;;;"couture";;;;0
+3087;2732;18020;;;;;;"broderie";;;;0
+3090;3989;18025;;;;;;"couture";;;;0
+3092;3765;18026;;;;;;"couture";;;;0
+3096;3990;18029;;;;;;"sellerie";;;;0
+3098;3652;18043;;;;;;"broderie";;;;0
+3100;3652;18046;;;;;;"broderie";;;;0
+3103;1945;18050;;;;;;"couture";;;;0
+3106;3573;18055;;;;;;"tonte";;;;0
+3108;1945;18057;;;;;;"couture";;;;0
+3111;3573;18068;;;;;;"tonte";;;;0
+3113;1945;18072;;;;;;"couture";;;"10 d. g. pour 1 robe et un chaperon";0
+3116;1945;18074;;;;;;"couture";;;;0
+3118;3609;18080;;;;;;"fourrure";;;;0
+3120;3995;18083;;;;;;"teinture";;;;0
+3122;1945;18092;;;;;;"couture";;;;0
+3124;3998;18099;;;;;;"tonte";;;"demi pièce de gris de montivillier";0
+3126;1945;18106;;;;;;"couture";;;;0
+3128;3573;18110;;;;;;"tonte";;;;0
+3130;1945;18111;;;;;;"couture";;;;0
+3132;42;18121;;;;;;"tonte";;;;0
+3135;3251;18123;;;;;;"couture";;;;0
+3137;147;;;;;;;"fourrure";;;;0
+3139;3251;18135;;;;;;"couture";;;;1
+3141;147;18137;;;;;;;;;;0
+3143;3251;18140;;;;;;"couture";;;;0
+3145;3903;18144;;;;;;"broderie";78;;"2 d par jour";0
+3147;3904;18145;;;;;;"broderie";78;;"2 d. par jour";0
+3149;3905;18146;;;;;;"broderie";;;"2 d. par jour";0
+3151;3903;18148;;;;;;"broderie";32;;"2 d. par jour";0
+3153;3903;18150;;;;;;"broderie";20;;"2 d. par jour";0
+3155;3540;18155;;;;;;"tonte";;;"15 aunes de brunette";0
+3157;1945;18161;;;;;;"couture";;;;0
+3159;1945;18163;;;;;;"couture";;;;0
+3161;1945;18165;;;;;;"couture";;;;1
+3163;1945;18167;;;;;;"couture";;;;0
+3165;1945;18169;;;;;;"couture";;;;1
+3167;1945;18172;;;;;;"couture";;;;1
+3170;1945;18174;;;;;;"couture";;;"posede la doublure";1
+3172;1945;18176;;;;;;"couture";;;;1
+3174;1945;18178;;;;;;"couture";;;;0
+3176;3990;18185;;;;;;"sellerie";;;;0
+3178;156;18192;;;;;;"tonte";;;;0
+3180;2732;;;;;;;"bature";;;"d'argent";0
+3182;3512;18217;;;;;;"broderie";;;;0
+3184;4019;18219;;;3;"compagnon";;"fourrure";;;;0
+3188;156;18221;;;;;;"tonte";;;"20 aunes de gris pour valet";0
+3190;3652;18231;;;;;;"broderie";;;;0
+3192;3586;18250;;;;;;"couture";;;;1
+3195;155;18252;;;;;;"couture";;;;0
+3197;155;18254;;;;;;"couture";;;;0
+3199;155;18256;;;;;;"couture";;;;0
+3201;155;18258;;;;;;"couture";;;"10 d. g. pour 1 robe et 1 chaperon";0
+3203;155;18260;;;;;;"couture";;;;0
+3205;155;18264;;;;;;"couture";;;;1
+3207;155;18266;;;;;;"couture";;;;0
+3209;155;18268;;;;;;"couture";;;;0
+3211;155;18282;;;;;;"couture";;;;0
+3215;3586;18290;;;;;;"couture";;;;0
+3217;3744;18347;;;;;;"broderie";;;"272 pièce d'ouvrage";0
+3219;4047;18351;;;;;;"couture";;;;0
+3222;4049;18358;;;;;;"broderie";;;;0
+3225;3797;18360;;;;;;"couture";;;;0
+3227;2732;18362;;;;;;"broderie";;;;0
+3229;3653;18382;;;;;;"broderie";;;;0
+3231;2732;18402;;;;;;"broderie";;;;0
+3233;156;18410;;;;;;"tonte";;;;0
+3235;1945;18414;;;;;;"couture";;;;0
+3237;3251;18460;;;;;;"couture";;;;0
+3239;42;18525;;;;;;"tonte";;;;0
+3241;3609;18538;;;;;;"fourrure";;;;0
+3243;2565;18543;;;;;;"fourrure";;;;0
+3246;4089;18544;;;;;;"fourrure";;;;0
+3248;3126;18560;;;;;;"tonte";;;;0
+3250;3126;18572;;;;;;"tonte";;;;0
+3252;156;18580;;;;;;"tonte";;;;0
+3254;155;18581;;;;;;"couture";;;;0
+3258;3057;18583;;;;;;"réparation";;;;0
+3260;42;18603;;;;;;"tonte";;;;0
+3263;156;18610;;;;;;"tonte";;;;0
+3267;1945;18613;;;;;;"couture";;;;0
+3271;155;18616;;;;;;"couture";;;;0
+3273;3586;18619;;;3;"compagnon";;"coupe";2;;"2 d g. t. par homme";0
+3276;3586;18621;;;;;;"couture";;;;0
+3278;3586;18623;;;;;;"couture";;;;0
+3280;3586;18625;;;;;;"couture";5;;"2 d. par jour";0
+3282;3586;;;;;;;"couture";3;;"2 d. g. t. par jour";0
+3284;3586;18631;;;;;;"couture";;;;0
+3286;3586;18633;;;;;;"couture";2;;"2 d. g. t. par jour";0
+3288;3119;18639;;;;;;"broderie";;;;0
+3290;155;18640;;;;;;"couture";;;;0
+3292;42;18663;;;;;;"tonte";;;;0
+3294;1945;18665;;;;;;"couture";;;;0
+3296;1945;18667;;;;;;"couture";;;;0
+3299;3903;18669;;;;;;"brodeur";;;;0
+3301;2450;18679;;;;;;"fourrure";;;;0
+3303;3609;18685;;;;;;"fourrure";;;;0
+3306;3609;18688;;;;;;"fourrure";;;;0
+3308;3126;18694;;;;;;"tonte";;;"0.5 d. g. t. par aune";0
+3310;42;18696;;;;;;"tonte";;;"0.5 d. g. t. par aune";0
+3312;1877;18698;;;;;;"couture";;;;0
+3314;155;18700;;;;;;"couture";;;;0
+3317;3719;18702;;;;;;"fourrure";;;;0
+3319;4124;18716;;;;;;"couture";;;;0
+3321;42;18812;;;;;;"tonte";;;"4 d. blanc l'aune";0
+3323;3126;18813;;;;;;"tonte";;;"4 d. blanc pour aune";0
+3325;1945;18815;;;;;;"couture";;;"13 d. g. t. pour ensemble 1 robe et 1 chaperon";0
+3328;3652;18817;;;;;;"brodeur";;;;0
+3330;4147;18818;;;;;;"broderie";;;;0
+3332;4148;18819;;;;;;"broderie";;;;0
+3334;4149;18832;;;;;;"fourrure";;;;0
+3336;3609;18833;;;;;;"fourrure";;;;0
+3338;4124;18841;;;;;;"couture";;;;0
+3340;3652;18843;;;;;;"bature";;;;0
+3342;3586;18846;;;;;;"couture";;;;0
+3349;42;18865;;;;;;"tonte";;;;0
+3351;2248;18870;;;;;;"tonte";;;;0
+3353;3586;18880;;;;;;"couture";3;;"2 d. g. t. par jour";1
+3357;155;18882;;;;;;"couture";;;;1
+3359;155;18884;;;;;;"couture";;;;1
+3361;3586;18886;;;;;;"couture";4;;"2 d. g. t. par jour";1
+3363;4179;18905;;;;;;"couture";;;;0
+3365;155;18908;;;;;;"couture";;;;0
+3367;2248;18917;;;;;;"tondeur";;;;0
+3369;2248;18926;;;;;;"tondeur";;;;0
+3371;4099;18940;;;;;;"couture";;;;0
+3373;4182;18959;;;;;;"tonte";;;;0
+3375;2149;18961;;;;;;"couture";;;;0
+3377;2248;18963;;;;;;"tonte";;;;0
+3379;2732;18976;;;;;;"broderie";;;;0
+3381;2852;18977;;;;;;"broderie";;;;0
+3383;2732;18979;;;;;;"broderie";;;;0
+3385;2852;18980;;;;;;"couture";;;;0
+3387;156;18990;;;;;;"tonte";;;"1 d. g. t. par aune d'écarlate";0
+3389;156;18992;;;;;;"tonte";;;"6 d. fort. par aune d'écarlate";0
+3391;3653;19002;;;;;;"broderie";;;;0
+3393;3653;19004;;;;;;"broderie";;;;0
+3395;3653;19006;;;;;;"broderie";;;;0
+3397;3653;19008;;;;;;"broderie";;;;0
+3399;3652;19010;;;;;;"broderie";;;;0
+3401;2732;19012;;;;;;"broderie";;;;0
+3403;2852;19013;;;;;;"broderie";;;;0
+3405;2732;19015;;;;;;"broderie";;;;0
+3407;2852;19016;;;;;;"broderie";;;;0
+3409;2732;19018;;;;;;"broderie";;;;0
+3411;2852;19019;;;;;;"broderie";;;;0
+3413;156;19048;;;;;;"tonte";;;;0
+3415;155;19056;;;;;;"couture";;;;1
+3417;3573;19058;;;;;;"tonte";;;;0
+3420;155;19067;;;;;;"couture";;;;0
+3422;155;19073;;;;;;"couture";;;;0
+3424;3126;19075;;;;;;"tonte";;;"1018 aune à 0.33 par aune";0
+3426;2732;19077;;;;;;"broderie";;;;0
+3428;2852;19078;;;;;;"broderie";;;;0
+3430;2732;19080;;;;;;"broderie";;;;0
+3432;2852;19081;;;;;;"broderie";;;;0
+3434;3126;19087;;;;;;"tonte";;;;0
+3436;3927;19093;;;;;;"couture";;;;1
+3438;3609;19109;;;;;;"fourrure";;;;0
+3440;155;19119;;;4;"couturier";;"couture";1;;"2 d. par jour";0
+3442;147;19171;;;;;;"fourrure";;;;0
+3444;3126;19175;;;;;;"tonte";;;"chaque aune 2 d. fort";0
+3446;3573;19192;;;;;;"tonte";;;;0
+3448;3652;19194;;;;;;"broderie";;;"5 fl. par robe";0
+3450;1945;19196;;;;;;"couture";;;;0
+3452;3756;19212;;;;;;"couture";;;;0
+3454;3297;19214;;;;;;"freppe";;;;0
+3456;4251;19224;;;;;;"broderie";;;;0
+3458;1945;19226;;;;;;"coupe";;;;0
+3463;4253;19229;;;;;;"couture";;;;0
+3465;3233;19231;;;;;;"freppe";;;;0
+3467;3609;;;;;;;"fourrure";;;;0
+3469;4254;;;;;;;"fourrure";;;;0
+3471;1945;19252;;;;;;"couture";;;;0
+3475;2451;19254;;;;;;"tonte";;;;0
+3477;1945;19264;;;;;;"couture";;;;0
+3479;1945;19271;;;;;;"couture";;;;0
+3481;4261;19275;;;;;;"couture";;;;0
+3483;3126;19279;;;;;;"tonte";;;"3 fort pour une aune";0
+3485;4253;19283;;;1;"compagon";;"couture";;;;1
+3487;4253;19287;;;;;;"couture";;;;0
+3489;3126;19297;;;;;;"tonte";;;"3 fort pour une aune";0
+3493;4264;19303;;;;;;"fourrure";;;;0
+3495;3609;;;;;;;"fourrure";;;;0
+3497;3609;19307;;;;;;"fourrure";;;;0
+3499;42;19323;;;;;;"tonte";;;"4 pièce de sigeant et 5 pièce de gignat";0
+3501;3609;19329;;;;;;"fourrure";;;;0
+3503;3464;19331;;;;;;"couture";;;;0
+3505;1945;19333;;;;;;;;;;1
+3507;3586;19335;;;;;;"couture";2;;"2 d. par jour";0
+3509;1945;19337;;;;;;"couture";;;;1
+3511;3586;;;;;;;"couture";4;;"2 d. par jour";0
+3513;3586;19340;;;;;;"couture";;;;0
+3515;155;19344;;;;;;"couture";;;;1
+3517;155;19346;;;;;;"couture";;;;0
+3519;155;19347;;;;;;"couture";;;"3 g. par chausses avec toile";0
+3521;155;19352;;;;;;"couture";;;;0
+3523;1945;19360;;;;;;"couture";;;;0
+3525;4273;19371;;;;;;"couture";;;;0
+3528;3652;19406;;;;;;"broderie";;;;0
+3530;156;19410;;;;;;"tonte";;;;0
+3532;156;19414;;;;;;"tonte";;;;0
+3534;3573;19433;;;;;;"tonte";;;;0
+3536;3953;19434;;;;;;"tonte";;;;0
+3538;3765;19436;;;;;;"couture";;;;0
+3540;4286;19437;;;;;;"couture";;;;0
+3542;156;19452;;;;;;"tonte";;;"2 d. par aune de violet";0
+3544;2732;19457;;;;;;"broderie";;;;0
+3546;2732;19460;;;;;;"broderie";;;;0
+3548;2732;19463;;;;;;"bature";;;;0
+3550;2732;19466;;;;;;"broderie";;;;0
+3552;4291;19471;;;;;;"couture";;;;0
+3554;2732;19473;;;;;;"broderie";;;;0
+3556;2732;19477;;;;;;"couture et bature";;;;0
+3558;2732;19481;;;;;;"couture et bature";;;;0
+3560;3653;19486;;;;;;"broderie";;;;0
+3562;3586;19497;;;;;;"couture";;;;0
+3564;3586;19500;;;;;;"couture";5;;"2 d. par jour";0
+3566;3586;19503;;;;;;"couture";;;;0
+3568;3586;19505;;;;;;"couture";;;;0
+3570;3586;19508;;;;;;"couture";;;;0
+3572;3586;19510;;;;;;"couture";;;;0
+3574;3586;19513;;;;;;"couture";;;;0
+3576;3586;19515;;;;;;"couture";;;;0
+3578;3652;19543;;;;;;"broderie";;;;0
+3580;3573;19548;;;;;;"tondeur";;;"97.5 aunes à 6 d. l'aune";0
+3582;3573;19563;;;;;;"tonte";;;;0
+3584;156;19571;;;;;;"tonte";;;;0
+3586;1945;19573;;;;;;"couture";;;;0
+3588;3609;19583;;;;;;"fourrure";;;;0
+3590;3573;19605;;;;;;"tonte";;;"59 aunes à 6 d. l'aune";0
+3592;1945;19613;;;;;;"couture";;;;0
+3594;1945;19615;;;;;;"couture";;;"8 d. g. t. par robe";0
+3597;1945;19617;;;;;;"couture";;;;0
+3599;1945;19620;;;;;;"couture";;;;0
+3602;3652;19630;;;;;;"broderie";;;;0
+3604;155;19656;;;;;;"couture";;;;0
+3607;4311;19667;;;;;;"tonte";;;;0
+3609;4395;19684;;;;;;"couture";;;;0
+3611;4396;19687;;;;;;"fourrure";;;;0
+3613;4397;19690;;;;;;"tonte";;;;0
+3616;4398;19693;;;;;;"sellerie";;;;0
+3618;4397;19702;;;;;;"tonte";;;;0
+3620;1945;19706;;;;;;"couture";;;;0
+3622;4400;19709;;;;;;"fourrure";;;;0
+3624;3573;19718;;;;;;"tondeur";;;;0
+3626;3573;19727;;;;;;"tonte";;;"8 s. la pièce";0
+3628;4412;19728;;;;;;"tonte";;;;0
+3632;3573;19739;;;;;;"tonte";;;;0
+3635;3765;19754;;;;;;"couture";;;;0
+3637;4412;19763;;;;;;"tonte";;;;0
+3639;155;19767;;;;;;"couture";;;;1
+3641;155;19769;;;;;;"couture";;;;1
+3643;4415;19773;;;;;;"couture";;;;0
+3645;3609;19778;;;;;;"fourrure";;;;1
+3648;3464;19797;;;;;;"couture";;;;0
+3650;3464;19799;;;;;;"couture";;;;0
+3652;3464;19801;;;;;;"couture";;;;0
+3655;3464;19803;;;;;;"couture";;;;0
+3657;3464;19805;;;;;;"couture";;;;0
+3659;3609;19808;;;;;;"fourrure";;;;0
+3662;3609;19810;;;;;;"fourrure";;;;0
+3664;4412;19826;;;;;;"tonte";;;"9 d. g. t. par pièce";0
+3666;3573;19827;;;;;;"tonte";;;"9 d. g. t. pour1 pièce";0
+3668;3765;19831;;;;;;"couture";;;;0
+3670;155;19840;;;;;;"couture";;;;0
+3674;155;19842;;;;;;"couture";;;"10 d. g. t. pour robe et chaperon";0
+3676;3464;19844;;;;;;"couture";;;;0
+3678;3464;19846;;;;;;"couture";;;;0
+3680;3609;19848;;;;;;"fourrure";;;;0
+3682;3609;19851;;;;;;"fourrure";;;;0
+3684;3609;19854;;;;;;"fourrure";;;;0
+3686;3023;19856;;;;;;"couture";;;;0
+3688;3827;19878;;;;;;"fourrure";;;;0
+3690;4442;19886;;;;;;"couture";;;;1
+3692;1945;19897;;;;;;"couture";;;;0
+3695;3652;19901;;;;;;"broderie";;;;1
+3697;156;19907;;;;;;"tonte";;;;0
+3699;156;19945;;;;;;"tonte";;;;0
+3701;155;19948;;;;;;"couture";;;;0
+3703;2732;19966;;;;;;"broderie";;;;0
+3705;4471;19976;;;;;;"tonte";;;"ob. par aunes";0
+3708;4253;19978;;;;;;"couture";;;;0
+3710;4472;19981;;;;;;"broderie";;;;0
+3713;155;19997;;;;;;"couture";;;;0
+3715;155;20001;;;;;;"couture";;;"1 fl. par robe";0
+3717;3652;20004;;;;;;"broderie";;;;0
+3719;3652;20008;;;;;;"broderie";;;;0
+3721;2607;20014;;;;;;"tonte";;;;0
+3723;3653;20020;;;;;;"broderie";;;;0
+3725;1693;20022;;;;;;"fourrure";;;;0
+3727;4483;20024;;;;;;"fourrure";;;;0
+3730;4483;20026;;;;;;"fourrure";;;;0
+3732;4412;20038;;;;;;"tonte";;;;0
+3734;3765;20040;;;;;;"couture";;;;0
+3736;3765;20046;;;;;;"couture";;;;1
+3738;3609;20048;;;;;;"fourrure";;;;0
+3740;3765;20060;;;;;;"couture";;;;0
+3742;156;20062;;;;;;"tonte";;;;0
+3744;3903;20064;;;;;;"broderie";;;;0
+3746;3903;20067;;;;;;"broderie";;;;0
+3748;3903;20070;;;;;;"broderie";;;;0
+3750;3903;20073;;;;;;"broderie";;;;0
+3752;3652;20076;;;;;;"broderie";;;;0
+3754;2732;20078;;;;;;"broderie";;;;0
+3756;156;20086;;;;;;"tonte";;;;0
+3758;4503;20090;;;;;;"couture";;;;0
+3761;156;20124;;;;;;"tonte";;;;0
+3764;155;20125;;;;;;"couture";;;;0
+3767;156;20129;;;;;;"tonte";;;;0
+3769;155;20130;;;;;;"couture";;;;0
+3771;156;20142;;;;;;"tonte";;;;0
+3773;4559;20203;;;;;;"tonte";;;;0
+3775;4558;20204;;;;;;"tonte";;;;0
+3778;4573;20206;;;;;;"couture";;;;0
+3780;4571;20207;;;;;;"couture";;;;0
+3782;4572;20208;;;;;;"couture";;;;0
+3784;4574;20210;;;;;;"broderie";;;;0
+3786;156;20214;;;;;;"tonte";;;;0
+3788;4572;20215;;;;;;"couture";;;;0
+3790;155;20226;;;;;;"couture";;;;0
+3792;3487;20228;;;;;;"couture";;;;0
+3794;156;20230;;;;;;"tonte";;;;0
+3796;3573;20248;;;;;;"tondeur";;;;0
+3798;3765;20250;;;;;;"couture";;;;0
+3800;1945;20253;;;;;;"couture";;;;0
+3802;3765;20300;;;;;;"couture";;;;0
+3804;3573;20301;;;;;;"tonte";;;;0
+3806;3126;20315;;;;;;"tonte";;;"62 aunes";0
+3808;3756;20317;;;;;;"réparation";;;;0
+3810;3756;20319;;;;;;"couture";;;;0
+3812;3756;20325;;;;;;"couture";;;;1
+3814;3652;20328;;;;;;"broderie";;;;0
+3816;3573;20336;;;;;;"tonte";;;;0
+3819;155;20338;;;;;;"couture";;;;0
+3821;155;20340;;;;;;"couture";;;;0
+3823;3573;20344;;;;;;"tonte";;;;0
+3825;155;20345;;;;;;"couture";;;;0
+3827;3609;;;;;;;"fourrure";;;;0
+3829;156;20351;;;;;;"tonte";;;;0
+3831;155;20354;;;;;;"couture";;;;0
+3833;155;20367;;;;;;"couture";;;;0
+3835;155;20370;;;;;;"couture";;;;0
+3837;155;20373;;;;;;"couture";;;;0
+3839;155;20376;;;;;;"couture";;;;0
+3841;155;20382;;;;;;"couture";;;;1
+3843;155;20384;;;;;;"couture";;;;0
+3845;155;20387;;;;;;"couture";;;;0
+3847;155;20389;;;;;;"couture";;;;0
+3849;4412;20395;;;;;;"tonte";;;"6 aunes";0
+3851;3609;20398;;;;;;"fourrure";;;;0
+3853;3765;20400;;;;;;"couture";;;;0
+3855;156;20402;;;;;;"tonte";;;;0
+3857;155;20404;;;;;;"couture";;;;0
+3859;156;20405;;;;;;"tonte";;;;0
+3861;3765;20413;;;;;;"couture";;;;0
+3863;3765;20417;;;;;;"couture";;;;0
+3865;3765;20420;;;;;;"couture";;;;0
+3867;3586;20423;;;;;;"couture";;;;0
+3869;4631;20458;;;;;;"couture";;;;0
+3872;156;20463;;;;;;"tonte";;;;0
+3874;3756;20467;;;;;;"couture";;;;0
+3876;1945;20472;;;;;;"couture";;;;0
+3878;3573;20492;;;;;;"tonte";;;"23 pièce  à 10 g. par Pièce et 15 pièce de blanc à 6.5 d. par pièce";0
+3880;155;20494;;;;;;"couture";;;"1 fl. par robe et 65 robes";0
+3882;155;20496;;;;;;"couture";;;;0
+3884;3609;20502;;;;;;"fourrure";;;;0
+3886;4656;20505;;;;;;"tonte";;;;0
+3890;4412;20511;;;;;;"tonte";;;;0
+3892;1945;20513;;;;;;"couture";;;;0
+3894;3609;20515;;;;;;"fourrure";;;;0
+3896;3609;20519;;;;;;"fourrure";;;;0
+3898;1945;20523;;;;;;"couture";;;;0
+3901;4412;20553;;;;;;"tonte";;;;0
+3903;4670;20555;;;;;;"tonte";;;;0
+3905;4672;20557;;;;;;"freppe";;;;0
+3908;155;20561;;;;;;"couture";;;;1
+3911;155;20563;;;;;;"couture";;;;0
+3913;155;20565;;;;;;"couture";;;;1
+3915;3652;;;;;;;"broderie";;;;0
+3917;155;20647;;;;;;"couture";;;;0
+3919;3609;20652;;;;;;"fourrure";;;;0
+3921;156;20664;;;;;;"tonte";;;;0
+3923;3329;20666;;;;;;"freppe";;;"3 d. pour 1 robe et 1 chaperon";0
+3925;3756;20669;;;;;;"couture";;;;0
+3927;4412;20705;;;;;;"tonte";;;"50 pièces de bon drap à 10 g. la pièce et 28 pièce de drap de doublure à 6 d. par pièce";0
+3929;4739;20706;;;;;;"tondeur";;;"6 d. pour une pièce de doublure et bon drap un pièce à 10 d.";0
+3932;3755;20709;;;;;;"couture";;;;0
+3934;1945;20710;;;;;;"couture";;;;0
+3936;1945;20713;;;;;;"couture";;;;0
+3938;3755;20714;;;;;;"couture";;;;0
+3940;3755;20717;;;;;;"couture";;;;0
+3942;1945;20718;;;;;;"couture";;;;0
+3944;3755;20721;;;;;;"couture";;;;0
+3946;1945;20722;;;;;;"couture";;;;0
+3948;3755;20724;;;;;;"couture";;;;0
+3950;1945;20725;;;;;;"couture";;;;0
+3952;3755;20728;;;;;;"couture";;;;0
+3954;1945;20729;;;;;;"couture";;;;0
+3956;1945;20732;;;;;;"couture";;;;0
+3958;4166;20735;;;;;;"couture";;;;0
+3960;3609;20743;;;;;;"fourrure";;;"ici le blanc mis dans les manches est fournis par le fourreur";1
+3962;3609;20749;;;;;;"fourrure";;;;0
+3964;3609;20753;;;;;;"fourrure";;;;0
+3966;3609;20757;;;;;;"fourrure";;;;0
+3968;4166;20778;;;;;;"couture";;;;0
+3973;608;20780;;;;;;"tonte";;;;0
+3975;3755;20791;;;;;;"couture";;;;0
+3977;3755;20794;;;;;;"couture";;;;0
+3979;3755;20797;;;;;;"couture";;;;0
+3981;3652;20798;;;;;;"broderie";;;;0
+3983;155;;;;;;;"couture";;;;0
+3985;156;;;;;;;"tonte";;;;0
+3987;4739;20814;;;;;;"tonte";;;;0
+3989;3755;20816;;;;;;"couture";;;;0
+3991;155;;;;;;;"couture";;;"4 d. pour les freppe donc à part";0
+3995;4751;20821;;;3;"valet";;"fourrure";;;;0
+3999;3586;20948;;;;"compagnon";;"couture";12;;;0
+4002;155;20954;;;;;;"couture";;;;0
+4004;85;20957;;;;;;"fourrure";;;;0
+4006;3609;21082;;;3;"compagnon";;"fourrure";;;;0
+4008;3609;21085;;;3;"compagnon";;"fourrure";;;;0
+4012;3609;21088;;;;;;"fourrure";;;"compte dans ce prix de façon fourrure de manche";1
+4014;3609;21091;;;3;"compagnon";;"fourrure";5;;;0
+4016;3653;21093;;;;;;"broderie";;;;0
+4018;3652;21095;;;;;;"broderie";;;;0
+4020;156;21100;;;;;;"tonte";;;;0
+4022;3756;21101;;;;;;"couture";;;;0
+4024;85;21102;;;;;;"freppe";;;;0
+4026;3756;21105;;;;;;"couture";;;;0
+4029;1945;21108;;;;;;"couture";;;;0
+4031;1945;21111;;;;;;"couture";;;;0
+4033;1945;21113;;;;;;"couture";;;;0
+4035;1945;21115;;;;;;"couture";;;;0
+4037;1945;21117;;;;;;"couture";;;;0
+4039;1945;21120;;;;;;"couture";;;;0
+4041;1945;21123;;;;;;"couture";;;;0
+4043;1945;21125;;;;;;"couture";;;;0
+4045;1945;21128;;;;;;"couture";;;;0
+4047;1945;21129;;;;;;"couture";;;;0
+4049;1945;21131;;;;;;"couture";;;;0
+4051;1945;21134;;;;;;"couture";;;;0
+4053;1945;21136;;;;;;"couture";;;;0
+4055;1945;21152;;;;;;"couture";;;;0
+4058;1945;21159;;;;;;"couture";;;;0
+4060;156;21168;;;;;;"tonte";;;;0
+4062;156;21170;;;;;;"tonte";;;"1 aunes de brunette";0
+4064;3487;21178;;;;;;"couture";;;;0
+4066;156;;;;;;;"tonte";;;;0
+4068;155;;;;;;;"couture";;;;0
+4070;2780;;;;;;;"refourrer";;;;0
+4072;4750;;;;;;;"fourrure";;;;0
+4074;4412;21263;;;;;;"tonte";;;;0
+4076;4739;21264;;;;;;"tonte";;;;0
+4078;4820;21279;;;;;;"fourrure";;;;0
+4080;4166;21288;;;;;;"couture";;;;0
+4082;4166;21291;;;;;;"couture";;;;0
+4084;4713;21296;;;;;;"couture";;;;0
+4086;4713;21299;;;;;;"couture";;;;0
+4088;2982;21308;;;;;;"couture";;;;0
+4090;3132;21311;;;;;;"couture";;;;0
+4092;3132;21313;;;;;;"couture";;;;0
+4094;2165;21315;;;;;;"fourrure";;;;0
+4097;2165;21317;;;;;;"fourrure";;;;0
+4100;2165;21319;;;;;;"fourrure";;;;0
+4102;4166;21322;;;;;;"couture";;;;0
+4104;3755;21325;;;;;;"couture";;;;0
+4106;4820;21333;;;;;;"fourrure";;;;0
+4110;4825;21335;;;;;;"couture";;;;0
+4112;4739;21364;;;;;;"tonte";;;"bruxelles 1 g. par aune, malines tournais 10 g. par pièce, sijans et gignac 8 g. la pièce, Allemagne 4 g. le quarras";0
+4114;4412;21366;;;;;;"tonte";;;"bruxelles 1 g. par aune, malines tournais 10 g. par pièce, sijans et gignac 8 g. la pièce, Allemagne 4 g. le quarras";0
+4117;4166;21386;;;;;;"couture";;;;0
+4120;4166;21388;;;;;;"couture";;;;0
+4122;4166;21391;;;;;;"couture";;;;0
+4124;4166;21393;;;;;;"couture";;;;0
+4126;3755;21399;;;;;;"couture";;;;0
+4128;155;;;;;;;"couture";;;;0
+4130;156;;;;;;;"tonte";;;;0
+4132;155;21415;;;;;;"couture";;;;0
+4134;85;21416;;;;;;"bature";;;;0
+4136;3755;21423;;;;;;"couture";;;;0
+4138;3755;21424;;;;;;"couture";;;;0
+4141;4166;21426;;;;;;"couture";;;;0
+4143;4166;21428;;;;;;"couture";;;;0
+4145;2165;;;;;;;"fourrure";;;;0
+4147;155;;;;;;;"couture";;;;0
+4149;156;;;;;;;"tonte";;;;0
+4152;155;21456;;;;;;"couture";;;;0
+4154;155;21459;;;;;;"couture";;;;0
+4157;155;21461;;;;;;"couture";;;;0
+4159;155;;;;;;;"couture";;;;0
+4161;155;21466;;;;;;"couture";;;;0
+4163;3755;21478;;;;;;"couture";;;;0
+4165;156;21480;;;;;;"tonte";;;;0
+4167;2565;21484;;;;;;"fourrure";;;;0
+4169;155;21485;;;;;;"couture";;;;0
+4171;4166;21490;;;;;;"couture";;;;1
+4173;2565;21491;;;;;;"fourrure";;;;0
+4175;156;21500;;;;;;"tonte";;;;0
+4177;4859;21504;;;;;;"couture";;;;0
+4179;4859;21506;;;;;;"couture";;;;0
+4181;3653;21508;;;;;;"broderie";;;;0
+4183;4825;21524;;;;;;"couture";;;;0
+4185;4166;21525;;;;;;"couture";;;;0
+4187;4166;21527;;;;;;"couture";;;;0
+4189;85;21529;;;;;;"freppe";;;;0
+4191;2165;21531;;;;;;"fourrure";;;;0
+4193;3755;21561;;;;;;"couture";;;;0
+4195;3609;21573;;;3;"compagnon";;"fourrure";15;;;0
+4197;156;21590;;;;;;"tonte";;;;0
+4199;155;21597;;;;;;"couture";;;;0
+4202;2565;21603;;;;;;"fourrure";;;;0
+4204;2732;21621;;;;;;"broderie";;;;0
+4206;3755;21626;;;;;;"couture";;;;0
+4208;3755;21629;;;;;;"couture";;;;0
+4210;3755;21631;;;;;;"couture";;;;0
+4212;3755;21633;;;;;;"couture";;;;0
+4214;3755;21638;;;;;;"couture";;;;0
+4216;3755;21640;;;;;;"couture";;;;0
+4218;155;21660;;;;;;"couture";;;;0
+4220;155;21666;;;;;;"couture";;;;0
+4222;155;21673;;;;;;"couture";;;;0
+4225;155;21674;;;;;;"couture";;;;0
+4229;155;21682;;;;;;"couture";;;;0
+4231;155;21685;;;;;;"couture";;;;0
+4233;155;21690;;;;;;"couture";;;;0
+4235;155;21695;;;;;;"couture";;;;0
+4237;155;21700;;;;;;"couture";;;;0
+4239;4877;21710;;;;;;"tonte";;;;0
+4241;4166;21712;;;;;;"couture";;;;0
+4244;155;21722;;;;;;"couture";;;;0
+4246;155;21725;;;;;;"couture";;;;0
+4249;155;21727;;;;;;"couture";;;;0
+4251;155;21730;;;;;;"couture";;;;0
+4253;155;21735;;;;;;"couture";;;;0
+4256;155;21741;;;;;;"couture";;;;0
+4258;155;21744;;;;;;"couture";;;;0
+4260;155;21747;;;;;;"couture";;;;0
+4262;155;21750;;;;;;"couture";;;;0
+4264;155;21755;;;;;;"couture";;;;0
+4266;155;21758;;;;;;"couture";;;;0
+4268;155;21762;;;;;;"couture";;;;0
+4270;155;21766;;;;;;"couture";;;;0
+4272;155;21769;;;;;;"couture";;;;0
+4274;155;21771;;;;;;"couture";;;;0
+4276;155;21773;;;;;;"couture";;;;0
+4278;4882;21777;;;;;;"freppe";;;;0
+4280;4883;21779;;;;;;"fourrure";;;;0
+4283;155;21782;;;;;;"couture";;;;0
+4285;155;21785;;;;;;"couture";;;;0
+4287;155;21788;;;;;;"couture";;;;0
+4289;155;21792;;;;;;"couture";;;;0
+4291;155;21796;;;;;;"couture";;;;0
+4293;155;21798;;;;;;"couture";;;;0
+4295;155;21800;;;;;;"couture";;;;0
+4297;2732;21805;;;;;;"broderie";;;;0
+4299;2165;21833;;;;;;"refourrer";;;;0
+4301;4166;21836;;;;;;"couture";;;;0
+4303;4820;21840;;;;;;"fourrure";;;;0
+4305;3755;21842;;;;;;"couture";;;;0
+4307;3755;21846;;;;;;"couture";;;;0
+4310;4915;21856;;;;;;;;;;1
+4312;3487;21861;;;;;;"couture";;;;0
+4314;156;21862;;;;;;"tonte";;;;0
+4316;4915;21866;;;;;;"couture";;;;0
+4318;2565;21882;;;;;;"fourrure";;;;0
+4320;4932;21892;;;;;;"couture";;;;0
+4322;4510;21899;;;;;;"couture";;;;0
+4325;3756;21901;;;;;;"réparation";;;;0
+4329;4939;21903;;;;;;"tonte";;;;0
+4331;3765;21911;;;;;;"couture";;;;0
+4333;156;21921;;;;;;"tonte";;;;0
+4335;4825;21923;;;;;;"couture";;;;0
+4337;4750;21927;;;;;;"fourrure";;;;0
+4339;4750;;;;;;;"fourrure";;;;0
+4341;4412;21971;;;;;;"tonte";;;"5 pièce de montivilliers, rouens, bruxelle à 20 d. g. la pièce";0
+4344;4739;21973;;;;;;"tonte";;;"5 pièce de montivilliers, rouens, bruxelle à 20 d. g. la pièce";0
+4347;4739;21975;;;;;;"tonte";;;"16.75 pièce de lierre, malines louvier et ystre à 10 d. la pièce";0
+4349;4412;21976;;;;;;"tonte";;;"16.75 pièce de lierre, malines louvier et ystre à 10 d. la pièce";0
+4351;4412;21978;;;;;;"tondeur";;;"8 pièce de blanc de gignac, 6 quarra d'Allemagne";0
+4353;4739;21979;;;;;;"tonte";;;"8 pièce de blanc de gignac, 6 quarra d'Allemagne";0
+4355;155;21997;;;;;;"couture";;;;0
+4357;4166;22034;;;;;;"couture";;;;0
+4359;155;22038;;;;;;"couture";;;;0
+4361;4959;22054;;;;;;"peinture";;;;0
+4363;2165;;;;;;;"fourrure";;;;0
+4365;2165;;;;;;;"fourrure";;;;0
+4367;2165;22063;;;;;;"fourrure";;;;0
+4369;2165;22068;;;;;;"fourrure";;;;0
+4371;2165;22079;;;;;;"fourrure";;;;0
+4373;2165;22082;;;;;;"fourrure";;;;0
+4375;3755;22095;;;;;;"freppe et couture";;;;0
+4378;85;22096;;;;;;"couture";;;;0
+4380;85;22097;;;;;;"couture";;;;0
+4382;85;22098;;;;;;"couture";;;;0
+4384;3755;22101;;;;;;"freppe et couture";;;;0
+4386;2165;22146;;;;;;"fourrure";;;;0
+4388;4166;22147;;;;;;"couture";;;;0
+4390;85;22148;;;;;;"tonte";;;;0
+4394;85;22162;;;;;;"couture";;;;0
+4396;85;22163;;;;;;"fourrure";;;;0
+4398;85;22174;;;;;;"tonte";;;;0
+4400;3755;22175;;;;;;"couture";;;;0
+4402;156;22184;;;;;;"tonte";;;;0
+4404;3827;22220;;;;;;"appareillier peaux";;;"sc. ad 21";0
+4406;2165;22237;;;;;;"fourrure";;;;0
+4408;3755;22243;;;;;;"couture";;;;0
+4410;156;22274;;;;;;"tonte";;;;0
+4412;3756;22276;;;;;;"couture";;;;0
+4414;3652;22303;;;;;;"broderie";;;;0
+4417;3862;22318;;;;;;"fourrure";;;;0
+4419;2165;22342;;;;;;"fourrure";;;;0
+4421;2165;22344;;;;;;"fourrure";;;;0
+4423;2165;22349;;;;;;"fourrure";;;;0
+4425;5044;22390;;;;;;"tonte";;;;0
+4429;3119;22402;;;;;;"broderie";;;;0
+4434;156;22420;;;;;;"tonte";;;;0
+4436;155;22425;;;;;;"couture";;;;0
+4438;2565;22427;;;;;;"refourrer";;;;0
+4440;5062;22448;;;;;;"tonte";;;;0
+4442;4713;22453;;;;;;"freppe et couture";;;;0
+4444;4713;22457;;;;;;"couture";;;;0
+4446;4713;22459;;;;;;"couture";;;;0
+4448;4166;22472;;;;;;"couture";;;;0
+4450;5064;22476;;;;;;"fourrure";;;;0
+4452;5064;22479;;;;;;"fourrure";;;;0
+4454;4166;22483;;;;;;"couture";;;;0
+4456;156;22486;;;;;;"tonte";;;;0
+4458;5068;22490;;;;;;"couture";;;;0
+4460;155;22495;;;;;;"couture";;;;0
+4462;155;22498;;;;;;"couture";;;;0
+4464;156;22499;;;;;;"tonte";;;;0
+4466;155;22505;;;;;;"couture";;;;0
+4468;155;22508;;;;;;"couture";;;;0
+4470;4166;22518;;;;;;"couture";;;;0
+4472;4166;22520;;;;;;"couture";;;;0
+4474;4166;22525;;;;;;"couture";;;;0
+4476;5062;22546;;;;;;"couture";;;;0
+4478;5090;22554;;;;;;"couture";;;;0
+4480;3652;22556;;;;;;"broderie";;;;0
+4482;156;22564;;;;;;"tonte";;;;0
+4484;156;22567;;;;;;"tonte";;;;0
+4486;4412;22581;;;;;;"tonte";;;;0
+4489;4825;22590;;;;;;"couture";;;;0
+4491;3653;22591;;;;;;"broderie";;;;0
+4493;4412;22592;;;;;;"tonte";;;;0
+4495;2165;22642;;;;;;"fourrure";;;;0
+4497;3652;22691;;;;;;"broderie";;;;0
+4499;2565;22699;;;;;;"fourrure";;;;0
+4501;2565;22702;;;;;;"fourrure";;;;0
+4503;2565;22705;;;;;;"fourrure";;;;0
+4505;2565;22708;;;;;;"doublure";;;;0
+4507;2565;22712;;;;;;"fourrure";;;;0
+4509;2565;22720;;;;;;"fourrure";;;;0
+4511;2565;;;;;;;"fourrure";;;;0
+4513;156;22754;;;;;;"tonte";;;;0
+4515;3609;22795;;;;;;"fourrure";;;;0
+4517;5148;22849;;;;;;"broderie";;;;0
+4519;5149;22851;;;;;;"couture";;;;0
