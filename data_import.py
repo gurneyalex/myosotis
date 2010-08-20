@@ -50,7 +50,7 @@ COMPTE = [('TypeCompte', 'type_compte', ()),
            ('Change', 'change', ()),
            ]
 def gen_compte(ctl):
-    for row in ctl.get_data('compte'):
+    for row in ctl.iter_and_commit('compte'):
         entity = mk_entity(row, COMPTE)
         ctl.store.add('Compte', entity)
         compte_id[row['Inventaire']] = entity['eid']
@@ -64,7 +64,7 @@ LIEU = [('Ville', 'ville', ()),
         ]
 
 def gen_lieu(ctl):
-    for row in ctl.get_data('lieu'):
+    for row in ctl.iter_and_commit('lieu'):
         entity = mk_entity(row, LIEU)
         ctl.store.add('Lieu', entity)
         lieu_id[(row['Ville'].lower(), row['Region'].lower())] = entity['eid']
@@ -77,7 +77,7 @@ MONNAIE = [("Nom", "nom", ()),
            ("type", "type", (monnaie_type,)),
            ]
 def gen_monnaie(ctl):
-    for row in ctl.get_data('monnaie'):
+    for row in ctl.iter_and_commit('monnaie'):
         entity = mk_entity(row, MONNAIE)
         ctl.store.add('Monnaie', entity)
         monnaie_id[row['Nom']] = entity['eid']
@@ -99,7 +99,7 @@ PERSONNE = [("identite", "identite", ()),
 
            ]
 def gen_personne(ctl):
-    for row in ctl.get_data('personne'):
+    for row in ctl.iter_and_commit('personne'):
         entity = mk_entity(row, PERSONNE)
         ctl.store.add('Personne', entity)
         personne_id[row['Id']] = entity['eid']
@@ -119,7 +119,7 @@ MATERIAUX = [("Type", "type", ()),
 
            ]
 def gen_materiaux(ctl):
-    for row in ctl.get_data('materiaux'):
+    for row in ctl.iter_and_commit('materiaux'):
         entity = mk_entity(row, MATERIAUX)
         ctl.store.add('Materiaux', entity)
         materiaux_id[row['Id']] = entity['eid']
@@ -143,7 +143,7 @@ PRIX = [("Livres", "livres", (int_or_none,)),
         ('Conversion', 'conversion', (float_or_none,))
            ]
 def gen_prix(ctl):
-    for row in ctl.get_data('prix'):
+    for row in ctl.iter_and_commit('prix'):
         entity = mk_entity(row, PRIX)
         ctl.store.add('Prix', entity)
         prix_id[row['Id']] = entity['eid']
@@ -153,7 +153,7 @@ GENERATORS.append((gen_prix, CHK))
 change_id = {}
 CHANGE = [('compte', 'dans_compte', ())]
 def gen_change(ctl):
-    for row in ctl.get_data('change'):
+    for row in ctl.iter_and_commit('change'):
         if row['Prix1'] and row['Prix2']:
             entity = mk_entity(row, CHANGE)
             ctl.store.add('Change', entity)
@@ -172,7 +172,7 @@ OCCUPATION = [("libelle", "libelle", ()),
         ('Occupation', 'occupation', ()),
            ]
 def gen_occupation(ctl):
-    for row in ctl.get_data('occupation'):
+    for row in ctl.iter_and_commit('occupation'):
         entity = mk_entity(row, OCCUPATION)
         ctl.store.add('Occupation', entity)
         occupation_id[row['Id']] = entity['eid']
@@ -192,7 +192,7 @@ OCCASION = [("Type", "type", ()),
            ]
 occasion_lieu={}
 def gen_occasion(ctl):
-    for row in ctl.get_data('occasion'):
+    for row in ctl.iter_and_commit('occasion'):
         entity = mk_entity(row, OCCASION)
         ctl.store.add('Occasion', entity)
         occasion_id[row['Id']] = entity['eid']
@@ -206,7 +206,7 @@ PARURE = [("Type", "type", ()),
           ('Caracteristique', 'caracteristique', ()),
           ]
 def gen_parure(ctl):
-    for row in ctl.get_data('parure'):
+    for row in ctl.iter_and_commit('parure'):
         entity = mk_entity(row, PARURE)
         ctl.store.add('Parure', entity)
         parure_id[row['Id']] = entity['eid']
@@ -222,7 +222,7 @@ MATERIAUXPARURE = [("TypeMesure", "type_mesure", ()),
                    ('usage', 'usage', ()),
                    ]
 def gen_materiauxparure(ctl):
-    for row in ctl.get_data('materiauxparure'):
+    for row in ctl.iter_and_commit('materiauxparure'):
         entity = mk_entity(row, MATERIAUXPARURE)
         ctl.store.add('MateriauxParure', entity)
         materiauxparure_id[(row['Parure'], row['Materiaux'])] = entity['eid']
@@ -248,7 +248,7 @@ TRANSACTION = [("Date", "date", (date_or_none,)),
           ]
 
 def gen_transaction(ctl):
-    for row in ctl.get_data('transaction'):
+    for row in ctl.iter_and_commit('transaction'):
         entity = mk_entity(row, TRANSACTION)
         ctl.store.add('Transaction', entity)
         eid = entity['eid']
@@ -288,7 +288,7 @@ destinataire_id = {}
 DESTINATAIRE = [("Nombre", "nombre", ()),
            ]
 def gen_destinataire(ctl):
-    for row in ctl.get_data('destinataire'):
+    for row in ctl.iter_and_commit('destinataire'):
         entity = mk_entity(row, DESTINATAIRE)
         ctl.store.add('Destinataire', entity)
         try:
@@ -305,7 +305,7 @@ vendeur_id = {}
 VENDEUR = [("Expression", "expression", ()),
            ]
 def gen_vendeur(ctl):
-    for row in ctl.get_data('vendeur'):
+    for row in ctl.iter_and_commit('vendeur'):
         entity = mk_entity(row, VENDEUR)
         ctl.store.add('Vendeur', entity)
         try:
@@ -330,7 +330,7 @@ TRAVAIL = [("SalaireNatureQt", "salaire_nature_qt", (int_or_none,)),
            ('Facon_et_etoffe', 'facon_et_etoffe', (bool,))
            ]
 def gen_travail(ctl):
-    for row in ctl.get_data('travail'):
+    for row in ctl.iter_and_commit('travail'):
         entity = mk_entity(row, TRAVAIL)
         ctl.store.add('Travail', entity)
         travail_id[row['idTravaille']] = entity['eid']
@@ -352,7 +352,7 @@ def gen_travail(ctl):
 GENERATORS.append((gen_travail, CHK))
 
 def gen_ltravail(ctl):
-    for row in ctl.get_data('ltravail'):
+    for row in ctl.iter_and_commit('ltravail'):
         if row['idTravaille'] not in travail_id:
             errors.append('MLTravail missing Travail  %s'%(row['idTravaille']))
             continue
@@ -364,13 +364,13 @@ def gen_ltravail(ctl):
 GENERATORS.append((gen_ltravail, CHK))
 
 def gen_receveur(ctl):
-    for row in ctl.get_data('receveur'):
+    for row in ctl.iter_and_commit('receveur'):
         ctl.store.relate(compte_id[row['Compte']], 'receveur', personne_id[row['Personne']])
 GENERATORS.append((gen_receveur, CHK))
 
 
 intervenant_id = {}
-INTERVENANT = [('Indemnite', 'indemnite', ()), #XXX
+INTERVENANT = [('Indemnite', 'indemnite', (int_or_none,)), #XXX
                ('NbMoyenTransport', 'nb_moyen_transport', (int_or_none,)),
                ('MoyenTransport', 'moyen_transport',()),
                ('NombreValets', 'nombre_valets', (int_or_none,)),
@@ -386,7 +386,7 @@ INTERVENANT = [('Indemnite', 'indemnite', ()), #XXX
                ('fait_compte_avec', 'fait_compte_avec', (bool,)),
            ]
 def gen_intervenant(ctl):
-    for row in ctl.get_data('intervenant'):
+    for row in ctl.iter_and_commit('intervenant'):
         entity = mk_entity(row, INTERVENANT)
         ctl.store.add('Intervenant', entity)
 
@@ -416,14 +416,14 @@ GENERATORS.append((gen_intervenant, CHK))
 
 achatmateriaux_id = {}
 ACHATMATERIAUX = [("TypeMesure", "type_mesure", ()),
-                   ("Quantite", "quantite", ()),
+                   ("Quantite", "quantite", (float_or_none,)),
                    ('Unite', 'unite', ()),
                    ('provenance_mesure', 'provenance_mesure', ()),
-                   ('Conversion', 'conversion', ()),
+                   ('Conversion', 'conversion', (float_or_none,)),
                   ('date_achat', 'date_achat', (date_or_none,)),
                    ]
 def gen_achatmateriaux(ctl):
-    for row in ctl.get_data('achatmateriaux'):
+    for row in ctl.iter_and_commit('achatmateriaux'):
         entity = mk_entity(row, ACHATMATERIAUX)
         ctl.store.add('AchatMateriaux', entity)
         achatmateriaux_id[row['Id']] = entity['eid']
@@ -443,11 +443,11 @@ GENERATORS.append((gen_achatmateriaux, CHK))
 
 
 achatpretporter_id = {}
-ACHATPRETPORTER = [("Quantite", "quantite", ()),
+ACHATPRETPORTER = [("Quantite", "quantite", (int_or_none,)),
                    ('date_achat', 'date_achat', (date_or_none,)),
                    ]
 def gen_achatpretporter(ctl):
-    for row in ctl.get_data('achatpretporter'):
+    for row in ctl.iter_and_commit('achatpretporter'):
         entity = mk_entity(row, ACHATPRETPORTER)
         ctl.store.add('AchatPretPorter', entity)
         achatpretporter_id[row['Id']] = entity['eid']
@@ -464,11 +464,11 @@ GENERATORS.append((gen_achatpretporter, CHK))
 
 
 achatfabrication_id = {}
-ACHATFABRICATION = [("Quantite", "quantite", ()),
+ACHATFABRICATION = [("Quantite", "quantite", (int_or_none)),
                    ('date_achat', 'date_achat', (date_or_none,)),
                    ]
 def gen_achatfabrication(ctl):
-    for row in ctl.get_data('achatfabrication'):
+    for row in ctl.iter_and_commit('achatfabrication'):
         entity = mk_entity(row, ACHATFABRICATION)
         ctl.store.add('AchatFabrication', entity)
         achatfabrication_id[row['Id']] = entity['eid']
@@ -487,15 +487,15 @@ GENERATORS.append((gen_achatfabrication, CHK))
 
 fabriqueavecmat_id = {}
 FABRIQUEAVECMAT = [("TypeMesure", "type_mesure", ()),
-                   ("Quantite", "quantite", ()),
+                   ("Quantite", "quantite", (float_or_none,)),
                    ('Unite', 'unite', ()),
                    ('provenance_mesure', 'provenance_mesure', ()),
-                   ('Conversion', 'conversion', ()),
+                   ('Conversion', 'conversion', (float_or_none,)),
                    ('usage', 'usage', ()),
                   ]
 def gen_fabriqueavecmat(ctl):
     print u'1339' in achatmateriaux_id
-    for row in ctl.get_data('fabriqueavecmat'):
+    for row in ctl.iter_and_commit('fabriqueavecmat'):
         entity = mk_entity(row, FABRIQUEAVECMAT)
         ctl.store.add('FabriqueAvecMat', entity)
         try:
@@ -515,7 +515,7 @@ GENERATORS.append((gen_fabriqueavecmat, CHK))
 
 # create controller
 if 'cnx' in locals():
-    ctl = CWImportController(RQLObjectStore(cnx), askerror=True, commitevery=10)
+    ctl = CWImportController(RQLObjectStore(cnx), askerror=True, commitevery=100)
 else:
     ctl = CWImportController(ObjectStore())
 ctl.generators = GENERATORS
