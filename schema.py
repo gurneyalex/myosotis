@@ -42,7 +42,7 @@ class Transaction(EntityType):
     remarques = String()
     intervenants = SubjectRelation('Intervenant', composite='subject', cardinality='*1')
     destinataires = SubjectRelation('Destinataire', composite='subject', cardinality='*1')
-    artisans = SubjectRelation('Artisan', composite='subject', cardinality='*1')
+    travaux = SubjectRelation('Travail', composite='subject', cardinality='**')
     vendeurs = SubjectRelation('Vendeur', composite='subject', cardinality='*1')
     prix_partage = Boolean(required=True, default=False)
 
@@ -54,27 +54,11 @@ class compte(RelationDefinition):
     composite = 'subject'
 
 
-class achat_mp(RelationDefinition):
+class achat(RelationDefinition):
     subject = 'Transaction'
-    object = 'AchatMateriaux'
+    object = ('AchatMateriaux', 'AchatPretPorter', 'AchatFabrication')
     cardinality = '*1'
     composite = 'subject'
-
-
-class achat_pp(RelationDefinition):
-    subject = 'Transaction'
-    object = 'AchatPretPorter'
-    cardinality = '*1'
-    composite = 'subject'
-
-
-class achat_fa(RelationDefinition):
-    subject = 'Transaction'
-    object = 'AchatFabrication'
-    cardinality = '*1'
-    composite = 'subject'
-
-
 
 class occasion(RelationDefinition):
     subject = 'Transaction'
@@ -123,6 +107,7 @@ class AchatPretPorter(EntityType):
     parure = SubjectRelation('Parure', cardinality='1*', inlined=True)
 
 class Change(EntityType):
+    dans_compte = String(maxsize=255) # dummy, to help data import
     compte = SubjectRelation('Compte', cardinality='?*')
     prix_depart = SubjectRelation('Prix', cardinality='??')
     prix_converti = SubjectRelation('Prix', cardinality='??')
@@ -155,6 +140,8 @@ class Personne(EntityType):
     occupation = String(maxsize=30, default='inconnue', required=True)
     titre = String(maxsize=128)
     sexe = String(vocabulary=['M', 'F'], required=True, default='M')
+    ville_domicile = String(maxsize=255) # XXX
+    ville_origine = String(maxsize=255) # XXX
     lieu_domicile = SubjectRelation('Lieu', cardinality='?*', inlined=True)
     lieu_origine = SubjectRelation('Lieu', cardinality='?*', inlined=True)
     remarques= String()
@@ -170,7 +157,7 @@ class Occupation(EntityType):
     occupation = String(maxsize=255)
     personne = SubjectRelation('Personne', cardinality = '?*', composite='subject', inlined=True)
 
-class Artisan(EntityType):
+class Travail(EntityType):
     artisan = SubjectRelation('Personne', cardinality='1*', composite='object', inlined=True)
     salaire_argent = SubjectRelation('Prix', cardinality='??', inlined=True, composite='subject')
     salaire_nature_qt = Int()
@@ -180,9 +167,9 @@ class Artisan(EntityType):
     salaire_aides = SubjectRelation('Prix', cardinality='??', inlined=True, composite='subject')
     tache = String(maxsize=64)
     duree = Int()
-    date_travaille = Date()
+    date_travail = Date()
     remarques = String()
-    facon_et_etoffes = Boolean(default=False, required=True)
+    facon_et_etoffe = Boolean(default=False, required=True)
 
 class Vendeur(EntityType): # MLVendeur
     expression = String(maxsize=255)
