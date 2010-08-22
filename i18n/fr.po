@@ -1,8 +1,1468 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
 msgstr ""
+"Project-Id-Version: myosotis-2.0\n"
+"PO-Revision-Date: 2010-08-22 15:40+0200\n"
+"Last-Translator: Alexandre Fayolle <alexandre.fayolle@free.fr>\n"
+"Language-Team: French <FR@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: pygettext.py 1.5\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
+# schema pot file, generated on 2010-08-22 15:26:07
+#
+# singular and plural forms for each entity type
+msgid "AchatFabrication"
+msgstr "Achat d'une Fabrication"
+
+msgid "AchatFabrication_plural"
+msgstr "Achats de Fabrications"
+
+msgid "AchatMateriaux"
+msgstr "Achat d'un Matériaux"
+
+msgid "AchatMateriaux_plural"
+msgstr "Achats de Matériaux"
+
+msgid "AchatPretPorter"
+msgstr "Achat d'un Prêt à porter"
+
+msgid "AchatPretPorter_plural"
+msgstr "Achats de Prêts à porter"
+
+msgid "Change"
+msgstr "Change"
+
+msgid "Change_plural"
+msgstr "Changes"
+
+msgid "Compte"
+msgstr "Compte"
+
+msgid "Compte_plural"
+msgstr "Comptes"
+
+msgid "Destinataire"
+msgstr "Destinataire"
+
+msgid "Destinataire_plural"
+msgstr "Destinataires"
+
+msgid "FabriqueAvecMat"
+msgstr "Fabriqué avec Matériaux"
+
+msgid "FabriqueAvecMat_plural"
+msgstr "Fabriqués avec Matériaux"
+
+msgid "Intervenant"
+msgstr "Intervenant"
+
+msgid "Intervenant_plural"
+msgstr "Intervenants"
+
+msgid "Lieu"
+msgstr "Lieu"
+
+msgid "Lieu_plural"
+msgstr "Lieux"
+
+msgid "Materiaux"
+msgstr "Matériaux"
+
+msgid "MateriauxParure"
+msgstr "Matériaux de Parure"
+
+msgid "MateriauxParure_plural"
+msgstr "Matériaux de Parures"
+
+msgid "Materiaux_plural"
+msgstr "Matériaux"
+
+msgid "Monnaie"
+msgstr "Monnaie"
+
+msgid "Monnaie_plural"
+msgstr "Monnaies"
+
+msgid "New AchatFabrication"
+msgstr ""
+
+msgid "New AchatMateriaux"
+msgstr ""
+
+msgid "New AchatPretPorter"
+msgstr ""
+
+msgid "New Change"
+msgstr ""
+
+msgid "New Compte"
+msgstr ""
+
+msgid "New Destinataire"
+msgstr ""
+
+msgid "New FabriqueAvecMat"
+msgstr ""
+
+msgid "New Intervenant"
+msgstr ""
+
+msgid "New Lieu"
+msgstr ""
+
+msgid "New Materiaux"
+msgstr ""
+
+msgid "New MateriauxParure"
+msgstr ""
+
+msgid "New Monnaie"
+msgstr ""
+
+msgid "New Occasion"
+msgstr ""
+
+msgid "New Occupation"
+msgstr ""
+
+msgid "New Parure"
+msgstr ""
+
+msgid "New Personne"
+msgstr ""
+
+msgid "New Prix"
+msgstr ""
+
+msgid "New Transaction"
+msgstr ""
+
+msgid "New Travail"
+msgstr ""
+
+msgid "New Vendeur"
+msgstr ""
+
+msgid "Occasion"
+msgstr "Occasion"
+
+msgid "Occasion_plural"
+msgstr "Occasions"
+
+msgid "Occupation"
+msgstr "Occupation"
+
+msgid "Occupation_plural"
+msgstr "Occupations"
+
+msgid "Parure"
+msgstr "Parure"
+
+msgid "Parure_plural"
+msgstr "Parures"
+
+msgid "Personne"
+msgstr "Personne"
+
+msgid "Personne_plural"
+msgstr "Personnes"
+
+msgid "Prix"
+msgstr "Prix"
+
+msgid "Prix_plural"
+msgstr "Prix"
+
+msgid "This AchatFabrication"
+msgstr ""
+
+msgid "This AchatMateriaux"
+msgstr ""
+
+msgid "This AchatPretPorter"
+msgstr ""
+
+msgid "This Change"
+msgstr ""
+
+msgid "This Compte"
+msgstr ""
+
+msgid "This Destinataire"
+msgstr ""
+
+msgid "This FabriqueAvecMat"
+msgstr ""
+
+msgid "This Intervenant"
+msgstr ""
+
+msgid "This Lieu"
+msgstr ""
+
+msgid "This Materiaux"
+msgstr ""
+
+msgid "This MateriauxParure"
+msgstr ""
+
+msgid "This Monnaie"
+msgstr ""
+
+msgid "This Occasion"
+msgstr ""
+
+msgid "This Occupation"
+msgstr ""
+
+msgid "This Parure"
+msgstr ""
+
+msgid "This Personne"
+msgstr ""
+
+msgid "This Prix"
+msgstr ""
+
+msgid "This Transaction"
+msgstr ""
+
+msgid "This Travail"
+msgstr ""
+
+msgid "This Vendeur"
+msgstr ""
+
+msgid "Transaction"
+msgstr "Transaction"
+
+msgid "Transaction_plural"
+msgstr "Transactions"
+
+msgid "Travail"
+msgstr "Travail"
+
+msgid "Travail_plural"
+msgstr "Travaux"
+
+msgid "Vendeur"
+msgstr "Vendeur"
+
+msgid "Vendeur_plural"
+msgstr "Vendeurs"
+
+# subject and object forms for each relation type
+# (no object form for final or symmetric relation types)
+msgid "achat"
+msgstr ""
+
+msgctxt "Transaction"
+msgid "achat"
+msgstr ""
+
+msgid "achat_matiere"
+msgstr ""
+
+msgctxt "FabriqueAvecMat"
+msgid "achat_matiere"
+msgstr ""
+
+msgid "achat_matiere_object"
+msgstr ""
+
+msgctxt "AchatMateriaux"
+msgid "achat_matiere_object"
+msgstr ""
+
+msgid "achat_object"
+msgstr ""
+
+msgctxt "AchatFabrication"
+msgid "achat_object"
+msgstr ""
+
+msgctxt "AchatMateriaux"
+msgid "achat_object"
+msgstr ""
+
+msgctxt "AchatPretPorter"
+msgid "achat_object"
+msgstr ""
+
+msgid "add Destinataire destinataire Personne object"
+msgstr ""
+
+msgid "add Intervenant intervenant Personne object"
+msgstr ""
+
+msgid "add Parure composee_de MateriauxParure subject"
+msgstr ""
+
+msgid "add Transaction achat AchatFabrication subject"
+msgstr ""
+
+msgid "add Transaction achat AchatMateriaux subject"
+msgstr ""
+
+msgid "add Transaction achat AchatPretPorter subject"
+msgstr ""
+
+msgid "add Transaction destinataires Destinataire subject"
+msgstr ""
+
+msgid "add Transaction intervenants Intervenant subject"
+msgstr ""
+
+msgid "add Transaction travaux Travail subject"
+msgstr ""
+
+msgid "add Transaction vendeurs Vendeur subject"
+msgstr ""
+
+msgid "add Travail artisan Personne object"
+msgstr ""
+
+msgid "add Vendeur vendeur Personne object"
+msgstr ""
+
+msgid "artisan"
+msgstr ""
+
+msgctxt "Travail"
+msgid "artisan"
+msgstr ""
+
+msgid "artisan_object"
+msgstr ""
+
+msgctxt "Personne"
+msgid "artisan_object"
+msgstr ""
+
+msgid "avec_mat"
+msgstr ""
+
+msgctxt "AchatFabrication"
+msgid "avec_mat"
+msgstr ""
+
+msgid "avec_mat_object"
+msgstr ""
+
+msgctxt "FabriqueAvecMat"
+msgid "avec_mat_object"
+msgstr ""
+
+msgid "carac_couleur"
+msgstr ""
+
+msgctxt "Materiaux"
+msgid "carac_couleur"
+msgstr ""
+
+msgid "carac_facture"
+msgstr ""
+
+msgctxt "Materiaux"
+msgid "carac_facture"
+msgstr ""
+
+msgid "caracteristique"
+msgstr ""
+
+msgctxt "Parure"
+msgid "caracteristique"
+msgstr ""
+
+msgid "change"
+msgstr ""
+
+msgctxt "Compte"
+msgid "change"
+msgstr ""
+
+msgid "commandement"
+msgstr ""
+
+msgctxt "Intervenant"
+msgid "commandement"
+msgstr ""
+
+msgid "composee_de"
+msgstr ""
+
+msgctxt "Parure"
+msgid "composee_de"
+msgstr ""
+
+msgid "composee_de_object"
+msgstr ""
+
+msgctxt "MateriauxParure"
+msgid "composee_de_object"
+msgstr ""
+
+msgid "compte"
+msgstr ""
+
+msgctxt "Change"
+msgid "compte"
+msgstr ""
+
+msgctxt "Occupation"
+msgid "compte"
+msgstr ""
+
+msgctxt "Transaction"
+msgid "compte"
+msgstr "compte"
+
+msgid "compte_object"
+msgstr "transactions"
+
+msgctxt "Compte"
+msgid "compte_object"
+msgstr "transactions"
+
+msgid "conversion"
+msgstr ""
+
+msgctxt "AchatMateriaux"
+msgid "conversion"
+msgstr ""
+
+msgctxt "FabriqueAvecMat"
+msgid "conversion"
+msgstr ""
+
+msgctxt "MateriauxParure"
+msgid "conversion"
+msgstr ""
+
+msgctxt "Prix"
+msgid "conversion"
+msgstr ""
+
+msgid "couleur"
+msgstr ""
+
+msgctxt "Materiaux"
+msgid "couleur"
+msgstr ""
+
+msgid ""
+"creating AchatFabrication (Transaction %(linkto)s achat AchatFabrication)"
+msgstr ""
+
+msgid "creating AchatMateriaux (Transaction %(linkto)s achat AchatMateriaux)"
+msgstr ""
+
+msgid "creating AchatPretPorter (Transaction %(linkto)s achat AchatPretPorter)"
+msgstr ""
+
+msgid "creating Destinataire (Destinataire destinataire Personne %(linkto)s)"
+msgstr ""
+
+msgid ""
+"creating Destinataire (Transaction %(linkto)s destinataires Destinataire)"
+msgstr ""
+
+msgid "creating Intervenant (Intervenant intervenant Personne %(linkto)s)"
+msgstr ""
+
+msgid "creating Intervenant (Transaction %(linkto)s intervenants Intervenant)"
+msgstr ""
+
+msgid ""
+"creating MateriauxParure (Parure %(linkto)s composee_de MateriauxParure)"
+msgstr ""
+
+msgid "creating Travail (Transaction %(linkto)s travaux Travail)"
+msgstr ""
+
+msgid "creating Travail (Travail artisan Personne %(linkto)s)"
+msgstr ""
+
+msgid "creating Vendeur (Transaction %(linkto)s vendeurs Vendeur)"
+msgstr ""
+
+msgid "creating Vendeur (Vendeur vendeur Personne %(linkto)s)"
+msgstr ""
+
+msgid "dans_compte"
+msgstr ""
+
+msgctxt "Change"
+msgid "dans_compte"
+msgstr ""
+
+msgid "date"
+msgstr ""
+
+msgctxt "Occasion"
+msgid "date"
+msgstr ""
+
+msgctxt "Transaction"
+msgid "date"
+msgstr ""
+
+msgid "date_achat"
+msgstr ""
+
+msgctxt "AchatFabrication"
+msgid "date_achat"
+msgstr ""
+
+msgctxt "AchatMateriaux"
+msgid "date_achat"
+msgstr ""
+
+msgctxt "AchatPretPorter"
+msgid "date_achat"
+msgstr ""
+
+msgid "date_ordre"
+msgstr ""
+
+msgctxt "Transaction"
+msgid "date_ordre"
+msgstr ""
+
+msgid "date_recette"
+msgstr ""
+
+msgctxt "Transaction"
+msgid "date_recette"
+msgstr ""
+
+msgid "date_travail"
+msgstr ""
+
+msgctxt "Travail"
+msgid "date_travail"
+msgstr ""
+
+msgid "debut"
+msgstr ""
+
+msgctxt "Compte"
+msgid "debut"
+msgstr ""
+
+msgid "delivre_a"
+msgstr ""
+
+msgctxt "Intervenant"
+msgid "delivre_a"
+msgstr ""
+
+msgid "denier_florins"
+msgstr ""
+
+msgctxt "Prix"
+msgid "denier_florins"
+msgstr ""
+
+msgid "deniers"
+msgstr ""
+
+msgctxt "Prix"
+msgid "deniers"
+msgstr ""
+
+msgid "designation_aides"
+msgstr ""
+
+msgctxt "Travail"
+msgid "designation_aides"
+msgstr ""
+
+msgid "destinataire"
+msgstr ""
+
+msgctxt "Destinataire"
+msgid "destinataire"
+msgstr ""
+
+msgid "destinataire_object"
+msgstr ""
+
+msgctxt "Personne"
+msgid "destinataire_object"
+msgstr ""
+
+msgid "destinataires"
+msgstr ""
+
+msgctxt "Transaction"
+msgid "destinataires"
+msgstr ""
+
+msgid "destinataires_object"
+msgstr ""
+
+msgctxt "Destinataire"
+msgid "destinataires_object"
+msgstr ""
+
+msgid "diminutif"
+msgstr ""
+
+msgctxt "Personne"
+msgid "diminutif"
+msgstr ""
+
+msgid "donne_par"
+msgstr ""
+
+msgctxt "Intervenant"
+msgid "donne_par"
+msgstr ""
+
+msgid "duree"
+msgstr ""
+
+msgctxt "Intervenant"
+msgid "duree"
+msgstr ""
+
+msgctxt "Travail"
+msgid "duree"
+msgstr ""
+
+msgctxt "Vendeur"
+msgid "expression"
+msgstr ""
+
+msgid "facon_et_etoffe"
+msgstr ""
+
+msgctxt "Travail"
+msgid "facon_et_etoffe"
+msgstr ""
+
+msgid "fait_compte_avec"
+msgstr ""
+
+msgctxt "Intervenant"
+msgid "fait_compte_avec"
+msgstr ""
+
+msgid "famille"
+msgstr ""
+
+msgctxt "Materiaux"
+msgid "famille"
+msgstr ""
+
+msgid "fin"
+msgstr ""
+
+msgctxt "Compte"
+msgid "fin"
+msgstr ""
+
+msgid "florins"
+msgstr ""
+
+msgctxt "Prix"
+msgid "florins"
+msgstr ""
+
+msgid "gros"
+msgstr ""
+
+msgctxt "Prix"
+msgid "gros"
+msgstr ""
+
+msgid "identite"
+msgstr ""
+
+msgctxt "Personne"
+msgid "identite"
+msgstr ""
+
+msgid "indemnite"
+msgstr ""
+
+msgctxt "Intervenant"
+msgid "indemnite"
+msgstr ""
+
+msgid "intervenant"
+msgstr ""
+
+msgctxt "Intervenant"
+msgid "intervenant"
+msgstr ""
+
+msgid "intervenant_object"
+msgstr ""
+
+msgctxt "Personne"
+msgid "intervenant_object"
+msgstr ""
+
+msgid "intervenants"
+msgstr ""
+
+msgctxt "Transaction"
+msgid "intervenants"
+msgstr ""
+
+msgid "intervenants_object"
+msgstr ""
+
+msgctxt "Intervenant"
+msgid "intervenants_object"
+msgstr ""
+
+msgid "inventaire"
+msgstr ""
+
+msgctxt "Compte"
+msgid "inventaire"
+msgstr ""
+
+msgid "libelle"
+msgstr ""
+
+msgctxt "Occupation"
+msgid "libelle"
+msgstr ""
+
+msgid "lieu"
+msgstr ""
+
+msgctxt "Occasion"
+msgid "lieu"
+msgstr ""
+
+msgctxt "Transaction"
+msgid "lieu"
+msgstr ""
+
+msgid "lieu_domicile"
+msgstr ""
+
+msgctxt "Personne"
+msgid "lieu_domicile"
+msgstr ""
+
+msgid "lieu_domicile_object"
+msgstr ""
+
+msgctxt "Lieu"
+msgid "lieu_domicile_object"
+msgstr ""
+
+msgid "lieu_object"
+msgstr ""
+
+msgctxt "Lieu"
+msgid "lieu_object"
+msgstr ""
+
+msgid "lieu_origine"
+msgstr ""
+
+msgctxt "Personne"
+msgid "lieu_origine"
+msgstr ""
+
+msgid "lieu_origine_object"
+msgstr ""
+
+msgctxt "Lieu"
+msgid "lieu_origine_object"
+msgstr ""
+
+msgid "livres"
+msgstr ""
+
+msgctxt "Prix"
+msgid "livres"
+msgstr ""
+
+msgid "maj_occupation"
+msgstr ""
+
+msgctxt "Personne"
+msgid "maj_occupation"
+msgstr ""
+
+msgid "materiaux"
+msgstr ""
+
+msgctxt "AchatMateriaux"
+msgid "materiaux"
+msgstr ""
+
+msgctxt "MateriauxParure"
+msgid "materiaux"
+msgstr ""
+
+msgid "materiaux_achete"
+msgstr ""
+
+msgctxt "MateriauxParure"
+msgid "materiaux_achete"
+msgstr ""
+
+msgid "materiaux_object"
+msgstr ""
+
+msgctxt "Materiaux"
+msgid "materiaux_object"
+msgstr ""
+
+msgid "monnaie"
+msgstr ""
+
+msgctxt "Prix"
+msgid "monnaie"
+msgstr ""
+
+msgid "monnaie_object"
+msgstr ""
+
+msgctxt "Monnaie"
+msgid "monnaie_object"
+msgstr ""
+
+msgid "monnaie_or"
+msgstr ""
+
+msgctxt "Prix"
+msgid "monnaie_or"
+msgstr ""
+
+msgid "moyen_transport"
+msgstr ""
+
+msgctxt "Intervenant"
+msgid "moyen_transport"
+msgstr ""
+
+msgid "nature"
+msgstr ""
+
+msgctxt "Parure"
+msgid "nature"
+msgstr ""
+
+msgid "nb_moyen_transport"
+msgstr ""
+
+msgctxt "Intervenant"
+msgid "nb_moyen_transport"
+msgstr ""
+
+msgid "nom"
+msgstr ""
+
+msgctxt "Materiaux"
+msgid "nom"
+msgstr ""
+
+msgctxt "Monnaie"
+msgid "nom"
+msgstr ""
+
+msgctxt "Personne"
+msgid "nom"
+msgstr ""
+
+msgid "nombre"
+msgstr ""
+
+msgctxt "Destinataire"
+msgid "nombre"
+msgstr ""
+
+msgid "nombre_aides"
+msgstr ""
+
+msgctxt "Travail"
+msgid "nombre_aides"
+msgstr ""
+
+msgid "nombre_valets"
+msgstr ""
+
+msgctxt "Intervenant"
+msgid "nombre_valets"
+msgstr ""
+
+msgid "occasion"
+msgstr ""
+
+msgctxt "Transaction"
+msgid "occasion"
+msgstr ""
+
+msgid "occasion_object"
+msgstr ""
+
+msgctxt "Occasion"
+msgid "occasion_object"
+msgstr ""
+
+msgid "occupation"
+msgstr ""
+
+msgctxt "Occupation"
+msgid "occupation"
+msgstr ""
+
+msgctxt "Personne"
+msgid "occupation"
+msgstr ""
+
+msgid "pagination"
+msgstr ""
+
+msgctxt "Occupation"
+msgid "pagination"
+msgstr ""
+
+msgctxt "Transaction"
+msgid "pagination"
+msgstr ""
+
+msgid "par_la_main"
+msgstr ""
+
+msgctxt "Intervenant"
+msgid "par_la_main"
+msgstr ""
+
+msgid "parure"
+msgstr ""
+
+msgctxt "AchatFabrication"
+msgid "parure"
+msgstr ""
+
+msgctxt "AchatPretPorter"
+msgid "parure"
+msgstr ""
+
+msgid "parure_object"
+msgstr ""
+
+msgctxt "Parure"
+msgid "parure_object"
+msgstr ""
+
+msgid "payeur"
+msgstr ""
+
+msgctxt "Intervenant"
+msgid "payeur"
+msgstr ""
+
+msgid "personne"
+msgstr ""
+
+msgctxt "Occupation"
+msgid "personne"
+msgstr ""
+
+msgid "personne_object"
+msgstr ""
+
+msgctxt "Personne"
+msgid "personne_object"
+msgstr ""
+
+msgid "present"
+msgstr ""
+
+msgctxt "Intervenant"
+msgid "present"
+msgstr ""
+
+msgid "pris"
+msgstr ""
+
+msgctxt "Intervenant"
+msgid "pris"
+msgstr ""
+
+msgid "prix_converti"
+msgstr ""
+
+msgctxt "Change"
+msgid "prix_converti"
+msgstr ""
+
+msgid "prix_converti_object"
+msgstr ""
+
+msgctxt "Prix"
+msgid "prix_converti_object"
+msgstr ""
+
+msgid "prix_depart"
+msgstr ""
+
+msgctxt "Change"
+msgid "prix_depart"
+msgstr ""
+
+msgid "prix_depart_object"
+msgstr ""
+
+msgctxt "Prix"
+msgid "prix_depart_object"
+msgstr ""
+
+msgid "prix_ensemble"
+msgstr ""
+
+msgctxt "Transaction"
+msgid "prix_ensemble"
+msgstr ""
+
+msgid "prix_ensemble_object"
+msgstr ""
+
+msgctxt "Prix"
+msgid "prix_ensemble_object"
+msgstr ""
+
+msgid "prix_partage"
+msgstr ""
+
+msgctxt "Transaction"
+msgid "prix_partage"
+msgstr ""
+
+msgid "prix_total"
+msgstr ""
+
+msgctxt "AchatFabrication"
+msgid "prix_total"
+msgstr ""
+
+msgctxt "AchatMateriaux"
+msgid "prix_total"
+msgstr ""
+
+msgctxt "AchatPretPorter"
+msgid "prix_total"
+msgstr ""
+
+msgid "prix_total_object"
+msgstr ""
+
+msgctxt "Prix"
+msgid "prix_total_object"
+msgstr ""
+
+msgid "prix_transport"
+msgstr ""
+
+msgctxt "Intervenant"
+msgid "prix_transport"
+msgstr ""
+
+msgid "prix_transport_object"
+msgstr ""
+
+msgctxt "Prix"
+msgid "prix_transport_object"
+msgstr ""
+
+msgid "prix_unitaire"
+msgstr ""
+
+msgctxt "AchatFabrication"
+msgid "prix_unitaire"
+msgstr ""
+
+msgctxt "AchatMateriaux"
+msgid "prix_unitaire"
+msgstr ""
+
+msgctxt "AchatPretPorter"
+msgid "prix_unitaire"
+msgstr ""
+
+msgid "prix_unitaire_object"
+msgstr ""
+
+msgctxt "Prix"
+msgid "prix_unitaire_object"
+msgstr ""
+
+msgid "prix_valet"
+msgstr ""
+
+msgctxt "Intervenant"
+msgid "prix_valet"
+msgstr ""
+
+msgid "prix_valet_object"
+msgstr ""
+
+msgctxt "Prix"
+msgid "prix_valet_object"
+msgstr ""
+
+msgid "provenance"
+msgstr ""
+
+msgctxt "Materiaux"
+msgid "provenance"
+msgstr ""
+
+msgid "provenance_mesure"
+msgstr ""
+
+msgctxt "AchatMateriaux"
+msgid "provenance_mesure"
+msgstr ""
+
+msgctxt "FabriqueAvecMat"
+msgid "provenance_mesure"
+msgstr ""
+
+msgctxt "MateriauxParure"
+msgid "provenance_mesure"
+msgstr ""
+
+msgid "provenance_object"
+msgstr ""
+
+msgctxt "Lieu"
+msgid "provenance_object"
+msgstr ""
+
+msgid "quantite"
+msgstr ""
+
+msgctxt "AchatFabrication"
+msgid "quantite"
+msgstr ""
+
+msgctxt "AchatMateriaux"
+msgid "quantite"
+msgstr ""
+
+msgctxt "AchatPretPorter"
+msgid "quantite"
+msgstr ""
+
+msgctxt "FabriqueAvecMat"
+msgid "quantite"
+msgstr ""
+
+msgctxt "MateriauxParure"
+msgid "quantite"
+msgstr ""
+
+msgid "rattache_a"
+msgstr ""
+
+msgctxt "Occupation"
+msgid "rattache_a"
+msgstr ""
+
+msgid "rattache_a_object"
+msgstr ""
+
+msgctxt "Personne"
+msgid "rattache_a_object"
+msgstr ""
+
+msgid "rattachement"
+msgstr ""
+
+msgctxt "Personne"
+msgid "rattachement"
+msgstr ""
+
+msgid "receveur"
+msgstr ""
+
+msgctxt "Compte"
+msgid "receveur"
+msgstr ""
+
+msgid "receveur_object"
+msgstr ""
+
+msgctxt "Personne"
+msgid "receveur_object"
+msgstr ""
+
+msgid "region"
+msgstr ""
+
+msgctxt "Lieu"
+msgid "region"
+msgstr ""
+
+msgid "relation_de"
+msgstr ""
+
+msgctxt "Intervenant"
+msgid "relation_de"
+msgstr ""
+
+msgid "remarques"
+msgstr ""
+
+msgctxt "Lieu"
+msgid "remarques"
+msgstr ""
+
+msgctxt "Occasion"
+msgid "remarques"
+msgstr ""
+
+msgctxt "Personne"
+msgid "remarques"
+msgstr ""
+
+msgctxt "Transaction"
+msgid "remarques"
+msgstr ""
+
+msgctxt "Travail"
+msgid "remarques"
+msgstr ""
+
+msgid "salaire_aides"
+msgstr ""
+
+msgctxt "Travail"
+msgid "salaire_aides"
+msgstr ""
+
+msgid "salaire_aides_object"
+msgstr ""
+
+msgctxt "Prix"
+msgid "salaire_aides_object"
+msgstr ""
+
+msgid "salaire_argent"
+msgstr ""
+
+msgctxt "Travail"
+msgid "salaire_argent"
+msgstr ""
+
+msgid "salaire_argent_object"
+msgstr ""
+
+msgctxt "Prix"
+msgid "salaire_argent_object"
+msgstr ""
+
+msgid "salaire_nature_obj"
+msgstr ""
+
+msgctxt "Travail"
+msgid "salaire_nature_obj"
+msgstr ""
+
+msgid "salaire_nature_qt"
+msgstr ""
+
+msgctxt "Travail"
+msgid "salaire_nature_qt"
+msgstr ""
+
+msgid "sexe"
+msgstr ""
+
+msgctxt "Personne"
+msgid "sexe"
+msgstr ""
+
+msgid "sous"
+msgstr ""
+
+msgctxt "Prix"
+msgid "sous"
+msgstr ""
+
+msgid "sous_florins"
+msgstr ""
+
+msgctxt "Prix"
+msgid "sous_florins"
+msgstr ""
+
+msgid "surnom"
+msgstr ""
+
+msgctxt "Personne"
+msgid "surnom"
+msgstr ""
+
+msgid "tache"
+msgstr ""
+
+msgctxt "Travail"
+msgid "tache"
+msgstr ""
+
+msgid "titre"
+msgstr ""
+
+msgctxt "Personne"
+msgid "titre"
+msgstr ""
+
+msgid "travaux"
+msgstr ""
+
+msgctxt "Transaction"
+msgid "travaux"
+msgstr ""
+
+msgid "travaux_object"
+msgstr ""
+
+msgctxt "Travail"
+msgid "travaux_object"
+msgstr ""
+
+msgctxt "Materiaux"
+msgid "type"
+msgstr ""
+
+msgctxt "Monnaie"
+msgid "type"
+msgstr ""
+
+msgctxt "Occasion"
+msgid "type"
+msgstr ""
+
+msgctxt "Parure"
+msgid "type"
+msgstr ""
+
+msgid "type_achat"
+msgstr ""
+
+msgctxt "Transaction"
+msgid "type_achat"
+msgstr ""
+
+msgid "type_compte"
+msgstr ""
+
+msgctxt "Compte"
+msgid "type_compte"
+msgstr ""
+
+msgid "type_mesure"
+msgstr ""
+
+msgctxt "AchatMateriaux"
+msgid "type_mesure"
+msgstr ""
+
+msgctxt "FabriqueAvecMat"
+msgid "type_mesure"
+msgstr ""
+
+msgctxt "MateriauxParure"
+msgid "type_mesure"
+msgstr ""
+
+msgid "unite"
+msgstr ""
+
+msgctxt "AchatMateriaux"
+msgid "unite"
+msgstr ""
+
+msgctxt "FabriqueAvecMat"
+msgid "unite"
+msgstr ""
+
+msgctxt "MateriauxParure"
+msgid "unite"
+msgstr ""
+
+msgid "usage"
+msgstr ""
+
+msgctxt "FabriqueAvecMat"
+msgid "usage"
+msgstr ""
+
+msgctxt "MateriauxParure"
+msgid "usage"
+msgstr ""
+
+msgid "valeur"
+msgstr ""
+
+msgctxt "Occupation"
+msgid "valeur"
+msgstr ""
+
+msgid "vendeur"
+msgstr ""
+
+msgctxt "Vendeur"
+msgid "vendeur"
+msgstr ""
+
+msgid "vendeur_object"
+msgstr ""
+
+msgctxt "Personne"
+msgid "vendeur_object"
+msgstr ""
+
+msgid "vendeurs"
+msgstr ""
+
+msgctxt "Transaction"
+msgid "vendeurs"
+msgstr ""
+
+msgid "vendeurs_object"
+msgstr ""
+
+msgctxt "Vendeur"
+msgid "vendeurs_object"
+msgstr ""
+
+msgid "ville"
+msgstr ""
+
+msgctxt "Lieu"
+msgid "ville"
+msgstr ""
+
+msgid "ville_domicile"
+msgstr ""
+
+msgctxt "Personne"
+msgid "ville_domicile"
+msgstr ""
+
+msgid "ville_origine"
+msgstr ""
+
+msgctxt "Personne"
+msgid "ville_origine"
+msgstr ""
