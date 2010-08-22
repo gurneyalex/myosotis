@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: myosotis-2.0\n"
-"PO-Revision-Date: 2010-08-22 15:40+0200\n"
+"PO-Revision-Date: 2010-08-22 15:59+0200\n"
 "Last-Translator: Alexandre Fayolle <alexandre.fayolle@free.fr>\n"
 "Language-Team: French <FR@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -284,15 +284,15 @@ msgstr ""
 
 msgctxt "AchatFabrication"
 msgid "achat_object"
-msgstr ""
+msgstr "transaction"
 
 msgctxt "AchatMateriaux"
 msgid "achat_object"
-msgstr ""
+msgstr "transaction"
 
 msgctxt "AchatPretPorter"
 msgid "achat_object"
-msgstr ""
+msgstr "transaction"
 
 msgid "add Destinataire destinataire Personne object"
 msgstr ""
