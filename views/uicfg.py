@@ -3,7 +3,6 @@ from cubicweb.web import uicfg
 def setup_ui(vreg):
     _pvs = uicfg.primaryview_section
     _pvs.tag_object_of(('*', 'compte', 'Compte'), 'hidden')
-    _pvs.tag_subject_of(('Transaction', 'prix_ensemble', 'Prix'), 'attributes')
     _pvs.tag_subject_of(('*', 'prix_depart', 'Prix'), 'attributes')
     _pvs.tag_subject_of(('*', 'prix_converti', 'Prix'), 'attributes')
     _pvs.tag_subject_of(('*', 'salaire_argent', 'Prix'), 'attributes')
@@ -14,6 +13,22 @@ def setup_ui(vreg):
     _pvs.tag_subject_of(('*', 'prix_total', 'Prix'), 'attributes')
     _pvs.tag_subject_of(('*', 'prix_unitaire', 'Prix'), 'attributes')
     _pvs.tag_subject_of(('*', 'lieu', 'Lieu'), 'attributes')
+    _pvs.tag_subject_of(('*', 'lieu_domicile', 'Lieu'), 'attributes')
+    _pvs.tag_subject_of(('*', 'lieu_origine', 'Lieu'), 'attributes')
+    _pvs.tag_object_of(('*', 'rattache_a', 'Personne'), 'hidden')
+    _pvs.tag_object_of(('*', 'personne', 'Personne'), 'hidden')
+    _pvs.tag_object_of(('*', 'artisan', 'Personne'), 'hidden')
+    _pvs.tag_object_of(('*', 'vendeur', 'Personne'), 'hidden')
+    _pvs.tag_object_of(('*', 'intervenant', 'Personne'), 'hidden')
+    _pvs.tag_object_of(('*', 'destinataire', 'Personne'), 'hidden')
+    _pvs.tag_subject_of(('Transaction', 'travaux', 'Travail'), 'attributes')
+    _pvs.tag_subject_of(('Transaction', 'vendeurs', 'Vendeur'), 'attributes')
+    _pvs.tag_subject_of(('Transaction', 'destinataires', 'Destinataire'), 'attributes')
+    _pvs.tag_subject_of(('Transaction', 'intervenants', 'Intervenant'), 'attributes')
+    _pvs.tag_subject_of(('Transaction', 'achat', '*'), 'attributes')
+    _pvs.tag_subject_of(('Transaction', 'prix_ensemble', 'Prix'), 'attributes')
+    _pvs.tag_subject_of(('Transaction', 'compte', '*'), 'sideboxes')
+    
 
 def registration_callback(vreg):
     setup_ui(vreg)

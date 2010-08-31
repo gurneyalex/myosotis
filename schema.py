@@ -27,19 +27,19 @@ from yams.buildobjs import (EntityType, String, Float, SubjectRelation,
 
 class Compte(EntityType):
     type_compte = String(maxsize=255, required=True)
-    inventaire = String(maxsize=255, required=True)
+    inventaire = String(maxsize=255, required=True, fulltextindexed=True)
     debut = Date()
     fin = Date()
-    change = String(maxsize=255)
+    change = String(maxsize=255, fulltextindexed=True)
     receveur = SubjectRelation('Personne', cardinality='**')
 
 class Transaction(EntityType):
     date = Date()
     type_achat = String(maxsize=2) # a virer ?
-    pagination = String(maxsize=255)
+    pagination = String(maxsize=255, fulltextindexed=True)
     date_ordre = Date()
     date_recette = Date()
-    remarques = String()
+    remarques = String(fulltextindexed=True)
     intervenants = SubjectRelation('Intervenant', composite='subject', cardinality='*1')
     destinataires = SubjectRelation('Destinataire', composite='subject', cardinality='*1')
     travaux = SubjectRelation('Travail', composite='subject', cardinality='**')
@@ -94,10 +94,10 @@ class AchatFabrication(EntityType):
 
 class AchatMateriaux(EntityType):
     date_achat = Date()
-    type_mesure = String(maxsize=255)
+    type_mesure = String(maxsize=255, fulltextindexed=True)
     quantite = Float()
-    unite = String(maxsize=255)
-    provenance_mesure = String(maxsize=255)
+    unite = String(maxsize=255, fulltextindexed=True)
+    provenance_mesure = String(maxsize=255, fulltextindexed=True)
     conversion = Float()
     materiaux = SubjectRelation('Materiaux', cardinality='1*', inlined=True)
 
@@ -107,24 +107,24 @@ class AchatPretPorter(EntityType):
     parure = SubjectRelation('Parure', cardinality='1*', inlined=True)
 
 class Change(EntityType):
-    dans_compte = String(maxsize=255) # dummy, to help data import
+    dans_compte = String(maxsize=255, fulltextindexed=True) # dummy, to help data import
     compte = SubjectRelation('Compte', cardinality='?*')
     prix_depart = SubjectRelation('Prix', cardinality='??')
     prix_converti = SubjectRelation('Prix', cardinality='??')
 
 class FabriqueAvecMat(EntityType):
-    type_mesure = String(maxsize=255)
+    type_mesure = String(maxsize=255, fulltextindexed=True)
     quantite = Float()
-    unite = String(maxsize=255)
-    provenance_mesure = String(maxsize=255)
+    unite = String(maxsize=255, fulltextindexed=True)
+    provenance_mesure = String(maxsize=255, fulltextindexed=True)
     conversion = Float()
-    usage = String()
+    usage = String(fulltextindexed=True)
     achat_matiere = SubjectRelation('AchatMateriaux', cardinality='1*')
 
 class Lieu(EntityType):
-    ville = String(maxsize=255, required=True)
-    region = String(maxsize=255)
-    remarques = String()
+    ville = String(maxsize=255, required=True, fulltextindexed=True)
+    region = String(maxsize=255, fulltextindexed=True)
+    remarques = String(fulltextindexed=True)
 
 class lieu(RelationDefinition):
     subject = ('Transaction', 'Occasion')
@@ -133,58 +133,58 @@ class lieu(RelationDefinition):
     inlined = True
 
 class Personne(EntityType):
-    identite = String(maxsize=255, required=True)
-    nom = String(maxsize=64)
-    surnom = String(maxsize=64)
-    diminutif = String(maxsize=64)
-    occupation = String(maxsize=30, default='inconnue', required=True)
-    titre = String(maxsize=128)
+    identite = String(maxsize=255, required=True, fulltextindexed=True)
+    nom = String(maxsize=64, fulltextindexed=True)
+    surnom = String(maxsize=64, fulltextindexed=True)
+    diminutif = String(maxsize=64, fulltextindexed=True)
+    occupation = String(maxsize=30, default='inconnue', required=True, fulltextindexed=True)
+    titre = String(maxsize=128, fulltextindexed=True)
     sexe = String(vocabulary=['M', 'F'], required=True, default='M')
-    ville_domicile = String(maxsize=255) # XXX
-    ville_origine = String(maxsize=255) # XXX
+    ville_domicile = String(maxsize=255, fulltextindexed=True) # XXX
+    ville_origine = String(maxsize=255, fulltextindexed=True) # XXX
     lieu_domicile = SubjectRelation('Lieu', cardinality='?*', inlined=True)
     lieu_origine = SubjectRelation('Lieu', cardinality='?*', inlined=True)
-    remarques= String()
-    rattachement = String(maxsize=64)
+    remarques= String(fulltextindexed=True)
+    rattachement = String(maxsize=64, fulltextindexed=True)
     maj_occupation= Boolean(default=True)
 
 class Occupation(EntityType):
-    libelle = String(maxsize=255)
-    valeur = String(maxsize=255)
+    libelle = String(maxsize=255, fulltextindexed=True)
+    valeur = String(maxsize=255, fulltextindexed=True)
     compte = SubjectRelation('Compte', cardinality='1*')
-    pagination = String(maxsize=64)
+    pagination = String(maxsize=64, fulltextindexed=True)
     rattache_a = SubjectRelation('Personne', cardinality='?*')
-    occupation = String(maxsize=255)
+    occupation = String(maxsize=255, fulltextindexed=True)
     personne = SubjectRelation('Personne', cardinality = '?*', composite='subject', inlined=True)
 
 class Travail(EntityType):
     artisan = SubjectRelation('Personne', cardinality='1*', composite='object', inlined=True)
     salaire_argent = SubjectRelation('Prix', cardinality='??', inlined=True, composite='subject')
     salaire_nature_qt = Int()
-    salaire_nature_obj = String(maxsize=64)
+    salaire_nature_obj = String(maxsize=64, fulltextindexed=True)
     nombre_aides = Int()
-    designation_aides = String(maxsize=64)
+    designation_aides = String(maxsize=64, fulltextindexed=True)
     salaire_aides = SubjectRelation('Prix', cardinality='??', inlined=True, composite='subject')
-    tache = String(maxsize=64)
+    tache = String(maxsize=64, fulltextindexed=True)
     duree = Int()
     date_travail = Date()
-    remarques = String()
+    remarques = String(fulltextindexed=True)
     facon_et_etoffe = Boolean(default=False, required=True)
 
 class Vendeur(EntityType): # MLVendeur
-    expression = String(maxsize=255)
+    expression = String(maxsize=255, fulltextindexed=True)
     vendeur = SubjectRelation('Personne', cardinality='1*', composite='object', inlined=True)
 
 
 class Destinataire(EntityType):
-    nombre = String(maxsize=255)
+    nombre = String(maxsize=255, fulltextindexed=True)
     destinataire = SubjectRelation('Personne', cardinality='1*', composite='object', inlined=True)
 
 class Intervenant(EntityType): # MLIntervenant
     intervenant = SubjectRelation('Personne', cardinality='1*', composite='object', inlined=True)
     indemnite = Int()
     nb_moyen_transport = Int()
-    moyen_transport = String(maxsize=255)
+    moyen_transport = String(maxsize=255, fulltextindexed=True)
     prix_transport = SubjectRelation('Prix', cardinality='??')
     nombre_valets = Int()
     prix_valet = SubjectRelation('Prix', cardinality='??')
@@ -200,39 +200,39 @@ class Intervenant(EntityType): # MLIntervenant
     fait_compte_avec  = Boolean()
 
 class Parure(EntityType):
-    type = String(maxsize=255)
-    nature = String(maxsize=255)
-    caracteristique = String(maxsize=255)
+    type = String(maxsize=255, fulltextindexed=True)
+    nature = String(maxsize=255, fulltextindexed=True)
+    caracteristique = String(maxsize=255, fulltextindexed=True)
     composee_de = SubjectRelation('MateriauxParure', cardinality='*1', composite='subject')
 
 class MateriauxParure(EntityType):
     type_mesure = String(maxsize=255)
     quantite = Float()
-    unite = String(maxsize=255)
-    provenance_mesure = String(maxsize=255)
+    unite = String(maxsize=255, fulltextindexed=True)
+    provenance_mesure = String(maxsize=255, fulltextindexed=True)
     conversion=Float()
     materiaux_achete = Boolean(required=True, default=False)
     materiaux = SubjectRelation('Materiaux', cardinality='1*',  inlined=True)
-    usage = String(maxsize=255)
+    usage = String(maxsize=255, fulltextindexed=True)
 
 
 class Materiaux(EntityType):
     nom = String(maxsize=255, required=True)
     type = String(vocabulary=['E', 'F', 'M', 'O', 'B', 'P'], required=True)
-    famille = String(maxsize=255, default=u"laine", required=True)
-    couleur = String(maxsize=255)
-    carac_couleur = String(maxsize=255)
-    carac_facture = String(maxsize=255)
+    famille = String(maxsize=255, default=u"laine", required=True, fulltextindexed=True)
+    couleur = String(maxsize=255, fulltextindexed=True)
+    carac_couleur = String(maxsize=255, fulltextindexed=True)
+    carac_facture = String(maxsize=255, fulltextindexed=True)
     provenance = SubjectRelation('Lieu', cardinality='?*', inlined=True)
 
 class Monnaie(EntityType):
-    nom = String(maxsize=255, required=True)
+    nom = String(maxsize=255, required=True, fulltextindexed=True)
     type = String(required=True, vocabulary=['Livre/Sous/Denier', 'Florin/Gros', 'Or'])
 
 class Occasion(EntityType):
-    type = String(maxsize=255, required=True)
+    type = String(maxsize=255, required=True, fulltextindexed=True)
     date = Date()
-    remarques = String()
+    remarques = String(fulltextindexed=True)
 
 
 class Prix(EntityType):

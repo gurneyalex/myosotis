@@ -78,7 +78,7 @@ PERSONNE = [("identite", "identite", ()),
             ('Titre', 'titre', ()),
             ('Sexe', 'sexe', ()),
             ('Remarques', 'remarques',()),
-            ('MaJ_occupations', 'maj_occupation', (bool,)),
+            ('MaJ_occupations', 'maj_occupation', (int, bool,)),
             ('Rattachement', 'rattachement', ()),
             ('VilleDomicile', 'ville_domicile', ()),
             ('VilleOrigine', 'ville_origine', ()),
@@ -203,7 +203,7 @@ MATERIAUXPARURE = [("TypeMesure", "type_mesure", ()),
                    ('Unite', 'unite', ()),
                    ('provenance_mesure', 'provenance_mesure', ()),
                    ('Conversion', 'conversion', (optional, atof,)),
-                   ('Materiaux_Achete', 'materiaux_achete', (bool,)),
+                   ('Materiaux_Achete', 'materiaux_achete', (int, bool,)),
                    ('usage', 'usage', ()),
                    ]
 def gen_materiauxparure(ctl):
@@ -228,7 +228,7 @@ TRANSACTION = [("Date", "date", (optional, date)),
                ('pagination', 'pagination', ()),
                ('date_ordre', 'date_ordre', (optional, date)),
                ('date_recette', 'date_recette', (optional, date)),
-               ('prix_partage', 'prix_partage', (bool,)),
+               ('prix_partage', 'prix_partage', (int, bool,)),
           ]
 
 def gen_transaction(ctl):
@@ -295,7 +295,7 @@ TRAVAIL = [("SalaireNatureQt", "salaire_nature_qt", (optional, int,)),
            ('Duree', 'duree', (optional, int,)),
            ('DateTravaille', 'date_travail', (optional, date)),
            ('Remarques', 'remarques', ()),
-           ('Facon_et_etoffe', 'facon_et_etoffe', (bool,))
+           ('Facon_et_etoffe', 'facon_et_etoffe', (int, bool,))
            ]
 def gen_travail(ctl):
     for i, row in enumerate(ctl.iter_and_commit('travail')):
@@ -343,15 +343,15 @@ INTERVENANT = [('Indemnite', 'indemnite', (optional, int,)), #XXX
                ('MoyenTransport', 'moyen_transport',()),
                ('NombreValets', 'nombre_valets', (optional, int,)),
                ('Duree', 'duree', (optional, int,)),
-               ('Payeur', 'payeur', (bool,)),
-               ('Pris', 'pris', (bool,)),
-               ('Commandement', 'commandement',(bool,)),
-               ('relation_de', 'relation_de', (bool,)),
-               ('donne_par', 'donne_par', (bool,)),
-               ('par_la_main', 'par_la_main', (bool,)),
-               ('present', 'present', (bool,)),
-               ('delivre_a', 'delivre_a', (bool,)),
-               ('fait_compte_avec', 'fait_compte_avec', (bool,)),
+               ('Payeur', 'payeur', (int, bool,)),
+               ('Pris', 'pris', (int, bool,)),
+               ('Commandement', 'commandement',(int, bool,)),
+               ('relation_de', 'relation_de', (int, bool,)),
+               ('donne_par', 'donne_par', (int, bool,)),
+               ('par_la_main', 'par_la_main', (int, bool,)),
+               ('present', 'present', (int, bool,)),
+               ('delivre_a', 'delivre_a', (int, bool,)),
+               ('fait_compte_avec', 'fait_compte_avec', (int, bool,)),
            ]
 def gen_intervenant(ctl):
     for i, row in enumerate(ctl.iter_and_commit('intervenant')):
