@@ -3,6 +3,7 @@ from cubicweb.entities import AnyEntity, fetch_config
 _ = unicode
 class Transaction(AnyEntity):
     __regid__ = 'Transaction'
+    fetch_attrs, fetch_order = fetch_config(('date', 'date_ordre', 'date_recette', 'pagination'))
     def dc_title(self):
         if self.date is None:
             date = _('pas de date')
