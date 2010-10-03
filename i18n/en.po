@@ -27,10 +27,16 @@ msgstr ""
 msgid "AchatPretPorter_plural"
 msgstr ""
 
+msgid "Artisan pour"
+msgstr ""
+
 msgid "Change"
 msgstr ""
 
 msgid "Change_plural"
+msgstr ""
+
+msgid "Changes"
 msgstr ""
 
 msgid "Compte"
@@ -40,6 +46,9 @@ msgid "Compte_plural"
 msgstr ""
 
 msgid "Destinataire"
+msgstr ""
+
+msgid "Destinataire de"
 msgstr ""
 
 msgid "Destinataire_plural"
@@ -55,6 +64,9 @@ msgid "Intervenant"
 msgstr ""
 
 msgid "Intervenant_plural"
+msgstr ""
+
+msgid "Intervient sur"
 msgstr ""
 
 msgid "Lieu"
@@ -153,6 +165,9 @@ msgstr ""
 msgid "Occupation_plural"
 msgstr ""
 
+msgid "Occupations"
+msgstr ""
+
 msgid "Parure"
 msgstr ""
 
@@ -169,6 +184,9 @@ msgid "Prix"
 msgstr ""
 
 msgid "Prix_plural"
+msgstr ""
+
+msgid "Rattachements"
 msgstr ""
 
 msgid "This AchatFabrication"
@@ -235,6 +253,9 @@ msgid "Transaction"
 msgstr ""
 
 msgid "Transaction_plural"
+msgstr ""
+
+msgid "Transactions"
 msgstr ""
 
 msgid "Travail"
@@ -377,6 +398,9 @@ msgstr ""
 
 msgctxt "Compte"
 msgid "change"
+msgstr ""
+
+msgid "changes_tab"
 msgstr ""
 
 msgid "commandement"
@@ -581,6 +605,14 @@ msgstr ""
 
 msgctxt "Destinataire"
 msgid "destinataire"
+msgstr ""
+
+#, python-format
+msgid "destinataire %s"
+msgstr ""
+
+#, python-format
+msgid "destinataire %s %s"
 msgstr ""
 
 msgid "destinataire_object"
@@ -908,6 +940,9 @@ msgctxt "Occasion"
 msgid "occasion_object"
 msgstr ""
 
+msgid "occasions_tab"
+msgstr ""
+
 msgid "occupation"
 msgstr ""
 
@@ -953,6 +988,9 @@ msgstr ""
 
 msgctxt "Parure"
 msgid "parure_object"
+msgstr ""
+
+msgid "pas de date"
 msgstr ""
 
 msgid "payeur"
@@ -1305,6 +1343,24 @@ msgctxt "Personne"
 msgid "surnom"
 msgstr ""
 
+msgid "tab_personne"
+msgstr ""
+
+msgid "tab_personne_artisan"
+msgstr ""
+
+msgid "tab_personne_destinataire"
+msgstr ""
+
+msgid "tab_personne_intervention"
+msgstr ""
+
+msgid "tab_personne_rattachement"
+msgstr ""
+
+msgid "tab_personne_vendeur"
+msgstr ""
+
 msgid "tache"
 msgstr ""
 
@@ -1317,6 +1373,9 @@ msgstr ""
 
 msgctxt "Personne"
 msgid "titre"
+msgstr ""
+
+msgid "transactions_tab"
 msgstr ""
 
 msgid "travaux"

@@ -6,9 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: myosotis-2.0\n"
-"PO-Revision-Date: 2010-08-22 15:59+0200\n"
+"PO-Revision-Date: 2010-10-01 22:47+0200\n"
 "Last-Translator: Alexandre Fayolle <alexandre.fayolle@free.fr>\n"
 "Language-Team: French <FR@li.org>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -34,10 +35,16 @@ msgstr "Achat d'un Prêt à porter"
 msgid "AchatPretPorter_plural"
 msgstr "Achats de Prêts à porter"
 
+msgid "Artisan pour"
+msgstr "Artisan pour"
+
 msgid "Change"
 msgstr "Change"
 
 msgid "Change_plural"
+msgstr "Changes"
+
+msgid "Changes"
 msgstr "Changes"
 
 msgid "Compte"
@@ -48,6 +55,9 @@ msgstr "Comptes"
 
 msgid "Destinataire"
 msgstr "Destinataire"
+
+msgid "Destinataire de"
+msgstr "Destinataire de"
 
 msgid "Destinataire_plural"
 msgstr "Destinataires"
@@ -63,6 +73,9 @@ msgstr "Intervenant"
 
 msgid "Intervenant_plural"
 msgstr "Intervenants"
+
+msgid "Intervient sur"
+msgstr "Intervient sur"
 
 msgid "Lieu"
 msgstr "Lieu"
@@ -160,6 +173,9 @@ msgstr "Occupation"
 msgid "Occupation_plural"
 msgstr "Occupations"
 
+msgid "Occupations"
+msgstr "Occupations"
+
 msgid "Parure"
 msgstr "Parure"
 
@@ -177,6 +193,9 @@ msgstr "Prix"
 
 msgid "Prix_plural"
 msgstr "Prix"
+
+msgid "Rattachements"
+msgstr "Rattachements"
 
 msgid "This AchatFabrication"
 msgstr ""
@@ -244,6 +263,9 @@ msgstr "Transaction"
 msgid "Transaction_plural"
 msgstr "Transactions"
 
+msgid "Transactions"
+msgstr "Transactions"
+
 msgid "Travail"
 msgstr "Travail"
 
@@ -259,18 +281,18 @@ msgstr "Vendeurs"
 # subject and object forms for each relation type
 # (no object form for final or symmetric relation types)
 msgid "achat"
-msgstr ""
+msgstr "achat"
 
 msgctxt "Transaction"
 msgid "achat"
-msgstr ""
+msgstr "achat"
 
 msgid "achat_matiere"
-msgstr ""
+msgstr "achat de matière"
 
 msgctxt "FabriqueAvecMat"
 msgid "achat_matiere"
-msgstr ""
+msgstr "achat de matière"
 
 msgid "achat_matiere_object"
 msgstr ""
@@ -384,6 +406,9 @@ msgstr ""
 
 msgctxt "Compte"
 msgid "change"
+msgstr ""
+
+msgid "changes_tab"
 msgstr ""
 
 msgid "commandement"
@@ -588,6 +613,14 @@ msgstr ""
 
 msgctxt "Destinataire"
 msgid "destinataire"
+msgstr ""
+
+#, python-format
+msgid "destinataire %s"
+msgstr ""
+
+#, python-format
+msgid "destinataire %s %s"
 msgstr ""
 
 msgid "destinataire_object"
@@ -915,6 +948,9 @@ msgctxt "Occasion"
 msgid "occasion_object"
 msgstr ""
 
+msgid "occasions_tab"
+msgstr ""
+
 msgid "occupation"
 msgstr ""
 
@@ -960,6 +996,9 @@ msgstr ""
 
 msgctxt "Parure"
 msgid "parure_object"
+msgstr ""
+
+msgid "pas de date"
 msgstr ""
 
 msgid "payeur"
@@ -1312,157 +1351,178 @@ msgctxt "Personne"
 msgid "surnom"
 msgstr ""
 
+msgid "tab_personne"
+msgstr "Personne"
+
+msgid "tab_personne_artisan"
+msgstr "Artisan"
+
+msgid "tab_personne_destinataire"
+msgstr "Destinataire"
+
+msgid "tab_personne_intervention"
+msgstr "Intervenant"
+
+msgid "tab_personne_rattachement"
+msgstr "Rattachement"
+
+msgid "tab_personne_vendeur"
+msgstr "Vendeur"
+
 msgid "tache"
-msgstr ""
+msgstr "tache"
 
 msgctxt "Travail"
 msgid "tache"
-msgstr ""
+msgstr "tache"
 
 msgid "titre"
-msgstr ""
+msgstr "titre"
 
 msgctxt "Personne"
 msgid "titre"
+msgstr "titre"
+
+msgid "transactions_tab"
 msgstr ""
 
 msgid "travaux"
-msgstr ""
+msgstr "travaux"
 
 msgctxt "Transaction"
 msgid "travaux"
-msgstr ""
+msgstr "travaux"
 
 msgid "travaux_object"
-msgstr ""
+msgstr "transaction"
 
 msgctxt "Travail"
 msgid "travaux_object"
-msgstr ""
+msgstr "transaction"
 
 msgctxt "Materiaux"
 msgid "type"
-msgstr ""
+msgstr "type"
 
 msgctxt "Monnaie"
 msgid "type"
-msgstr ""
+msgstr "type"
 
 msgctxt "Occasion"
 msgid "type"
-msgstr ""
+msgstr "type"
 
 msgctxt "Parure"
 msgid "type"
-msgstr ""
+msgstr "type"
 
 msgid "type_achat"
-msgstr ""
+msgstr "type achat"
 
 msgctxt "Transaction"
 msgid "type_achat"
-msgstr ""
+msgstr "type achat"
 
 msgid "type_compte"
-msgstr ""
+msgstr "type compte"
 
 msgctxt "Compte"
 msgid "type_compte"
-msgstr ""
+msgstr "type compte"
 
 msgid "type_mesure"
-msgstr ""
+msgstr "type mesure"
 
 msgctxt "AchatMateriaux"
 msgid "type_mesure"
-msgstr ""
+msgstr "type mesure"
 
 msgctxt "FabriqueAvecMat"
 msgid "type_mesure"
-msgstr ""
+msgstr "type mesure"
 
 msgctxt "MateriauxParure"
 msgid "type_mesure"
-msgstr ""
+msgstr "type mesure"
 
 msgid "unite"
-msgstr ""
+msgstr "unité"
 
 msgctxt "AchatMateriaux"
 msgid "unite"
-msgstr ""
+msgstr "unité"
 
 msgctxt "FabriqueAvecMat"
 msgid "unite"
-msgstr ""
+msgstr "unité"
 
 msgctxt "MateriauxParure"
 msgid "unite"
-msgstr ""
+msgstr "unité"
 
 msgid "usage"
-msgstr ""
+msgstr "usage"
 
 msgctxt "FabriqueAvecMat"
 msgid "usage"
-msgstr ""
+msgstr "usage"
 
 msgctxt "MateriauxParure"
 msgid "usage"
-msgstr ""
+msgstr "usage"
 
 msgid "valeur"
-msgstr ""
+msgstr "valeur"
 
 msgctxt "Occupation"
 msgid "valeur"
-msgstr ""
+msgstr "valeur"
 
 msgid "vendeur"
-msgstr ""
+msgstr "vendeur"
 
 msgctxt "Vendeur"
 msgid "vendeur"
-msgstr ""
+msgstr "vendeur"
 
 msgid "vendeur_object"
-msgstr ""
+msgstr "personne"
 
 msgctxt "Personne"
 msgid "vendeur_object"
-msgstr ""
+msgstr "personne"
 
 msgid "vendeurs"
-msgstr ""
+msgstr "vendeurs"
 
 msgctxt "Transaction"
 msgid "vendeurs"
-msgstr ""
+msgstr "vendeurs"
 
 msgid "vendeurs_object"
-msgstr ""
+msgstr "transaction"
 
 msgctxt "Vendeur"
 msgid "vendeurs_object"
-msgstr ""
+msgstr "transaction"
 
 msgid "ville"
-msgstr ""
+msgstr "ville"
 
 msgctxt "Lieu"
 msgid "ville"
-msgstr ""
+msgstr "ville"
 
 msgid "ville_domicile"
-msgstr ""
+msgstr "domicile"
 
 msgctxt "Personne"
 msgid "ville_domicile"
-msgstr ""
+msgstr "domicile"
 
 msgid "ville_origine"
-msgstr ""
+msgstr "origine"
 
 msgctxt "Personne"
 msgid "ville_origine"
-msgstr ""
+msgstr "origine"
