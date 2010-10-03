@@ -46,7 +46,11 @@ class Parure(AnyEntity):
     fetch_attrs, fetch_order = fetch_config(['type', 'nature', 'caracteristique'])
     
     def dc_title(self):
-        return '%s %s' % (self.nature, self.caracteristique)
+        title = u'%s %s' % (self.nature, self.caracteristique)
+        if title.strip():
+            return title
+        else:
+            return u'???'
 
 class Materiaux(AnyEntity):
     __regid__ = 'Materiaux'

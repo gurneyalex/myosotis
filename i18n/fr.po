@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: myosotis-2.0\n"
-"PO-Revision-Date: 2010-10-01 22:47+0200\n"
+"PO-Revision-Date: 2010-10-03 11:38+0200\n"
 "Last-Translator: Alexandre Fayolle <alexandre.fayolle@free.fr>\n"
 "Language-Team: French <FR@li.org>\n"
 "Language: fr\n"
@@ -182,6 +182,9 @@ msgstr "Parure"
 msgid "Parure_plural"
 msgstr "Parures"
 
+msgid "Parures similaires"
+msgstr ""
+
 msgid "Personne"
 msgstr "Personne"
 
@@ -196,6 +199,15 @@ msgstr "Prix"
 
 msgid "Rattachements"
 msgstr "Rattachements"
+
+msgid "Same caracteristique Parures"
+msgstr "même caractéristique"
+
+msgid "Same nature Parures"
+msgstr "même nature"
+
+msgid "Same type Parures"
+msgstr "même type"
 
 msgid "This AchatFabrication"
 msgstr ""
@@ -378,6 +390,12 @@ msgstr ""
 
 msgctxt "FabriqueAvecMat"
 msgid "avec_mat_object"
+msgstr ""
+
+msgid "boxes_myosotis.similar_parures"
+msgstr ""
+
+msgid "boxes_myosotis.similar_parures_description"
 msgstr ""
 
 msgid "carac_couleur"
