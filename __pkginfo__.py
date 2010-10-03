@@ -41,5 +41,6 @@ for dname in ('entities', 'views', 'sobjects', 'hooks', 'schema', 'data', 'wdoc'
 # them to be included in the debian package
 
 __depends__ =  {'cubicweb': '>= 3.9.4'}
+__depends_cubes__ = {}
 __recommends__ = {}
 
