@@ -15,7 +15,16 @@ class TransactionPrimaryView(primary.PrimaryView):
 class TransactionTableView(EntityAttributesTableView):
     __select__ = EntityAttributesTableView.__select__ & is_instance('Transaction')
     __regid__ = 'myosotis.transaction.attributestableview'
-    columns = ('transaction', 'date', 'pagination', 'date_ordre', 'date_recette', )
+    columns = ('transaction', 'achats', 'prix', 'date', 'pagination', 'date_ordre', 'date_recette', )
 
     def build_transaction_cell(self, entity):
-        return entity.dc_title()
+        return entity.view('incontext')
+
+    def build_achats_cell(self, entity):
+        return u', '.join([e.view('incontext') for e in entity.achat])
+
+    def build_prix_cell(self, entity):
+        prix = entity.prix_ensemble
+        if prix:
+            return prix[0].dc_title()
+        return u''

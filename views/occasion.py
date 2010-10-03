@@ -9,6 +9,9 @@ class OccasionTableView(EntityAttributesTableView):
 
     def build_lieu_cell(self, entity):
         if entity.lieu:
-            return entity.lieu[0].dc_title()
+            return entity.lieu[0].view('incontext')
         else:
             return u''
+
+    def build_type_cell(self, entity):
+        return entity.view('incontext')

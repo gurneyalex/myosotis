@@ -1,4 +1,5 @@
 # -*- coding: utf-8
+from cubicweb.view import EntityView
 from cubicweb.web.views import tabs
 from cubicweb.selectors import is_instance
 
@@ -37,6 +38,16 @@ class PersonneTab(tabs.PrimaryTab):
         self.wview('editable-table', rset, 'null', title=_('Occupations'),
                    headers=[_('Occupation'), _('libelle'), _('valeur'), _('rattache_a'),
                             _('occupation'), _('compte'), _('pagination')])
+        if len(rset) > 1:
+            self.w('<p>voir <a href="%s"> dans le temps</a></p>' % (entity.absolute_url(vid='occupation_timeline')))
+            
+class PersonneOccupationTimeline(EntityView):
+    __regid__ = 'occupation_timeline'
+    __select__ = is_instance('Personne')
+    def cell_call(self, row, col):
+        entity = self.cw_rset.get_entity(row, col)
+        subst = {'eid': entity.eid}
+        self.wview('myosotis.timeline', self._cw.execute('Any X where X is Occupation, X personne P, P eid %(eid)s', subst))
 
 class TabPersonneIntervention(tabs.EntityRelationView):
     __regid__ = 'tab_personne_intervention'

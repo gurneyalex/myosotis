@@ -2,6 +2,7 @@ from cubicweb.web import uicfg
 
 def setup_ui(vreg):
     _pvs = uicfg.primaryview_section
+    _pdc = uicfg.primaryview_display_ctrl
     _pvs.tag_object_of(('*', 'compte', 'Compte'), 'hidden')
     _pvs.tag_subject_of(('*', 'prix_depart', 'Prix'), 'attributes')
     _pvs.tag_subject_of(('*', 'prix_converti', 'Prix'), 'attributes')
@@ -28,7 +29,8 @@ def setup_ui(vreg):
     _pvs.tag_subject_of(('Transaction', 'achat', '*'), 'attributes')
     _pvs.tag_subject_of(('Transaction', 'prix_ensemble', 'Prix'), 'attributes')
     _pvs.tag_subject_of(('Transaction', 'compte', '*'), 'sideboxes')
-    
+    _pvs.tag_object_of(('*', 'occasion', 'Occasion'), 'relations')
+    _pdc.tag_object_of(('*', 'occasion', 'Occasion'), {'vid': 'myosotis.transaction.attributestableview', 'limit': None})
 
 def registration_callback(vreg):
     setup_ui(vreg)
