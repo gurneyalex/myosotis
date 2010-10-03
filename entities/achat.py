@@ -30,9 +30,21 @@ class AchatMateriaux(AnyEntity):
             quantite = u''
         return 'Achat %s %s %s' % (quantite, unite, self.materiaux[0].dc_title())
 
+class FabriqueAvecMat(AnyEntity):
+    __regid__ = 'FabriqueAvecMat'
+    def dc_title(self):
+        return u'fabrique avec %s' % self.achat_matiere[0].dc_title()
+
+class MateriauxParure(AnyEntity):
+    __regid__ = 'MateriauxParure'
+    fetch_attrs, fetch_order = fetch_config(['usage', 'provenance', 'type_mesure', 'quantite', 'unite','conversion', 'materiaux_achete' , ])
+    def dc_title(self):
+        return self.materiaux[0].dc_title()
 
 class Parure(AnyEntity):
     __regid__ = 'Parure'
+    fetch_attrs, fetch_order = fetch_config(['type', 'nature', 'caracteristique'])
+    
     def dc_title(self):
         return '%s %s' % (self.nature, self.caracteristique)
 
