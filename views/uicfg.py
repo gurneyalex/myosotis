@@ -29,6 +29,7 @@ def setup_ui(vreg):
     _pvs.tag_subject_of(('Transaction', 'achat', '*'), 'attributes')
     _pvs.tag_subject_of(('Transaction', 'prix_ensemble', 'Prix'), 'attributes')
     _pvs.tag_subject_of(('Transaction', 'compte', '*'), 'sideboxes')
+    _pvs.tag_subject_of(('Materiaux', 'provenance', '*'), 'attributes')
     _pvs.tag_object_of(('*', 'occasion', 'Occasion'), 'relations')
     _pdc.tag_object_of(('*', 'occasion', 'Occasion'), {'vid': 'myosotis.transaction.attributestableview', 'limit': None})
 
