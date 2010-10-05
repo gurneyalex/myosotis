@@ -32,6 +32,7 @@ def setup_ui(vreg):
     _pvs.tag_subject_of(('Materiaux', 'provenance', '*'), 'attributes')
     _pvs.tag_object_of(('*', 'occasion', 'Occasion'), 'relations')
     _pdc.tag_object_of(('*', 'occasion', 'Occasion'), {'vid': 'myosotis.transaction.attributestableview', 'limit': None})
-
+    _pvs.tag_subject_of(('AchatFabrication', 'avec_mat', '*'), 'relations')
+    _pdc.tag_subject_of(('AchatFabrication', 'avec_mat', '*'), {'vid': 'list', 'limit': None})
 def registration_callback(vreg):
     setup_ui(vreg)

@@ -20,11 +20,30 @@ class ParureOutOfContextView(baseviews.OutOfContextView):
                 orig = u'[P]'
         else:
             orig = u'[?]'
-                
-    
+
+
         length = rset[0][0]
         rset2 = self._cw.execute('Any Count(M) where A parure P, A avec_mat M, P eid %(eid)s', {'eid': entity.eid})
-        self.w(u' %s(%d)' % (orig, rset[0][0]+ rset2[0][0]))
+        self.w(u' %s(%d) %s' % (orig, rset[0][0]+ rset2[0][0], entity.date()))
+
+
+class ParurePrimaryView(primary.PrimaryView):
+    __select__ = is_instance('Parure')
+
+    def summary(self, entity):
+        return u'%s' % entity.date()
+    def render_entity_relations(self, entity):
+        super(ParurePrimaryView, self).render_entity_relations(entity)
+
+        self.render_materiaux(entity)
+    def render_materiaux(self, entity):
+        self.w(u'<table class="listing">\n')
+        self.w(u'<thead><tr><th>Matériaux</th><th>acheté</th><th>partagé</th><th>quantité</th><th>usage</th></tr></thead>\n')
+        self.w(u'<tbody>\n')
+        for mat, achete, partage, quantite, usage in entity.materiaux():
+            self.w('<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>\n'%(mat.dc_title(), achete, partage, quantite, usage))
+        self.w(u'</tbody></table>\n')
+
 
 class ParureLinkBox(EntityBoxTemplate):
     __regid__ = 'myosotis.similar_parures'
@@ -56,18 +75,20 @@ class ParureLinkBox(EntityBoxTemplate):
 class MultiParureSummaryView(EntityView):
     __regid__ = 'myosotis.parure_summary'
     __select__ = is_instance('Parure')
-
+    title = _('Parure summary')
     def call(self):
         parures = {}
         for p in self.cw_rset.entities():
             parures.setdefault(p.nature, []).append(p)
         for nature in parures:
             self.w(u'<h2>%s</h2>' % nature)
-            self.w(u'<ul>')
-            for p in parures[nature]:
-                self.w(u'<li>')
-                self.w(p.view('listitem'))
-                self.w(u'</li>')
-            
-            self.w(u'</ul>')
-                   
+            self.display_parures_table(parures[nature])
+    def display_parures_table(self, parures):
+        self.w(u'<ul>')
+        for p in parures:
+            self.w(u'<li>')
+            self.w(p.view('listitem'))
+            self.w(u'</li>')
+
+        self.w(u'</ul>')
+

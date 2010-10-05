@@ -10,3 +10,13 @@ class Transaction(AnyEntity):
         else:
             date = self.date
         return u'%s p. %s [n° %d, %s]' % ( self.compte[0].inventaire, self.pagination, self.eid, date,)
+
+    def get_best_date(self):
+        if self.date:
+            return self.date
+        if self.date_ordre:
+            return self.date_ordre
+        if self.date_recette:
+            return self.date_recette
+        compte = self.compte[0]
+        return compte.debut
