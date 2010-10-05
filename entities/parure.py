@@ -15,10 +15,14 @@ class Parure(AnyEntity):
         materiaux = []
         for mp in self.composee_de:
             if mp.materiaux:
+                if mp.quantite is None:
+                    quantite = None
+                else:
+                    quantite = u"%s %s" % (mp.quantite, mp.unite)
                 materiaux.append((mp.materiaux[0],
                                   mp.materiaux_achete,
                                   False,
-                                  u"%s %s" % (mp.quantite, mp.unite),
+                                  quantite,
                                   mp.usage) )
             else:
                 print 'warning : pas de materiaux lié à ', mp.eid
@@ -30,13 +34,18 @@ class Parure(AnyEntity):
             for avecmat in achat.avec_mat:
                 for achatmat in avecmat.achat_matiere:
                     quantite = avecmat.conversion
-                    usage = avecmat.usage
+                    usage = avecmat.usage or ''
                     quantite_partagee = False
+
                     if avecmat.quantite is None:
-                        quantite = u'%s %s' % (achatmat.quantite, achatmat.unite)
-                        quantite_partagee = True
+                        if achatmat.quantite:
+                            quantite = u'%s %s' % (achatmat.quantite, achatmat.unite)
+                            quantite_partagee = True
+                        else:
+                            quantite = None
                     else:
                         quantite = u'%s %s' % (avecmat.quantite, avecmat.unite)
+                    print quantite
                     materiaux.append((achatmat.materiaux[0],
                                      materiaux_achete,
                                      quantite_partagee,

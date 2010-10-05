@@ -103,7 +103,7 @@ class MultiParureSummaryView(EntityView):
             self.w(u'<tr>')
             for val in (p.view('listitem'), p.caracteristique, p.quantite()):
                 self.w(u'<td>')
-                self.w(unicode(val))
+                self.w(unicode(val or ''))
                 self.w(u'</td>\n')
             for name in mat_names:
                 parure_lines = materiaux[name].get(p.eid, [(None, u'', u'', u'', u'')])
@@ -111,15 +111,16 @@ class MultiParureSummaryView(EntityView):
                 mat_views = []
                 couls = []
                 provs = []
+                qtes = [q or '' for q in qtes]
                 for mat in mats:
                     if mat is None:
                         mat_views.append(u'')
                         couls.append(u'')
                         provs.append(u'')
                     else:
-                        mat_views.append(mat.nom)
-                        couls.append(mat.couleur)
-                        provs.append(mat.get_provenance())
+                        mat_views.append(mat.nom or '')
+                        couls.append(mat.couleur or '')
+                        provs.append(mat.get_provenance() or '')
                 for values in mat_views, couls, provs, qtes, uses, achs, parts:
                     self.w(u'<td>')
                     if len(values) > 1:
