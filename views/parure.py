@@ -81,14 +81,52 @@ class MultiParureSummaryView(EntityView):
         for p in self.cw_rset.entities():
             parures.setdefault(p.nature, []).append(p)
         for nature in parures:
+            print 'processing', nature, len(parures[nature])
             self.w(u'<h2>%s</h2>' % nature)
             self.display_parures_table(parures[nature])
     def display_parures_table(self, parures):
-        self.w(u'<ul>')
+        materiaux = {}
         for p in parures:
-            self.w(u'<li>')
-            self.w(p.view('listitem'))
-            self.w(u'</li>')
-
-        self.w(u'</ul>')
+            for mat, achete, partage, quantite, usage in p.materiaux():
+                materiaux.setdefault(mat.long_famille, {}).setdefault(p.eid, []).append((mat, achete, partage, quantite, usage))
+        mat_names = sorted(materiaux)
+        self.w(u'<table class="listing">')
+        self.w(u'<thead><tr><th colspan="3">Parure</th>')
+        for name in mat_names:
+            self.w(u'<th colspan="7">%s</th>\n' % name)
+        self.w(u'</tr>')
+        self.w(u'<tr><th>parure</th><th>carac</th><th>quantite</th>')
+        for name in mat_names:
+            self.w(u'<th>mat</th><th>coul.</th><th>prov.</th><th>qté</th><th>usage</th><th>Ach?</th><th>Part?</th>\n')
+        self.w(u'</tr></thead><tbody>')
+        for p in parures:
+            self.w(u'<tr>')
+            for val in (p.view('listitem'), p.caracteristique, p.quantite()):
+                self.w(u'<td>')
+                self.w(unicode(val))
+                self.w(u'</td>\n')
+            for name in mat_names:
+                parure_lines = materiaux[name].get(p.eid, [(None, u'', u'', u'', u'')])
+                mats, achs, parts, qtes, uses = zip(*parure_lines)
+                mat_views = []
+                couls = []
+                provs = []
+                for mat in mats:
+                    if mat is None:
+                        mat_views.append(u'')
+                        couls.append(u'')
+                        provs.append(u'')
+                    else:
+                        mat_views.append(mat.nom)
+                        couls.append(mat.couleur)
+                        provs.append(mat.get_provenance())
+                for values in mat_views, couls, provs, qtes, uses, achs, parts:
+                    self.w(u'<td>')
+                    if len(values) > 1:
+                        self.wview('pyvallist', pyvalue=values)
+                    else:
+                        self.w(unicode(values[0]))
+                    self.w(u'</td>\n')
+            self.w(u'</tr>')
+        self.w(u'</tbody></table>')
 

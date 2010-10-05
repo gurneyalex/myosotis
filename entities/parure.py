@@ -8,6 +8,9 @@ class Parure(AnyEntity):
     def dc_title(self):
         return u'%s %s'% (self.nature, self.caracteristique)
 
+    def quantite(self):
+        if self.reverse_parure:
+            return self.reverse_parure[0].quantite
     def materiaux(self):
         materiaux = []
         for mp in self.composee_de:
