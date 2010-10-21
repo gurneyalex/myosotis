@@ -1,0 +1,7 @@
+@import url("cubicweb.css");
+table.evenoddcol col.even{
+    background: 777777;
+}
+table.evenoddcol td{
+    background: transparent;
+}
