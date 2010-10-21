@@ -77,6 +77,7 @@ class MultiParureSummaryView(EntityView):
     __select__ = is_instance('Parure')
     title = _('Parure summary')
     def call(self):
+
         parures = {}
         for p in self.cw_rset.entities():
             parures.setdefault(p.nature, []).append(p)
@@ -90,7 +91,10 @@ class MultiParureSummaryView(EntityView):
             for mat, achete, partage, quantite, usage in p.materiaux():
                 materiaux.setdefault(mat.long_famille, {}).setdefault(p.eid, []).append((mat, achete, partage, quantite, usage))
         mat_names = sorted(materiaux)
-        self.w(u'<table class="listing">')
+        self.w(u'<table class="listing evenoddcol">')
+        self.w(u'<col span="3" class="even" />')
+        for i, name in enumerate(mat_names):
+            self.w(u'<col span="7" class="%s" />' % ((['odd', 'even'])[i%2]))
         self.w(u'<thead><tr><th colspan="3">Parure</th>')
         for name in mat_names:
             self.w(u'<th colspan="7">%s</th>\n' % name)
@@ -131,3 +135,90 @@ class MultiParureSummaryView(EntityView):
             self.w(u'</tr>')
         self.w(u'</tbody></table>')
 
+import xlwt
+
+class ExcelView(EntityView):
+    __regid__ = 'excelexport'
+    title = _('excel entities export')
+    __select__ = is_instance('Parure')
+    content_type = "application/vnd.ms-excel"
+    templatable = False
+    binary = True
+
+    def compute_filename(self):
+        return "parure.xls"
+
+    def set_request_content_type(self):
+        """overriden to set a .xls filename"""
+        self._cw.set_content_type(self.content_type,
+                                  filename=self.compute_filename())
+
+    def call(self, written_eid=None, etype_dict=None):
+        wb = xlwt.Workbook(encoding='utf-8')
+        parures = {}
+        for p in self.cw_rset.entities():
+            parures.setdefault(p.nature, []).append(p)
+        for nature in parures:
+            print 'processing', nature, len(parures[nature])
+            sheet = wb.add_sheet(nature)
+            self.write_sheet(sheet, parures[nature])
+        wb.save(self)
+
+
+    def write_sheet(self, sheet, parures):
+        materiaux = {}
+        for p in parures:
+            for mat, achete, partage, quantite, usage in p.materiaux():
+                materiaux.setdefault(mat.long_famille, {}).setdefault(p.eid, []).append((mat, achete, partage, quantite, usage))
+        mat_names = sorted(materiaux)
+        self.write_headers(sheet, mat_names)
+        entity_row = 2
+        for p in parures:
+            col = 0
+            row_incr = 1
+            for val in (p.dc_title(), p.caracteristique, p.quantite()):
+                sheet.write(entity_row, col, unicode(val or ''))
+                col += 1
+            for name in mat_names:
+                parure_lines = materiaux[name].get(p.eid, [(None, u'', u'', u'', u'')])
+                mats, achs, parts, qtes, uses = zip(*parure_lines)
+                mat_views = []
+                couls = []
+                provs = []
+                qtes = [q or '' for q in qtes]
+                for mat in mats:
+                    if mat is None:
+                        mat_views.append(u'')
+                        couls.append(u'')
+                        provs.append(u'')
+                    else:
+                        mat_views.append(mat.nom or '')
+                        couls.append(mat.couleur or '')
+                        provs.append(mat.get_provenance() or '')
+                for values in mat_views, couls, provs, qtes, uses, achs, parts:
+                    row_incr = max(row_incr, len(values))
+                    for i, val in enumerate(values):
+                        sheet.write(entity_row+i, col, unicode(values[0]))
+                    col += 1
+            if row_incr > 1:
+                sheet.merge(entity_row, 0, entity_row+row_incr-1, 0)
+            entity_row += row_incr
+
+    def write_headers(self, sheet, mat_names):
+        headers = [('Parure', ('parure', 'carac', 'quantite'))] + \
+                  [(name, ('mat', 'coul', 'prov.', 'qté', 'usage', 'ach?', 'part?')) for name in mat_names]
+        col = 0
+        for header, subheaders in headers:
+            sheet.write(0, col, header)
+            print 0, col, 0, col+len(subheaders)-1
+            sheet.merge(0, 0, col, col+len(subheaders)-1)
+            for i, subheader in enumerate(subheaders):
+                sheet.write(1, i+col, subheader)
+            col += len(subheaders)
+    
+    def write(self, data):
+        """
+        implement writable interface to be able to pass self to
+        Workbook.save()
+        """
+        self.w(data)
