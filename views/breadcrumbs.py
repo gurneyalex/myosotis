@@ -28,7 +28,8 @@ class OccupationBreadCrumbAdapter(IBreadCrumbsAdapter):
 class TravailBreadCrumbAdapter(IBreadCrumbsAdapter):
     __select__ =  is_instance('Travail')
     def parent_entity(self):
-        return self.entity.reverse_travaux[0]
+        if self.entity.reverse_travaux:
+            return self.entity.reverse_travaux[0]
 
 class VendeurBreadCrumbAdapter(IBreadCrumbsAdapter):
     __select__ =  is_instance('Vendeur')

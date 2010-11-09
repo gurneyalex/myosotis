@@ -3,6 +3,7 @@ import sys, codecs
 rset = rql('Any T WHERE T is Transaction')
 
 count = 0
+print "transaction\tmonnaie transaction\tremarque"
 for transaction in rset.entities():
     rem = transaction.remarques
     if rem is None:
@@ -14,6 +15,6 @@ for transaction in rset.entities():
             monnaie = prix[0].monnaie[0].nom.encode('utf-8')
         else:
             monnaie = None
-        print transaction.eid, monnaie, '; \t', rem.encode('utf-8')
+        print '%s\t%s\t%s' % (transaction.eid, monnaie, rem.encode('utf-8'))
         count += 1
 print count
