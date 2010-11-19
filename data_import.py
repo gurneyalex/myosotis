@@ -150,25 +150,6 @@ def gen_change(ctl):
             errors.append("pas d'info change pour Id %s" % row['IdChange'])
 GENERATORS.append((gen_change, CHK))
 
-occupation_id = {}
-OCCUPATION = [("libelle", "libelle", ()),
-        ("valeur", "valeur", ()),
-        ('Pagination', 'pagination', ()),
-        ('Occupation', 'occupation', ()),
-           ]
-def gen_occupation(ctl):
-    for i, row in enumerate(ctl.iter_and_commit('occupation')):
-        entity = mk_entity(row, OCCUPATION)
-        ctl.store.add('Occupation', entity)
-        occupation_id[row['Id']] = entity['eid']
-        ctl.store.relate(entity['eid'], 'compte', compte_id[row['Compte']])
-        if row['PersonneId'] in personne_id:
-            ctl.store.relate(entity['eid'], 'personne', personne_id[row['PersonneId']])
-        else:
-            errors.append('line %d: ' %(i+1) + 'MOccupation personne manquante id %s' % row['PersonneId'])
-        if row['PersonneRattachement']:
-            ctl.store.relate(entity['eid'], 'rattache_a', personne_id[row['PersonneRattachement']])
-GENERATORS.append((gen_occupation, CHK))
 
 occasion_id = {}
 OCCASION = [("Type", "type", ()),
@@ -259,15 +240,15 @@ DESTINATAIRE = [("Nombre", "nombre", ()),
 def gen_destinataire(ctl):
     for i, row in enumerate(ctl.iter_and_commit('destinataire')):
         entity = mk_entity(row, DESTINATAIRE)
+        if row['Personne'] not in personne_id:
+            errors.append('line %d: ' %(i+1) + 'Destinataires line %d missing Personne %s'%(i+1, row['Personne']))
+            continue
+        elif row['numTrans'] not in transaction_id:
+            errors.append('line %d: ' %(i+1) + 'Destinataires line %d missing Transaction %s'%(i+1, row['numTrans']))
+            continue
         ctl.store.add('Destinataire', entity)
-        try:
-            ctl.store.relate(entity['eid'], 'destinataire', personne_id[row['Personne']])
-        except KeyError:
-            errors.append('line %d: ' %(i+1) + 'Destinataires eid %s missing Personne %s'%(entity['eid'], row['Personne']))
-        try:
-            ctl.store.relate(transaction_id[row['numTrans']], 'destinataires', entity['eid'])
-        except KeyError:
-            errors.append('line %d: ' %(i+1) + 'Destinataires eid %s missing Transaction %s'%(entity['eid'], row['numTrans']))
+        ctl.store.relate(entity['eid'], 'destinataire', personne_id[row['Personne']])
+        ctl.store.relate(transaction_id[row['numTrans']], 'destinataires', entity['eid'])
 GENERATORS.append((gen_destinataire, CHK))
 
 vendeur_id = {}
@@ -356,26 +337,27 @@ INTERVENANT = [('Indemnite', 'indemnite', (optional, int,)), #XXX
 def gen_intervenant(ctl):
     for i, row in enumerate(ctl.iter_and_commit('intervenant')):
         entity = mk_entity(row, INTERVENANT)
-        ctl.store.add('Intervenant', entity)
-        if row['Personne'] in personne_id and row['numTrans'] in transaction_id:
-            try:
-                ctl.store.relate(entity['eid'], 'prix_valets', prix_id[row['PrixValets']])
-            except KeyError:
-                if row['PrixValets']:
-                    errors.append('line %d: ' %(i+1) + 'Intervenant eid %s missing Prix (prix_valets) %s'%(entity['eid'], row['PrixValets']))
-
-            try:
-                ctl.store.relate(entity['eid'], 'prix_transport', prix_id[row['PrixTransport']])
-            except KeyError:
-                if row['PrixTransport']:
-                    errors.append('line %d: ' %(i+1) + 'Intervenant eid %s missing Prix (prix_transport) %s'%(entity['eid'], row['PrixTransport']))
-
-            ctl.store.relate(entity['eid'], 'intervenant', personne_id[row['Personne']])
-            ctl.store.relate(transaction_id[row['numTrans']], 'intervenants', entity['eid'])
         if row['Personne'] not in personne_id:
             errors.append('line %d: ' %(i+1) + 'Intervenant missing Personne %s'%(row['Personne']))
-        if row['numTrans'] not in transaction_id:
+            continue
+        elif row['numTrans'] not in transaction_id:
             errors.append('line %d: ' %(i+1) + 'Intervenant missing Transaction %s'%(row['numTrans']))
+            continue
+        ctl.store.add('Intervenant', entity)
+        try:
+            ctl.store.relate(entity['eid'], 'prix_valets', prix_id[row['PrixValets']])
+        except KeyError:
+            if row['PrixValets']:
+                errors.append('line %d: ' %(i+1) + 'Intervenant eid %s missing Prix (prix_valets) %s'%(entity['eid'], row['PrixValets']))
+
+        try:
+            ctl.store.relate(entity['eid'], 'prix_transport', prix_id[row['PrixTransport']])
+        except KeyError:
+            if row['PrixTransport']:
+                errors.append('line %d: ' %(i+1) + 'Intervenant eid %s missing Prix (prix_transport) %s'%(entity['eid'], row['PrixTransport']))
+
+        ctl.store.relate(entity['eid'], 'intervenant', personne_id[row['Personne']])
+        ctl.store.relate(transaction_id[row['numTrans']], 'intervenants', entity['eid'])
 GENERATORS.append((gen_intervenant, CHK))
 
 
@@ -476,13 +458,32 @@ def gen_fabriqueavecmat(ctl):
 
 GENERATORS.append((gen_fabriqueavecmat, CHK))
 
+occupation_id = {}
+OCCUPATION = [("libelle", "libelle", ()),
+        ("valeur", "valeur", ()),
+        ('Pagination', 'pagination', ()),
+        ('Occupation', 'occupation', ()),
+           ]
+def gen_occupation(ctl):
+    for i, row in enumerate(ctl.iter_and_commit('occupation')):
+        entity = mk_entity(row, OCCUPATION)
+        ctl.store.add('Occupation', entity)
+        occupation_id[row['Id']] = entity['eid']
+        ctl.store.relate(entity['eid'], 'compte', compte_id[row['Compte']])
+        if row['PersonneId'] in personne_id:
+            ctl.store.relate(entity['eid'], 'personne', personne_id[row['PersonneId']])
+        else:
+            errors.append('line %d: ' %(i+1) + 'MOccupation personne manquante id %s' % row['PersonneId'])
+        if row['PersonneRattachement']:
+            ctl.store.relate(entity['eid'], 'rattache_a', personne_id[row['PersonneRattachement']])
+GENERATORS.append((gen_occupation, CHK))
 
 
 
 
 # create controller
 if 'cnx' in locals():
-    ctl = CWImportController(RQLObjectStore(cnx), askerror=True, commitevery=100)
+    ctl = CWImportController(RQLObjectStore(cnx), askerror=True, commitevery=1000)
 else:
     ctl = CWImportController(ObjectStore())
 ctl.generators = GENERATORS
