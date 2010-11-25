@@ -11,6 +11,7 @@ class Parure(AnyEntity):
     def quantite(self):
         if self.reverse_parure:
             return self.reverse_parure[0].quantite
+
     def materiaux(self):
         materiaux = []
         for mp in self.composee_de:

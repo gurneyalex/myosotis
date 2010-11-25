@@ -30,7 +30,7 @@ class Compte(EntityType):
     inventaire = String(maxsize=255, required=True, fulltextindexed=True)
     debut = Date()
     fin = Date()
-    change = String(maxsize=255, fulltextindexed=True)
+    change_str = String(maxsize=255, fulltextindexed=True) # XXX drop me?
     receveur = SubjectRelation('Personne', cardinality='**')
 
 class Transaction(EntityType):
@@ -86,6 +86,13 @@ class prix_unitaire(RelationDefinition):
     composite = 'subject'
     inlined = True
 
+class change(RelationDefinition):
+    subject = ('Compte', 'Transaction')
+    object = 'Change'
+    cardinality = '*?'
+    composite = 'subject'
+    
+
 class AchatFabrication(EntityType):
     date_achat = Date()
     quantite = Int()
@@ -107,10 +114,11 @@ class AchatPretPorter(EntityType):
     parure = SubjectRelation('Parure', cardinality='1*', inlined=True)
 
 class Change(EntityType):
-    dans_compte = String(maxsize=255, fulltextindexed=True) # dummy, to help data import
-    compte = SubjectRelation('Compte', cardinality='?*')
+    #dans_compte = String(maxsize=255, fulltextindexed=True) # dummy, to help data import
+    #compte = SubjectRelation('Compte', cardinality='?*')
     prix_depart = SubjectRelation('Prix', cardinality='??')
     prix_converti = SubjectRelation('Prix', cardinality='??')
+
 
 class FabriqueAvecMat(EntityType):
     type_mesure = String(maxsize=255, fulltextindexed=True)
@@ -137,7 +145,7 @@ class Personne(EntityType):
     nom = String(maxsize=64, fulltextindexed=True)
     surnom = String(maxsize=64, fulltextindexed=True)
     diminutif = String(maxsize=64, fulltextindexed=True)
-    occupation = String(maxsize=30, default='inconnue', required=True, fulltextindexed=True)
+    #occupation = String(maxsize=30, default='inconnue', required=True, fulltextindexed=True)
     titre = String(maxsize=128, fulltextindexed=True)
     sexe = String(vocabulary=['M', 'F'], required=True, default='M')
     ville_domicile = String(maxsize=255, fulltextindexed=True) # XXX
@@ -146,7 +154,7 @@ class Personne(EntityType):
     lieu_origine = SubjectRelation('Lieu', cardinality='?*', inlined=True)
     remarques= String(fulltextindexed=True)
     rattachement = String(maxsize=64, fulltextindexed=True)
-    maj_occupation= Boolean(default=True)
+    #maj_occupation= Boolean(default=True)
 
 class Occupation(EntityType):
     libelle = String(maxsize=255, fulltextindexed=True)
