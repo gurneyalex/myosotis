@@ -14,9 +14,10 @@ for etype in (u'MateriauxParure', u'FabriqueAvecMat', u'AchatMateriaux',):
     rql(query, {'etype': etype})
 
 
+rql ('DELETE Monnaie M WHERE  NOT P monnaie M')
 
 commit()
 
-
+sync_schema_props_perms()
 #add_cube('simile_timeline')
 
