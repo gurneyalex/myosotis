@@ -18,7 +18,6 @@ class OccasionBreadCrumbAdapter(IBreadCrumbsAdapter):
     def parent_entity(self):
         return self.entity.reverse_occasion[0]
 
-    
 # XXX todo: Parure, Materiaux
 
 class OccupationBreadCrumbAdapter(IBreadCrumbsAdapter):
