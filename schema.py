@@ -244,7 +244,7 @@ class Occasion(EntityType):
 
 
 class Prix(EntityType):
-    monnaie = SubjectRelation('Monnaie', cardinality='1*')
+    monnaie = SubjectRelation('Monnaie', cardinality='1*', inlined=True)
     livres = Int()
     sous = Int()
     deniers = Float()
