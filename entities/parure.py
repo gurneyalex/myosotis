@@ -25,7 +25,7 @@ class Parure(AnyEntity):
                                   quantite,
                                   mp.usage) )
             else:
-                print 'warning : pas de materiaux lié à ', mp.eid
+                print u'warning : pas de materiaux lié à ', mp.eid
 
         for achat in self.reverse_parure:
             materiaux_achete = True
@@ -45,7 +45,7 @@ class Parure(AnyEntity):
                             quantite = None
                     else:
                         quantite = u'%s %s' % (avecmat.quantite, avecmat.unite)
-                    print quantite
+                    #print quantite
                     materiaux.append((achatmat.materiaux[0],
                                      materiaux_achete,
                                      quantite_partagee,
@@ -56,7 +56,7 @@ class Parure(AnyEntity):
         try:
             achat = self.reverse_parure[0]
         except IndexError:
-            print "pas d'achat pour parure", self.eid
+            #print "pas d'achat pour parure", self.eid
             return u'null'
         if achat.date_achat:
             return achat.date_achat
