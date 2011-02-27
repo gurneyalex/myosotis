@@ -63,11 +63,11 @@ def gen_artisan(ctl):
 GENERATORS.append((gen_artisan, CHK),)
 
 transaction_id = {}
-COMMANDE = [('DateOrdre', 'date_ordre', ()),
+COMMANDE = [('DateOrdre', 'date_ordre', (optional, date)),
             ]
-def gen_xxx(ctl):
-    for i, row in enumerate(ctl.iter_and_commit('XXX')):
-        entity = mk_entity(row, COMPTE)
+def gen_transaction(ctl):
+    for i, row in enumerate(ctl.iter_and_commit('COMMANDE')):
+        entity = mk_entity(row, Transaction)
         print entity
         ctl.store.add('Compte', entity)
         compte_id[row['CodeCompte']] = entity['eid']
