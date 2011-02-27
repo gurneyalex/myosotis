@@ -253,4 +253,3 @@ CodeMateriaux;Matiere;Couleur
 261;"sayette";"noire"
 262;"pers";"adurea"
 263;"toile";
-

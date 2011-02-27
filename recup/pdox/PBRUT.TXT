@@ -1,4 +1,4 @@
-CodeCommande;CodePB;CodeMateriaux;BProvenance;BLieuAchat;BQuantite;BPPrixUnitaire;BPrixGlobal;BOccasion
+CodeCommande;CodePB;CodeMateriaux;BProvenance;BLieuAchat;BQuantite;BPrixUnitaire;BPrixGlobal;BOccasion
 10;18;12;;;"plusieurs";;"66Sv";
 13;129;22;;"Chambéry";"2";;;
 13;130;36;;"Chambéry";"1";;;
@@ -1602,4 +1602,3 @@ CodeCommande;CodePB;CodeMateriaux;BProvenance;BLieuAchat;BQuantite;BPPrixUnitair
 1095;1618;50;;;;;;"livrée pour sépulture d'Aymon"
 1096;1619;50;;;"2 pièces";;;"ivrée pour sépulture d'Aymon, pour sacristie de hautecombe"
 1096;1620;50;;;"2 a";;;"ivrée pour sépulture d'Aymon, pour la sacristie de Hautecombe"
-

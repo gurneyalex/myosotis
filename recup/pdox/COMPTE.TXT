@@ -86,4 +86,3 @@ CodeCompte;TypeCompte;AnneeDebut;AnneeFin
 102;"Trésorerie";1298;1300
 103;"Trésorerie";1298;1300
 104;"Hôtel de la Comtesse";1342;1343
-

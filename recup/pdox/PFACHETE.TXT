@@ -216,4 +216,3 @@ CodeCommande;CodePFA;AProvenance;ANature;ALieuAchat;AQuantite;APrixUnitaire;APri
 1084;218;;"couverture";;"1";;;
 1095;219;;"draps";;;;;"ivrée pour sépulture d'Aymon"
 1097;220;;"couverture de cercueil";;"1";;;"ivrée pour sépulture d'Aymon"
-
