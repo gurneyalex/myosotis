@@ -17,7 +17,7 @@
 # -*- coding: utf-8 -*-
 """cubicweb-myosotis schema"""
 
-from yams.buildobjs import (EntityType, String, Float, SubjectRelation,
+from yams.buildobjs import (EntityType, String, RichString, Float, SubjectRelation,
                             Int, Boolean, Bytes, Datetime, Date,
                             RichString, RelationDefinition)  #pylint:disable-msg=E0611
 from cubicweb.schema import RQLVocabularyConstraint
@@ -40,7 +40,7 @@ class Transaction(EntityType):
     pagination = String(maxsize=255, fulltextindexed=True)
     date_ordre = Date()
     date_recette = Date()
-    remarques = String(fulltextindexed=True)
+    remarques = RichString(fulltextindexed=True, default_format='text/rest')
     intervenants = SubjectRelation('Intervenant', composite='subject', cardinality='*1')
     destinataires = SubjectRelation('Destinataire', composite='subject', cardinality='*1')
     travaux = SubjectRelation('Travail', composite='subject', cardinality='**')
@@ -100,7 +100,8 @@ class AchatFabrication(EntityType):
     quantite = Int()
     parure = SubjectRelation('Parure', cardinality='1*', inlined=True)
     avec_mat = SubjectRelation('FabriqueAvecMat', cardinality='*1')
-
+    remarques = RichString(fulltextindexed=True, default_format='text/rest')
+    
 class AchatMateriaux(EntityType):
     date_achat = Date()
     type_mesure = String(maxsize=255, fulltextindexed=True)
@@ -109,11 +110,13 @@ class AchatMateriaux(EntityType):
     provenance_mesure = String(maxsize=255, fulltextindexed=True)
     conversion = Float()
     materiaux = SubjectRelation('Materiaux', cardinality='1*', inlined=True)
+    remarques = RichString(fulltextindexed=True, default_format='text/rest')
 
 class AchatPretPorter(EntityType):
     date_achat = Date()
     quantite = Float()
     parure = SubjectRelation('Parure', cardinality='1*', inlined=True)
+    remarques = RichString(fulltextindexed=True, default_format='text/rest')
 
 class Change(EntityType):
     #dans_compte = String(maxsize=255, fulltextindexed=True) # dummy, to help data import
@@ -134,8 +137,8 @@ class FabriqueAvecMat(EntityType):
 class Lieu(EntityType):
     ville = String(maxsize=255, required=True, fulltextindexed=True)
     region = String(maxsize=255, fulltextindexed=True)
-    remarques = String(fulltextindexed=True)
-
+    remarques = RichString(fulltextindexed=True, default_format='text/rest')
+    
 class lieu(RelationDefinition):
     subject = ('Transaction', 'Occasion')
     object= 'Lieu'
@@ -149,12 +152,12 @@ class Personne(EntityType):
     diminutif = String(maxsize=64, fulltextindexed=True)
     #occupation = String(maxsize=30, default='inconnue', required=True, fulltextindexed=True)
     titre = String(maxsize=128, fulltextindexed=True)
-    sexe = String(vocabulary=['M', 'F'], required=True, default='M')
+    sexe = String(vocabulary=['M', 'F', '?'], required=True, default='M')
     ville_domicile = String(maxsize=255, fulltextindexed=True) # XXX
     ville_origine = String(maxsize=255, fulltextindexed=True) # XXX
     lieu_domicile = SubjectRelation('Lieu', cardinality='?*', inlined=True)
     lieu_origine = SubjectRelation('Lieu', cardinality='?*', inlined=True)
-    remarques= String(fulltextindexed=True)
+    remarques= RichString(fulltextindexed=True, default_format='text/rest')
     rattachement = String(maxsize=64, fulltextindexed=True)
     #maj_occupation= Boolean(default=True)
     base_paradox = Boolean(default=False, description='vient de la base Paradox')
@@ -179,7 +182,7 @@ class Travail(EntityType):
     tache = String(maxsize=64, fulltextindexed=True)
     duree = Int()
     date_travail = Date()
-    remarques = String(fulltextindexed=True)
+    remarques = RichString(fulltextindexed=True, default_format='text/rest')
     facon_et_etoffe = Boolean(default=False, required=True)
 
 class Vendeur(EntityType): # MLVendeur
@@ -229,7 +232,7 @@ class MateriauxParure(EntityType):
 
 class Materiaux(EntityType):
     nom = String(maxsize=255, required=True)
-    type = String(vocabulary=['E', 'F', 'M', 'O', 'B', 'P'], required=True)
+    type = String(vocabulary=['E', 'F', 'M', 'O', 'B', 'P', '?'], required=True)
     famille = String(maxsize=255, default=u"laine", required=True, fulltextindexed=True)
     couleur = String(maxsize=255, fulltextindexed=True)
     carac_couleur = String(maxsize=255, fulltextindexed=True)
@@ -243,7 +246,7 @@ class Monnaie(EntityType):
 class Occasion(EntityType):
     type = String(maxsize=255, required=True, fulltextindexed=True)
     date = Date()
-    remarques = String(fulltextindexed=True)
+    remarques = RichString(fulltextindexed=True, default_format='text/rest')
 
 
 class Prix(EntityType):
