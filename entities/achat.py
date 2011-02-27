@@ -36,6 +36,8 @@ class AchatMateriaux(AnyEntity):
 
 class FabriqueAvecMat(AnyEntity):
     __regid__ = 'FabriqueAvecMat'
+    fetch_attrs, fetch_order = fetch_config(['usage', 'type_mesure', 'quantite', 'unite', 'provenance_mesure', 'conversion'])
+    
     def dc_title(self):
         return u'fabrique avec %s' % self.achat_matiere[0].dc_title()
 

@@ -1,0 +1,89 @@
+CodeCompte;TypeCompte;AnneeDebut;AnneeFin
+11;"Trésorerie";1300;1300
+12;"Trésorerie";1301;1302
+16;"Trésorerie";1303;1303
+17;"Trésorerie";1303;1304
+18;"Trésorerie";1305;1306
+19;"Trésorerie";1307;1308
+21;"Trésorerie";1308;1310
+22;"Trésorerie";1310;1311
+23;"Trésorerie";1311;1312
+24;"Trésorerie";1312;1314
+25;"Trésorerie";1314;1316
+26;"Trésorerie";1315;1316
+27;"Trésorerie";1316;1317
+28;"Trésorerie";1317;1318
+29;"Trésorerie";1318;1319
+30;"Trésorerie";1330;1331
+31;"Trésorerie";1333;1334
+32;"Trésorerie";1334;1335
+33;"Trésorerie";1335;1335
+34;"Trésorerie";1335;1336
+35;"Trésorerie";1346;1349
+36;"Trésorerie";1349;1351
+37;"Hôtel du Comte";1300;1300
+38;"Hôtel du Comte";1302;1303
+39;"Hôtel du Comte";1301;1301
+40;"Hôtel du Comte";1302;1303
+41;"Hôtel du Comte";1302;1302
+42;"Hôtel du Comte";1304;1304
+43;"Hôtel du Comte";1304;1305
+44;"Hôtel du Comte";1308;1308
+45;"Hôtel du Comte";1305;1311
+46;"Hôtel du Comte";1307;1307
+47;"Hôtel du Comte";1306;1307
+48;"Hôtel du Comte";1310;1311
+49;"Hôtel du Comte";1307;1307
+50;"Hôtel du Comte";1306;1309
+51;"Hôtel du Comte";1307;1308
+52;"Hôtel du Comte";1308;1309
+53;"Hôtel du Comte";1314;1315
+54;"Hôtel du Comte";1315;1315
+55;"Hôtel du Comte";1315;1315
+56;"Hôtel du Comte";1315;1315
+57;"Hôtel du Comte";1315;1316
+58;"Hôtel du Comte";1316;1317
+59;"Hôtel du Comte";1318;1319
+60;"Hôtel du Comte";1322;1323
+61;"Hôtel du Comte";1323;1323
+62;"Hôtel du Comte";1323;1323
+63;"Hôtel du Comte";1323;1323
+64;"Hôtel du Comte";1323;1323
+65;"Hôtel du Comte";1326;1327
+66;"Hôtel du Comte";1324;1324
+67;"Hôtel du Comte";1324;1324
+68;"Hôtel du Comte";1324;1324
+69;"Hôtel du Comte";1324;1325
+70;"Hôtel du Comte";1325;1325
+71;"Hôtel du Comte";1324;1325
+72;"Hôtel du Comte";1326;1326
+73;"Hôtel du Comte";1327;1329
+74;"Hôtel du Comte";1327;1327
+75;"Hôtel du Comte";1327;1327
+76;"Hôtel du Comte";1327;1327
+78;"Hôtel du Comte";1329;1329
+79;"Hôtel du Comte";1339;1339
+80;"Hôtel du Comte";1302;1304
+81;"Hôtel du Comte";1360;1360
+82;"Hôtel du Comte";1341;1342
+83;"Hôtel du Comte";1343;1344
+84;"Hôtel du Comte";1344;1344
+85;"Hôtel du Comte";1344;1346
+86;"Hôtel de la Comtesse";1308;1309
+87;"Hôtel de la Comtesse";1320;1320
+88;"Hôtel de la Comtesse";1321;1321
+89;"Hôtel de la Comtesse";1330;1331
+90;"Hôtel de la Comtesse";1331;1331
+91;"Hôtel de la Comtesse";1331;1332
+92;"Hôtel de la Comtesse";1332;1333
+93;"Hôtel de la Comtesse";1333;1333
+95;"Hôtel de la Comtesse";1333;1334
+96;"Hôtel de la Comtesse";1334;1334
+97;"Hôtel de la Comtesse";1335;1335
+99;"Hôtel de la Comtesse";1336;1338
+100;"Hôtel de la Comtesse";1338;1339
+101;"Trésorerie";1297;1300
+102;"Trésorerie";1298;1300
+103;"Trésorerie";1298;1300
+104;"Hôtel de la Comtesse";1342;1343
+

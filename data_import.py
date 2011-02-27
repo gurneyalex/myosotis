@@ -32,12 +32,13 @@ compte_id = {}
 COMPTE = [('TypeCompte', 'type_compte', ()),
            ('Inventaire', 'inventaire', ()),
            ('Debut', 'debut', (optional, date)),
-           ('Fin', 'fin', ()),
+           ('Fin', 'fin', (optional, date)),
            ('Change', 'change', ()),
            ]
 def gen_compte(ctl):
     for i, row in enumerate(ctl.iter_and_commit('compte')):
         entity = mk_entity(row, COMPTE)
+        print entity
         ctl.store.add('Compte', entity)
         compte_id[row['Inventaire']] = entity['eid']
 GENERATORS.append((gen_compte, CHK),)

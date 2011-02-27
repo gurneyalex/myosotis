@@ -135,6 +135,7 @@ class PersonneRelationVisitor(object):
         self._cw = cw
         self.personne = personne
         self._edges = []
+
     def nodes(self):
         for occupation in self.personne.reverse_rattache_a:
             try:
@@ -148,6 +149,7 @@ class PersonneRelationVisitor(object):
         for p in self._cw.execute(related_to_rql, {'eid': self.personne.eid}).entities():
             self._edges.append((p.reverse_rattache_a[0], self.personne, p))
             yield p.eid, p
+
     def edges(self):
         known = set()
         for occupation, p1, p2 in self._edges:
@@ -164,7 +166,7 @@ class PersonnePropsHandler(dotgraphview.DotPropsHandler):
                       #'href': personne.absolute_url(vid='personne_liens'),
                       })
         return props
-    
+
     def edge_properties(self, occupation, from_, to):
         props = super(PersonnePropsHandler, self).edge_properties(occupation, from_, to)
         props.update({'label': occupation.dc_title(),
