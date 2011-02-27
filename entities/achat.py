@@ -28,7 +28,11 @@ class AchatMateriaux(AnyEntity):
         else:
             unite = u''
             quantite = u''
-        return 'Achat %s %s %s' % (quantite, unite, self.materiaux[0].dc_title())
+        if len(self.reverse_achat_matiere)>1:
+            flag = '*'
+        else:
+            flag = ''
+        return u'Achat %s %s %s%s' % (quantite, unite, self.materiaux[0].dc_title(), flag)
 
 class FabriqueAvecMat(AnyEntity):
     __regid__ = 'FabriqueAvecMat'

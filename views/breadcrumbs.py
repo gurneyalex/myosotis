@@ -23,7 +23,8 @@ class OccasionBreadCrumbAdapter(IBreadCrumbsAdapter):
 class OccupationBreadCrumbAdapter(IBreadCrumbsAdapter):
     __select__ = is_instance('Occupation')
     def parent_entity(self):
-        return self.entity.personne[0]
+        if self.entity.personne:
+            return self.entity.personne[0]
 
 class TravailBreadCrumbAdapter(IBreadCrumbsAdapter):
     __select__ =  is_instance('Travail')

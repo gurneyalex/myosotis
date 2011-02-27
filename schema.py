@@ -20,7 +20,7 @@
 from yams.buildobjs import (EntityType, String, Float, SubjectRelation,
                             Int, Boolean, Bytes, Datetime, Date,
                             RichString, RelationDefinition)  #pylint:disable-msg=E0611
-
+from cubicweb.schema import RQLVocabularyConstraint
 # TODO:
 # * vérifier les cardinalites
 # * renommer les relations 'personne'
