@@ -32,7 +32,8 @@ class Compte(EntityType):
     fin = Date()
     change_str = String(maxsize=255, fulltextindexed=True) # XXX drop me?
     receveur = SubjectRelation('Personne', cardinality='**')
-
+    base_paradox = Boolean(default=False,
+                           description='vient de la base Paradox')
 class Transaction(EntityType):
     date = Date()
     type_achat = String(maxsize=2) # a virer ?
@@ -45,6 +46,7 @@ class Transaction(EntityType):
     travaux = SubjectRelation('Travail', composite='subject', cardinality='**')
     vendeurs = SubjectRelation('Vendeur', composite='subject', cardinality='*1')
     prix_partage = Boolean(required=True, default=False)
+    base_paradox = Boolean(default=False, description='vient de la base Paradox')
 
 class compte(RelationDefinition):
     name = 'compte'
@@ -155,6 +157,7 @@ class Personne(EntityType):
     remarques= String(fulltextindexed=True)
     rattachement = String(maxsize=64, fulltextindexed=True)
     #maj_occupation= Boolean(default=True)
+    base_paradox = Boolean(default=False, description='vient de la base Paradox')
 
 class Occupation(EntityType):
     libelle = String(maxsize=255, fulltextindexed=True)
