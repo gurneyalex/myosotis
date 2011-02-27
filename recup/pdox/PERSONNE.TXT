@@ -1,0 +1,854 @@
+CodePersonne;Nom;Qualite
+14;"Amédée 5";"Comte de Savoie"
+15;"Guillielmi de Aubona";
+16;"Jacobo de Trescors";"Dominus"
+17;"Rudolpho Barralis";"Châtelain de Chambéry"
+18;"Rosseti";"tailleur"
+19;"Jacobo";"châtelain du château de Chambéry"
+20;"Jacobo";"chapelain du château de Chambéry"
+21;"Johanni Boni";"Lathomo"
+22;"Johanni de Sancto Eugendo";"Lathomo"
+23;"Johanni Chabondi";
+24;"Romaneto";"mercier"
+25;"Convers";"gardien des vignes de Tresserve"
+26;"Aymoni Quandie";"bourgeois de Chambéry"
+27;"Romaneto de Bamber";"bourgeois"
+28;"Bernardo de Bamber";"bourgeois"
+30;"Batheti";
+31;"Eduardi";"fils d' Amédée 5"
+32;"Pauvres";
+33;"Amedeo de Bignino";"bourgeois de Chambéry"
+34;"Marquise";"fille d'  Amédée 5"
+35;"Vivando";"juif"
+36;"?";"bouteiller du seigneur Edouard"
+37;"Blondelli";"tailleur (?)"
+38;"?";"femme de Bernardi Ambrosii"
+39;"Rubeomontis";
+40;"Enardeti de Miciaco";
+41;"Andree Deniseti";"pelletier de Chambéry"
+42;"Ansermo";"médecin Magistro"
+44;"Andree Quandie";
+45;"Filiestro de Chirone";
+47;"fille A5 1";
+48;"?";"nourisse"
+49;"fille  A5 2";
+50;"fille A5 3";
+51;"plusieurs personnes";"nourisses des filles d'A5"
+52;"Marie";"Comtesse femme d'A5"
+53;"Alisie de Beleinde";
+54;"Johanni Bonivardi Mayori";
+55;"Kathelote";"Damoiselle de la Dame Comtesse Marie"
+56;"Bernardeti Giraudi";
+57;"Guillielmo Picardi";
+59;"Girardo de Cusiriaco";"cisori d' A5"
+60;"Marie";"fille d'A5"
+61;"Guillielmeto";"cisori de la Comtesse Marie"
+62;"Nicholao de Bignino";
+63;"Beatrix";"Dame"
+64;"Jacobo de Bozcosello";"Domino"
+65;"Petro de Saravalle";"Domino"
+66;"Guigona";"Damoiselle (?)"
+67;"?";"Damoiselle 1"
+68;"?";"Damoiselle 2"
+69;"?";"Damoiselle 3"
+70;"2 personnes";"valets d'écurie d' Angleterre"
+71;"Pereto torneri";
+72;"Colino Estivendo";
+73;"Gresi Blundello";
+74;"Guillielmo de Furno";
+75;"13 personnes";"valets d' A5"
+76;"plusieurs personnes";"gardiens des palefroids d'A5"
+77;"Aymone Passet";
+78;"Panteroto";"portier"
+79;"Mermondo";"cuisine"
+80;"plusieurs personnes";"valets de Dame Beatrix"
+81;"plusieurs personnes";"sommeliers d'A5"
+82;"Frevine de Groaria";
+83;"?";"Damoiselle de Frevine de Groaria"
+84;"Petro";"clerc"
+85;"Martini Berra";
+86;"Girardo";"arbalètrier"
+87;"Nicholao de Playsencia";
+88;"Johanni Loreneri";
+89;"Blanche";"Dame"
+90;"Johanni Bonivardi";"bourgeois de Chambéry"
+91;"Marteronise";"Domine"
+92;"filles d' A5";
+93;"Andreneti Deniseti";"pelletier"
+94;"plusieur personnes";"chevaliers"
+95;"plusieurs personnes";"clercs d'A5"
+96;"plusieurs personnes";"chapelains"
+97;"Thome";"médecin magistro"
+98;"plusieurs personnes";"Damoiseaux d' A5"
+99;"plusieurs personnes";"valets de la Contesse Marie"
+100;"plusieurs personnes";"damoiseaux d' Eduardi"
+101;"Jaquometo";"pelletier"
+102;"Nicolas de Burgeti";
+103;"Nichola de Meuguez";
+104;"Guete de Chiari";
+105;"Hermeline Clananderie";
+106;"Alaysie";"Damoiselle de Beatrice, fille d'A5"
+107;"Johanni ?";
+108;"Phillipi";"écuyer de Dame Beatrix, fille d'A5"
+109;"Johannis de Viveriis";
+110;"Chucho";"Dominus"
+111;"Beatrisie";"femme de Bertholi de Sillani de Chambéry"
+112;"Jacobo";"?"
+113;"Hermeline Chentule";"fille d' A5?"
+114;"frère Francisco";"ordre des mineurs"
+115;"plusieurs personnes";"associés de frère Francisco (mineur)"
+116;"Johanni de Castelerio";"habitant de Chambéry marchand"
+117;"Mermondo";"feu"
+118;"Katerine";"Dame"
+119;"?";"conseiller"
+120;"tondeur";
+121;"Henrieta";"Dame"
+122;"Girini";"femme de Guillilmi Meyrins"
+123;"?";
+124;"Alaysie de Gresiaco";
+125;"Nicole de Mongie";
+126;"Nichole de Burgeto";"fille de Johanni de Arthondi"
+127;"Guietes de Trueriis";
+128;"Petro de Camera";
+129;"Festeria";
+130;"Rasio";
+131;"Beatrix";"fille d' A5"
+132;"Johanne";"fille d' A5"
+133;"Nichola de Mengiorco";
+134;"Ginete";"fille de Johanni Arthondi"
+135;"Peronete";"fille de Johanni Arthondi"
+136;"Anthonie";"servante des filles d' A5"
+137;"?";"fournier"
+138;"Aymoni";"portier"
+139;"?";"conseil d' A5"
+142;"plusieurs personnes";"conseillers"
+143;"Perrudo Conchays";"fournisseur de Johanni d' Avranche"
+144;"Johanni d' Avranche";"pelletier de Paris"
+145;"Katrina";"fille d' A5"
+146;"Nichole";"fille de mercier"
+147;"Johanni de Bergini";"drappier?"
+149;"Mermondo Perrerio";"lathomo"
+150;"plusieurs personnes";"écuyers d'A5"
+151;"Jacometo de Solerio";
+153;"plusieurs personnes";"bons valets de Marie (Contesse)"
+154;"plusieurs personnes";"Damoiselles de la Contesse Marie"
+156;"Anthonia";"chambrière"
+157;"Belone";"tondeur veuve de Petri cissori"
+158;"Colinete";"tondeur (femme)"
+159;"le dit Capelam";"drappier?"
+160;"Marquise Duchesse";"fille d'A5"
+161;"Guillielmo";"Domino"
+162;"Guillielmo de Fontonay";"mercier de Paris"
+163;"Johanni de Monchrisiaco";
+164;"? de Montechabondi";"Damoiselle de la Comtesse  Marie"
+165;"?";"femme de Nichola Demper"
+166;"?";"femme de Guardi apothicaire"
+167;"Andree de Montemeliano";
+169;"Hôtel d'A5";
+170;"Bertheti";"cisori  d'A5"
+171;"61 personnes";"codureis"
+172;"22 personnes";"écuyer d'A5 et de la Duchesse"
+173;"Johanni Chasteler";"marchand?"
+174;"Agathe Picardi";"mercière?"
+175;"?";"mercière? femme du dit Liarre"
+176;"Anthoni";
+177;"Dameli Pelete";"marchand"
+178;"Johanni";"veneur d' A5"
+179;"?";"couturier"
+180;"Berchat";"portier de la Comtesse Marie"
+181;"Jonita Percevallo";"charpentier"
+182;"Johanni";"lathomo magistro"
+183;"Aymonino Ginote";"lathomo magistro"
+184;"Frére Johanni";"convers"
+185;"2 personnes";"Damoiselles"
+186;"?";"clerc de la chapelle d'A5"
+187;"le dit Lando";
+188;"Villonde";"lavandière d'A5"
+189;"plusieurs personnes";"bons valets d'A5"
+190;"Maliorri";"lathomo"
+191;"Johanni de Loreni";"terrassier"
+192;"Basiano de Gachiis";"Domino"
+193;"Hugonie Boteri";
+194;"Johanni de Bineria";"terrasier"
+195;"?";"sellier d'A5"
+196;"Guillielmo de Chevelueto";"procurateur de la curie d'A5"
+197;"Candulphello Bergoiquin..ni?";"marchand"
+198;"Guillieimi";"veneur d' A5"
+199;"Liarre";
+201;"Guilielmo de Chignino";
+202;"Johanni de Richemontem";"Domino et chevalier"
+203;"Reymondo de Viriseto";"chevalier"
+204;"frére Guillielmi";"convers d'Hautecombe"
+205;"frére Johanni";"convers de Mont...?"
+206;"Miolani";"Domini"
+207;"Antermi";"Domini"
+208;"?";"fils d'Amtermi"
+209;"?";"chapelain d'Aymon (comte)"
+210;"Aymoni Luppi";
+211;"?";"avoué d'Aymon (comte)"
+213;"Johanni Silvestri";"de Chambéry"
+214;"Haleri";"Domino"
+215;"Aguilleto de Bignino";
+216;"Guillielmi Boni";"receveur des comptes de trésorerie"
+217;"Stephano de Chales";
+218;"couturier";
+219;"Andree Bonichristiani";"magistri"
+220;"Johanni Boni le pére";"bourgeois de Chambéry marchand?"
+221;"Jaquometi";"armeatori"
+222;"Humberti batard d'Aymon";"Domini"
+223;"4 personnes";"menestrerio du seigneur de Milan"
+225;"plusieurs personnes";"enfants d' Amedeo de Bignino"
+226;"Girardi";"chambrier  d'Aymon"
+227;"?";"operatreti"
+228;"Amblardeti Boni";"de Chambéry"
+229;"Dame de Faucigny";
+230;"Cusin";"valet follo du Seigneur Comte de Genève"
+231;"Eduardi  de Gorgenon";"Domini chevalier"
+232;"Truel";"citoyen de Lyon drappier"
+233;"le dit Carrel";"ménestrel  de domino Ludovici de Clermont"
+234;"Frére Jacobo";"moine de Montem Ferratem"
+235;"Mermeto Rogario";"tondeur"
+236;"Bonerio";"tondeur"
+237;"Johanni Odetti";"citoyen de Lyon et pelletier"
+238;"Borerio?";"cisori"
+239;"Brunond Postea";
+240;"?";"gardien"
+243;"Guillielto de Bignino";"drappier de Chambéry bourgeois"
+244;"Mostelerio";"pelletier de Chambéry"
+245;"Petri Pugnay";"pelletier de Chambéry"
+246;"?";"lecteur des Damoiselles de Yolande"
+247;"Johanneti Deniseti";"pelletier de Chambéry"
+248;"la dite Fichaille";
+249;"?";"femme  de Domino de Castellione"
+250;"Johanni Marescalci";
+251;"Petri";"domini de Castelione"
+252;"plusieurs personnes";"fauconiers  d'Aymon"
+253;"le dit Feterna";
+254;"Jacobi de Sabaudie";
+255;"5 personnes";"écuyers du Piémont"
+256;"Sibarequi";
+257;"Jaquometi de Chalez";
+258;"bâtard d'Artisiodorem d'Aymon";
+259;"bâtard de Lyon d'Aymon";
+260;"Arnondoni";"rentre dans les ordres"
+261;"Aymoni Chanaliri";"maréchal ferrant"
+262;"Andree";"magistri"
+264;"Johanni";"valet de l'hôtel d'Amedei fils d'Aymon"
+265;"Amedei";"fils d'Aymon"
+266;"bâtard mineur d'Aymon";
+267;"Joffredi";"arbalètrier"
+269;"Guillielto Jorreti de Chatonay";
+270;"Amédéi petit fils d'Aymon";
+271;"?";"fils de Rameleti"
+272;"Petro Tore";"Domino"
+273;"Petri Cirobandi";
+274;"Jaquino Terzana";
+275;"2 personnes";"écuyers de la curie"
+276;"Andree Boni";
+277;"Giullielmi Boni";
+278;"Mermeto Chabondi de Ripperia";"tondeur"
+279;"le dit Rogerre";"tondeur"
+280;"Petri de Sancto Symphorium";"chapelain d'Aymon"
+281;"Humberto de Cou";
+282;"Johanni Picardi";"marchand"
+283;"Yolande";"Comtesse femme d'Aymon"
+284;"Johanni Rameleti";"armeatori"
+285;"Marchioni Montifflati";"Domini"
+287;"Hugeto Picardi";"marchand?"
+288;"Hôtel d'Aymon";
+289;"Berteti Fromentini";"cisori d'Aymon"
+290;"Ogeri";"cisori d'Aymon  et Yolande"
+291;"Peroti";"cisori d'Aymon"
+293;"plusieurs personnes";
+294;"Comte de Genève";
+295;"Guillonete de Bignino";"femme d' Amedei de Bignino drappier"
+296;"Raymondo follo";"magistro"
+297;"Stephano Venardi";
+298;"Francisco Niblerio";
+300;"Peroti de Reins";"familier d'Aymon et de Yolande"
+301;"Johanni de Maco";
+302;"Nicholeto de Sancto Genesi";
+303;"Terrico de Septimo";"Domino chevalier d'Aymon"
+307;"Alisie de Bignino";"Damoiselle de la Comtesse Yolande"
+308;"2 personnes";"gardiens des chevaux d'Aymon"
+309;"?";"monne et fille de la dite Cara"
+310;"Lemissacio";"médecin magistro"
+312;"Bonifacio";"magistro"
+313;"Amedei";"fratri principis nepoti d'Aymon"
+314;"Edouard";"Comte"
+315;"Aymon";"Comte"
+316;"Amédée 6";"Comte"
+317;"Johanni Osselli de Ponte";
+318;"Guillielmo de Bignino";"drappier de Chambéry"
+319;"?";"messager du Domino Manfredi de Carre"
+320;"?";"fils du Domino de Varambon"
+321;"2 personnes";"messagers du seigneur de Milan"
+322;"4 personnes";"menestreriis du Domino Merquoni"
+323;"le dit Latompeta?";
+324;"le dit Bonen...?";
+325;"Aymoni";"fils de Guigoni de Sancto Apro"
+326;"Johanni Deniseti";"pelletier de Chambéry"
+327;"Andree de Pisis";
+328;"le dit Loneconti";"nouveau messager de Yolande"
+329;"Mermeto de Rupper";"pelletier"
+330;"?";"nourrice d'Amedei fils d'Aymon"
+331;"bâtard (petit) de Sancti Regnani (d' aymon)";
+332;"Symoneta";
+333;"Eduardi Belioci";"nepoti Eduardi"
+334;"Mermeto de Rumeria";"tondeur"
+335;"Perono";"tondeur"
+336;"Johanni Cousiaco";
+337;"Hugoni Picardi";"marchand?"
+338;"Ramelato";"armeatori"
+339;"le grand cheval d'Aymon";
+340;"Perroti de Channeto";"pelletier de Chambéry"
+341;"Melmeto";"pelletier de Chambéry"
+342;"Michando";"tondeur habitant de Lyon"
+343;"Mermeto de Rochia";"pelletier"
+344;"Peronono";"tondeur"
+346;"Jaquio de Aubona";"tondeur"
+347;"enfants d'Amedeo de Bignino";"marchands?"
+348;"Michele Rosset";"pelletier"
+349;"Ludovico";"Domino"
+350;"comte de Genève";
+351;"Familia du comte de Genève";
+352;"4 personnes";"écuyers du domino Petri Laniar"
+353;"Petri Laniar";"Domino"
+354;"2 personnes";"associés de Petri Laniar"
+355;"cotuteur d'A6";
+356;"Jaquobo de Sancta Aguata";"citoyen d'Yponag..?"
+357;"Johanni de Fonte";"chapelain du Comte de Genève"
+358;"Hôtel d'A6";
+359;"Petri Friens?";
+360;"Blanche";"Demoiselle de Savoie soeur d'A6"
+361;"Grobelleto";
+362;"?";"Demoiselle de Genève"
+363;"Georgi Marescalci";
+364;"Jacobi Marescalci";"Maître du frère d'A6"
+365;"Johanni de Savoie";"frère d'A6"
+366;"Sorcello";
+367;"Bernardi";"écuyer de Blanche soeur d'A6"
+368;"Pitit Piero";
+369;"Johanni Betone";"magistro"
+370;"Aymoneti";"cisori A6"
+371;"Marchionis Montiferati";
+373;"Jaquometi Marescalci";
+374;"Le dit Facior";
+375;"Emerito";
+376;"Danieli";"menestrerio"
+377;"Dencisa";"messager Marchioni Montisferati"
+378;"Ogerii Batard d'A6";
+379;"Gita de Burgeto";
+380;"Guillielmo de Duyng";"familier de Blanche soeur de A6"
+381;"Johanneta";"Damoiselle de Blanche soeur A6"
+382;"Girardo";"chambrier de Johanneta Damoiselle de Blanche"
+383;"Estrangia";"Damoiselle de Blanche soeur A6"
+384;"?";"reclus du bourget"
+385;"?";"recluse du bourget"
+387;"2 personnes";"messagers"
+388;"Petri Galiandi";"Domino chapelain A6"
+389;"?";"écuyer du Domini de Sancti Ter...?"
+390;"Hugueta de Bonz";"nonne"
+391;"Humberto de Murisin";
+392;"Guillielto de Virius";
+393;"Luppi";
+394;"Johanni";"régulier  d'Hautecombe"
+396;"Johanneta de Duyng";"familiere de Blanche soeur A6"
+397;"Bernardum de Murbello";"(Montbel)"
+399;"Bonifacio de Burgeto";"cuisinier d'A6"
+400;"Jacobo de Turre";"moine"
+401;"?";"electo d'A6"
+402;"plusieurs personnes";"associers d'electo d'A6"
+403;"Johanni Delamart";
+404;"Johanni de Syon";
+405;"?";"charpentier d'Annecy"
+406;"?";"écuyer A6"
+407;"Buffeto";
+408;"le dit Lelabelli";"cuisinier d'A6"
+410;"?";"garde de Chambéry de la soeur d'A6"
+411;"Johanni de Ragiaco";"charpentier"
+412;"Jacometi Duardi";"charpentier"
+413;"Jeanne de Bourgogne";"future femme d'A6"
+414;"Francisci de Siravalle";"Domini"
+415;"plusieurs personnes";"chevaliers d'A6"
+416;"plusieurs personnes";"bons clercs d'A6"
+417;"plusieurs personnes";"écuyers d'A6"
+418;"Plusieurs personnes";"petit valets d'A6"
+419;"?";"fournier d'A6"
+420;"Virardi";
+421;"le dit Apert";
+422;"Johanni Joli";"pannetier A6"
+423;"Petro";"chevalier"
+424;"Le dit Baclo";
+425;"Armando";"venatori"
+426;"?";"chantre du Comte de Genève"
+427;"Petro Galiat";"Domino"
+428;"4 personnes";"valets de la future femme d'A6 Jehanne"
+429;"?";"vacher"
+430;"?";"écuyer de la Comtesse (A6)"
+431;"?";"chapelain de la Comtesse (A6)"
+432;"Johanne";"Damoiselle de la Comtesse (A6)"
+433;"Alisia";"magistra Domine"
+434;"Comtesse";"future femme d'A6"
+435;"Johanni de Salino";"écuyer de la future femme d'A6 Jehanne"
+436;"?";"regulario domini Alte Combe"
+437;"Jacobo";"escoferio du Seigneur de Yenne"
+438;"Charlono";
+439;"le dit Chimalier";
+440;"Johanni";"batard"
+441;"Reynerio de Sancta Agneta d'Ivrée";
+442;"Jacono de Sancta Agneta d'Ivrée";
+443;"Frère Jacobo";"moine du bourget"
+444;"Johanni";"tailleur de la Comtesse (A6)"
+445;"Le dit Buorno";
+446;"Johanni de Lianeres";
+447;"Le dit Locopenne";"clercs"
+448;"Le dit Page";"gardien des vignes d'A6 à St Georges"
+449;"Conrad de Turre";
+450;"Petro Melaneis";
+451;"le dit Millet Brenero";
+452;"Henricus Aqua";
+453;"Guigoni";"cuisinier"
+454;"?";"menestrerio d'A6"
+455;"Hugeta";"moniale de Bonz"
+456;"?";"chambrière de la Contesse(A6)"
+457;"?";"trompette du Seigneur de Milan"
+458;"Henricum de Putheo";
+459;"le dit Bret";"magistro ingeniatori"
+460;"Petro";"fils du dit Bret magistro ingeniatori"
+461;"Stephano de Ragiez";"charpentier"
+462;"Anthoni de Ragiez";"charpentier"
+463;"Chatipol";"lathomo"
+464;"?";"arbalètrier du Seigneur de Chambéry"
+465;"Endurmi";"valet de Johanni de Salino"
+466;"Rombe de Perona";"domino chapelain du Comte de genève"
+467;"Nycoleto Francisco";"de Chambéry"
+468;"Jacobo de Claromonte";"chevalier d'A6"
+470;"Jacomo";"tondeur de chambéry"
+471;"Conseil d'A6";
+472;"Domenione";"femme du trompete Coci"
+473;"Petro";"maître arbalètrier d'A6"
+474;"plusieurs personnes";"valets de maître Petro arbalètrier d'A6"
+475;"?";"lecteur d' A6"
+476;"Johanni Frilla";
+477;"?";"Damoiselles de Blanche soeur d'A6"
+478;"Amblardo Rosseti";"pelletier"
+479;"Aymoni (de Castio?)";"tailleur d'A6"
+480;"plusieurs personnes";"petits pages d'A6"
+481;"Simonino Garil";
+482;"Guigoni Cathene";
+483;"Custode";"frère mineur"
+484;"Le dit Lucho Musi";
+485;"plusieurs personnes";"écuyers d'A6"
+486;"plusieurs personnes";"bons valets d'A6"
+487;"plusieurs personnes";"charrotonnis d'A6"
+488;"plusieurs personnes";"valets de Guillielmi Thoyr... clerc d'A6"
+489;"Guillielmi Thoyr...";"clerc d'A6"
+490;"Archevêque de Milan";
+491;"Galiachi";"Domini"
+492;"Johanni Frerardi";"organiste"
+493;"plusieurs personnes";"valets d'A6"
+494;"Jacobo de Aubona";"tondeur"
+495;"Anthoni Inclari";"tondeur"
+496;"Johanni de Mayrmo";
+497;"Amblardi";"Domini"
+498;"plusieurs personnes";"familia de la Comtesse Marie"
+499;"Francisco Cingulo";"fils de Petro Cingulo"
+501;"Nicole";"mercière de Chambéry"
+502;"Petri";"magistri"
+504;"Guillielmo de Salino";
+505;"Humberto de Vachis";"Domini"
+506;"Bernardum";
+507;"Stephano Andreti";
+508;"Margarita";"Domina fille d'A5"
+509;"Grossone Balbesem";"nouveau chevalier"
+510;"Margarita";"nourisse"
+512;"Guichardi Burgo";
+513;"Johanni  ?";
+515;"plusieurs personnes";"Damoiselles de Marie"
+516;"Ginete";"Domina"
+517;"Ludovico";
+518;"Johanni";"Domini"
+519;"Merlino";
+520;"Guillielmo de Dagiis";
+521;"frére Jacobo";"médecin"
+522;"frère Jacobo de Bay";
+523;"? de Morcis";"nouveau chevalier"
+524;"Villenco";"nouveau chevalier"
+525;"Petro de Yrai";
+526;"Andreneti";
+527;"plusieurs personnes";"chevaliers d'A5"
+528;"Hugoni de Beson.....";
+529;"plusieurs personnes";"Damoiselles cour A5"
+530;"Familia d'A5";
+531;"Johanni Vango de ?";
+532;"5 personnes";"écuyers A5"
+533;"2 personnes";"petits clercs"
+534;"3 personnes";"valets A5"
+535;"?";"garçon de cuisine A5"
+536;"Mellino";
+537;"Brabantam";"Domina"
+538;"Duc de Brabant";
+539;"La dite Clericita";
+540;"Coluchi de Septimo";
+541;"Rosete Coesene";
+542;"Henrici de Septimo";
+543;"Symoni Fere";"de St Marcel"
+544;"Johanni Breton";
+545;"Torchibuef";
+546;"Johanni Burtout";"theoconico"
+547;"5 personnes";"associés de Johanni Burtout theoconico"
+548;"Guillielto Loperero de Mastitone";
+549;"Agnete";"filli A5"
+550;"Johanni de Fabricis";"citoyen de Lyon marchand ?"
+551;"Johanni de Cusiriaco";
+552;"Guillielmi de Briardo";
+553;"21  personnes";"chevaliers d'A5"
+554;"Johanni Horthondi";
+555;"Petro Curbondi";
+556;"Ludovico de Savoie";
+557;"Bertholito de Sancto Marcello";"marchand?"
+558;"Stephano Renaudi";
+559;"Petri Clerici";
+560;"Antelmo de Sancto Anthonio";
+562;"Stephano de Versora";"couturier d'A5"
+563;"Monterenalo";
+564;"2 personnes";"chevalier d'A5"
+565;"Nicholeti Picoleri";
+566;"plusieurs personnes";"valets d'A5"
+567;"Anthoni de Claromonte";
+568;"Peroneti de Sancto Symphori";
+569;"Petro de Machanz";"valet du Roi de France"
+570;"Johanni de Machanz";"valet du Roi de France"
+571;"Guillielmo de Viridarie";"valet du Roi de France"
+572;"Guillielmo";"chapelain d'A5"
+573;"?";"lecteur d'A5"
+574;"Egidio Boscocello";"Domino"
+575;"Garno de Sancto Symphorium";"Domino"
+576;"Andree Marescalci";
+577;"?";"valet d'A5"
+578;"?";"gardien du coursier de frise d'A5"
+579;"plusieures personnes";"gardiens des grands chevaux d'A5"
+580;"2 personnes";"chevaliers d'A5"
+581;"6 personnes";"valets de la chambre du roi de france"
+582;"2 personnes";"valets d'A5"
+583;"Thassis Barberii";"couturier??"
+584;"Reymondo";"fauconnier d'A5"
+585;"Peroneto";"veneur d' A5"
+586;"Thome";"mercier"
+587;"Joffredo";"valet du Roi de France"
+588;"plusieurs personnes";"garcionibus d'A5"
+589;"Aymoni de Sancto Claude";
+590;"Johanni de Garneti";
+591;"Reyneri de Trey";"sellier de Paris"
+592;"Johanni dit le velud";"marchand?"
+593;"Gordani de Burgenistam";"Domini et chevalier du Duc d'Autriche"
+594;"Johanni de Garnell...?";"écuyer de Gordani de Burgenistam"
+595;"Johanni Ulot";"lathomo de paris"
+596;"plusieurs personnes";"chantoribus d'A5"
+597;"Guillielmi de Berganio";
+598;"Rosseta Coysoria";
+599;"Johanni de Virmara";"magistro"
+600;"Chapuisi";
+601;"Philipeto";"conciergerio de Gentilli"
+602;"Laudondo";"clerc A5"
+603;"Petro Zonaterio";"Magistro"
+604;"Villonda";"ancilla concurbita domini de Gentilli"
+605;"plusieurs personnes";"forestiers de Saint germain en laye"
+606;"Ludi";"Domini chancellier"
+607;"principe nepotibus domini";"Domini"
+608;"Guillielmo de Pergamo";"magistro"
+609;"Noeri";"Domino"
+610;"34 personnes";"écuyers d'A5"
+611;"Tassino";
+612;"Petri de Claromonte";
+613;"10 personnes";"valets juvantium de Berteto codurei d'A5"
+614;"Philippi de Secusa";"clerc d'A5"
+615;"Anthoni Insi";"De Secusia"
+616;"Guillielmo de Barrelli";
+617;"Guidoni de Saxe ou Rixe";
+618;"Nicoleti de Alpibus";"écuyer d'Eduardi"
+619;"Barrel...";"Domini"
+620;"Miolani de Alpibus";
+621;"Incoleri";"Domini"
+622;"37 personnes";"valets juvantis du couturier"
+623;"plusieurs personnes";"chevalier du Comte Eduardi"
+624;"Blanche";"Comtesse femme d'Eduardi"
+625;"filles d'Eduardi";
+626;"Michaeli de Camera";
+627;"Candi";"valet du Duc de Bourgogne"
+628;"Alaisia";"chambrière de la Comtesse Blanche"
+629;"Guillielmi";"chapelain d'Eduardi"
+630;"Peroneto Chamiero";"couturier du Conte Eduardi"
+631;"Robineti";"calicatori et couturier Comtesse Blanche"
+632;"Familia d'Eduardi et Blanche";
+633;"Peroneti de Monte Gelato";
+634;"Johanni de Castella";"marchand?"
+635;"cuisine du conte Eduardi";
+636;"?";"lecteur du Comte Eduardi"
+637;"2 personnes";"valets tailleurs"
+638;"2 personnes";"valets pelletiers"
+639;"Aynide de Camera";"Domini"
+640;"Stephani Lamberti";
+641;"Martino de Saissello";"magistro chapellain de Vienne"
+642;"Hôtel d'Eduardi";
+643;"Andree";"magistri"
+644;"Marescalci";"clerc d'Eduardi"
+645;"Johanni de Vaylliaco";
+646;"Imperatrice";
+647;"Henrici de Flandies";
+648;"Ablandi";
+649;"Johanni de Savoie";"(sous Eduardi)"
+650;"plusieurs personnes";"écuyers d'Eduardi"
+651;"plusieurs personnes";"messagers d'Eduardi"
+652;"Johanni Mongueri";
+653;"Petro de Moay";"theonico"
+654;"Petro de Mastelo";"teotonico militi"
+655;"le dit Johanni";"drappier"
+656;"?";"fils de Domini Viriseti"
+657;"Jordano de Boc Esraynt";"chevalier Allemand"
+658;"?";"écuyer de Jordano de Boc Esraynt"
+659;"Venarudo";"écuyer d'Eduardi"
+660;"Imperatrici Grecorum";"Domine"
+661;"Hugoneto de Bessio";
+662;"Ysabelle de Rupercula";
+663;"Margarita Bonivarde";
+664;"Stephani Reynardi";"Domini"
+665;"Leone de Rupercula";"Domine"
+666;"?";"femme de Johanni Cusini"
+667;"Perino de Viriseto";"Domino"
+668;"21 personnes";"écuyers de Domine l'Imperatrici"
+669;"plusieurs personnes";"chambrières de Domine Imperatrici"
+670;"2 personnes";"barbiers d'Eduardi"
+671;"Aymoni";"Domini"
+672;"Petro Nideys";"theoconico"
+673;"Nicondo de Soluerio de suburgo";
+674;"Robert de bougogne";"Duc"
+675;"4 personnes";"valets couturiers"
+676;"?";"valet pelletiers (fourreur?)"
+677;"Nichieto";
+678;"Frère Guillielmo de Camera";
+679;"plusieurs personnes";"couturiers"
+680;"Frère";
+681;"?";"associers de Frére?"
+682;"Stephani";"chambrier de la Comtesse Blanche"
+683;"3 prersonnes";"familiers de la cour d'Eduardi"
+684;"Guigone";"Damoiselle de Dame Beatrix"
+685;"Chinalorio";"chambrier de Dame Beatrix"
+686;"Egadio Richildi?";
+687;"plusieurs personnes";"chevaliers de Beatrix"
+688;"plusieurs personnes";"écuyers de Beatrix"
+689;"Johanni";"clerc d'Eduardi"
+690;"Johanne";"fille d'Eduardi"
+691;"plusieurs personnes";"Damoiselles de la Comtesse Blanche"
+692;"?";"Damoiselles de Dame Beatrix soeur d'Eduardi"
+693;"plusieurs personnes";"conducteurs d'animaux"
+694;"?";"theoconico d'Eduardi"
+695;"plusieurs personnes";"trompettes d'Eduardi"
+696;"fille d'Eduardi";
+697;"?";"cuisinier de Contesse Blanche"
+698;"Aymoni de Camera";
+699;"plusieurs personnes";"arbalètriers de Valence"
+700;"Guillielmeto Torneti de Chatonay";
+701;"Guillielmi";
+702;"Guillielmi";"Domini stulei d'Eduardi"
+703;"?";"Damoiselle d'une fille d'Eduardi"
+704;"?";"tuillier du Bourget"
+705;"Gironeto Yvrii de Voyronis";"clerc"
+706;"plusieurs personnes";"petits valets d'Eduardi"
+707;"Stephano de Yennes";"magistro"
+708;"plusieurs personnes";"écuyers d'Egidu Richildi"
+709;"Aquerneti";"juif"
+710;"Manissei de Aquabella";
+711;"Clorid de Costa";
+712;"Peyreti de Sancto Genesis";
+713;"Andree Bondonne";"juge du bourg"
+714;"Jacobi de Runore";
+715;"Johanni Masca d'Albor";
+716;"Antermo de Festerna";
+717;"Seigneur de Lyon";
+718;"4 personnes";"valets"
+719;"Jacobo Fabe";
+720;"Hugoneti Dideri";
+721;"Johanni Migili";
+722;"Grant Juliane";"tondeur"
+723;"Prieuré de Lemenc";
+724;"Petri Baleri (feu)";
+725;"Johanni";"magistri tondeur"
+726;"Mathera";"chambrier d'Aymon"
+727;"Guilieldi Tavelli";"Domini"
+728;"Francisco Fallo de Callay";
+729;"2 personnes";"messagers des seigneurs de Milan"
+730;"Viridi";"messager d'Aymon"
+731;"Johanni de Porta";
+732;"?";"fils de Aubeville"
+733;"Johanni";"barbier"
+734;"Martimondo";
+735;"Troilleto";
+736;"Johanni Belleville";
+737;"le dit Baverna";
+738;"Berteto";"bastardo curati Yenne"
+739;"Hugoni";"marescalci d'Aymon"
+740;"?";"nouveau pannetier d'Aymon"
+741;"Robineto";"fauconnier d'Aymon"
+742;"Colino";"de Chambéry"
+743;"Robino de Buticlaris";
+744;"Petro de Vitriis";"Domini"
+745;"Amedei de Hospitalis";
+746;"Amedei de Solnis";"écuyer d'Aymon"
+747;"Berlionis";"familier d'Aymon"
+748;"?";"chapelain anglais"
+749;"?";"chevalier anglais gardé à Arras"
+750;"Bonifacio";"cuisinier d'Aymon"
+751;"Johannete";"femme du dit Charlon"
+752;"le dit Charlon";
+753;"Johanni Joilleti";
+754;"Frère Martyno";"prédicateur d' Aymon"
+755;"Frère Oberto";"prédicateur d' Aymon"
+756;"Villo";"palefrenier d'Aymon"
+757;"Adaneto";"terrassier"
+758;"Alaverna";
+759;"Guilloto";"terrassier"
+760;"Petri Milini";"magistri"
+761;"Johanni de Monz";
+763;"Humberti Diderii";
+764;"Hugone de Besanson";"Domino"
+765;"Panneterie d'A5";
+766;"Guidoni Chenenes";"nouveau chevalier"
+767;"15 personnes";"nouveau chevalier d'A5"
+768;"Aymaro de Bellonidere";
+769;"Frère Johanni";
+770;"Raynaldi";"chevalier"
+771;"plusieurs personnes";"Dames de la cour d'A5"
+772;"Barleri";"couturier"
+773;"Rufilato";"messager d'Aymon"
+774;"Frère Joffredi Abrasteri";
+775;"7 personnes";"pauvres"
+776;"bâtard petit d'Aymon";
+777;"Fatue";"femme d'un pauvre"
+778;"Ludoni";
+779;"Georgie de Solerio Castelle";"magistri (Ivrée)"
+780;"Humberteto";"mantilerio de Chambéry"
+781;"Bâtard d'A6";
+782;"?";"pêcheur du comte de Genève"
+783;"plusieurs personnes";"fauconniers du Comte de Genève"
+784;"Anthonio Balardi";"marchand d'avillaniam"
+785;"Eduardi Pisani";
+786;"Johanni";"nouveau barbier d'A6"
+787;"Johanni de Gastgina Belleville";
+788;"Henrici";"cuisine"
+789;"Johanni Marco";"Facioto"
+790;"Perto de Furuo";"cuisine"
+791;"Nachie Fornario";
+793;"Jacometi de Porta";
+794;"Guillonete";"lavandière d'A6"
+795;"Hugoni";"cuisine"
+796;"Guigonete";"cuisine"
+797;"?";"trompette de Florence"
+798;"Guigoneto de Avena";"fallieto"
+799;"Eveyrendi Borno de Porta";
+800;"2 personnes";"chariotonibus d'A6"
+801;"le dit Campa Colombeto";
+802;"Johanneto Batheto";
+803;"le dit Dorria";
+804;"Jacometo";"valet furi"
+805;"Petro";"valet furi"
+806;"le dit baclo de Caribus";
+807;"Aperto";"messager"
+808;"Petro Muleti";"pannetier"
+809;"Aymoni de Challant";
+810;"Hugois de Cotonate";"écuyer"
+811;"Anthoni Bartholomei";"marchand de Pignerol"
+812;"Alaisia";"femme de Bartholomei Dombotat"
+813;"Eymerici de Monte Falcone";"écuyer d'A6"
+814;"?";"valet juvanti couturier"
+815;"marchionis";"Domini"
+816;"Facioto";"chambrier d'A6"
+817;"Jaquemino Equadi";
+818;"Bartholomei Balbiani";"d'Avillania marchand?"
+819;"Gautherio";"menestrerio du Comte de Genève"
+820;"Anthoni Garili";"d'Avillania marchand?"
+821;"Benevenuti Martini";"de Ripaille marchand?"
+822;"Alequano";"fauconnier"
+823;"?";"valet gardien du grand cheval du Comte de Genève"
+824;"Emoneti de Coteilliaco";"d'Ambronay marchand?"
+825;"?";"valet palfrenier du Comte de Genève"
+826;"?";"codurei juvanti"
+827;"Petri Torneri";
+828;"Colineti";"cuisine (mort)"
+829;"Stephani de Burgeti";
+830;"plusieurs personnes";"menestreriis"
+831;"?";"médecin de la Comtesse Yolande"
+833;"?";"écuyer de la Contesse Yolande"
+834;"?";"tailleur de la Comtesse Yolande"
+835;"?";"clerc de la Comtesse Yolande"
+836;"Garino";"menestrerio"
+837;"Berteti";"tailleur de Yolande"
+838;"Castellini";"messager de Yolande"
+839;"plusieurs personnes";"valets d'Aymon"
+840;"Courandi";"Domini"
+841;"Guillielmi";"chapelain d'Aymon"
+842;"Hôtel de Yolande";
+843;"Camera";"Domini"
+844;"plusieurs personnes";"clercs d'Aymon"
+845;"Picardi";"marchand de Chambéry"
+846;"Aleysie";
+847;"Jacono";"mercier Juif"
+848;"Bono Johannono Patri";"marchand"
+849;"Petro Chaponay";"drappier et citoyen de Lyon"
+850;"Marquise";"soeur d'Aymon"
+851;"Petri Rolandi";"pannetier de Yolande"
+852;"?";"petit menestrerio"
+853;"2 personnes";"clercs de la chapelle d'Aymon"
+854;"plusieurs personnes";"garcionibus d'Aymon"
+855;"Francisci";
+856;"Aymoni de Verdon...?";
+857;"?";"bailli du Chablais"
+858;"Maria";"Domina"
+859;"Andrea";"Domino"
+861;"plusieurs personnes";"palliceriis(fourreurs?)"
+862;"Lombards";"de Chambéry"
+863;"Frère Martino";"confesseur d'Aymon"
+864;"plusieurs personnes";"associers de Frère Martino confesseur d'Aymon"
+865;"Bernardi";
+866;"Montiferrati";"Marquis"
+867;"Jacometi Belioci";
+868;"Alixia de Chignini";"Damoiselle de Yolande"
+870;"?";"recluse d'Aquiam"
+871;"?";"juif marchand"
+872;"?";"fils d'Aymon"
+873;"?";"pelletier d'Ambronnais"
+874;"Bâtard d'Aymon";
+875;"Henrici";
+876;"Pigneti";
+877;"Familia d'Aymon";
+878;"Guillielmo Teruorum";"drappier de Costa"
+879;"Lombards de Costa";
+880;"Petri de Montegelati";"Domini,chatelain de Maurienne"
+881;"Hugoni Boscocelli";"nouveau chevalier"
+882;"Reymondo de Solerio";"Domino nouveau chevalier"
+883;"Anthoni Bertholini";
+884;"plusieurs personnes";"écuyers d'Aymon"
+885;"plusieurs personnes";"D'autres personnes"
+886;"Berardi Pellete";
+887;"Alexandri Gamberrelli";
+888;"les nouveaux chevaliers";
+889;"Syondini Saleti";
+890;"Johanne Girondeti";
+891;"Manneto Calucusani";"marchand de Turin"
+892;"Belioci";"bâtard"
+893;"Bartholomeo Taberne";"bailli d'Avillania"
+894;"Guichardi Tavelli";"Domini"
+895;"Girardi Curtilis";
+896;"Aymoni";"fils d'A5"
+897;"Eduardi";"magistri"
+898;"Johanni";"magistri"
+899;"Guillielmo Morer";"valet d'Eduardi"
+900;"Girardo de Cupiria";
+901;"plusieurs personnes";"associés d'Aymon et Eduardi fils A5"
+902;"Colino";"cisori de Marie femme d'A5"
+903;"plusieurs personnes";"gents du Comte"
+904;"Hautecombe";
+905;"divers personnes";" Chambéry"
+906;"plusieurs personnes";"gents de l'hôtel du comte"
+

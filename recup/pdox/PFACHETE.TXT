@@ -1,0 +1,219 @@
+CodeCommande;CodePFA;AProvenance;ANature;ALieuAchat;AQuantite;APrixUnitaire;APrixGlobal;AOccasion
+10;2;;"monnaie";;;;;"adoubement"
+18;4;;"robe";;"1";;;
+20;5;;"robe";;"1";;;
+24;6;;"robe";;"1";;"108 S v";
+28;7;;"garnache";"Lyon";"1";;;
+28;8;;"chausses";"Lyon";"plusieurs";;;
+28;9;;"malecote";"Lyon";"2";;;
+31;10;;"robe";;"1";;;"Donnée par la Dame Contesse."
+35;11;;"paylliceri";;;;"13l v";
+45;12;;"tunique";;"6";;;
+52;13;;"cloche";;"2";;;
+58;14;;"couverture";;"1";"22s v esp";;
+65;15;;"robe";;"1";;"25l v esp";
+67;16;;"robe";;"1";;"6l 19s 6d v esp";"pour le voyage en Italie"
+71;17;;"chausses";;"6 paires";;;
+71;18;;"tunique";;"1";;;
+76;19;;"voile";"Lyon";"13";;;
+79;20;;"épingles";;"2000";;;
+82;21;;"corde";;"?";;;"pour envelopper les achat de Lyon"
+91;22;;"pelisse";;"2";;;
+98;23;;"chaperon";"Lyon";"plusieurs";;;
+106;24;;"tapisserie de drap  armes Savoies et Duc Autriche";"Paris";"8";;"dans le prix on compte la façon";
+106;25;;"courte pointe aux armes Savoie et Duc Autriche";"Paris";"2";;"la façon est comptée dans le prix";
+108;26;;"robe";;"1";"12L 12S v tur";;"donnée par A5"
+137;27;;"robe";;"1";;"60S v";"remerciment pour un travail fait dans les opera castri le comte lui donne l'argent pour cela"
+152;28;;"couverture";"Chambéry";"2";;;
+162;29;;"passementerie";;"?";;;"commémoration de la mort du pére et du frére du comte 2"
+173;30;;"gant";"Lyon";"2 paires";;"17D gt";
+173;31;;"cirtellum pour la maison";"Lyon";"2 paires";;"4S 5D gt";
+173;32;;"couvre-chef";;"3";;"3S 3D gt";
+175;33;;"fourrure à chaperon";;"1";;;
+177;34;;"surceinte";;"1";;;"donné par la contesse 2"
+177;35;;"bourse";;"1";;;"donné par la contesse 2"
+178;36;;"pelisse";;"?";;;
+182;37;;"fourrure de chaperon";;"3";;;"treansport"
+182;38;;"gipon";;"1";;;"transport"
+183;39;;"robe";;"1";;;
+184;40;;"capitegium";;"?";;;
+184;41;;"gorgerium";;"?";;;
+185;42;;"robe";;"?";;;
+186;43;;"fourrure de chaperon écarlate";"Chambéry";"1";;;
+187;44;;"robe";;"?";;;
+187;45;;"robe partitée";"Chambéry";"4";;;
+200;46;;"robe";"Avignon";"1";;;"quand Petro est en mission en Avignon"
+205;47;;"fourrure de chaperon";;"2";;;"livrée"
+205;48;;"corset";;"2";;;"Livrée"
+207;49;;"bourse brodée";;"9";;"11S 4D gt";
+208;50;;"corset";;"1";;;
+208;51;;"gorgerium";;"?";;;
+223;52;;"couvre-chef";"Chambéry";"1";;;
+224;53;;"pelisse";;"1";;;
+225;54;;"vêtement";"Lyon";"?";;;"le voyage est compris dans l'item"
+226;55;;"couverture de cheval";;"4";;"2S 11D gt";
+229;56;;"capitegium";;"?";;;
+229;57;;"gorgerium";;"?";;;
+230;58;;"doublure de chaperon";"Chambéry";"3";;;
+234;59;;"doublure de chaperon";"Chambéry";"3";;;
+257;60;;"vêtement";;"6";;;
+260;61;;"las";"Chambéry";"?";;;
+260;62;;"tresse";"Chambéry";"?";;;
+263;63;;"malecote";;"1";"1FBP";;
+273;64;;"doublure de chaperon";;"2 2 de 30 ventres";"3S 9D gt";"7S 6D gt";"livrée"
+274;65;;"chausses";;"?";;"4D ob gt";
+288;66;;"chausses";"Pont d'Ain";"?";;"7D ob gt";
+288;67;;"chausses";"Pont d'Ain";"?";;"6D 1/3 gt";
+290;68;;"pelisse";;"2";"6.5 FABP";"13 FABP";
+291;69;;"mitenar";;"1 paire";;;
+291;70;;"couvre-chef";;"4";;;
+300;71;;"chaperon";;"4 de 30 ventres";"3S 6D ob gt";"14S 2D gt";"livrée d'Avignon"
+300;72;;"chaperon";;"5 de 24 ventres";"2S 9D gt";"13S 9D gt";"livrée d'Avignon"
+304;73;;"ruban";;"4";;;
+304;74;;"ceinture";;"4";;;
+312;75;;"chaperon";;"2";"2S 7D gt";"5S 2D gt";"livrée d'avignon"
+314;76;;"chaperon";;"1 de 24 ventres";"2S 7D gt";"2S 7D gt";
+376;77;;"fourrure de chaperon";;"1 fourrure de 24 ventres";"?";"?";
+384;78;;"gipon";;"plusieurs";;;
+384;79;;"arnesus";;"plusieurs";;;
+391;80;;"chausses";;"3 paires";;;
+391;81;;"fourrure de chaperon";;"1";;;
+397;82;;"écusson aux armes du Seigneur Bellioci";;"?";;;
+400;83;;"écusson aux armes du Seigneur Bellioci";;"14";;"2FBP";
+403;84;;"robe";"Genève";"?";;;
+404;85;;"robe";;"?";;"210L 5S v";
+410;86;;"gorgerium";"Lyon";"6";;;
+410;87;;"chapelet";"Lyon";"6";;;
+413;88;;"scotie";"Londres";;;;
+416;89;;"bourse";;"24";;;
+433;90;;"couverture de cheval";;"12";;;
+439;91;;"fourrure de chaperon";;"?";;"60S";
+442;92;;"fourrure de mantel";;"1";"7L";;"adoubement"
+443;93;;"camisius";;"1";;;
+443;94;;"braies";;"2";;;
+453;95;;"doublure de chaperon";;"1";;;"adoubement"
+467;96;;"fourrure de chaperon";;"24";;"30L";
+468;97;;"pelisse";;"2";;"16L tur";
+468;98;;"fourrure de chaperon";;"1";"12S 6D tur";"12S 6D tur";
+469;99;;"couvre-chef doublé de cendal";;;;;
+473;100;;"malecote";;"1";;"46S";
+477;101;;"fourrure de chaperon";;"6";"16S";"4L 16S";
+485;102;;"furrure de chaperon";;"7";;;
+508;103;;"pelisse";;"1 de 200 ventres";"24L";;
+509;104;;"fourrure de surcot";;"1";;;
+509;105;;"fourrure de chaperon";;"1";;;
+511;106;;"fourrure de chaperon";;"1";;;
+514;107;;"fourrure de chaperon";;"1";"4L";"4L";
+516;108;;"chaperon";;"1";"4L";;
+518;109;;"fourrure de chaperon";;"1 furratura de 4 tires";"48S";"48S";
+528;110;;"couvre-chef";;"1";"8S";"8S";
+538;111;;"fourrure de chaperon";;"1";"4L parisis";"4L parisis";
+539;112;;"pelisse";;"1";;;
+543;113;;"doublure de chaperon";;"1";;;
+544;114;;"robe";"pont de Veyle";"1";;"6L parv tur";
+548;115;;"chaperon";;"1";;;
+562;116;;"couverture pointée";;"1";;"42L tur";
+564;117;;"robe";;"1";;;
+589;118;;"las";;"1";"8D parisis";"8D parisis";
+609;119;;"couvre-chef";;"1";"16S parisis";"16S parisis";
+626;120;;"couverture";;"1";"26L";"26L";
+627;121;;"couverture petite";;"1";"13L parisis";"13L parisis";
+628;122;;"couverture";;"1";"30L parisis";"30L parisis";
+629;123;;"couverture";;"1";"?";;
+630;124;;"fourrure de garnache";;"1";"16L parisis";"16L parisis";
+636;125;;"chaperon";;"1";;;"livrée"
+668;126;;"fourrure de chaperon";"Paris";"1";;;
+673;127;;"fourrure de chaperon";"Paris";"20";;;"livrée pers de penthecote"
+679;128;;"chaperon";"Paris";"1";;;
+681;129;;"couvre-chef";"Paris";"2";"12S Parisis";"24S Parisis";
+696;130;;"chausses";;"1 paire";"2D ob gt";"2D ob gt";
+713;131;;"tunique";"Aoste";"1";"2S gt";"2S gt";
+722;132;;"fourrure de chaperon blanche";;"15";"12D gt";"15S gt";
+725;133;;"fourrure de chaperon";;"1";"12D gt";;
+739;134;;"malecote";;"1";"1404S v lug";"104S v lug";
+742;135;;"malecote";;"1";"10S  fortes escu";"10S  fortes escu";
+743;136;;"chausses";;"3 paires";;"26S lug";
+766;137;;"robe de deux garnements";;"1";;;
+774;138;;"pourpoint";;"1";;;
+774;139;;"bacinet";;"1";;;
+774;140;;"plate";;"1";;;
+791;141;;"fourrure de chaperon";"Chambéry";"4";;;
+794;142;;"fourrure de chaperon";;"3";;;
+800;143;;"mantel";;"1";;;"pou un mort que l'on enterre"
+827;144;;"fourrure de chaperon";;"3";;;
+834;145;;"robe";;"1";;"50S gt";"don d'Eduardi"
+849;146;;"chausses";"Pont d'Ain";"2 paires";;"3S gt";
+850;147;;"surcot";"Pont d'Ain";"2";;;
+852;148;;"couvre-chef";"Chambéry";"1";"20D gt";"20D gt";
+857;149;;"pourpoint";"Paris";"3";"24S parisis";"72S parisis";
+858;150;;"gipon";"Paris";"3";"24S  parisis";"72S  parisis";
+859;151;;"pourpoint";"Paris";"1";"24S  parisis";"24S  parisis";
+860;152;;"pourpoint";;"6";"1FA";"6FA";
+861;153;;"pourpoint";;"1";"1FA";"1FA";
+864;154;;"ceinture";"Paris";"6";;"9L  parisis";
+864;155;;"écusson brodé";"Paris";"2";;"11S  parisis";
+867;157;;"chaperon";"Paris ou Cambrai";"1";;;
+867;158;;"couvre chef";"Paris ou Cambrai";"4";;"60S parisis";
+869;159;;"chausses";"Lille";;;;"Berlinis accompagne le chapelain anglais qui retourne en Angleterre"
+877;160;;"fourrure de chaperon";"Douai";"2";;;
+879;161;;"malecote";"Arras";"1";;;
+880;162;;"surcot";;"1";;;
+880;163;;"chausses";;;;;
+880;164;;"chaussures";;;;;
+881;165;;"cote à armée doublée";;"7";;;"tournois??"
+881;166;;"aiguillettes";;;;;
+882;167;;"ceinture";"Paris";"2";;"10FA et 10S parisis";
+883;168;;"malecote";"Paris";"1";;"30S parisis";
+884;169;;"malecote";"Paris";"1";"25S parisis";"25S parisis";"le terrassier va en Savoie avec le Comte Aymon"
+885;170;;"couvre-chef";"Paris";"3";;;
+885;171;;"couvre-chef";"Paris";"2";;;
+886;172;;"fourrure de chaperon";"Paris";"5";;;
+886;173;;"fourrure de chape";"Paris";"1";;;
+886;174;;"fourrure de mantel";"Paris";"1";;;
+887;175;;"coiffe";"Paris";"5";;"110S parisis";
+894;176;;"fourrure de chaperon";;"6";;"4L 16S";
+906;177;;"tuiallia";;"60";"36S la dousaine";"9L";
+910;178;;"bâche à couvrir les chariots";;"3";;"47L";
+916;179;;"fourrure de chaperon";;"1 furratura";"16S";"16S";
+918;180;;"fourrure de chaperon";;"1";;;
+922;181;;"capitegia";;"10Pièces";"10S par pièces";"100S";
+924;182;;"capitegia";;"5 pièces";"9S";"40S";
+939;183;;"robe";;"1";;"2FA";"don d'Aymon"
+953;184;;"cote daudis";;"plusieurs";;"2FABP";
+956;185;;"robe";;"25";;"26FABP";
+960;186;;"couvre-chef";;"3";;"28S v esp";
+964;187;;"chausses";;;;"7D ob gt";
+969;188;;"chausses";"Ambronay";;;"4D gt";"fête de la nativité 1346"
+981;189;;"pelisse";;"2";;"112S 6D v curs";
+987;190;;"chausses";;;;;
+995;191;;"chaperon";"Chambéry";;;"8S 6D gt";
+1000;192;;"capitegia insula";;;;;
+1000;193;;"autre chose";;;;;
+1005;194;;"capitegia";;"6";;;
+1009;195;;"cote";;"1";;;"don de Yolande"
+1009;196;;"robe";;"1";;;"don de Yolande"
+1009;197;;"chausses";;;;;"don de Yolande"
+1016;198;;"robe normande";;"1";"3S gt";"3S gt";
+1025;199;;"capitegia";;"?";;"9S gt";
+1027;200;;"fourrure de corset";"Ambronay";"1";;;
+1027;201;;"fourrure de mantel";"Ambronay";"1";;;
+1027;202;;"pelisse";"Ambronay";"2";;;
+1035;203;;"fourrure de chaperon";;"1";;;"Adoubement de nouveaux chevaliers à Ripaille"
+1040;204;;"couverture";;;;;"Adoubement de nouveaux chevaliers à Ripaille"
+1042;205;;"fourrure de chaperon";;"4 pièces de 40 ventre chacunes";;"8.5FA";"Adoubement de nouveaux chevaliers à Ripaille"
+1049;206;;"fourrure de chaperon";"Aoste";"20 de 24v = 480v";"105FA les 1000v";;"Adoubement de nouveaux chevaliers à Ripaille"
+1049;207;;"fourrure de chaperon";"Aoste";"20 de 32v = 600v";"105FA les 1000v";;"Adoubement de nouveaux chevaliers à Ripaille"
+1049;208;;"fourrure de mantel";"Aoste";"6 de 200v = 1600v";"105FA lex 1000v";;"Adoubement de nouveaux chevaliers à Ripaille"
+1049;209;;"fourrure de mantel";"Aoste";"6 de 100v = 600v";"105FA v les 1000v";;"Adoubement de nouveaux chevaliers à Ripaille"
+1050;210;;"couverture";"Avignon";"3 de 145v";;"75FA de F et 6D gt";"Adoubement de nouveaux chevaliers à Ripaille"
+1056;211;;"turban";"Avignon";"1";;;"Adoubement de nouveaux chevaliers à Ripaille"
+1057;212;;"capellus";"Avignon";"8";;"1FA et 6D gt";"Adoubement de nouveaux chevaliers à Ripaille"
+1058;213;;"gipon";"Avignon";"1";;"1FA et 8D gt";"Adoubement de nouveaux chevaliers à Ripaille"
+1076;214;;"pelice";;"2";;;
+1081;215;;"fustanei";;"2";;;
+1081;216;;"robe";;"3";;;
+1083;217;;"fourrure de chaperon";;"2";;;
+1084;218;;"couverture";;"1";;;
+1095;219;;"draps";;;;;"ivrée pour sépulture d'Aymon"
+1097;220;;"couverture de cercueil";;"1";;;"ivrée pour sépulture d'Aymon"
+

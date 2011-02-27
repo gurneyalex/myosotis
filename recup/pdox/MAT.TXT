@@ -1,0 +1,256 @@
+CodeMateriaux;Matiere;Couleur
+9;"pers";"bleu"
+10;"vulpes";
+11;"pannus";
+12;"furratura";
+13;"pannus";"blanc"
+14;"blanchet";"blanc"
+15;"serge";"noire"
+16;"vergette";
+17;"soie";
+18;"fils d' argent";
+19;"autres choses";
+20;"agneau";
+21;"lapin";"blanc"
+22;"pennus";
+23;"camelin";
+24;"brussequin";
+25;"menu vair";
+26;"persico";
+27;"camelin";"rouge"
+28;"serge";
+29;"cendal";
+30;"toile";
+31;"drap d'or";
+32;"fil";
+33;"vert";
+34;"rayé";
+35;"eschargati";
+36;"pennus de barbarino";
+37;"varius";"ardentus"
+38;"lapin";
+39;"sable";
+40;"agneau";"pernis"
+41;"toile de Reims";
+42;"cendal";"en graine"
+43;"cendal";"vert"
+44;"futaine";
+45;"écarlate";"punatia"
+46;"toile de lin";
+47;"samit";
+48;"velour";
+49;"crêpe";
+50;"cendal";"noir"
+51;"las de soie";
+52;"toile de burre";
+53;"écureuil";
+54;"agneau";"blanc"
+55;"camelin";"en graine"
+56;"vert";"crocey"
+57;"blodii";
+58;"chanvre";
+59;"furratura";
+60;"toile à envelopper";
+61;"vert";"janne"
+62;"bife";
+63;"agneau";"patere"
+64;"violet";
+65;"écarlate";
+66;"rosset";
+67;"blanc";
+68;"tanné";
+69;"vert";"émeraude"
+70;"camelin";"beguini"
+71;"pers";"obscuro"
+72;"pers";"azur"
+73;"mantilium";
+74;"tuiallia";
+75;"gros drap";
+76;"toile";"yndi"
+77;"fil";"rouge"
+78;"fil";"blanc"
+79;"fil";"yndi"
+80;"cendal";"noir"
+81;"griset";
+82;"cendal";"rouge"
+83;"agneau";"assinatus"
+84;"pers";"clair"
+85;"cendal";"azur"
+86;"sorcia";
+87;"agneau";"blanc"
+88;"gris";
+89;"camelin";"blanc goutté de graine"
+90;"morée";
+91;"yraigne";
+92;"jaune";
+93;"camelin";"imitant le tanné"
+94;"pers";"eyncio"
+95;"pennus";"noire"
+96;"brunette";
+97;"varius";
+98;"camelin";"blanc"
+99;"bièvre";
+100;"rosorus";
+101;"fil de soie";
+102;"fil d'or";
+103;"dos de lapin";
+104;"divers vairs";
+105;"serge";"rayée"
+106;"drap";"plain"
+107;"pers";"plissé"
+108;"menu vair";"espuratis"
+109;"bugia ou lugia";
+110;"pennus";"blanc"
+111;"gros vair";
+112;"gros porpre";
+113;"manutegia";
+115;"toile bourgeoise";
+116;"toile";"blanche"
+117;"tursichie";
+118;"vermeil";
+119;"écarlate";"vermeil"
+120;"bugia";"blanc"
+121;"camelin";"blanc gouté"
+122;"luyro";
+123;"ruban";
+124;"rose";
+125;"rayé à carreaux";
+126;"castro vele";
+127;"porpre";"fin"
+128;"vair";"russus"
+129;"castro vele";"blanc"
+130;"ecarlate rayée";"vermeil"
+131;"pannus";"blanc gouté"
+132;"stalot";
+133;"camelin";"vert"
+134;"camelin";"vermeil"
+135;"camelin";"brun"
+136;"tanné";"vert"
+137;"pers";"vert"
+138;"blaueti";
+139;"listaco";
+140;"porpre";
+141;"pannus valesi";
+142;"serge";"stanei"
+143;"plane";
+144;"soie";"noire"
+145;"ruban";"avec perles"
+146;"hermine";
+147;"castra";
+148;"ruban";"argent"
+149;"capitegium";
+150;"capeti";
+151;"mappus";
+152;"porpre";"gros"
+153;"larest";
+154;"bourre";"laine"
+155;"coton";
+156;"porpre";"menu"
+157;"polena";
+158;"vair";"affriaco"
+159;"fil";"noir"
+160;"pannus";"rouge"
+161;"camelot";
+162;"marbré";
+163;"grosse toile";
+164;"cendal";"rouge renforcé"
+165;"cendal";"jaune"
+166;"cendal";"blanc renforcé"
+167;"cendal";"yndi renforcé"
+168;"toile";"verte"
+169;"samit";"rouge"
+170;"capi";
+171;"cendal";"vert renforcé"
+172;"toile";"benda"
+173;"écarlate";"rayé"
+174;"tiretaine";
+175;"manutegia";
+176;"sayette";
+177;"cendal";"blanc"
+178;"drap de Florence";
+179;"sable";"blanc"
+180;"toile fine";
+181;"toile";"verte"
+182;"coton";
+183;"camelin";"cagnatus"
+184;"vert";"nemoroso"
+185;"toile";"inde"
+186;"camelin";"marbré"
+187;"pers";"noire"
+188;"soissie";
+189;"mappus";"grosse"
+190;"écarlate";"morée"
+191;"écarlate";"violet"
+192;"drap d'argent";
+193;"gros vair";"bray"
+194;"tarse";"vert"
+195;"vert";"entrefile"
+196;"ventre de lapin";
+197;"cuisse de lièvre";"blanche"
+198;"bièvre";"noire"
+199;"brussequin";"brun"
+200;"camelin";"marbré rouge"
+201;"errefile";"de St denis"
+202;"supermapis";
+203;"écarlate";"alea"
+204;"vergette";"rouge"
+205;"cendal";"yndi"
+206;"estafeta";
+207;"écarlate";"rouge"
+208;"eschargati";"rayé"
+209;"lapin";"dos"
+210;"pannus";"noir"
+211;"toile";"fucali"
+212;"fil";"vert"
+213;"écarlate";"echarcate"
+214;"cendal";"vermeil"
+215;"toile";"teinte"
+216;"brunette";"noire"
+217;"bugia";
+218;"camelin";"violet"
+219;"écarlate";"vergette"
+220;"toile";"rouge"
+221;"bougrant";
+222;"rayé";"menu"
+223;"teneti";
+224;"Atolay";
+225;"pannus";"en graine"
+226;"verdelet";
+227;"ruban";"soie"
+228;"argent";
+229;"ruban";"vert"
+230;"marbré";"rouge"
+231;"montivillier";
+232;"taffeta";
+233;"cordon";
+234;"panni";"luigiis"
+235;"panni";"dacoli"
+236;"écarlate";"rose"
+237;"serge";"verte"
+238;"serge";"rouge"
+239;"impèriale";
+240;"lin";
+241;"camelot";"fin"
+242;"camelin";"nay"
+243;"tiretaine";"blanche"
+244;"soie";"divers couleurs"
+245;"fil";"divers couleurs"
+246;"migraine";
+247;"pannus";"vermeil"
+248;"violet";"en graine"
+249;"tresse";
+250;"tresse";"noire"
+251;"cordon";"soie"
+252;"garance";
+253;"camelin";"rayé"
+254;"pannus";"frise"
+255;"brunette";"morée"
+256;"camiscati";
+257;"gros fil";"soie"
+258;"froci";
+259;"soie";"rayée"
+260;"pannus";"Yvoire"
+261;"sayette";"noire"
+262;"pers";"adurea"
+263;"toile";
+
