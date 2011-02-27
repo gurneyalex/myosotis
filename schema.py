@@ -93,7 +93,7 @@ class change(RelationDefinition):
     object = 'Change'
     cardinality = '*?'
     composite = 'subject'
-    
+
 
 class AchatFabrication(EntityType):
     date_achat = Date()

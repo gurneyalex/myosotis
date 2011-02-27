@@ -7,6 +7,9 @@ rql('SET X change Y WHERE X is Compte, Y is Change, Y compte X')
 drop_relation_definition('Change', 'compte', 'Compte')
 drop_attribute('Change', 'dans_compte')
 
+for etype in ('Personne', 'Compte', 'Transaction'):
+    add_attribute(etype, 'base_paradox')
+
 print "Nettoyage"
 query = 'SET X type_mesure NULL, X unite NULL, X provenance_mesure NULL WHERE X is %(etype)s, X quantite NULL'
 for etype in (u'MateriauxParure', u'FabriqueAvecMat', u'AchatMateriaux',):
