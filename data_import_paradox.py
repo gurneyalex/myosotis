@@ -55,10 +55,8 @@ MAT = [('Matiere', 'nom', ()),
        ]
 def gen_mat(ctl):
     for i, row in enumerate(ctl.iter_and_commit('MAT')):
-        #print row
         entity = mk_entity(row, MAT)
         entity.update({'type': u'?', 'famille': u'?'})
-        #print entity
         ctl.store.add('Materiaux', entity)
         mat_id[row['CodeMateriaux']] = entity['eid']
 GENERATORS.append((gen_mat, CHK),)
@@ -71,8 +69,9 @@ PERSONNE = [('Nom', 'identite', ()),
 def gen_personne(ctl):
     for i, row in enumerate(ctl.iter_and_commit('PERSONNE')):
         entity = mk_entity(row, PERSONNE)
+        if entity['identite'] == '?':
+            entity['identite']  = entity['titre']
         entity.update({'sexe': u'?', 'base_paradox': True})
-        #print entity
         ctl.store.add('Personne', entity)
         personne_id[row['CodePersonne']] = entity['eid']
 GENERATORS.append((gen_personne, CHK),)
@@ -85,42 +84,41 @@ COMPTE = [('TypeCompte', 'type_compte', ()),
            ]
 def gen_compte(ctl):
     for i, row in enumerate(ctl.iter_and_commit('COMPTE')):
-        #print row
         entity = mk_entity(row, COMPTE)
-        entity.update({'inventaire': u'cf. maitrise',
+        entity.update({'inventaire': u'compte de %s %s-%s' % (entity['type_compte'], row['AnneeDebut'], row['AnneeFin']),
                        'base_paradox': True})
-        #print entity
         ctl.store.add('Compte', entity)
         compte_id[row['CodeCompte']] = entity['eid']
 GENERATORS.append((gen_compte, CHK),)
 
-
-transaction_id = {}
-def gen_transaction(ctl):
+commande_id = {}
+commande_info = {}
+COMMANDE = [('Numero', 'numero', (int,)),
+           ('DateOrdre', 'date_ordre_str', (optional,)),
+           ('Prix', 'prix_str', (optional, )),
+           ]
+def gen_commande(ctl):
     for i, row in enumerate(ctl.iter_and_commit('COMMANDE')):
         if row['CodeCompte'] not in compte_id:
             continue
-        entity = {}
-        entity['remarques'] = u'Numéro item: %s\n\nPrix global: %s\n\nDate Ordre: %s' % (row['Numero'], row.get('Prix', u'inconnu'), row.get('Date', u''))
-        entity['base_paradox'] = True
-        ctl.store.add('Transaction', entity)
-        
+        entity = mk_entity(row, COMMANDE)
+        ctl.store.add('Commande', entity)
+
         ctl.store.relate(entity['eid'], 'compte', compte_id[row['CodeCompte']])
-        if row['CodePersonne'] in personne_id:
-            commanditaire_data = {'commandement': True}
-            ctl.store.add('Intervenant', commanditaire_data)
-            ctl.store.relate(entity['eid'], 'intervenants', commanditaire_data['eid'])
-            ctl.store.relate(commanditaire_data['eid'], 'intervenant', personne_id[row['CodePersonne']])
-        transaction_id[row['CodeCommande']] = entity['eid']
-GENERATORS.append((gen_transaction, CHK),)
+        commande_info[row['CodeCommande']] = (personne_id.get(row['CodePersonne']),
+                                              compte_id[row['CodeCompte']])
+        commande_id[row['CodeCommande']] = entity['eid']
+GENERATORS.append((gen_commande, CHK),)
 
 
+transaction_id = {}
+commande_transactions = {}
 pbrut_id = {}
 PBRUT = [
     ]
 def gen_pbrut(ctl):
     for i, row in enumerate(ctl.iter_and_commit('PBRUT')):
-        if row['CodeCommande'] not in transaction_id:
+        if row['CodeCommande'] not in commande_id:
             continue
         entity = mk_entity(row, PBRUT)
         remarks = [u'Provenance Materiaux: %s'%row['BProvenance'],
@@ -131,10 +129,21 @@ def gen_pbrut(ctl):
                    u'Occasion: %s' % row['BOccasion'],
                    ]
         entity['remarques'] = u'\n\n'.join(remarks)
-        #print entity
         ctl.store.add('AchatMateriaux', entity)
-        ctl.store.relate(transaction_id[row['CodeCommande']], 'achat', entity['eid'])
+        transaction = {'base_paradox': True}
+        ctl.store.add('Transaction', transaction)
+        ctl.store.relate(commande_id[row['CodeCommande']], 'transactions', transaction['eid'])
+        commanditaire, compte = commande_info[row['CodeCommande']]
+        ctl.store.relate(transaction['eid'], 'compte', compte)
+        if commanditaire:
+            commanditaire_data = {'commandement': True}
+            ctl.store.add('Intervenant', commanditaire_data)
+            ctl.store.relate(transaction['eid'], 'intervenants', commanditaire_data['eid'])
+            ctl.store.relate(commanditaire_data['eid'], 'intervenant', commanditaire)
+        ctl.store.relate(transaction['eid'], 'achat', entity['eid'])
         ctl.store.relate(entity['eid'], 'materiaux', mat_id[row['CodeMateriaux']])
+        transaction_id[('pb', row['CodePB'])] = transaction['eid']
+        commande_transactions.setdefault(row['CodeCommande'], []).append(transaction['eid'])
         pbrut_id[row['CodePB']] = entity['eid']
 GENERATORS.append((gen_pbrut, CHK),)
 
@@ -145,7 +154,7 @@ PFACHETE = [
     ]
 def gen_pfachete(ctl):
     for i, row in enumerate(ctl.iter_and_commit('PFACHETE')):
-        if row['CodeCommande'] not in transaction_id:
+        if row['CodeCommande'] not in commande_id:
             continue
         parure = {'type': u'???',
                   'nature': row['ANature']}
@@ -158,11 +167,22 @@ def gen_pfachete(ctl):
                    u'Occasion: %s' % row['AOccasion'],
                    ]
         entity['remarques'] = u'\n\n'.join(remarks)
-        #print entity
         ctl.store.add('AchatFabrication', entity)
-        ctl.store.relate(transaction_id[row['CodeCommande']], 'achat', entity['eid'])
+        transaction = {'base_paradox': True}
+        ctl.store.add('Transaction', transaction)
+        ctl.store.relate(commande_id[row['CodeCommande']], 'transactions', transaction['eid'])
+        commanditaire, compte = commande_info[row['CodeCommande']]
+        ctl.store.relate(transaction['eid'], 'compte', compte)
+        if commanditaire:
+            commanditaire_data = {'commandement': True}
+            ctl.store.add('Intervenant', commanditaire_data)
+            ctl.store.relate(transaction['eid'], 'intervenants', commanditaire_data['eid'])
+            ctl.store.relate(commanditaire_data['eid'], 'intervenant', commanditaire)
+        ctl.store.relate(transaction['eid'], 'achat', entity['eid'])
         ctl.store.relate(entity['eid'], 'parure', parure['eid'])
         pfachete_id[row['CodePFA']] = entity['eid']
+        transaction_id[('pfa', row['CodePFA'])] = transaction['eid']
+        commande_transactions.setdefault(row['CodeCommande'], []).append(transaction['eid'])
         pfachete_parure[row['CodePFA']] = parure['eid']
 GENERATORS.append((gen_pfachete, CHK),)
 
@@ -172,7 +192,7 @@ PFFABRIK = [
     ]
 def gen_pffabrik(ctl):
     for i, row in enumerate(ctl.iter_and_commit('PFFABRIK')):
-        if row['CodeCommande'] not in transaction_id:
+        if row['CodeCommande'] not in commande_id:
             continue
         parure = {'type': u'???',
                   'nature': row['FNature']}
@@ -185,11 +205,22 @@ def gen_pffabrik(ctl):
                    u'Occasion: %s' % row['FOccasion'],
                    ]
         entity['remarques'] = u'\n\n'.join(remarks)
-        #print entity
         ctl.store.add('AchatFabrication', entity)
-        ctl.store.relate(transaction_id[row['CodeCommande']], 'achat', entity['eid'])
+        transaction = {'base_paradox': True}
+        ctl.store.add('Transaction', transaction)
+        ctl.store.relate(commande_id[row['CodeCommande']], 'transactions', transaction['eid'])
+        commanditaire, compte = commande_info[row['CodeCommande']]
+        ctl.store.relate(transaction['eid'], 'compte', compte)
+        if commanditaire:
+            commanditaire_data = {'commandement': True}
+            ctl.store.add('Intervenant', commanditaire_data)
+            ctl.store.relate(transaction['eid'], 'intervenants', commanditaire_data['eid'])
+            ctl.store.relate(commanditaire_data['eid'], 'intervenant', commanditaire)
+        ctl.store.relate(transaction['eid'], 'achat', entity['eid'])
         ctl.store.relate(entity['eid'], 'parure', parure['eid'])
         pffabrik_id[row['CodePFF']] = entity['eid']
+        transaction_id[('pff', row['CodePFF'])] = transaction['eid']
+        commande_transactions.setdefault(row['CodeCommande'], []).append(transaction['eid'])
         pffabrik_parure[row['CodePFF']] = parure['eid']
 GENERATORS.append((gen_pffabrik, CHK),)
 
@@ -197,39 +228,36 @@ GENERATORS.append((gen_pffabrik, CHK),)
 DESTPB = []
 def gen_destpb(ctl):
     for i, row in enumerate(ctl.iter_and_commit('DESTPB')):
-        if row['CodeCommande'] not in transaction_id or row['CodePersonne'] not in personne_id:
+        if ('pb',row['CodePB']) not in transaction_id or row['CodePersonne'] not in personne_id:
             continue
         entity = mk_entity(row, DESTPB)
         entity['nombre'] = u'1'
-        #print entity
         ctl.store.add('Destinataire', entity)
         ctl.store.relate(entity['eid'], 'destinataire', personne_id[row['CodePersonne']])
-        ctl.store.relate(transaction_id[row['CodeCommande']], 'destinataires', entity['eid'])
+        ctl.store.relate(transaction_id[('pb',row['CodePB'])], 'destinataires', entity['eid'])
 GENERATORS.append((gen_destpb, CHK),)
 
 DESTPFA = []
 def gen_destpfa(ctl):
     for i, row in enumerate(ctl.iter_and_commit('DESTPFA')):
-        if row['CodeCommande'] not in transaction_id or row['CodePersonne'] not in personne_id:
+        if ('pfa',row['CodePFA']) not in transaction_id or row['CodePersonne'] not in personne_id:
             continue
         entity = mk_entity(row, DESTPFA)
         entity['nombre'] = u'1'
-        #print entity
         ctl.store.add('Destinataire', entity)
         ctl.store.relate(entity['eid'], 'destinataire', personne_id[row['CodePersonne']])
-        ctl.store.relate(transaction_id[row['CodeCommande']], 'destinataires', entity['eid'])
+        ctl.store.relate(transaction_id[('pfa', row['CodePFA'])], 'destinataires', entity['eid'])
 GENERATORS.append((gen_destpfa, CHK),)
 
 def gen_destpff(ctl):
     for i, row in enumerate(ctl.iter_and_commit('DESTPFF')):
-        if row['CodeCommande'] not in transaction_id or row['CodePersonne'] not in personne_id:
+        if ('pff',row['CodePFF']) not in transaction_id or row['CodePersonne'] not in personne_id:
             continue
         entity = {}
         entity['nombre'] = u'1'
-        #print entity
         ctl.store.add('Destinataire', entity)
         ctl.store.relate(entity['eid'], 'destinataire', personne_id[row['CodePersonne']])
-        ctl.store.relate(transaction_id[row['CodeCommande']], 'destinataires', entity['eid'])
+        ctl.store.relate(transaction_id[('pff', row['CodePFF'])], 'destinataires', entity['eid'])
 GENERATORS.append((gen_destpff, CHK),)
 
 
@@ -237,31 +265,33 @@ GENERATORS.append((gen_destpff, CHK),)
 intrmdr_id = {}
 def gen_intrmdr(ctl):
     for i, row in enumerate(ctl.iter_and_commit('INTRMEDR')):
-        if row['CodeCommande'] not in transaction_id or row['CodePersonne'] not in personne_id:
+        if row['CodeCommande'] not in commande_id or row['CodePersonne'] not in personne_id:
             continue
-        entity = {}
-        ctl.store.add('Intervenant', entity)
-        ctl.store.relate(entity['eid'], 'intervenant', personne_id[row['CodePersonne']])
-        ctl.store.relate(transaction_id[row['CodeCommande']], 'intervenants', entity['eid'])
+        for transaction in commande_transactions.get(row['CodeCommande'], ()):
+            entity = {}
+            ctl.store.add('Intervenant', entity)
+            ctl.store.relate(entity['eid'], 'intervenant', personne_id[row['CodePersonne']])
+            ctl.store.relate(transaction, 'intervenants', entity['eid'])
 GENERATORS.append((gen_intrmdr, CHK),)
-        
+
 def gen_vendrpb(ctl):
     for i, row in enumerate(ctl.iter_and_commit('VENDRPB')):
-        if row['CodeCommande'] not in transaction_id or row['CodePersonne'] not in personne_id:
+        if ('pb',row['CodePB']) not in transaction_id or row['CodePersonne'] not in personne_id:
             continue
         entity = {}
         ctl.store.add('Vendeur', entity)
         ctl.store.relate(entity['eid'], 'vendeur', personne_id[row['CodePersonne']])
-        ctl.store.relate(transaction_id[row['CodeCommande']], 'vendeurs', entity['eid'])
+        ctl.store.relate(transaction_id[('pb', row['CodePB'])], 'vendeurs', entity['eid'])
 GENERATORS.append((gen_vendrpb, CHK),)
+
 def gen_vendrpfa(ctl):
     for i, row in enumerate(ctl.iter_and_commit('VENDRPFA')):
-        if row['CodeCommande'] not in transaction_id or row['CodePersonne'] not in personne_id:
+        if ('pfa',row['CodePFA']) not in transaction_id or row['CodePersonne'] not in personne_id:
             continue
         entity = {}
         ctl.store.add('Vendeur', entity)
         ctl.store.relate(entity['eid'], 'vendeur', personne_id[row['CodePersonne']])
-        ctl.store.relate(transaction_id[row['CodeCommande']], 'vendeurs', entity['eid'])
+        ctl.store.relate(transaction_id[('pfa', row['CodePFA'])], 'vendeurs', entity['eid'])
 GENERATORS.append((gen_vendrpfa, CHK),)
 
 
@@ -271,7 +301,7 @@ ARTISAN = [('JoursTravail', 'duree', (optional, int)),
            ]
 def gen_artisan(ctl):
     for i, row in enumerate(ctl.iter_and_commit('ARTISAN')):
-        if row['CodeCommande'] not in transaction_id or row['CodePersonne'] not in personne_id:
+        if ('pff',row['CodePFF']) not in transaction_id or row['CodePersonne'] not in personne_id:
             continue
         entity = mk_entity(row, ARTISAN)
         if not entity['duree']:
@@ -280,19 +310,18 @@ def gen_artisan(ctl):
         entity.update({'tache': u'fabrication %s' % pffabrik_id[row['CodePFF']]})
         ctl.store.add('Travail', entity)
         ctl.store.relate(entity['eid'], 'artisan', personne_id[row['CodePersonne']])
-        ctl.store.relate(transaction_id[row['CodeCommande']], 'travaux', entity['eid'])
+        ctl.store.relate(transaction_id[('pff', row['CodePFF'])], 'travaux', entity['eid'])
 GENERATORS.append((gen_artisan, CHK),)
 
 def gen_tondeur(ctl):
     for i, row in enumerate(ctl.iter_and_commit('TONDEUR')):
-        if row['CodeCommande'] not in transaction_id or row['CodePersonne'] not in personne_id:
+        if ('pb',row['CodePB']) not in transaction_id or row['CodePersonne'] not in personne_id:
             continue
         entity = {'remarques': u'Salaire: %s\n\nJours travail:%s'%(row['Salaire'], row['JoursTravail']),
                   'tache': 'tonte de %s' % pbrut_id.get('CodePB', u'?')}
-        #print entity
         ctl.store.add('Travail', entity)
         ctl.store.relate(entity['eid'], 'artisan', personne_id[row['CodePersonne']])
-        ctl.store.relate(transaction_id[row['CodeCommande']], 'travaux', entity['eid'])
+        ctl.store.relate(transaction_id[('pb', row['CodePB'])], 'travaux', entity['eid'])
 GENERATORS.append((gen_tondeur, CHK),)
 
 def gen_matpach(ctl):
@@ -325,7 +354,6 @@ GENERATORS.append((gen_pbpfab, CHK),)
 
 
 
-# create controller
 if 'cnx' in locals():
     ctl = CWImportController(RQLObjectStore(cnx), askerror=True, commitevery=1000)
 else:
@@ -356,7 +384,8 @@ datasources = ['COMPTE',
 for data_name in datasources:
     data_file = 'recup/pdox/'+data_name+'.TXT'
     ctl.data[data_name] = lazytable(ucsvreader_pb(open(data_file), encoding="cp1252", separator=";"))
-# run
+
+
 ctl.run()
 import codecs
 f = codecs.open('data_import_paradox.errors', 'w', encoding='utf-8')

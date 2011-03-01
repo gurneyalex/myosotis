@@ -34,6 +34,12 @@ class Compte(EntityType):
     receveur = SubjectRelation('Personne', cardinality='**')
     base_paradox = Boolean(default=False,
                            description='vient de la base Paradox')
+class Commande(EntityType):
+    numero = Int(required=True)
+    prix_str = String(maxsize=100)
+    date_ordre_str = String(maxsize=100)
+    transactions = SubjectRelation('Transaction', cardinality='?*')
+
 class Transaction(EntityType):
     date = Date()
     type_achat = String(maxsize=2) # a virer ?
@@ -50,7 +56,7 @@ class Transaction(EntityType):
 
 class compte(RelationDefinition):
     name = 'compte'
-    subject = ('Transaction',)
+    subject = ('Transaction', 'Commande')
     object = 'Compte'
     cardinality = '1*'
     composite = 'subject'
@@ -179,7 +185,7 @@ class Travail(EntityType):
     nombre_aides = Int()
     designation_aides = String(maxsize=64, fulltextindexed=True)
     salaire_aides = SubjectRelation('Prix', cardinality='??', inlined=True, composite='subject')
-    tache = String(maxsize=64, fulltextindexed=True)
+    tache = String(maxsize=255, fulltextindexed=True)
     duree = Int()
     date_travail = Date()
     remarques = RichString(fulltextindexed=True, default_format='text/rest')
