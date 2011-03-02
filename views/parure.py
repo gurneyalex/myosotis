@@ -82,7 +82,7 @@ class MultiParureSummaryView(EntityView):
         for p in self.cw_rset.entities():
             parures.setdefault(p.nature, []).append(p)
         for nature in parures:
-            print 'processing', nature, len(parures[nature])
+            #print 'processing', nature, len(parures[nature])
             self.w(u'<h2>%s</h2>' % nature)
             self.display_parures_table(parures[nature])
     def display_parures_table(self, parures):
@@ -159,7 +159,7 @@ class ExcelView(EntityView):
         for p in self.cw_rset.entities():
             parures.setdefault(p.nature, []).append(p)
         for nature in parures:
-            print 'processing', nature, len(parures[nature])
+            #print 'processing', nature, len(parures[nature])
             sheet = wb.add_sheet(nature)
             self.write_sheet(sheet, parures[nature])
         wb.save(self)
@@ -210,7 +210,7 @@ class ExcelView(EntityView):
         col = 0
         for header, subheaders in headers:
             sheet.write(0, col, header)
-            print 0, col, 0, col+len(subheaders)-1
+            #print 0, col, 0, col+len(subheaders)-1
             sheet.merge(0, 0, col, col+len(subheaders)-1)
             for i, subheader in enumerate(subheaders):
                 sheet.write(1, i+col, subheader)
