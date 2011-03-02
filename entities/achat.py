@@ -63,7 +63,7 @@ class Materiaux(AnyEntity):
     __regid__ = 'Materiaux'
     fetch_attrs, _ = fetch_config(['type', 'famille', 'nom', 'couleur', 'carac_couleur', 'carac_facture'])
     type_names = {'E': u'étoffe', 'F': u'fourrure', 'M': u'mercerie',
-                  'O': u'orfèvrerie', 'B': u'broderie', 'P': u'peau'}
+                  'O': u'orfèvrerie', 'B': u'broderie', 'P': u'peau', '?': u'inconnu'}
         
     def dc_title(self):
         if self.provenance:
