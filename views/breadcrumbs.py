@@ -2,7 +2,7 @@ from cubicweb.web.views.ibreadcrumbs import IBreadCrumbsAdapter
 from cubicweb.selectors import is_instance, has_related_entities
 
 class TransactionBreadCrumbAdapter(IBreadCrumbsAdapter):
-    __select__ = is_instance('Transaction') & has_related_entities('compte')
+    __select__ = is_instance('Transaction', 'Commande') & has_related_entities('compte')
     def parent_entity(self):
         return self.entity.compte[0]
 
