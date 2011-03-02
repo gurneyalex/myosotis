@@ -38,7 +38,7 @@ class Commande(EntityType):
     numero = Int(required=True)
     prix_str = String(maxsize=100)
     date_ordre_str = String(maxsize=100)
-    transactions = SubjectRelation('Transaction', cardinality='?*')
+    transactions = SubjectRelation('Transaction', cardinality='*?')
 
 class Transaction(EntityType):
     date = Date()
