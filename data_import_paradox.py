@@ -395,4 +395,9 @@ for error in errors:
     f.write('\n')
 f.close()
 print '\n%d errors.' % len(errors)
+
+if 'cnx' in locals():
+    for c in rql('Commande C').entities(0):
+        rql('SET T pagination %(p)s WHERE C eid %(e)s, C transactions T', {'e': c.eid, 'p': u'item %d'%c.numero})
+    commit()
 sys.exit(0)
