@@ -126,29 +126,35 @@ class PersonneRelationsView(dotgraphview.DotGraphView):
     title = 'Personne : relations'
     backend_kwargs = {'ratio': 'auto', 'additionnal_param': {'rankdir':'LR'}}
     def build_visitor(self, entity):
-        return PersonneRelationVisitor(self._cw, entity)
+        return PersonneRelationVisitor(self._cw, [entity])
     def build_dotpropshandler(self):
         return PersonnePropsHandler(self._cw)
 
 class PersonneRelationVisitor(object):
-    def __init__(self, cw, personne):
+    def __init__(self, cw, personnes):
         self._cw = cw
-        self.personne = personne
+        if isinstance(personnes, list):
+            self.personnes = personnes
+        else:
+            self.personnes = [personnes]
         self._edges = []
 
     def nodes(self):
-        for occupation in self.personne.reverse_rattache_a:
-            try:
-                p = occupation.personne[0]
-                self._edges.append((occupation, p, self.personne))
+        for personne in self.personnes:
+            for occupation in personne.reverse_rattache_a:
+                try:
+                    print 'occ', occupation.eid
+                    p = occupation.personne[0]
+                    self._edges.append((occupation, p, personne))
+                    yield p.eid, p
+                except IndexError:
+                    continue
+            yield personne.eid, personne
+            related_to_rql = 'Any O WHERE O personne P, O rattache_a X, P eid %(eid)s'
+            for o in self._cw.execute(related_to_rql, {'eid': personne.eid}).entities():
+                p = o.rattache_a[0]
+                self._edges.append((o, personne, p))
                 yield p.eid, p
-            except IndexError:
-                continue
-        yield self.personne.eid, self.personne
-        related_to_rql = 'Any X WHERE O personne P, O rattache_a X, P eid %(eid)s'
-        for p in self._cw.execute(related_to_rql, {'eid': self.personne.eid}).entities():
-            self._edges.append((p.reverse_rattache_a[0], self.personne, p))
-            yield p.eid, p
 
     def edges(self):
         known = set()
