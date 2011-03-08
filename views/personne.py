@@ -124,7 +124,14 @@ class PersonneRelationsView(dotgraphview.DotGraphView):
     __regid__ = 'personne_relations'
     __select__ = is_instance('Personne')
     title = 'Personne : relations'
-    backend_kwargs = {'ratio': 'auto', 'additionnal_param': {'rankdir':'LR'}}
+    backend_kwargs = {'ratio': 'auto',
+                      'additionnal_param': {
+                          #'overlap': 'scale',
+                          'rankdir':'LR'
+                          },
+                      'renderer': 'dot',
+        
+        }
     def build_visitor(self, entity):
         return PersonneRelationVisitor(self._cw, [entity])
     def build_dotpropshandler(self):
@@ -143,7 +150,7 @@ class PersonneRelationVisitor(object):
         for personne in self.personnes:
             for occupation in personne.reverse_rattache_a:
                 try:
-                    print 'occ', occupation.eid
+                    #print 'occ', occupation.eid
                     p = occupation.personne[0]
                     self._edges.append((occupation, p, personne))
                     yield p.eid, p
@@ -158,11 +165,27 @@ class PersonneRelationVisitor(object):
 
     def edges(self):
         known = set()
-        for occupation, p1, p2 in self._edges:
-            current = (p1.eid, p2.eid, occupation.dc_title())
-            if current not in known:
-                known.add(current)
-                yield p1.eid, p2.eid, occupation
+        all_persons = set(p.eid for p in self.personnes)
+        for _occupation, p1, p2 in self._edges:
+            all_persons.add(p1.eid)
+            all_persons.add(p2.eid)
+        eids = ','.join(str(e) for e in all_persons)
+        rql = 'Any O WHERE O is Occupation, O personne X, X eid IN (%s), O rattache_a Y, Y eid IN (%s)'
+        rql = rql % (eids, eids)
+        for occupation in self._cw.execute(rql).entities():
+            p1 = occupation.personne[0]
+            p2 = occupation.rattache_a[0]
+            title = occupation.dc_title()
+            if (p1.eid, title, p2.eid) not in known:
+                known.add((p1.eid, title, p2.eid))
+                if title.strip():
+                    yield p1.eid, p2.eid, occupation
+                
+        ## for occupation, p1, p2 in self._edges:
+        ##     current = (p1.eid, p2.eid, occupation.dc_title())
+        ##     if current not in known:
+        ##         known.add(current)
+        ##         yield p1.eid, p2.eid, occupation
 
 class PersonnePropsHandler(dotgraphview.DotPropsHandler):
     def node_properties(self, personne):
