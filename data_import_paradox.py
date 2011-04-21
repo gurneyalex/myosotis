@@ -50,30 +50,66 @@ COLUMNS = {'ARTISAN': 'CodeCommande CodePFF CodePersonne Salaire JoursTravail',
 
 
 mat_id = {}
-MAT = [('Matiere', 'nom', ()),
-       ('Couleur', 'couleur', ())
+MAT = [('nom', 'nom', ()),
+       ('couleur', 'couleur', ()),
+       ('carac_couleur', 'carac_couleur', ()),
+       ('carac_facture', 'carac_facture', ()),
+       ('type', 'type', ()),
+       ('famille', 'famille', ()),
+       
        ]
 def gen_mat(ctl):
     for i, row in enumerate(ctl.iter_and_commit('MAT')):
         entity = mk_entity(row, MAT)
-        entity.update({'type': u'?', 'famille': u'?'})
         ctl.store.add('Materiaux', entity)
         mat_id[row['CodeMateriaux']] = entity['eid']
 GENERATORS.append((gen_mat, CHK),)
 
+preexisting_personnes = {}
+occupations = []
 personne_id = {}
-PERSONNE = [('Nom', 'identite', ()),
+PERSONNE = [('Identité', 'identite', ()),
             ('Nom', 'nom', ()),
-            ('Qualite', 'titre', ())
+            #('Qualite', 'titre', ()),
+            ('occupation', 'occupation', (optional,)),
+            ('rattachement', 'rattachement', (optional,)),
+            ('Surnom', 'surnom', (optional,)),
+            ('Diminutif', 'diminutif', (optional,)),
+            ('titre', 'titre', (optional,)),
+            ('sexe', 'sexe', ()),
+            
             ]
 def gen_personne(ctl):
     for i, row in enumerate(ctl.iter_and_commit('PERSONNE')):
+        if row['Identité'] in preexisting_personnes:
+            personne_id[row['CodePersonne']] = preexisting_personnes[row['Identité']]
+            continue
         entity = mk_entity(row, PERSONNE)
-        if entity['identite'] == '?':
-            entity['identite']  = entity['titre']
-        entity.update({'sexe': u'?', 'base_paradox': True})
+        entity.update('base_paradox': True})
+        if 'occupation' in entity:
+            if entity['occupation']:
+                occupation = (entity['occupation'], entity.get('rattachement')
+            else:
+                occupation = None
+            del entity['occupation']
+            del entity['rattachement']
+        else:
+            occupation = None
         ctl.store.add('Personne', entity)
+        if occupation is not None:
+            occupations.append((entity['eid'],)+occupation)
         personne_id[row['CodePersonne']] = entity['eid']
+        preexisting_personnes[entity['identite']] = entity['eid']
+    for eid, valeur, rattachement in occupations:
+        occupation = {'valeur': valeur}
+        if rattachement:
+            occupation['libelle'] = u'identité'
+        else:
+            occupation['libelle'] = u'occupation' 
+        entity = ctl.store.add('Occupation', occupation)
+        ctl.store.relate(entity['eid'], 'personne', eid)
+        if rattachement:
+            ctl.store.relate(entity['eid'], 'rattache_a', preexisting_personnes[rattachement])
 GENERATORS.append((gen_personne, CHK),)
 
 
@@ -360,6 +396,10 @@ else:
     ctl = CWImportController(ObjectStore())
 ctl.generators = GENERATORS
 
+if 'cnx' in locals():
+    rset = rql('Any P WHERE P is Person')
+    for person in rset.entities():
+        preexisting_personnes[person.identite] = person.eid
 
 
 datasources = ['COMPTE',
