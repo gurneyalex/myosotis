@@ -1,255 +1,255 @@
-CodeMateriaux;Matiere;Couleur
-9;"pers";"bleu"
-10;"vulpes";
-11;"pannus";
-12;"furratura";
-13;"pannus";"blanc"
-14;"blanchet";"blanc"
-15;"serge";"noire"
-16;"vergette";
-17;"soie";
-18;"fils d' argent";
-19;"autres choses";
-20;"agneau";
-21;"lapin";"blanc"
-22;"pennus";
-23;"camelin";
-24;"brussequin";
-25;"menu vair";
-26;"persico";
-27;"camelin";"rouge"
-28;"serge";
-29;"cendal";
-30;"toile";
-31;"drap d'or";
-32;"fil";
-33;"vert";
-34;"ray�";
-35;"eschargati";
-36;"pennus de barbarino";
-37;"varius";"ardentus"
-38;"lapin";
-39;"sable";
-40;"agneau";"pernis"
-41;"toile de Reims";
-42;"cendal";"en graine"
-43;"cendal";"vert"
-44;"futaine";
-45;"�carlate";"punatia"
-46;"toile de lin";
-47;"samit";
-48;"velour";
-49;"cr�pe";
-50;"cendal";"noir"
-51;"las de soie";
-52;"toile de burre";
-53;"�cureuil";
-54;"agneau";"blanc"
-55;"camelin";"en graine"
-56;"vert";"crocey"
-57;"blodii";
-58;"chanvre";
-59;"furratura";
-60;"toile � envelopper";
-61;"vert";"janne"
-62;"bife";
-63;"agneau";"patere"
-64;"violet";
-65;"�carlate";
-66;"rosset";
-67;"blanc";
-68;"tann�";
-69;"vert";"�meraude"
-70;"camelin";"beguini"
-71;"pers";"obscuro"
-72;"pers";"azur"
-73;"mantilium";
-74;"tuiallia";
-75;"gros drap";
-76;"toile";"yndi"
-77;"fil";"rouge"
-78;"fil";"blanc"
-79;"fil";"yndi"
-80;"cendal";"noir"
-81;"griset";
-82;"cendal";"rouge"
-83;"agneau";"assinatus"
-84;"pers";"clair"
-85;"cendal";"azur"
-86;"sorcia";
-87;"agneau";"blanc"
-88;"gris";
-89;"camelin";"blanc goutt� de graine"
-90;"mor�e";
-91;"yraigne";
-92;"jaune";
-93;"camelin";"imitant le tann�"
-94;"pers";"eyncio"
-95;"pennus";"noire"
-96;"brunette";
-97;"varius";
-98;"camelin";"blanc"
-99;"bi�vre";
-100;"rosorus";
-101;"fil de soie";
-102;"fil d'or";
-103;"dos de lapin";
-104;"divers vairs";
-105;"serge";"ray�e"
-106;"drap";"plain"
-107;"pers";"pliss�"
-108;"menu vair";"espuratis"
-109;"bugia ou lugia";
-110;"pennus";"blanc"
-111;"gros vair";
-112;"gros porpre";
-113;"manutegia";
-115;"toile bourgeoise";
-116;"toile";"blanche"
-117;"tursichie";
-118;"vermeil";
-119;"�carlate";"vermeil"
-120;"bugia";"blanc"
-121;"camelin";"blanc gout�"
-122;"luyro";
-123;"ruban";
-124;"rose";
-125;"ray� � carreaux";
-126;"castro vele";
-127;"porpre";"fin"
-128;"vair";"russus"
-129;"castro vele";"blanc"
-130;"ecarlate ray�e";"vermeil"
-131;"pannus";"blanc gout�"
-132;"stalot";
-133;"camelin";"vert"
-134;"camelin";"vermeil"
-135;"camelin";"brun"
-136;"tann�";"vert"
-137;"pers";"vert"
-138;"blaueti";
-139;"listaco";
-140;"porpre";
-141;"pannus valesi";
-142;"serge";"stanei"
-143;"plane";
-144;"soie";"noire"
-145;"ruban";"avec perles"
-146;"hermine";
-147;"castra";
-148;"ruban";"argent"
-149;"capitegium";
-150;"capeti";
-151;"mappus";
-152;"porpre";"gros"
-153;"larest";
-154;"bourre";"laine"
-155;"coton";
-156;"porpre";"menu"
-157;"polena";
-158;"vair";"affriaco"
-159;"fil";"noir"
-160;"pannus";"rouge"
-161;"camelot";
-162;"marbr�";
-163;"grosse toile";
-164;"cendal";"rouge renforc�"
-165;"cendal";"jaune"
-166;"cendal";"blanc renforc�"
-167;"cendal";"yndi renforc�"
-168;"toile";"verte"
-169;"samit";"rouge"
-170;"capi";
-171;"cendal";"vert renforc�"
-172;"toile";"benda"
-173;"�carlate";"ray�"
-174;"tiretaine";
-175;"manutegia";
-176;"sayette";
-177;"cendal";"blanc"
-178;"drap de Florence";
-179;"sable";"blanc"
-180;"toile fine";
-181;"toile";"verte"
-182;"coton";
-183;"camelin";"cagnatus"
-184;"vert";"nemoroso"
-185;"toile";"inde"
-186;"camelin";"marbr�"
-187;"pers";"noire"
-188;"soissie";
-189;"mappus";"grosse"
-190;"�carlate";"mor�e"
-191;"�carlate";"violet"
-192;"drap d'argent";
-193;"gros vair";"bray"
-194;"tarse";"vert"
-195;"vert";"entrefile"
-196;"ventre de lapin";
-197;"cuisse de li�vre";"blanche"
-198;"bi�vre";"noire"
-199;"brussequin";"brun"
-200;"camelin";"marbr� rouge"
-201;"errefile";"de St denis"
-202;"supermapis";
-203;"�carlate";"alea"
-204;"vergette";"rouge"
-205;"cendal";"yndi"
-206;"estafeta";
-207;"�carlate";"rouge"
-208;"eschargati";"ray�"
-209;"lapin";"dos"
-210;"pannus";"noir"
-211;"toile";"fucali"
-212;"fil";"vert"
-213;"�carlate";"echarcate"
-214;"cendal";"vermeil"
-215;"toile";"teinte"
-216;"brunette";"noire"
-217;"bugia";
-218;"camelin";"violet"
-219;"�carlate";"vergette"
-220;"toile";"rouge"
-221;"bougrant";
-222;"ray�";"menu"
-223;"teneti";
-224;"Atolay";
-225;"pannus";"en graine"
-226;"verdelet";
-227;"ruban";"soie"
-228;"argent";
-229;"ruban";"vert"
-230;"marbr�";"rouge"
-231;"montivillier";
-232;"taffeta";
-233;"cordon";
-234;"panni";"luigiis"
-235;"panni";"dacoli"
-236;"�carlate";"rose"
-237;"serge";"verte"
-238;"serge";"rouge"
-239;"imp�riale";
-240;"lin";
-241;"camelot";"fin"
-242;"camelin";"nay"
-243;"tiretaine";"blanche"
-244;"soie";"divers couleurs"
-245;"fil";"divers couleurs"
-246;"migraine";
-247;"pannus";"vermeil"
-248;"violet";"en graine"
-249;"tresse";
-250;"tresse";"noire"
-251;"cordon";"soie"
-252;"garance";
-253;"camelin";"ray�"
-254;"pannus";"frise"
-255;"brunette";"mor�e"
-256;"camiscati";
-257;"gros fil";"soie"
-258;"froci";
-259;"soie";"ray�e"
-260;"pannus";"Yvoire"
-261;"sayette";"noire"
-262;"pers";"adurea"
-263;"toile";
+"CodeMateriaux","Matiere","Couleur","type","famille","nom","couleur","carac_couleur","carac_facture"
+20,"agneau",,"F","NA","agneau",,,
+40,"agneau","pernis","F","NA","agneau","pernis",,"pernis"
+54,"agneau","blanc","F","NA","agneau","blanc","blanc",
+63,"agneau","patere","F","NA","agneau","patere",,"patere"
+83,"agneau","assinatus","F","NA","agneau","assinatus",,"assinatus"
+87,"agneau","blanc","F","NA","agneau","blanc","blanc",
+228,"argent",,"O","NA","argent",,,
+224,"Atolay",,"I","NA","Atolay",,,
+19,"autres choses",,"N","NA","autres choses",,,
+99,"bièvre",,"F","NA","bièvre",,,
+198,"bièvre","noire","F","NA","bièvre","noire","noir",
+62,"bife",,"E","LAINE","bife",,,
+67,"blanc",,"E","LAINE","blanc",,,
+14,"blanchet","blanc","E","LAINE","blanchet","blanc","blanc",
+138,"blaueti",,"E","LAINE","blaueti",,,
+57,"blodii",,"E","LAINE","blodii",,,
+221,"bougrant",,"E","LAINE","bougrant",,,
+154,"bourre","laine","E","LAINE","bourre","laine",,
+96,"brunette",,"E","LAINE","brunette",,,
+216,"brunette","noire","E","LAINE","brunette","noire","noir",
+255,"brunette","morée","E","LAINE","brunette","morée","morée",
+24,"brussequin",,"E","LAINE","brussequin",,,
+199,"brussequin","brun","E","LAINE","brussequin","brun","brun",
+120,"bugia","blanc","F","NA","bugia","blanc","blanc",
+217,"bugia",,"F","NA","bugia",,,
+109,"bugia ou lugia",,"F","NA","bugia ou lugia",,,
+23,"camelin",,"E","LAINE","camelin",,,
+27,"camelin","rouge","E","LAINE","camelin","rouge","rouge",
+55,"camelin","en graine","E","LAINE","camelin","en graine","graine",
+70,"camelin","beguini","E","LAINE","camelin","beguini","beguini",
+89,"camelin","blanc goutté de graine","E","LAINE","camelin","blanc goutté de graine","blanc goutté de graine",
+93,"camelin","imitant le tanné","E","LAINE","camelin","imitant le tanné","tanné",
+98,"camelin","blanc","E","LAINE","camelin","blanc","blanc",
+121,"camelin","blanc gouté","E","LAINE","camelin","blanc gouté","blanc goutté",
+133,"camelin","vert","E","LAINE","camelin","vert","vert",
+134,"camelin","vermeil","E","LAINE","camelin","vermeil","vermeil",
+135,"camelin","brun","E","LAINE","camelin","brun","brun",
+183,"camelin","cagnatus","E","LAINE","camelin","cagnatus","cagnet",
+186,"camelin","marbré","E","LAINE","camelin","marbré","marbré",
+200,"camelin","marbré rouge","E","LAINE","camelin","marbré rouge","marbré rouge",
+218,"camelin","violet","E","LAINE","camelin","violet","violet",
+242,"camelin","nay","E","LAINE","camelin","nay","nay",
+253,"camelin","rayé","E","LAINE","camelin","rayé","rayé",
+161,"camelot",,"E","LAINE","camelot",,,
+241,"camelot","fin","E","LAINE","camelot","fin",,"fin"
+256,"camiscati",,"E","LAINE","camiscati",,,
+150,"capeti",,"E","LAINE","capeti",,,
+170,"capi",,"E","LAINE","capi",,,
+149,"capitegium",,"E","LAINE","capitegium",,,
+147,"castra",,"F","NA","castra",,,
+126,"castro vele",,"F","NA","castro vele",,,
+129,"castro vele","blanc","F","NA","castro vele","blanc","blanc",
+29,"cendal",,"E","SOIE","cendal",,,
+42,"cendal","en graine","E","SOIE","cendal","en graine","graine",
+43,"cendal","vert","E","SOIE","cendal","vert","vert",
+50,"cendal","noir","E","SOIE","cendal","noir","noir",
+80,"cendal","noir","E","SOIE","cendal","noir","noir",
+82,"cendal","rouge","E","SOIE","cendal","rouge","rouge",
+85,"cendal","azur","E","SOIE","cendal","azur","azur",
+164,"cendal","rouge renforcé","E","SOIE","cendal","rouge renforcé","rouge ","renforcé"
+165,"cendal","jaune","E","SOIE","cendal","jaune","jaune",
+166,"cendal","blanc renforcé","E","SOIE","cendal","blanc renforcé","blanc","renforcé"
+167,"cendal","yndi renforcé","E","SOIE","cendal","yndi renforcé","yndi","renforcé"
+171,"cendal","vert renforcé","E","SOIE","cendal","vert renforcé","vert","renforcé"
+177,"cendal","blanc","E","SOIE","cendal","blanc","blanc",
+205,"cendal","yndi","E","SOIE","cendal","yndi","yndi",
+214,"cendal","vermeil","E","SOIE","cendal","vermeil","vermeil",
+58,"chanvre",,"E","TOILE","chanvre",,,
+233,"cordon",,"M","NA","cordon",,,
+251,"cordon","soie","M","NA","cordon","soie",,
+155,"coton",,"M","TOILE","coton",,,
+182,"coton",,"M","TOILE","coton",,,
+49,"crêpe",,"E","SOIE","crêpe",,,
+197,"cuisse de lièvre","blanche","F","NA","cuisse de lièvre","blanche","blanc",
+104,"divers vairs",,"F","NA","divers vairs",,,
+103,"dos de lapin",,"F","NA","dos de lapin",,,
+106,"drap","plain","E","LAINE","drap","plain","uni",
+192,"drap d'argent",,"E","SOIE","drap d'argent",,,
+31,"drap d'or",,"E","SOIE","drap d'or",,,
+178,"drap de Florence",,"E","LAINE","drap de Florence",,,
+45,"écarlate","punatia","E","LAINE","écarlate","punatia","punatia",
+65,"écarlate",,"E","LAINE","écarlate",,,
+119,"écarlate","vermeil","E","LAINE","écarlate","vermeil","vermeil",
+173,"écarlate","rayé","E","LAINE","écarlate","rayé","rayé",
+190,"écarlate","morée","E","LAINE","écarlate","morée","morée",
+191,"écarlate","violet","E","LAINE","écarlate","violet","violet",
+203,"écarlate","alea","E","LAINE","écarlate","alea","alea",
+207,"écarlate","rouge","E","LAINE","écarlate","rouge","rouge",
+213,"écarlate","echarcate","E","LAINE","écarlate","echarcate","à carreaux",
+219,"écarlate","vergette","E","LAINE","écarlate","vergette",,"vergette"
+236,"écarlate","rose","E","LAINE","écarlate","rose","rose",
+130,"ecarlate rayée","vermeil","E","LAINE","ecarlate rayée","vermeil","vermeil",
+53,"écureuil",,"F","NA","écureuil",,,
+201,"errefile","de St denis","E","LAINE","errefile","de St denis",,
+35,"eschargati",,"E","LAINE","eschargati",,,
+208,"eschargati","rayé","E","SOIE","eschargati","rayé","rayé",
+206,"estafeta",,"E","SOIE","estafeta",,,
+32,"fil",,"M","NA","fil",,,
+77,"fil","rouge","M","NA","fil","rouge","rouge",
+78,"fil","blanc","M","NA","fil","blanc","blanc",
+79,"fil","yndi","M","NA","fil","yndi","yndi",
+159,"fil","noir","M","NA","fil","noir","noir",
+212,"fil","vert","M","NA","fil","vert","vert",
+245,"fil","divers couleurs","M","NA","fil","divers couleurs",,
+102,"fil d'or",,"M","NA","fil d'or",,,
+101,"fil de soie",,"M","SOIE","fil de soie",,,
+18,"fils d' argent",,"M","NA","fils d' argent",,,
+258,"froci",,"I","NA","froci",,,
+12,"furratura",,"F","NA","furratura",,,
+59,"furratura",,"F","NA","furratura",,,
+44,"futaine",,"E","TOILE","futaine",,,
+252,"garance",,"E","LAINE","garance",,,
+88,"gris",,"E","LAINE","gris",,,
+81,"griset",,"E","LAINE","griset",,,
+75,"gros drap",,"E","LAINE","gros drap",,,
+257,"gros fil","soie","M","SOIE","gros fil","soie",,
+112,"gros porpre",,"F","NA","gros porpre",,,
+111,"gros vair",,"F","NA","gros vair",,,
+193,"gros vair","bray","F","NA","gros vair","bray",,"bray"
+163,"grosse toile",,"E","TOILE","grosse toile",,,"grosse"
+146,"hermine",,"F","NA","hermine",,,
+239,"impèriale",,"E","LAINE","impèriale",,,
+92,"jaune",,"E","LAINE","jaune",,,
+21,"lapin","blanc","F","NA","lapin","blanc","blanc",
+38,"lapin",,"F","NA","lapin",,,
+209,"lapin","dos","F","NA","lapin","dos",,"dos"
+153,"larest",,"E","LAINE","larest",,,
+51,"las de soie",,"M","SOIE","las de soie",,,
+240,"lin",,"M","TOILE","lin",,,
+139,"listaco",,"M","NA","listaco",,,
+122,"luyro",,"I","NA","luyro",,,
+73,"mantilium",,"E","TOILE","mantilium",,,
+113,"manutegia",,"E","TOILE","manutegia",,,
+175,"manutegia",,"E","TOILE","manutegia",,,
+151,"mappus",,"E","TOILE","mappus",,,
+189,"mappus","grosse","E","TOILE","mappus","grosse",,"grosse"
+162,"marbré",,"E","LAINE","marbré",,,
+230,"marbré","rouge","E","LAINE","marbré","rouge","rouge",
+25,"menu vair",,"F","NA","menu vair",,,
+108,"menu vair","espuratis","F","NA","menu vair","espuratis",,"épuré"
+246,"migraine",,"E","LAINE","migraine",,,
+231,"montivillier",,"E","LAINE","montivillier",,,
+90,"morée",,"E","LAINE","morée",,,
+234,"panni","luigiis","E","LAINE","panni","luigiis",,
+235,"panni","dacoli","E","LAINE","panni","dacoli","ancolie",
+11,"pannus",,"E","LAINE","pannus",,,
+13,"pannus","blanc","E","LAINE","pannus","blanc","blanc",
+131,"pannus","blanc gouté","E","LAINE","pannus","blanc gouté","blanc goutté",
+160,"pannus","rouge","E","LAINE","pannus","rouge","rouge",
+210,"pannus","noir","E","LAINE","pannus","noir","noir",
+225,"pannus","en graine","E","LAINE","pannus","en graine","graine",
+247,"pannus","vermeil","E","LAINE","pannus","vermeil","vermeil",
+254,"pannus","frise","E","LAINE","pannus","frise",,"frise"
+260,"pannus","Yvoire","E","LAINE","pannus","Yvoire","ivoire",
+141,"pannus valesi",,"E","LAINE","pannus valesi",,,
+22,"pennus",,"F","NA","pennus",,,
+95,"pennus","noire","F","NA","pennus","noire","noir",
+110,"pennus","blanc","F","NA","pennus","blanc","blanc",
+36,"pennus de barbarino",,"F","NA","pennus de barbarino",,,"de barbarie"
+9,"pers","bleu","E","LAINE","pers","bleu","bleu",
+71,"pers","obscuro","E","LAINE","pers","obscuro","obscur",
+72,"pers","azur","E","LAINE","pers","azur","azur",
+84,"pers","clair","E","LAINE","pers","clair","clair",
+94,"pers","eyncio","E","LAINE","pers","eyncio","eyncio",
+107,"pers","plissé","E","LAINE","pers","plissé","plissé",
+137,"pers","vert","E","LAINE","pers","vert","vert",
+187,"pers","noire","E","LAINE","pers","noire","noir",
+262,"pers","adurea","E","LAINE","pers","adurea","azur",
+26,"persico",,"E","LAINE","persico",,,
+143,"plane",,"I","NA","plane",,,
+157,"polena",,"I","NA","polena",,,
+127,"porpre","fin","F","NA","porpre","fin",,"fin"
+140,"porpre",,"F","NA","porpre",,,
+152,"porpre","gros","F","NA","porpre","gros",,"gros"
+156,"porpre","menu","F","NA","porpre","menu",,"menu"
+34,"rayé",,"E","LAINE","rayé",,,
+222,"rayé","menu","E","LAINE","rayé","menu",,"menu"
+125,"rayé à carreaux",,"E","LAINE","rayé à carreaux",,,
+124,"rose",,"E","LAINE","rose",,,
+100,"rosorus",,"E","LAINE","rosorus",,,
+66,"rosset",,"E","LAINE","rosset",,,
+123,"ruban",,"M","NA","ruban",,,
+145,"ruban","avec perles","M","NA","ruban","avec perles",,"à perle"
+148,"ruban","argent","M","NA","ruban","argent",,"argent"
+227,"ruban","soie","M","SOIE","ruban","soie",,
+229,"ruban","vert","M","NA","ruban","vert","vert",
+39,"sable",,"E","LAINE","sable",,,
+179,"sable","blanc","E","LAINE","sable","blanc","blanc",
+47,"samit",,"E","SOIE","samit",,,
+169,"samit","rouge","E","SOIE","samit","rouge","rouge",
+176,"sayette",,"E","LAINE","sayette",,,
+261,"sayette","noire","E","LAINE","sayette","noire","noir",
+15,"serge","noire","E","LAINE","serge","noire","noir",
+28,"serge",,"E","LAINE","serge",,,
+105,"serge","rayée","E","LAINE","serge","rayée","rayé",
+142,"serge","stanei","E","LAINE","serge","stanei","étain",
+237,"serge","verte","E","LAINE","serge","verte","vert",
+238,"serge","rouge","E","LAINE","serge","rouge","rouge",
+17,"soie",,"E","SOIE","soie",,,
+144,"soie","noire","E","SOIE","soie","noire","noir",
+244,"soie","divers couleurs","E","SOIE","soie","divers couleurs",,
+259,"soie","rayée","E","SOIE","soie","rayée","rayé",
+188,"soissie",,"E","SOIE","soissie",,,
+86,"sorcia",,"E","SOIE","sorcia",,,
+132,"stalot",,"E","LAINE","stalot",,,
+202,"supermapis",,"E","TOILE","supermapis",,,
+232,"taffeta",,"E","SOIE","taffeta",,,
+68,"tanné",,"E","LAINE","tanné",,,
+136,"tanné","vert","E","LAINE","tanné","vert","vert",
+194,"tarse","vert","E","LAINE","tarse","vert","vert",
+223,"teneti",,"E","LAINE","teneti",,,
+174,"tiretaine",,"E","LAINE","tiretaine",,,
+243,"tiretaine","blanche","E","LAINE","tiretaine","blanche","blanc",
+30,"toile",,"E","TOILE","toile",,,
+76,"toile","yndi","E","TOILE","toile","yndi","yndi",
+116,"toile","blanche","E","TOILE","toile","blanche","blanc",
+168,"toile","verte","E","TOILE","toile","verte","vert",
+172,"toile","benda","E","TOILE","toile","benda",,"benda"
+181,"toile","verte","E","TOILE","toile","verte","vert",
+185,"toile","inde","E","TOILE","toile","inde","yndi",
+211,"toile","fucali","E","TOILE","toile","fucali",,"fucali"
+215,"toile","teinte","E","TOILE","toile","teinte",,
+220,"toile","rouge","E","TOILE","toile","rouge","rouge",
+263,"toile",,"E","TOILE","toile",,,
+60,"toile à envelopper",,"E","TOILE","toile à envelopper",,,"à envelopper"
+115,"toile bourgeoise",,"E","TOILE","toile bourgeoise",,,"bourgeoise"
+52,"toile de burre",,"E","TOILE","toile de burre",,,"bure"
+46,"toile de lin",,"E","TOILE","toile de lin",,,"lin"
+41,"toile de Reims",,"E","TOILE","toile de Reims",,,
+180,"toile fine",,"E","TOILE","toile fine",,,"fin"
+249,"tresse",,"M","NA","tresse",,,
+250,"tresse","noire","M","NA","tresse","noire","noir",
+74,"tuiallia",,"E","TOILE","tuiallia",,,
+117,"tursichie",,"E","NA","tursichie",,,
+128,"vair","russus","F","NA","vair","russus",,"rassus"
+158,"vair","affriaco","F","NA","vair","affriaco",,"affriaco"
+37,"varius","ardentus","F","NA","varius","ardentus",,"ardentus"
+97,"varius",,"F","NA","varius",,,
+48,"velour",,"E","SOIE","velour",,,
+196,"ventre de lapin",,"F","NA","ventre de lapin",,,"ventre"
+226,"verdelet",,"E","LAINE","verdelet",,"vert",
+16,"vergette",,"E","LAINE","vergette",,,
+204,"vergette","rouge","E","LAINE","vergette","rouge",,
+118,"vermeil",,"E","LAINE","vermeil",,"vermeil",
+33,"vert",,"E","LAINE","vert",,"vert",
+56,"vert","crocey","E","LAINE","vert","crocey","crosey",
+61,"vert","janne","E","LAINE","vert","janne","jaune",
+69,"vert","émeraude","E","LAINE","vert","émeraude","émeraude",
+184,"vert","nemoroso","E","LAINE","vert","nemoroso","nemoroso",
+195,"vert","entrefile","E","LAINE","vert","entrefile",,"entrefilé"
+64,"violet",,"E","LAINE","violet",,,
+248,"violet","en graine","E","LAINE","violet","en graine","graine",
+10,"vulpes",,"F","NA","vulpes",,,
+91,"yraigne",,"E","LAINE","yraigne",,,

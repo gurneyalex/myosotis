@@ -1,737 +1,737 @@
-CodeCommande;CodePFF;FNature;FLieuAchat;FQuantite;FPrixUnitaire;FPrixGlobal;FOccasion
-11;5;"robe";;"1";;"10 L v";
-12;6;"robe";;"1";;"100 S v";
-13;7;"robe";;"1";;"100 S v";
-14;8;"robe";;"1";;"100 S v";
-17;9;"robe";;"1";"4 L 10 S";"4 L 10 S";
-21;10;"robe";;"1";;;
-25;11;"robe";;"1";;;
-26;12;"cote";"Chamb�ry";"1";;;
-26;13;"pourpoint";"Chamb�ry";"1";;;
-29;14;"couverture piqu�e";;"1";;;
-29;15;"d'autres choses";;;;;
-36;16;"pelisse";"Chamb�ry";"4";;;
-39;17;"corset";;"3";;;
-44;21;"robe";;"1";;;"le prix de la couture compte avec 8 autres robes"
-45;18;"corset";;"1";;;"serge,cendal doublure et � partager avec filles"
-46;19;"robe";;"plusieurs (3?)";;;
-47;20;"gipon";;"3";;;
-50;22;"garnement";;"47";;;"soie cendal fil..menus objets pour la couture."
-51;23;"surcot";;"plusieurs";;;
-52;24;"cloche";;"1";;;"le m�trage vaut aussi pour le surcot"
-52;25;"surcot";;"1";;;"le m�trage vaux aussi pour la cloche."
-52;26;"corset";;"3";;;
-52;27;"corset";;"3";;;
-52;28;"robe";;"6";;;"livr�e"
-53;29;"robe � trois garnements";;"1";;;"livr�e"
-53;30;"robe";;"1";;;"livr�e"
-53;31;"robe";;"2";;;"livr�e"
-53;32;"robe";;"2";;;"livr�e"
-53;33;"robe";;"1";;;"livr�e"
-54;34;"robe";;"1";;;
-55;35;"garnache";;"1";;;
-59;36;"robe";;"plusieurs";;;
-60;37;"doublure de chaperon";;"plusieurs";;;"ramen�es par A5 pour les chevaliers qui n'iront pas en Italie avec la comtesse"
-63;38;"couverture";;"1";;;
-68;39;"cloche";;"plusieurs";;;"partent en mission en Italie"
-71;40;"linteamentum";;"plusieurs";;;
-71;41;"camisius";;"plusieurs";;;
-72;43;"robe";;"1";;;
-73;44;"linteamentum";;;;;
-74;46;"coussin";;"plusieurs";;;
-75;47;"chaperon";;"1";;;
-80;48;"coussin";;"plusieurs";;;
-83;49;"robe � trois garnements";;"2";;;
-84;50;"cape";;"2";;;
-85;51;"robe";;"1";;;
-86;52;"cloche";;"1";;;
-89;54;"doublure de robe";;"1";;;
-91;55;"doublure de corset";;"plusieurs";;;
-92;56;"robe";;"plusieurs";;;
-92;57;"chausses";;"plusieurs paires";;;
-92;58;"robe";;"2";;;
-92;59;"robe";;"1";;;
-92;60;"robe";;"3";;;
-92;61;"robe";;"1";;;
-94;62;"doublure de robe";;"1";;;"pour un robe d'ecarlate punatia"
-98;63;"doublure de chaperon";;"1";;;"pour une cape"
-99;64;"robe";;"plusieurs";;;"livr�e de car�me 1314"
-100;65;"robe";;"2";;;
-101;66;"robe partit�e";;"?";;;"livr�e des �cuyers d' A5"
-104;67;"robe";;"?";;;"livr�e"
-104;68;"robe partit�e";;"?";;;"livr�e"
-104;69;"robe";;"1";;;
-106;70;"selle";;"1";;;"mariage avec le duc d'autriche"
-106;71;"selle";;"1";;;"mariage avec le duc d'autriche"
-107;72;"malecote";;"1";;;
-107;73;"cloche";;"1";;"pas achat de tissu seulement tonte";
-107;74;"doublure de cloche";;"1";;"as achat de tissu seulement tonte";"L'azur sert aussi pour la male cote"
-107;75;"doublure de malecote";;"1";;"pas achat de tissu seulement tonte";"azur sert aussi pour la cloche"
-112;76;"chemise d'arbal�tes";;"3";;;
-113;77;"robe";;"plusieurs";;;"sans doute mariage"
-116;78;"doublure de robe";;"?";;;
-117;79;"bouton";;"72";;;
-118;80;"robe";;;;;"livr�e par A5 quand il va en Allemagne"
-120;81;"cape lombarde";"Bresse";"plusieurs";;;"le voyage de l'intermediaire est compt� dans le prix"
-121;82;"robe";;"1";;;
-122;83;"chemise d'arbal�te";;"68";;;
-123;84;"corset d'�t�";;"?";;;
-125;85;"robe";;"2?";;;"complemeent de livr�e"
-125;86;"chausses";;"?";;;
-126;87;"doublure de corset";;"?";;;"doublure pour corset item 4 1315.1316"
-128;88;"tunique";;"1";;;"�trennes"
-128;89;"cape";;"1";;;"�trennes"
-129;90;"robe";;"?";;;
-131;91;"robe";;"?";;;"cet achar compl�te les fourrures ramen� de paris par le comte qui n'etaient pas suffisantes"
-132;92;"robe";;"4?";;;
-133;93;"robe";;"?";;;"completer la livr�e"
-134;94;"robe";;"3";;;"compl�ment � la livr�e"
-134;95;"robe";;"?";;;"compl�ment � la livr�e"
-136;96;"fourrure de robe";;"2";;;
-139;97;"robe";;"1";;;"pour son voyage en Italie"
-139;98;"robe";;"1";;;
-139;99;"robe";;"2";;;
-139;100;"corset";;"1";;;
-140;101;"robe";;"1";;;
-141;102;"robe de trois garnements";;"4";;;"sert aussi pour le corset"
-141;103;"corset";;"1";;;"sert aussi pour les 4 robes"
-143;104;"robe";;"4";;;"livr�e envoy�� Yppong...?"
-145;105;"doublure de corset";;"1";;;"doublure du corset item 19 1317.1318"
-146;106;"doublure de robe de trois garnements";;"3";;;"pour des robes de sarges"
-147;107;"cloche";;"2";;;
-148;111;"robe";;"?";;;"livr�e"
-149;108;"robe";;"?";;;"livr�e"
-152;109;"doublure de corset";;"2";;;
-153;110;"doublure de robe";;"?";;;"livr�e,double les robes de sorcia it 13 1317.1318"
-154;112;"manteau � chevaucher";;"1";;;
-155;113;"chausses";;"?";;;
-156;114;"robe";;"1";;;
-156;115;"couverture de palfroid";;"1";;;
-156;116;"couverture arm�e";;"1";;;
-156;117;"robe";;"2";;;
-156;118;"robe";;"1";;;"livr�e"
-156;119;"?";;"2";;;
-156;120;"cape";;"1";;;
-156;121;"malecote";;"1";;;
-156;122;"robe";;"2";;;
-158;123;"tunique";;"?";;;
-159;124;"mantel";;"2";;;
-161;125;"robe";;"?";;;
-165;126;"couverture de cheval";;"8";;;"d�pences de l'h�tel"
-165;127;"�cusson";;"44";;;"d�pences de l'h�tel"
-167;128;"cote piqu�e";"Chamb�ry";"1";;;
-167;129;"pourpoint";"Chamb�ry";"1";;;
-169;130;"robe";;"?";;;"pou la couture la tonte et les parements de fourrures"
-172;131;"ruban";;"6";;;
-174;132;"robe";;"1";;;"donn�e par C2"
-175;133;"corset ouvert";;"1";;;"pennis utilis�es pour corset ouvert et l'autre"
-175;134;"corset";;"1";;;"pennis utilis�es pour corset ouvert et l'autre"
-178;136;"robe";;"?";;;
-178;137;"coussin";;"?";;;
-186;138;"couverture";;"2";;;
-194;139;"robe";;"1";;;"joffredi va en France"
-198;140;"doublure de couverture";;"1";;;
-199;141;"doublure de couverture armeanda";;"1";;;
-201;142;"robe";;"4";;;"confection compt�e dans le prix"
-206;143;"surcot";;"1";;;
-209;144;"courte pointe";;"1";;;
-210;145;"couverture armeata de cheval";;"1";;;
-212;146;"corset";;"1";;;
-213;147;"corset ouvert";;"1";;;"le px est pour la fa�on du corset et du chaperon"
-213;148;"chaperon";;"1";;;"le px est pour la fa�on du corset et du chaperon"
-214;149;"lanterne pour la chambre du comte � Chamb�ry";;"?";;;
-217;150;"doublure de robe � quatre garnements";;"4";;;"f�te de la nativit�"
-217;151;"robe";;"?";;;"f�te de la nativit�"
-220;152;"robe";;"2";;;"la fa�on n'est pas compt� dans le px de l'item"
-221;153;"robe";;"1";;;"donn�e par la comtesse"
-224;154;"garniture de malecote";;"1";;;
-224;155;"chaperon";;"1";;;
-226;157;"couverture de cheval";;"4";;;
-227;156;"linteamentum";;"?";;;
-228;158;"cote";;"2";;;
-230;159;"cote";;"1";;;"sert aussi pour les chausses"
-230;160;"chausses";;"?";;;"sert aussi pour la cote"
-230;161;"chausses";;"1 paire";;;
-230;162;"corset";;"1";;;
-231;163;"robe";;"1";;;
-232;164;"robe";;"?";;;
-233;165;"robe";;"2";;;"l'anonce d'un message venant de Lode Castri"
-233;166;"cote";;"1";;;"sert aussi pour le mantel"
-233;167;"mantel";;"1";;;"sert aussi pour la cote"
-233;168;"doublure de mantel";;"1";;;
-233;169;"robe";;"6";;;
-234;170;"garniture de corset";;"1";;;
-234;171;"chaperon";;"1";;;"sert pour corset et chaperon"
-235;172;"un corset per pedem,";;"1";;;
-242;173;"gipon";;"2";;;
-243;174;"gipon";;"2";;;
-244;175;"parement et garniture";;"?";;;
-251;176;"bourse";;"?";;;
-251;177;"coiffe";;"?";;;
-251;178;"gorgerium";;"?";;;
-257;179;"veste";;"4";;;
-258;180;"robe";;"1";"2FBP";;
-259;181;"robe enti�re";;"1";;;
-266;182;"corset � chevaucher";;"1";;;
-266;183;"doublure de corset";;"1";;;
-266;184;"malecote";;"2";;;
-266;185;"cote";;"1";;;
-266;186;"blanchet";;"1";;;
-266;187;"robe";;"2";;;
-266;188;"robe � parer bonne";;"1";;;
-267;189;"malecote";;"2";;;
-267;190;"chaperon";;"2";;;
-267;191;"chausses";;"4 paires";;;
-267;192;"malecote";;"1";;;
-267;193;"robe";;"1";;;
-267;194;"chausses";;"?";;;
-270;195;"doublure de chaperon";;"1?";;;
-270;196;"chaperon doubl�";;;;;
-272;197;"mantel double";;"2";;;
-274;198;"cote";;"1";;;
-275;199;"cote";;"1";;;"sert pour les chausses et le chaperon"
-275;200;"chaperon";;"1";;;"sert pour la cote et les chausses"
-275;201;"chausses";;"1 paire";;;"sert aussi pour le chaperon et la cote"
-276;202;"doublure de manteau";;"2";;;
-276;203;"doublure de chaperon";;"2";;;
-277;204;"chausses";;"?";;;
-278;205;"chausses";;"2 paires";;;
-279;206;"doublure de chaperon blanc";;"1";;;
-280;207;"malecote";;"3";;;
-280;208;"cote";;"1";;;
-281;209;"mantel double";;"1";;;
-283;210;"mantel";;"1";;;
-285;211;"robe";;"1";;;
-285;212;"robe";;"1";;;
-286;213;"chausses";;"?";;;
-288;214;"malecote";;"1";;;
-288;215;"mantel double";;"1";;;
-288;216;"chausses";;"?";;;
-294;217;"chausses";;"3 paires";;;"2 pour A6"
-295;218;"chausses";;"2 paires";;;
-296;219;"couverture de cheval";;"1";;;
-297;220;"chausses";;"?";;;
-298;221;"robe";;"1";;;
-298;222;"robe";;"2";;;
-298;223;"corset";;"?";;;
-305;224;"corset";;"1";;;
-305;225;"chaperon";;"1";;;
-305;226;"corset";;"1";;;
-305;227;"chaperon";;"1";;;
-306;228;"corset";;"1";;;
-306;229;"chaperon";;"1";;;
-308;230;"corset";;"3";;;
-308;231;"chausses";;"?";;;
-309;232;"cote";;"1";;;
-309;233;"chaperon";;"1";;;
-311;234;"chausses";;"2 paires";;;
-313;235;"couverture";;"1";;;
-313;236;"doublure de couverture";;"1";;;
-314;237;"robe";;"1";;;
-315;238;"chausses";;"3 paires";;;"dont 2 pour A6"
-315;239;"cote";;"1";;;"sert aussi pour le chaperon"
-316;240;"cote";;"1";;;"set aussi pour le chaperon et le manteau doubl�"
-316;241;"mantel double";;"1";;;"sert aussi pour la cote et le chaperon"
-316;242;"chaperon";;"1";;;"set aussi pour la cote et le manteau doubl�"
-317;243;"chausses";;"2 paires";;;
-318;244;"robe courte";;"1";;;
-318;245;"malecote";;"2";;;
-318;246;"gonelle";;"1";;;
-318;247;"blanchet";;"1";;;
-318;248;"mantel double";;"1";;;
-318;249;"cote";;"1";;;
-319;250;"corset � chevaucher";;"1";;;
-319;251;"robe courte � parer";;"1";;;
-319;252;"doublure de corset � chevaucher";;"1";;;
-319;253;"cote";;"1";;;
-319;254;"cote";;"1";;;
-319;255;"cote";;"1";;;
-320;256;"robe";;"2";;;"parce qu'ils ont r�alise la grande salles du bourget"
-320;257;"cote";;"2";;;
-320;258;"doublure de chaperon";;"1";;;
-320;259;"doublure de manteaux";;"1";;;
-320;260;"doublure de chaperon";;"1";;;
-320;261;"doublure de manteau";;"1";;;
-320;262;"doublure de chaperon";;"2";;;
-320;263;"chausses";;"4 paires";;;
-320;264;"cote";;"1";;;
-320;265;"chaperon";;"1";;;
-322;266;"cote";;"?";;;
-322;267;"cote partit�e";;"?";;;
-322;268;"doublure de chaperon";;"1";;;
-322;269;"cote";;"?";;;
-323;270;"courtine";;;;;
-323;271;"cote";;"1";;;
-323;272;"cote";;"1";;;
-323;273;"cote partit�e";;"4";;;
-323;274;"doublure de mantel";;"2";;;
-323;275;"doublure de chaperon";;"2";;;
-323;276;"doublure de chaperon";;"1";;;
-323;277;"doublure de chaperon";;"1";;;
-323;278;"cote";;"2";;;
-323;279;"doublure de chaperon";;"1";;;
-323;280;"cote";;"2";;;"sert pour la cote et le mantel"
-323;281;"mantel";;"2";;;"sert pour cote et mantel"
-324;282;"manionibus pro pelicionis";;;;;
-325;283;"mantel";;"1";;;
-327;284;"blanchet";;"1";;;"sert pour chausse et cote"
-327;285;"chausses";;"?";;;"sert pour cote et blanchet"
-327;286;"cote";;"1";;;"sert pour chausses et blanchet"
-328;287;"doublure de chaperon";;"1";;;
-328;288;"chausses";;"2 paires";;;
-328;289;"broderie sur gipon";;"?";;;
-328;290;"mantel double";;"2";;;
-329;291;"cote";;"1";;;
-329;292;"chaperon";;"1";;;
-329;293;"chausses";;"?";;;
-329;294;"chausses";;"?";;;
-330;295;"doublure de chaperon";;"1";;;
-332;296;"cote";;"2";;;"sert aussi pour 2 chaperons"
-332;297;"chaperon";;"2";;;"sert aussi pour 2 cotes"
-332;298;"doublure de chaperon";;"2";;;"sert aussi pour des chausses"
-332;299;"chausses";;"2 paires";;;"sert aussi pour 2 doublures de chaperons"
-333;300;"cote";;"1";;;
-333;301;"cote";;"2";;;
-335;302;"chausses";;"4 paires";;;
-338;303;"cote";;"1";;;"sert aussi pour chaperon"
-338;304;"chaperon";;"1";;;"sert pour cote"
-339;305;"chausses";;"2 paires";;;
-340;306;"cote";;"1";;;"sert aussi pour chaperon"
-340;307;"chaperon";;"1";;;"sert aussi pour la cote"
-341;308;"chausses";;"2 paires";;;
-342;309;"cote";;"1";;;
-342;310;"chaperon";;"1";;;
-343;311;"chausses";;"2 paires";;;
-344;312;"cote";;"1";;;"sert aussi pour le chaperon"
-344;313;"chaperon";;"1";;;"sert aussi pour la cote"
-344;314;"chausses";;"2 paires";;;
-347;315;"chausses";;"2 paires";;;
-348;316;"robe de trois garnements";;"1";;;
-348;317;"doublure de mantel";;"1";;;"sert aussi pour malecote"
-348;318;"malecote";;"1";;;"sert aussi pour la doublure de mantel"
-348;319;"robe";;"1";;;
-348;320;"corset";;"2";;;
-349;321;"robe";;"1";;;
-354;322;"robe";;"2";;;
-354;323;"gonelle";;"1";;;"sert aussi pour des chausses"
-354;324;"chausses";;"?";;;"sert aussi pour une gonelle"
-354;325;"corset";;"1";;;"sert aussi pour chaperon et chausses"
-354;326;"chausses";;"?";;;"sert aussi pour le corset et le chaperon"
-354;327;"chaperon";;"1";;;"sert aussi pour les chausses et le corset"
-355;328;"mantel";;"1";;;
-361;329;"chaperon";;"1";;;
-367;330;"robe";;"2";;;
-367;331;"malecote";;"4";;;"sert aussi pour chaperons"
-367;332;"chaperon";;"4";;;"sert aussi pour la malecote"
-369;333;"cote";;"2";;;"sert pour 2cotes mantel 1 chaperonet en chaperon doubl� des chausses"
-369;334;"mantel";;"1";;;"2 cotes mantel 1 chaperonet un chaperon doubl� des chausses"
-369;335;"chaperon doubl�";;"1";;;"2 cotes mantel 1 chaperonet un chaperon doubl� des chausses"
-369;336;"chaperon";;"1";;;"2 cotes mantel 1 chaperonet un chaperon doubl� des chausses"
-369;337;"chausses";;"?";;;"2 cotes mantel 1 chaperonet un chaperon doubl� des chausses"
-370;338;"cote";;"1";;;"sert pour cote et chaperon doubl�"
-370;339;"chaperon doubl�";;"1";;;"sert pour cote et chaperon doubl�"
-372;340;"malecote";;"1";;;"sert pour malecote et chaperon"
-372;341;"chaperon";;"1";;;"sert pour malecote et chaperon"
-377;342;"robe";;"1";;;
-382;343;"couverture d'arbal�te";;"?";;;
-382;344;"robe";;"1";;;
-391;345;"robe";;"1";;;
-392;346;"robe";;"7";;;
-394;347;"robe enti�re";;"1";;;
-395;348;"robe";;"3";;;
-396;349;"robe";;"1";;;
-406;350;"robe";;"1";;;
-407;351;"doublure de chaperon de velours";;"1";;;
-408;352;"doublure de chaperon";;"?";;;
-411;353;"couverture de cheval";;"3";;;"comprend dans le prix la fa�on"
-413;354;"chasuble de chapelle";;"1";;;"comprend dans le prix la fa�on"
-419;355;"doublure de chaperon";;;;;"sert aussi pour la cape"
-419;356;"doublure de cape";;"1";;;"sert aussi pour chaperon"
-419;357;"mantel";;"1";;;
-423;358;"linteamentum";;"?";;;
-427;359;"chausses";;"?";;;
-428;360;"doublure de corset";;"?";;;
-429;361;"doublure de corset de serge";;"1";;;
-433;362;"�cusson";;"?";;;
-434;363;"robe";;"1";;;"sert aussi pour la couverture et la garnache"
-434;364;"couverture";;"1";;;"sert pour la robe et la garnache"
-434;365;"garnache";;"1";;;"sert pour la couverture  et la robe"
-437;366;"robe";;"?";;;
-438;367;"robe";;"?";;;
-441;368;"linteamentum";;"?";;;"la fa�on est comprise dans le prix de l'item"
-445;369;"doublure de couverture";;;;;
-447;370;"robe partit�e";;"2";;;
-448;371;"couverture de cheval";;"?";;;
-452;372;"mantel";;"1";;;
-453;373;"couverture";;"1";;;"adoubement"
-454;374;"doublet";;"2";;;
-469;375;"pourfil de corset";;;;;
-470;376;"couverture de cheval";;"14";;;
-472;377;"surplis";;"2";;;
-473;378;"couverture de cheval";;;;;
-474;379;"couverture de cheval";;"?";;;
-478;380;"linteamentum pour la chambre";;;;;
-484;381;"couverture";;"?";;;
-487;382;"mappus";;"21";;;
-493;383;"linteamentum";;"?";;;
-498;384;"chausses";;"?";;;
-499;385;"corset";;"1";;;
-500;386;"doublure de couverture";;"1";;;
-506;387;"garnement de robe";;"8";;;
-512;388;"mantel";;"1";;;
-513;389;"pourfil d'un gardecorps";;"1";;;"sert aussi pour les manches"
-513;390;"manche de gardecorps";;"2";;;"sert aussi pour le pourfil"
-519;391;"canevas";;;;;
-520;392;"chaperon";;"?";;;
-522;393;"doublure de cape";;"1";;;"1 pi�ce est utilis�e"
-523;394;"robe";;"1";;;
-526;395;"plate";;"?";;;
-530;396;"doublure de corset";;"1";;;
-531;397;"doublure de cape";;"1";;;
-532;398;"canevas";;"1";;;
-534;399;"cuesus";;"24";;;
-541;400;"mantilium";;;;;
-541;401;"manterius";;;;;
-543;403;"malecote";;"1";;;
-546;404;"chausses";;"?";;;
-548;405;"surcot";;"1";;;
-553;406;"chausses";;;;;
-554;407;"doublure de cote arm�e";;"2";;;"sert aussi pour les �cussons"
-554;408;"�cusson";;"60";;;"sert aussi pour les cotes arm�e"
-559;409;"chaperon";;;;;
-561;410;"robe";;"1";;;
-566;411;"robe";;"3";;;
-566;412;"corset";;"3";;;
-566;413;"corset";;"2";;;
-567;414;"robe";;"?";;;"livr�e le tissu est compt� dans l'item"
-568;415;"corset";;"1";;;
-569;416;"robe";;"2";;;
-570;417;"garnache";;"1";;;"sert aussi pour des chausses"
-570;418;"chausses";;"?";;;"sert aussi pour la garnache"
-571;419;"chausses";;"?";;;
-574;420;"linteamentum";;;;;
-575;421;"linteamentum";;"8";;;
-576;422;"pannorum linearum";;"8";;;
-577;423;"linteamentum";;;;;
-578;424;"tenture pour chambre";;"?";;;
-580;425;"tenture";;;;;
-583;426;"bancheriis de sala";;;;;
-584;427;"couverture";;"2";;;
-585;428;"garnache";;"1";;;"sert aussi pour 4 paires de chausses et un corset"
-585;429;"corset";;"1";;;"sert  pour 4 paires de chausses et une garnache"
-585;430;"chausses";;"4 paires";;;"sert aussi pour corset et garnache"
-586;431;"chausses";;"2 paires";;;
-587;432;"bani�re aux armes de Savoie";;;;;
-588;433;"doublure de corset";;"1";;;"sert aussi pour le chaperon"
-588;434;"chaperon";;"1";;;"sert aussi pour le corset"
-590;435;"doublure de robe";;"3";;;"livr�e"
-591;436;"vaine pointe";;"1";;;
-593;437;"linteamentum";;"4";;;
-593;438;"linteamentum";;"4 paires";;;"sert � en r�parer 4 autres"
-593;439;"gipon";;"3";;;
-593;440;"surplis";;"1";;;
-593;441;"surplis";;"1";;;
-595;442;"cloche";;"1";;;
-597;443;"corset";;"1";;;
-598;444;"corset";;"1";;;"sert aussi pour des grands chaperons"
-598;445;"grand chaperon";;;;;"sert aussi pour le corset"
-600;446;"courte pointe";;"1";;;
-602;447;"malecote";;"3";;;
-603;448;"malecote";;"6";;;
-604;449;"malecote";;"1";;;"sert aussi pour le corset et les chausses"
-604;450;"corset";;"1";;;"sert aussi pour la malecote et les chausses"
-604;451;"chausses";;;;;"sert aussi pour la malecote et le corset"
-605;452;"doublure de mantel";;"1";;;"sert aussi pour une cote"
-605;453;"cote";;"1";;;"sert aussi pour une doublure de mantel"
-606;454;"cloche";;"1";;;
-610;455;"chausses";;"6 paires";;;
-614;456;"parement de cheval";;"1";;;
-614;457;"armoirie";;;;;
-614;458;"doublure de parement de cheval";;;;;
-622;459;"parement de cheval";;"15";;;"sert aussi pour les croix sur une plate"
-622;460;"croix";;;;;"sert aussi pour les parements"
-623;461;"croix";;;;;
-624;462;"courtine";;;;;"sert � d'autre objet du mobilier"
-624;463;"d'autre objet de mobilier";;;;;"sert aussi pour des courtines"
-631;464;"doublure de garnache";;"2";;;
-632;465;"surcot";;"4";;;"P�que"
-633;466;"doublure de chaperon";;"2";;;
-634;467;"doublure de manches de surcot";;;;;
-639;468;"coussin";;"4";;;
-640;469;"coperalibus";;"2";;;"sert aussi pour 2 tuialliis"
-640;470;"tuiallia";;"2";;;"sert aussi pour 2 corperalibus"
-641;471;"braies";;"6";;;
-642;472;"linteamentum";;"20 paires";;;"sert pour 2 autre linteamentis et une couverture? de nuit"
-642;473;"linteamentum";;"2";;;"vert pour 20 paires linteamentis et une couverture? de nuit"
-642;474;"couverture? de nuit";;"1";;;"sert pour  autres linteamentis"
-642;475;"linteamentum";;"6 paires";;;
-642;476;"linteamentum";;"13 paires";;;
-645;477;"pannorum lineorum";;;;;
-661;478;"selle de femme";;"1";;;
-665;479;"corset";;"1";;;
-666;480;"doublure de chaperon";;"1";;;
-671;481;"robe";;"1";;;"penthecote"
-672;482;"chaperon";;"1";;;"penthecote"
-673;483;"doublure de manches de corset";;;;;
-678;484;"doublure de corset";;"1";;;
-680;485;"selle";;"1";;;
-682;486;"doublet";;"2";;;
-686;487;"doublet";;"2";;;
-687;488;"braies";;"4";;;
-687;489;"linteamentum";;"2";;;"sert aussi pour pedibus"
-687;490;"pedibus";;;;;"sert aussi pour 2 linteamentis"
-688;491;"chanconibus";;;;;
-689;492;"cote hardie";;"1";;;
-689;493;"clamide";;"1";;;
-689;494;"couverture";;"1";;;
-689;495;"cote hardie";;"2";;;
-693;496;"?";;;;;"le couturier touche l'ag et ensuite paie ouvrier 4s pou lui et ses valets"
-695;497;"corset";;"1";;;
-697;498;"bancheriis";;"3";;;
-701;499;"amica";;"1";;;
-704;500;"palaris";;;;;
-706;501;"robe de trois garnements";;"1";;;
-706;502;"robe de deux garnements";;"1";;;
-706;503;"robe de trois garnements";;"1";;;
-706;504;"chausses";;"5 paires";;;
-707;505;"bonnet de bain";;"1";;;"r�par�"
-709;506;"doublure de couverture";;"1";;;
-710;507;"coussin";;"3";;;
-711;508;"gipon";;"1";;;
-712;509;"doublure de mantel";;"2";;;
-714;510;"mala tunica";;"2";;;
-715;511;"mantel";;"1";;;"sert aussi pour la male tunica"
-716;512;"tunique";;"1";;;"sert aussi pour un mantel"
-716;513;"mantel";;"1";;;"sert aussi pour la tunique"
-717;514;"doublure de robe";;"1";;;"facture se fait � rippaille"
-721;515;"doublure de bomba";;"1";;;
-724;516;"gipon";;"1";;;
-728;517;"robe";;"1";;;
-729;518;"robe";;"1";;;
-731;519;"robe";;"1";;;
-733;520;"robe";;"1";;;"livr�e"
-735;521;"robe";;"1";;;
-741;522;"doublure de corset";;"3";;;
-744;523;"cloche";;"1";;;
-746;524;"malecote";;"1";;;
-751;525;"croix";;;;;
-752;526;"gipon";;"2";;;
-759;527;"robe";;;;;
-760;528;"chausses";;;;;
-761;529;"tunique";;"1";;;
-763;530;"robe de trois garnements";;"1";;;"donn� par Eduardi"
-763;531;"doublure de chaperon";;;;;"donn� par Eduardi"
-773;532;"arnesium";;"plusieurs";;;
-775;533;"coussin";;"plusieurs";;;
-778;534;"robe";;"1";;;
-779;535;"couverture";;"3";;;
-781;536;"couverture";;"plusieurs";;;
-782;537;"robe";;"1";;;
-783;538;"couverture de selle";;"1";;;
-784;539;"chausses";;;;;
-785;540;"cloche";;"1";;;
-786;541;"robe";;"5";;;
-787;542;"doublure de couverture";;"5";;;
-788;543;"robe";;"21";;;
-790;544;"malecote";;"2";;;
-794;545;"malecote";;"3";;;
-795;546;"robe";;"1";;;
-796;547;"panaillonem";;;;;
-797;548;"couverture de cheval";;"?";;;
-798;549;"robe";;"2";;;
-799;550;"bancheriis";;;;;
-801;551;"banni�re";;"?";;;"sert aussi pour la cote � armer"
-801;552;"cote � armer";;"1";;;
-802;553;"surplis";;"1";;;
-804;554;"robe";;"?";;;
-805;555;"chausses";;"?";;;
-811;556;"malecote";;"4";;;
-812;557;"mantel";;"1";;;"sert aussi pour une malecote"
-812;558;"malecote";;"1";;;"sert aussi pour un mantel"
-814;559;"chausses";;;;;
-819;560;"chaperon";;"2";;;
-819;561;"doublure de mantel";;"1";;;
-819;562;"chaperon";;"1";;;
-822;563;"cloche";;"2";;;
-822;564;"corset";;"1";;;
-822;565;"robe";;"1";;;
-824;566;"courtine de la chapelle d'Eduardi � Chamb�ry";;"?";;;
-824;567;"croix de la chapelle d'Eduardi � chamb�ry";;;;;
-826;568;"robe";;"1";;;
-826;569;"malecote";;"1";;;"sert aussi pour le mentel double"
-826;570;"mantel double";;"1";;;"sert aussi pour la male cote"
-826;571;"robe";;"1";;;
-826;572;"mantel";;"1";;;
-826;573;"robe";;"1";;;
-827;574;"doublure de malecote";;"2";;;
-828;575;"mantel double";;"1";;;
-828;576;"chausses";;;;;
-828;577;"chausses";;;;;
-829;578;"robe";;"1";;;
-830;579;"mantel double";;"1";;;
-835;580;"doublure de parement pour cheval";;"1";;;
-835;581;"doublet";;"1";;;
-836;582;"doublure de surcot";;"1";;;"don D'Eduardi"
-837;583;"chausses";;;;;
-838;584;"doublure de robe";;"2";;;
-839;585;"fourrure de chaperon";;"2";;"4S 4D gt";
-841;586;"robes � quatre garnements";;"6";;;
-843;587;"mantilium";;"31";;;
-844;588;"malecote";;"1";;;"sert aussi pour le mantel doubl�"
-844;589;"mantel double";;"1";;;"sert aussi pour la male cote"
-850;590;"doublure de robe";;;;;
-851;591;"robe";;"1";;;
-855;592;"surcot";;"1";;;"sert aussi pour chausses et chaussures"
-855;593;"chausses";;;;;"sert aussi pour surcot et chaussures"
-855;594;"chaussures";;;;;"sert aussi pour chausses et surcot"
-862;595;"couverture";"Douai";"4";;;
-864;596;"pourpoint";"Paris";"1";;;
-865;597;"pourpoint";"Paris";"1";;;
-866;598;"garnements d'�t�";"Paris ou Douai";"3";;;
-866;599;"doublure de mantel";"Paris ou Douai";"1";;;
-866;600;"mantel";"Paris ou Douai";"1";;;
-866;601;"cape � mettre sur arnesium";"Paris ou Douai";"1";;;"sert aussi pour chaperon"
-866;602;"chaperon � mettre sur arnesium";"Paris ou Douai";"1";;;"sert aussi pour la cape"
-866;603;"doublure de corset";"Paris ou Douai";"1";;;
-866;604;"corset d'�t�";"Paris ou Douai";"1";;;
-866;605;"robe";"Paris ou Douai";"1";;;
-867;606;"doublure de couvre-chef";"Paris ou Cambrais";"1";;;
-867;607;"doublure de mucia";"Paris ou Cambrais";"1";;;
-867;608;"doublure de corset";"Paris ou Cambrais";"1";;;
-867;609;"doublure de chaperon";"Paris ou Cambrais";"1";;;
-867;610;"doublure de corset";"Paris ou Cambrais";"1";;;
-867;611;"doublure de corset";"Paris ou Cambrais";"1";;;
-870;612;"mantel double";"Arras";"1";;;
-870;613;"chaperon";"Arras";"1";;;
-870;614;"chausses";"Arras";;;;
-870;615;"chaperon";"Arras";"1";;;"sert aussi pour les chausses"
-870;616;"chausses";"Arras";;;;"sert aussi pour le chaperon"
-870;617;"robe";"Arras";"1";;;
-870;618;"cote";"Arras";"1";;;
-871;619;"doublure de corset";"Arras";"1";;;
-873;620;"gipon";"Arras";"2";;"72S 2D parisis";
-874;621;"doublure de surcot";"arras";"1";;;
-874;622;"chausses";"Arras";;;;
-875;623;"malecote";"Arras";"1";;;"sert aussi pour les chausses"
-875;624;"chausses";"arras";;;;"sert aussi pour la malecote"
-877;625;"chausses";"Douai";"4 paires";;;
-877;626;"doublure de malecote";"Douai";"1";;;
-886;627;"chape";"Paris";"1";;;"sert aussi pour les manches et le chaperon"
-886;628;"manche de chape";"Paris";"1 paire";;;"sert aussi pour la chape et le chaperon"
-886;629;"chaperon";"Paris";"1";;;"sert aussi pour les manches et la chape"
-887;630;"mantel";"Paris";"1";;;"sert pour des chausses"
-887;631;"chausses";"Paris";;;;"sert aussi pour le mantel"
-887;632;"robe";"Paris";"1";;;
-887;633;"balle � envelopper";"Paris";;;;
-887;634;"doublure de cote";"Paris";"1";;;
-887;635;"gipon";"Paris";"1";;;
-887;636;"doublure de chaperon";"Paris";"1";;;
-887;637;"malecote";"Paris";"1";;;
-887;638;"cote ardia de nuit";"Paris";"1";;;
-888;639;"pourfil de mantel";"Pont d'Ain";"1";;;
-890;640;"doublure de robe";;"1";;;
-895;641;"linteamentum";;;;;
-902;642;"doublure de chaperon";;"7";;;
-904;643;"mappus";;"21";;;
-907;644;"sac";;;;;
-908;645;"enveloppe � mappus";;;;;
-909;646;"miniorius";;;;;
-911;647;"linteamentum";;;;;
-912;648;"linteamentum";;"1";;;
-917;649;"robe";;"15";;;
-919;650;"linteamentum";;"2";;;
-921;651;"robe";;"1";;;"livr�e"
-925;652;"doublure de robe";;"1";;;
-925;653;"doublure de robe";;"1";;;
-925;654;"doublure de corset";;"1";;;
-926;655;"?";;;;;
-927;656;"doublure de corset";;"1";;;
-929;657;"tunique";;"1";;;
-929;658;"garnache";;"1";;;
-929;659;"cloche";;"1";;;
-930;660;"doublure de robe";;"1";;;
-931;661;"robe";;"1";;;"sert aussi pour une doublure de chaperon"
-932;662;"doublure de chaperon";;"1";;;"sert aussi pour une robe"
-933;663;"d�core de robe";;;;;
-936;664;"doublet";;"plusieurs";;;
-937;665;"linteamentum";;"5";;;
-937;666;"oreiller";;"8";;;
-938;667;"chanconetis";;;;;
-940;668;"robe";;"1";;;"il est aller de Preysone � Versoyni"
-942;669;"chausses";;;;;
-944;670;"robe";;"1";;;"sert aussi pour des chausses"
-944;671;"chausses";;;;;"sert aussi pour la robe"
-952;672;"doublure de chaperon";;"2";;;"sert aussi pour des chausses"
-952;674;"chaperon";;"1";;;
-952;675;"chausses";;;;;"sert aussi pour les doublures de chaperons"
-959;676;"corset";;"1";;;
-959;677;"garnement de robe";;"40";;;
-959;678;"mantel";;"4";;;
-959;679;"chaperon";;"8";;;
-959;680;"chemise";;"6";;;
-960;681;"accessoire de robe";;"4";;;
-960;682;"pelisse";;"2";;;
-960;683;"accessoire de chaperon";;"4";;;
-960;684;"robe";;"1";"6S v esp";"6S v esp";
-961;685;"couverture de matelas";;;;;"sert aussi pour les coussins"
-961;686;"couverture de coussins";;;;;"sert aussi pour les matelas"
-961;687;"robe enti�re partit�e";;"3";;;
-961;688;"robe enti�re";;"2";;;
-961;689;"robe enti�re partit�e";;"2";;;"livr�e"
-961;690;"robe";;"1";;;
-961;691;"cote";;"2";;;"livr�e"
-961;692;"corset";;"2";;;
-961;693;"cote";;"2";;;
-961;694;"cote partit�e";;"2";;;
-961;695;"robe enti�re";;"1";;;
-961;696;"cote";;"1";;;
-961;697;"cote partit�e";;"2";;;
-964;698;"chausses";;;;;
-965;699;"chausses";;;;;
-966;700;"chausses";;;;;
-966;701;"doublure de chaperon";;"1";;;
-966;702;"robe enti�re";;"1";;;
-966;703;"cote";;"1";;;
-967;704;"cote";;"1";;;
-970;705;"doublure de robe";;;;;"nativit�"
-970;706;"cote";;"2";;;"nativit�"
-970;707;"mantel";;"2";;;"nativit�"
-970;708;"chaperon doubl�";;"2";;;"nativit�"
-970;709;"chaperon doubl�";;"2";;;"nativit�"
-970;710;"cote partit�";;"3";;;"nativit�"
-970;711;"d'autre chose";;;;;
-974;712;"chausses";;;;;
-975;713;"couverture de selle";;"1";;;
-976;714;"chausses";;;;;
-977;715;"doublet";;"1";;;
-980;716;"coussin";;;;;
-986;717;"robe";;"pludsieurs";;;
-987;718;"couverture de cheval";;"plusieurs";;;
-991;719;"doublure de robe";;;;;
-992;720;"surcot";;"1";;;
-993;721;"droderie sur des robes";;;;;
-996;722;"robe";;"?";;;
-999;723;"panillonum";;;;;
-1008;724;"linteamentum";;;;;
-1011;725;"mantilium";;;;;
-1013;726;"mantilium";;;;;"bapt�me du Fils d'Aymon"
-1014;727;"couverture";;"?";;;"bapt�me de fils d'aymon"
-1015;728;"divers choses";;;;;
-1017;729;"linteamentum";;;;;
-1018;730;"linteamentum";;"?";;;
-1018;731;"sac";;"?";;;
-1019;732;"robe";"Costa";"?";;;
-1021;733;"malecote";;"1";;;
-1022;734;"robe";;"1";;;
-1024;735;"doublure de cote";"Aquiam";"1";;;"Helemensini"
-1028;736;"robe";;"1";;;
-1033;737;"tenture pour la grande salle";;;;;"Adoubement de nouveaux chevaliers � Ripaille"
-1036;738;"courtine";;;;;"Adoubement de nouveaux chevaliers � Ripaille"
-1048;739;"cote";;"1";;;"Adoubement de nouveaux chevaliers � Ripaille"
-1074;740;"malecote";;"1";;;
-1075;741;"corset";;"2";;;
-1076;742;"doublure de surcot";;"2";;;
-1076;743;"doublure de chaperon";;"2";;;
-1078;744;"garnache";;"2";;;
-1083;745;"robe";;"?";;;
-1085;746;"robe";;;;;"ivr�e pour s�pulture d'Aymon"
+"CodeCommande","CodePFF","FNature","Type Parure","Nature Parure","Carac Parure","FLieuAchat","FQuantite","FPrixUnitaire","prix unitaire","monnaire prix unitaire","FPrixGlobal","prix global","monnaie prix global","FOccasion"
+11,5,"robe","vêtement","robe",,,"1",,,,"10 L v","10 0 0","viennois",
+12,6,"robe","vêtement","robe",,,"1",,,,"100 S v","0 100 0","viennois",
+13,7,"robe","vêtement","robe",,,"1",,,,"100 S v","0 100 0","viennois",
+14,8,"robe","vêtement","robe",,,"1",,,,"100 S v","0 100 0","viennois",
+17,9,"robe","vêtement","robe",,,"1","4 L 10 S","4 10 0",,"4 L 10 S","4 10 0","inconnu",
+21,10,"robe","vêtement","robe",,,"1",,,,,,,
+25,11,"robe","vêtement","robe",,,"1",,,,,,,
+26,12,"cote","intérieur","cotte",,"Chambéry","1",,,,,,,
+26,13,"pourpoint","ajusté","pourpoint",,"Chambéry","1",,,,,,,
+29,14,"couverture piquée","mobilier","couverture","piquée",,"1",,,,,,,
+29,15,"d'autres choses","inconnue","inconnue",,,,,,,,,,
+36,16,"pelisse","extérieur","pelisse",,"Chambéry","4",,,,,,,
+39,17,"corset","intérieur","corset",,,"3",,,,,,,
+44,21,"robe","vêtement","robe",,,"1",,,,,,,"le prix de la couture compte avec 8 autres robes"
+45,18,"corset","intérieur","corset",,,"1",,,,,,,"serge,cendal doublure et à partager avec filles"
+46,19,"robe","vêtement","robe",,,"plusieurs (3?)",,,,,,,
+47,20,"gipon","ajusté","gipon",,,"3",,,,,,,
+50,22,"garnement","vêtement","garnement",,,"47",,,,,,,"soie cendal fil..menus objets pour la couture."
+51,23,"surcot","intérieur","surcot",,,"plusieurs",,,,,,,
+52,24,"cloche","extérieur","cloche",,,"1",,,,,,,"le mètrage vaut aussi pour le surcot"
+52,25,"surcot","intérieur","surcot",,,"1",,,,,,,"le métrage vaux aussi pour la cloche."
+52,26,"corset","intérieur","corset",,,"3",,,,,,,
+52,27,"corset","intérieur","corset",,,"3",,,,,,,
+52,28,"robe","vêtement","robe",,,"6",,,,,,,"livrée"
+53,29,"robe à trois garnements","vêtement","robe","trois garnements",,"1",,,,,,,"livrée"
+53,30,"robe","vêtement","robe",,,"1",,,,,,,"livrée"
+53,31,"robe","vêtement","robe",,,"2",,,,,,,"livrée"
+53,32,"robe","vêtement","robe",,,"2",,,,,,,"livrée"
+53,33,"robe","vêtement","robe",,,"1",,,,,,,"livrée"
+54,34,"robe","vêtement","robe",,,"1",,,,,,,
+55,35,"garnache","extérieur","garnache",,,"1",,,,,,,
+59,36,"robe","vêtement","robe",,,"plusieurs",,,,,,,
+60,37,"doublure de chaperon","doublure","chaperon",,,"plusieurs",,,,,,,"ramenées par A5 pour les chevaliers qui n'iront pas en Italie avec la comtesse"
+63,38,"couverture","mobilier","couverture",,,"1",,,,,,,
+68,39,"cloche","extérieur","cloche",,,"plusieurs",,,,,,,"partent en mission en Italie"
+71,40,"linteamentum","mobilier","linteamenta",,,"plusieurs",,,,,,,
+71,41,"camisius","sous-vêtement","chemise",,,"plusieurs",,,,,,,
+72,43,"robe","vêtement","robe",,,"1",,,,,,,
+73,44,"linteamentum","mobilier","linteamenta",,,,,,,,,,
+74,46,"coussin","mobilier","coussin",,,"plusieurs",,,,,,,
+75,47,"chaperon","tête","chaperon",,,"1",,,,,,,
+80,48,"coussin","mobilier","coussin",,,"plusieurs",,,,,,,
+83,49,"robe à trois garnements","vêtement","robe","trois garnements",,"2",,,,,,,
+84,50,"cape","extérieur","cape",,,"2",,,,,,,
+85,51,"robe","intérieur","robe",,,"1",,,,,,,
+86,52,"cloche","extérieur","cloche",,,"1",,,,,,,
+89,54,"doublure de robe","doublure","robe",,,"1",,,,,,,
+91,55,"doublure de corset","doublure","corset",,,"plusieurs",,,,,,,
+92,56,"robe","vêtement","robe",,,"plusieurs",,,,,,,
+92,57,"chausses","chausses","chausses",,,"plusieurs paires",,,,,,,
+92,58,"robe","vêtement","robe",,,"2",,,,,,,
+92,59,"robe","vêtement","robe",,,"1",,,,,,,
+92,60,"robe","vêtement","robe",,,"3",,,,,,,
+92,61,"robe","vêtement","robe",,,"1",,,,,,,
+94,62,"doublure de robe","doublure","robe",,,"1",,,,,,,"pour un robe d'ecarlate punatia"
+98,63,"doublure de chaperon","doublure","chaperon",,,"1",,,,,,,"pour une cape"
+99,64,"robe","vêtement","robe",,,"plusieurs",,,,,,,"livrée de carême 1314"
+100,65,"robe","vêtement","robe",,,"2",,,,,,,
+101,66,"robe partitée","vêtement","robe","partité",,"?",,,,,,,"livrée des écuyers d' A5"
+104,67,"robe","vêtement","robe",,,"?",,,,,,,"livrée"
+104,68,"robe partitée","vêtement","robe","partité",,"?",,,,,,,"livrée"
+104,69,"robe","vêtement","robe",,,"1",,,,,,,
+106,70,"selle","cheval","selle",,,"1",,,,,,,"mariage avec le duc d'autriche"
+106,71,"selle","cheval","selle",,,"1",,,,,,,"mariage avec le duc d'autriche"
+107,72,"malecote","intérieur","malecotte",,,"1",,,,,,,
+107,73,"cloche","extérieur","cloche",,,"1",,,,"pas achat de tissu seulement tonte",,,
+107,74,"doublure de cloche","doublure","cloche",,,"1",,,,"as achat de tissu seulement tonte",,,"L'azur sert aussi pour la male cote"
+107,75,"doublure de malecote","doublure","malecotte",,,"1",,,,"pas achat de tissu seulement tonte",,,"azur sert aussi pour la cloche"
+112,76,"chemise d'arbalétes","emballage","sac","arbalète",,"3",,,,,,,
+113,77,"robe","vêtement","robe",,,"plusieurs",,,,,,,"sans doute mariage"
+116,78,"doublure de robe","doublure","robe",,,"?",,,,,,,
+117,79,"bouton","mercerie","bouton",,,"72",,,,,,,
+118,80,"robe","vêtement","robe",,,,,,,,,,"livrée par A5 quand il va en Allemagne"
+120,81,"cape lombarde","extérieur","cape","lombarde","Bresse","plusieurs",,,,,,,"le voyage de l'intermediaire est compté dans le prix"
+121,82,"robe","vêtement","robe",,,"1",,,,,,,
+122,83,"chemise d'arbalète","emballage","sac","arbalète",,"68",,,,,,,
+123,84,"corset d'été","intérieur","corset","d'été",,"?",,,,,,,
+125,85,"robe","vêtement","robe",,,"2?",,,,,,,"complemeent de livrée"
+125,86,"chausses","chausses","chausses",,,"?",,,,,,,
+126,87,"doublure de corset","doublure","corset",,,"?",,,,,,,"doublure pour corset item 4 1315.1316"
+128,88,"tunique","intérieur","tunique",,,"1",,,,,,,"étrennes"
+128,89,"cape","extérieur","cape",,,"1",,,,,,,"étrennes"
+129,90,"robe","vêtement","robe",,,"?",,,,,,,
+131,91,"robe","vêtement","robe",,,"?",,,,,,,"cet achar compléte les fourrures ramené de paris par le comte qui n'etaient pas suffisantes"
+132,92,"robe","vêtement","robe",,,"4?",,,,,,,
+133,93,"robe","vêtement","robe",,,"?",,,,,,,"completer la livrée"
+134,94,"robe","vêtement","robe",,,"3",,,,,,,"complément à la livrée"
+134,95,"robe","vêtement","robe",,,"?",,,,,,,"complément à la livrée"
+136,96,"fourrure de robe","fourrure","robe",,,"2",,,,,,,
+139,97,"robe","vêtement","robe",,,"1",,,,,,,"pour son voyage en Italie"
+139,98,"robe","vêtement","robe",,,"1",,,,,,,
+139,99,"robe","vêtement","robe",,,"2",,,,,,,
+139,100,"corset","intérieur","corset",,,"1",,,,,,,
+140,101,"robe","vêtement","robe",,,"1",,,,,,,
+141,102,"robe de trois garnements","vêtement","robe","trois garnements",,"4",,,,,,,"sert aussi pour le corset"
+141,103,"corset","intérieur","corset",,,"1",,,,,,,"sert aussi pour les 4 robes"
+143,104,"robe","vêtement","robe",,,"4",,,,,,,"livrée envoyéà Yppong...?"
+145,105,"doublure de corset","doublure","corset",,,"1",,,,,,,"doublure du corset item 19 1317.1318"
+146,106,"doublure de robe de trois garnements","doublure","robe","trois garnements",,"3",,,,,,,"pour des robes de sarges"
+147,107,"cloche","extérieur","cloche",,,"2",,,,,,,
+148,111,"robe","vêtement","robe",,,"?",,,,,,,"livrée"
+149,108,"robe","vêtement","robe",,,"?",,,,,,,"livrée"
+152,109,"doublure de corset","doublure","corset",,,"2",,,,,,,
+153,110,"doublure de robe","doublure","robe",,,"?",,,,,,,"livrée,double les robes de sorcia it 13 1317.1318"
+154,112,"manteau à chevaucher","extérieur","mantel","à chevaucher",,"1",,,,,,,
+155,113,"chausses","chausses","chausses",,,"?",,,,,,,
+156,114,"robe","vêtement","robe",,,"1",,,,,,,
+156,115,"couverture de palfroid","cheval","couverture","de cheval",,"1",,,,,,,
+156,116,"couverture armée","mobilier","couverture","aux armes",,"1",,,,,,,
+156,117,"robe","vêtement","robe",,,"2",,,,,,,
+156,118,"robe","vêtement","robe",,,"1",,,,,,,"livrée"
+156,119,"?","inconnue","inconnue",,,"2",,,,,,,
+156,120,"cape","extérieur","cape",,,"1",,,,,,,
+156,121,"malecote","intérieur","malecotte",,,"1",,,,,,,
+156,122,"robe","vêtement","robe",,,"2",,,,,,,
+158,123,"tunique","intérieur","tunique",,,"?",,,,,,,
+159,124,"mantel","extérieur","mantel",,,"2",,,,,,,
+161,125,"robe","vêtement","robe",,,"?",,,,,,,
+165,126,"couverture de cheval","cheval","couverture","de cheval",,"8",,,,,,,"dépences de l'hôtel"
+165,127,"écusson","autre","écusson",,,"44",,,,,,,"dépences de l'hôtel"
+167,128,"cote piquée","militaire","cotte","piquée","Chambéry","1",,,,,,,
+167,129,"pourpoint","ajusté","pourpoint",,"Chambéry","1",,,,,,,
+169,130,"robe","vêtement","robe",,,"?",,,,,,,"pou la couture la tonte et les parements de fourrures"
+172,131,"ruban","mercerie","ruban",,,"6",,,,,,,
+174,132,"robe","vêtement","robe",,,"1",,,,,,,"donnée par C2"
+175,133,"corset ouvert","intérieur","corset","ouvert",,"1",,,,,,,"pennis utilisées pour corset ouvert et l'autre"
+175,134,"corset","intérieur","corset",,,"1",,,,,,,"pennis utilisées pour corset ouvert et l'autre"
+178,136,"robe","vêtement","robe",,,"?",,,,,,,
+178,137,"coussin","mobilier","coussin",,,"?",,,,,,,
+186,138,"couverture","mobilier","couverture",,,"2",,,,,,,
+194,139,"robe","vêtement","robe",,,"1",,,,,,,"joffredi va en France"
+198,140,"doublure de couverture","doublure","couverture",,,"1",,,,,,,
+199,141,"doublure de couverture armeanda","doublure","couverture","aux armes",,"1",,,,,,,
+201,142,"robe","vêtement","robe",,,"4",,,,,,,"confection comptée dans le prix"
+206,143,"surcot","intérieur","surcot",,,"1",,,,,,,
+209,144,"courte pointe","mobilier","courtepointe",,,"1",,,,,,,
+210,145,"couverture armeata de cheval","cheval","couverture","de cheval aux armes",,"1",,,,,,,
+212,146,"corset","intérieur","corset",,,"1",,,,,,,
+213,147,"corset ouvert","intérieur","corset","ouvert",,"1",,,,,,,"le px est pour la façon du corset et du chaperon"
+213,148,"chaperon","tête","chaperon",,,"1",,,,,,,"le px est pour la façon du corset et du chaperon"
+214,149,"lanterne pour la chambre du comte à Chambéry","mobilier","lanterne",,,"?",,,,,,,
+217,150,"doublure de robe à quatre garnements","vêtement","robe","quatre garnements",,"4",,,,,,,"fête de la nativité"
+217,151,"robe","vêtement","robe",,,"?",,,,,,,"fête de la nativité"
+220,152,"robe","vêtement","robe",,,"2",,,,,,,"la façon n'est pas compté dans le px de l'item"
+221,153,"robe","vêtement","robe",,,"1",,,,,,,"donnée par la comtesse"
+224,154,"garniture de malecote","doublure","malecotte",,,"1",,,,,,,
+224,155,"chaperon","tête","chaperon",,,"1",,,,,,,
+226,157,"couverture de cheval","cheval","couverture","de cheval",,"4",,,,,,,
+227,156,"linteamentum","mobilier","linteamenta",,,"?",,,,,,,
+228,158,"cote","intérieur","cotte",,,"2",,,,,,,
+230,159,"cote","intérieur","cotte",,,"1",,,,,,,"sert aussi pour les chausses"
+230,160,"chausses","chausses","chausses",,,"?",,,,,,,"sert aussi pour la cote"
+230,161,"chausses","chausses","chausses",,,"1 paire",,,,,,,
+230,162,"corset","intérieur","corset",,,"1",,,,,,,
+231,163,"robe","vêtement","robe",,,"1",,,,,,,
+232,164,"robe","vêtement","robe",,,"?",,,,,,,
+233,165,"robe","vêtement","robe",,,"2",,,,,,,"l'anonce d'un message venant de Lode Castri"
+233,166,"cote","vêtement","robe",,,"1",,,,,,,"sert aussi pour le mantel"
+233,167,"mantel","extérieur","mantel",,,"1",,,,,,,"sert aussi pour la cote"
+233,168,"doublure de mantel","extérieur","mantel","double",,"1",,,,,,,
+233,169,"robe","vêtement","robe",,,"6",,,,,,,
+234,170,"garniture de corset","doublure","corset",,,"1",,,,,,,
+234,171,"chaperon","tête","chaperon",,,"1",,,,,,,"sert pour corset et chaperon"
+235,172,"un corset per pedem,","intérieur","corset","jusqu'aux pieds",,"1",,,,,,,
+242,173,"gipon","ajusté","gipon",,,"2",,,,,,,
+243,174,"gipon","ajusté","gipon",,,"2",,,,,,,
+244,175,"parement et garniture","mercerie","mercerie",,,"?",,,,,,,
+251,176,"bourse","parure","bourse",,,"?",,,,,,,
+251,177,"coiffe","tête","coiffe",,,"?",,,,,,,
+251,178,"gorgerium","sous-vêtement","gorgière",,,"?",,,,,,,
+257,179,"veste","vêtement","veste",,,"4",,,,,,,
+258,180,"robe","vêtement","robe",,,"1","2FBP",,,,,,
+259,181,"robe entière","vêtement","robe","entière",,"1",,,,,,,
+266,182,"corset à chevaucher","intérieur","corset","à chevaucher",,"1",,,,,,,
+266,183,"doublure de corset","doublure","corset",,,"1",,,,,,,
+266,184,"malecote","intérieur","malecotte",,,"2",,,,,,,
+266,185,"cote","intérieur","cotte",,,"1",,,,,,,
+266,186,"blanchet","sous-vêtement","blanchet",,,"1",,,,,,,
+266,187,"robe","vêtement","robe",,,"2",,,,,,,
+266,188,"robe à parer bonne","vêtement","robe","à parer",,"1",,,,,,,
+267,189,"malecote","intérieur","malecotte",,,"2",,,,,,,
+267,190,"chaperon","tête","chaperon",,,"2",,,,,,,
+267,191,"chausses","chausses","chausses",,,"4 paires",,,,,,,
+267,192,"malecote","intérieur","malecotte",,,"1",,,,,,,
+267,193,"robe","vêtement","robe",,,"1",,,,,,,
+267,194,"chausses","chausses","chausses",,,"?",,,,,,,
+270,195,"doublure de chaperon","doublure","chaperon",,,"1?",,,,,,,
+270,196,"chaperon doublé","tête","chaperon","doublé",,,,,,,,,
+272,197,"mantel double","extérieur","mantel","double",,"2",,,,,,,
+274,198,"cote","intérieur","cotte",,,"1",,,,,,,
+275,199,"cote","intérieur","cotte",,,"1",,,,,,,"sert pour les chausses et le chaperon"
+275,200,"chaperon","tête","chaperon",,,"1",,,,,,,"sert pour la cote et les chausses"
+275,201,"chausses","chausses","chausses",,,"1 paire",,,,,,,"sert aussi pour le chaperon et la cote"
+276,202,"doublure de manteau","doublure","mantel",,,"2",,,,,,,
+276,203,"doublure de chaperon","doublure","chaperon",,,"2",,,,,,,
+277,204,"chausses","chausses","chausses",,,"?",,,,,,,
+278,205,"chausses","chausses","chausses",,,"2 paires",,,,,,,
+279,206,"doublure de chaperon blanc","doublure","chaperon",,,"1",,,,,,,
+280,207,"malecote","intérieur","malecotte",,,"3",,,,,,,
+280,208,"cote","intérieur","cotte",,,"1",,,,,,,
+281,209,"mantel double","extérieur","mantel","double",,"1",,,,,,,
+283,210,"mantel","intérieur","mantel",,,"1",,,,,,,
+285,211,"robe","vêtement","robe",,,"1",,,,,,,
+285,212,"robe","vêtement","robe",,,"1",,,,,,,
+286,213,"chausses","chausses","chausses",,,"?",,,,,,,
+288,214,"malecote","intérieur","malecotte",,,"1",,,,,,,
+288,215,"mantel double","vêtement","mantel","double",,"1",,,,,,,
+288,216,"chausses","chausses","chausses",,,"?",,,,,,,
+294,217,"chausses","chausses","chausses",,,"3 paires",,,,,,,"2 pour A6"
+295,218,"chausses","chausses","chausses",,,"2 paires",,,,,,,
+296,219,"couverture de cheval","cheval","couverture","de cheval",,"1",,,,,,,
+297,220,"chausses","chausses","chausses",,,"?",,,,,,,
+298,221,"robe","vêtement","robe",,,"1",,,,,,,
+298,222,"robe","vêtement","robe",,,"2",,,,,,,
+298,223,"corset","intérieur","corset",,,"?",,,,,,,
+305,224,"corset","intérieur","corset",,,"1",,,,,,,
+305,225,"chaperon","tête","chaperon",,,"1",,,,,,,
+305,226,"corset","intérieur","corset",,,"1",,,,,,,
+305,227,"chaperon","tête","chaperon",,,"1",,,,,,,
+306,228,"corset","intérieur","corset",,,"1",,,,,,,
+306,229,"chaperon","tête","chaperon",,,"1",,,,,,,
+308,230,"corset","intérieur","corset",,,"3",,,,,,,
+308,231,"chausses","chausses","chausses",,,"?",,,,,,,
+309,232,"cote","intérieur","cotte",,,"1",,,,,,,
+309,233,"chaperon","tête","chaperon",,,"1",,,,,,,
+311,234,"chausses","chausses","chausses",,,"2 paires",,,,,,,
+313,235,"couverture","mobilier","couverture",,,"1",,,,,,,
+313,236,"doublure de couverture","doublure","couverture",,,"1",,,,,,,
+314,237,"robe","vêtement","robe",,,"1",,,,,,,
+315,238,"chausses","chausses","chausses",,,"3 paires",,,,,,,"dont 2 pour A6"
+315,239,"cote","intérieur","cotte",,,"1",,,,,,,"sert aussi pour le chaperon"
+316,240,"cote","intérieur","cotte",,,"1",,,,,,,"set aussi pour le chaperon et le manteau doublé"
+316,241,"mantel double","extérieur","mantel","double",,"1",,,,,,,"sert aussi pour la cote et le chaperon"
+316,242,"chaperon","tête","chaperon",,,"1",,,,,,,"set aussi pour la cote et le manteau doublé"
+317,243,"chausses","chausses","chausses",,,"2 paires",,,,,,,
+318,244,"robe courte","vêtement","robe","court",,"1",,,,,,,
+318,245,"malecote","intérieur","malecotte",,,"2",,,,,,,
+318,246,"gonelle","intérieur","gonelle",,,"1",,,,,,,
+318,247,"blanchet","sous-vêtement","blanchet",,,"1",,,,,,,
+318,248,"mantel double","extérieur","mantel","double",,"1",,,,,,,
+318,249,"cote","intérieur","cotte",,,"1",,,,,,,
+319,250,"corset à chevaucher","intérieur","corset","à chevaucher",,"1",,,,,,,
+319,251,"robe courte à parer","vêtement","robe","court à parer",,"1",,,,,,,
+319,252,"doublure de corset à chevaucher","doublure","corset","à chevaucher",,"1",,"inconnu","viennois",,,,
+319,253,"cote","intérieur","cotte",,,"1",,,,,,,
+319,254,"cote","intérieur","cotte",,,"1",,,,,,,
+319,255,"cote","intérieur","cotte",,,"1",,,,,,,
+320,256,"robe","vêtement","robe",,,"2",,,,,,,"parce qu'ils ont réalise la grande salles du bourget"
+320,257,"cote","intérieur","cotte",,,"2",,,,,,,
+320,258,"doublure de chaperon","doublure","chaperon",,,"1",,,,,,,
+320,259,"doublure de manteaux","doublure","mantel",,,"1",,,,,,,
+320,260,"doublure de chaperon","doublure","chaperon",,,"1",,,,,,,
+320,261,"doublure de manteau","doublure","mantel",,,"1",,,,,,,
+320,262,"doublure de chaperon","doublure","chaperon",,,"2",,,,,,,
+320,263,"chausses","chausses","chausses",,,"4 paires",,,,,,,
+320,264,"cote","intérieur","cotte",,,"1",,,,,,,
+320,265,"chaperon","tête","chaperon",,,"1",,,,,,,
+322,266,"cote","intérieur","cotte",,,"?",,,,,,,
+322,267,"cote partitée","intérieur","cotte","partité",,"?",,,,,,,
+322,268,"doublure de chaperon","doublure","chaperon",,,"1",,,,,,,
+322,269,"cote","intérieur","cotte",,,"?",,,,,,,
+323,270,"courtine","mobilier","coutine",,,,,,,,,,
+323,271,"cote","intérieur","cotte",,,"1",,,,,,,
+323,272,"cote","intérieur","cotte",,,"1",,,,,,,
+323,273,"cote partitée","intérieur","cotte","partité",,"4",,,,,,,
+323,274,"doublure de mantel","doublure","mantel",,,"2",,,,,,,
+323,275,"doublure de chaperon","doublure","chaperon",,,"2",,,,,,,
+323,276,"doublure de chaperon","doublure","chaperon",,,"1",,,,,,,
+323,277,"doublure de chaperon","doublure","chaperon",,,"1",,,,,,,
+323,278,"cote","intérieur","cotte",,,"2",,,,,,,
+323,279,"doublure de chaperon","doublure","chaperon",,,"1",,,,,,,
+323,280,"cote","intérieur","cotte",,,"2",,,,,,,"sert pour la cote et le mantel"
+323,281,"mantel","extérieur","mantel",,,"2",,,,,,,"sert pour cote et mantel"
+324,282,"manionibus pro pelicionis","sous-vêtement","pellisson",,,,,,,,,,
+325,283,"mantel","extérieur","mantel",,,"1",,,,,,,
+327,284,"blanchet","sous-vêtement","blanchet",,,"1",,,,,,,"sert pour chausse et cote"
+327,285,"chausses","chausses","chausses",,,"?",,,,,,,"sert pour cote et blanchet"
+327,286,"cote","intérieur","cotte",,,"1",,,,,,,"sert pour chausses et blanchet"
+328,287,"doublure de chaperon","doublure","chaperon",,,"1",,,,,,,
+328,288,"chausses","chausses","chausses",,,"2 paires",,,,,,,
+328,289,"broderie sur gipon","broderie","broderie",,,"?",,,,,,,
+328,290,"mantel double","extérieur","mantel","double",,"2",,,,,,,
+329,291,"cote","intérieur","cotte",,,"1",,,,,,,
+329,292,"chaperon","tête","chaperon",,,"1",,,,,,,
+329,293,"chausses","chausses","chausses",,,"?",,,,,,,
+329,294,"chausses","chausses","chausses",,,"?",,,,,,,
+330,295,"doublure de chaperon","doublure","chaperon",,,"1",,,,,,,
+332,296,"cote","intérieur","cotte",,,"2",,,,,,,"sert aussi pour 2 chaperons"
+332,297,"chaperon","tête","chaperon",,,"2",,,,,,,"sert aussi pour 2 cotes"
+332,298,"doublure de chaperon","doublure","chaperon",,,"2",,,,,,,"sert aussi pour des chausses"
+332,299,"chausses","chausses","chausses",,,"2 paires",,,,,,,"sert aussi pour 2 doublures de chaperons"
+333,300,"cote","intérieur","cotte",,,"1",,,,,,,
+333,301,"cote","intérieur","cotte",,,"2",,,,,,,
+335,302,"chausses","chausses","chausses",,,"4 paires",,,,,,,
+338,303,"cote","intérieur","cotte",,,"1",,,,,,,"sert aussi pour chaperon"
+338,304,"chaperon","tête","chaperon",,,"1",,,,,,,"sert pour cote"
+339,305,"chausses","chausses","chausses",,,"2 paires",,,,,,,
+340,306,"cote","intérieur","cotte",,,"1",,,,,,,"sert aussi pour chaperon"
+340,307,"chaperon","tête","chaperon",,,"1",,,,,,,"sert aussi pour la cote"
+341,308,"chausses","chausses","chausses",,,"2 paires",,,,,,,
+342,309,"cote","intérieur","cotte",,,"1",,,,,,,
+342,310,"chaperon","tête","chaperon",,,"1",,,,,,,
+343,311,"chausses","chausses","chausses",,,"2 paires",,,,,,,
+344,312,"cote","intérieur","cotte",,,"1",,,,,,,"sert aussi pour le chaperon"
+344,313,"chaperon","tête","chaperon",,,"1",,,,,,,"sert aussi pour la cote"
+344,314,"chausses","chausses","chausses",,,"2 paires",,,,,,,
+347,315,"chausses","chausses","chausses",,,"2 paires",,,,,,,
+348,316,"robe de trois garnements","vêtement","robe","trois garnements",,"1",,,,,,,
+348,317,"doublure de mantel","doublure","mantel",,,"1",,,,,,,"sert aussi pour malecote"
+348,318,"malecote","intérieur","malecotte",,,"1",,,,,,,"sert aussi pour la doublure de mantel"
+348,319,"robe","vêtement","robe",,,"1",,,,,,,
+348,320,"corset","intérieur","corset",,,"2",,,,,,,
+349,321,"robe","vêtement","robe",,,"1",,,,,,,
+354,322,"robe","vêtement","robe",,,"2",,,,,,,
+354,323,"gonelle","intérieur","gonelle",,,"1",,,,,,,"sert aussi pour des chausses"
+354,324,"chausses","chausses","chausses",,,"?",,,,,,,"sert aussi pour une gonelle"
+354,325,"corset","intérieur","corset",,,"1",,,,,,,"sert aussi pour chaperon et chausses"
+354,326,"chausses","chausses","chausses",,,"?",,,,,,,"sert aussi pour le corset et le chaperon"
+354,327,"chaperon","tête","chaperon",,,"1",,,,,,,"sert aussi pour les chausses et le corset"
+355,328,"mantel","extérieur","mantel",,,"1",,,,,,,
+361,329,"chaperon","tête","chaperon",,,"1",,,,,,,
+367,330,"robe","vêtement","robe",,,"2",,,,,,,
+367,331,"malecote","intérieur","malecotte",,,"4",,,,,,,"sert aussi pour chaperons"
+367,332,"chaperon","tête","chaperon",,,"4",,,,,,,"sert aussi pour la malecote"
+369,333,"cote","intérieur","malecotte",,,"2",,,,,,,"sert pour 2cotes mantel 1 chaperonet en chaperon doublé des chausses"
+369,334,"mantel","extérieur","mantel",,,"1",,,,,,,"2 cotes mantel 1 chaperonet un chaperon doublé des chausses"
+369,335,"chaperon doublé","tête","chaperon","doublé",,"1",,,,,,,"2 cotes mantel 1 chaperonet un chaperon doublé des chausses"
+369,336,"chaperon","tête","chaperon",,,"1",,,,,,,"2 cotes mantel 1 chaperonet un chaperon doublé des chausses"
+369,337,"chausses","chausses","chausses",,,"?",,,,,,,"2 cotes mantel 1 chaperonet un chaperon doublé des chausses"
+370,338,"cote","intérieur","cotte",,,"1",,,,,,,"sert pour cote et chaperon doublé"
+370,339,"chaperon doublé","tête","chaperon","doublé",,"1",,,,,,,"sert pour cote et chaperon doublé"
+372,340,"malecote","intérieur","malecotte",,,"1",,,,,,,"sert pour malecote et chaperon"
+372,341,"chaperon","tête","chaperon",,,"1",,,,,,,"sert pour malecote et chaperon"
+377,342,"robe","vêtement","robe",,,"1",,,,,,,
+382,343,"couverture d'arbalète","emballage","sac","arbalète",,"?",,,,,,,
+382,344,"robe","vêtement","robe",,,"1",,,,,,,
+391,345,"robe","vêtement","robe",,,"1",,,,,,,
+392,346,"robe","vêtement","robe",,,"7",,,,,,,
+394,347,"robe entière","vêtement","robe","entière",,"1",,,,,,,
+395,348,"robe","vêtement","robe",,,"3",,,,,,,
+396,349,"robe","vêtement","robe",,,"1",,,,,,,
+406,350,"robe","vêtement","robe",,,"1",,,,,,,
+407,351,"doublure de chaperon de velours","doublure","chaperon",,,"1",,,,,,,
+408,352,"doublure de chaperon","doublure","chaperon",,,"?",,,,,,,
+411,353,"couverture de cheval","cheval","couverture","de cheval",,"3",,,,,,,"comprend dans le prix la façon"
+413,354,"chasuble de chapelle","religieux","chasuble",,,"1",,,,,,,"comprend dans le prix la façon"
+419,355,"doublure de chaperon","tête","chaperon",,,,,,,,,,"sert aussi pour la cape"
+419,356,"doublure de cape","doublure","cape",,,"1",,,,,,,"sert aussi pour chaperon"
+419,357,"mantel","extérieur","mantel",,,"1",,,,,,,
+423,358,"linteamentum","mobilier","linteamenta",,,"?",,,,,,,
+427,359,"chausses","chausses","chausses",,,"?",,,,,,,
+428,360,"doublure de corset","doublure","corset",,,"?",,,,,,,
+429,361,"doublure de corset de serge","intérieur","corset","de serge",,"1",,,,,,,
+433,362,"écusson","autre","écusson",,,"?",,,,,,,
+434,363,"robe","vêtement","robe",,,"1",,,,,,,"sert aussi pour la couverture et la garnache"
+434,364,"couverture","mobilier","couverture",,,"1",,,,,,,"sert pour la robe et la garnache"
+434,365,"garnache","extérieur","garnache",,,"1",,,,,,,"sert pour la couverture  et la robe"
+437,366,"robe","vêtement","robe",,,"?",,,,,,,
+438,367,"robe","vêtement","robe",,,"?",,,,,,,
+441,368,"linteamentum","mobilier","linteamenta",,,"?",,,,,,,"la façon est comprise dans le prix de l'item"
+445,369,"doublure de couverture","doublure","couverture",,,,,,,,,,
+447,370,"robe partitée","vêtement","robe","partité",,"2",,,,,,,
+448,371,"couverture de cheval","cheval","couverture","de cheval",,"?",,,,,,,
+452,372,"mantel","extérieur","mantel",,,"1",,,,,,,
+453,373,"couverture","mobilier","couverture",,,"1",,,,,,,"adoubement"
+454,374,"doublet","ajusté","doublet",,,"2",,,,,,,
+469,375,"pourfil de corset","pourfil","corset",,,,,,,,,,
+470,376,"couverture de cheval","cheval","couverture","de cheval",,"14",,,,,,,
+472,377,"surplis","religieux","surplis",,,"2",,,,,,,
+473,378,"couverture de cheval","cheval","couverture","de cheval",,,,,,,,,
+474,379,"couverture de cheval","cheval","couverture","de cheval",,"?",,,,,,,
+478,380,"linteamentum pour la chambre","mobilier","linteamenta",,,,,,,,,,
+484,381,"couverture","mobilier","couverture",,,"?",,,,,,,
+487,382,"mappus","mobilier","nappe",,,"21",,,,,,,
+493,383,"linteamentum","mobilier","linteamenta",,,"?",,,,,,,
+498,384,"chausses","chausses","chausses",,,"?",,,,,,,
+499,385,"corset","intérieur","corset",,,"1",,,,,,,
+500,386,"doublure de couverture","doublure","couverture",,,"1",,,,,,,
+506,387,"garnement de robe","vêtement","garnement",,,"8",,,,,,,
+512,388,"mantel","extérieur","mantel",,,"1",,,,,,,
+513,389,"pourfil d'un gardecorps","pourfil","garde corps",,,"1",,,,,,,"sert aussi pour les manches"
+513,390,"manche de gardecorps","ajusté","garde corps","manche",,"2",,,,,,,"sert aussi pour le pourfil"
+519,391,"canevas","autre","canevas",,,,,,,,,,
+520,392,"chaperon","chausses","chausses",,,"?",,,,,,,
+522,393,"doublure de cape","doublure","cape",,,"1",,,,,,,"1 pièce est utilisée"
+523,394,"robe","vêtement","robe",,,"1",,,,,,,
+526,395,"plate","militaire","plate",,,"?",,,,,,,
+530,396,"doublure de corset","doublure","corset",,,"1",,,,,,,
+531,397,"doublure de cape","doublure","cape",,,"1",,,,,,,
+532,398,"canevas","autre","canevas",,,"1",,,,,,,
+534,399,"cuesus","autre","cuesus",,,"24",,,,,,,
+541,400,"mantilium","mobilier","mantil",,,,,,,,,,
+541,401,"manterius","extérieur","mantel",,,,,,,,,,
+543,403,"malecote","intérieur","malecotte",,,"1",,,,,,,
+546,404,"chausses","chausses","chausses",,,"?",,,,,,,
+548,405,"surcot","intérieur","surcot",,,"1",,,,,,,
+553,406,"chausses","chausses","chausses",,,,,,,,,,
+554,407,"doublure de cote armée","doublure","cotte d'armes",,,"2",,,,,,,"sert aussi pour les écussons"
+554,408,"écusson","autre","écusson",,,"60",,,,,,,"sert aussi pour les cotes armée"
+559,409,"chaperon","tête","chaperon",,,,,,,,,,
+561,410,"robe","vêtement","robe",,,"1",,,,,,,
+566,411,"robe","vêtement","robe",,,"3",,,,,,,
+566,412,"corset","intérieur","corset",,,"3",,,,,,,
+566,413,"corset","intérieur","corset",,,"2",,,,,,,
+567,414,"robe","vêtement","robe",,,"?",,,,,,,"livrée le tissu est compté dans l'item"
+568,415,"corset","intérieur","corset",,,"1",,,,,,,
+569,416,"robe","vêtement","robe",,,"2",,,,,,,
+570,417,"garnache","extérieur","garnache",,,"1",,,,,,,"sert aussi pour des chausses"
+570,418,"chausses","chausses","chausses",,,"?",,,,,,,"sert aussi pour la garnache"
+571,419,"chausses","chausses","chausses",,,"?",,,,,,,
+574,420,"linteamentum","mobilier","linteamenta",,,,,,,,,,
+575,421,"linteamentum","mobilier","linteamenta",,,"8",,,,,,,
+576,422,"pannorum linearum","mobilier","linteamenta",,,"8",,,,,,,
+577,423,"linteamentum","mobilier","linteamenta",,,,,,,,,,
+578,424,"tenture pour chambre","mobilier","tenture","chambre",,"?",,,,,,,
+580,425,"tenture","mobilier","tenture",,,,,,,,,,
+583,426,"bancheriis de sala","mobilier","banc",,,,,,,,,,
+584,427,"couverture","mobilier","couverture",,,"2",,,,,,,
+585,428,"garnache","extérieur","garnache",,,"1",,,,,,,"sert aussi pour 4 paires de chausses et un corset"
+585,429,"corset","intérieur","corset",,,"1",,,,,,,"sert  pour 4 paires de chausses et une garnache"
+585,430,"chausses","chausses","chausses",,,"4 paires",,,,,,,"sert aussi pour corset et garnache"
+586,431,"chausses","chausses","chausses",,,"2 paires",,,,,,,
+587,432,"banière aux armes de Savoie","militaire","bannière","aux armes de Savoie",,,,,,,,,
+588,433,"doublure de corset","doublure","corset",,,"1",,,,,,,"sert aussi pour le chaperon"
+588,434,"chaperon","tête","chaperon",,,"1",,,,,,,"sert aussi pour le corset"
+590,435,"doublure de robe","doublure","robe",,,"3",,,,,,,"livrée"
+591,436,"vaine pointe","mobilier","vainepointe",,,"1",,,,,,,
+593,437,"linteamentum","mobilier","linteamenta",,,"4",,,,,,,
+593,438,"linteamentum","mobilier","linteamenta",,,"4 paires",,,,,,,"sert à en réparer 4 autres"
+593,439,"gipon","ajusté","gipon",,,"3",,,,,,,
+593,440,"surplis","religieux","surplis",,,"1",,,,,,,
+593,441,"surplis","religieux","surplis",,,"1",,,,,,,
+595,442,"cloche","extérieur","cloche",,,"1",,,,,,,
+597,443,"corset","intérieur","corset",,,"1",,,,,,,
+598,444,"corset","intérieur","corset",,,"1",,,,,,,"sert aussi pour des grands chaperons"
+598,445,"grand chaperon","tête","chaperon","grand",,,,,,,,,"sert aussi pour le corset"
+600,446,"courte pointe","mobilier","courtepointe",,,"1",,,,,,,
+602,447,"malecote","intérieur","malecotte",,,"3",,,,,,,
+603,448,"malecote","intérieur","malecotte",,,"6",,,,,,,
+604,449,"malecote","intérieur","malecotte",,,"1",,,,,,,"sert aussi pour le corset et les chausses"
+604,450,"corset","intérieur","corset",,,"1",,,,,,,"sert aussi pour la malecote et les chausses"
+604,451,"chausses","chausses","chausses",,,,,,,,,,"sert aussi pour la malecote et le corset"
+605,452,"doublure de mantel","doublure","mantel",,,"1",,,,,,,"sert aussi pour une cote"
+605,453,"cote","intérieur","cotte",,,"1",,,,,,,"sert aussi pour une doublure de mantel"
+606,454,"cloche","extérieur","cloche",,,"1",,,,,,,
+610,455,"chausses","chausses","chausses",,,"6 paires",,,,,,,
+614,456,"parement de cheval","cheval","parement","de cheval",,"1",,,,,,,
+614,457,"armoiries","autre","armoiries",,,,,,,,,,
+614,458,"doublure de parement de cheval","doublure","parement","de cheval",,,,,,,,,
+622,459,"parement de cheval","cheval","parement","de cheval",,"15",,,,,,,"sert aussi pour les croix sur une plate"
+622,460,"croix","autre","armoiries","croix",,,,,,,,,"sert aussi pour les parements"
+623,461,"croix","autre","armoiries","croix",,,,,,,,,
+624,462,"courtine","mobilier","courtine",,,,,,,,,,"sert à d'autre objet du mobilier"
+624,463,"d'autre objet de mobilier","mobilier","mobilier",,,,,,,,,,"sert aussi pour des courtines"
+631,464,"doublure de garnache","doublure","garnache",,,"2",,,,,,,
+632,465,"surcot","intérieur","surcot",,,"4",,,,,,,"Pâque"
+633,466,"doublure de chaperon","doublure","chaperon",,,"2",,,,,,,
+634,467,"doublure de manches de surcot","doublure","surcot","manche",,,,,,,,,
+639,468,"coussin","mobilier","coussin",,,"4",,,,,,,
+640,469,"coperalibus","autre","coperalibus",,,"2",,,,,,,"sert aussi pour 2 tuialliis"
+640,470,"tuiallia","mobilier","tuaille",,,"2",,,,,,,"sert aussi pour 2 corperalibus"
+641,471,"braies","sous-vêtement","braies",,,"6",,,,,,,
+642,472,"linteamentum","mobilier","linteamenta",,,"20 paires",,,,,,,"sert pour 2 autre linteamentis et une couverture? de nuit"
+642,473,"linteamentum","mobilier","linteamenta",,,"2",,,,,,,"vert pour 20 paires linteamentis et une couverture? de nuit"
+642,474,"couverture? de nuit","mobilier","couverture",,,"1",,,,,,,"sert pour  autres linteamentis"
+642,475,"linteamentum","mobilier","linteamenta",,,"6 paires",,,,,,,
+642,476,"linteamentum","mobilier","linteamenta",,,"13 paires",,,,,,,
+645,477,"pannorum lineorum","mobilier","linteamenta",,,,,,,,,,
+661,478,"selle de femme","cheval","selle","de femme",,"1",,,,,,,
+665,479,"corset","intérieur","corset",,,"1",,,,,,,
+666,480,"doublure de chaperon","doublure","chaperon",,,"1",,,,,,,
+671,481,"robe","vêtement","robe",,,"1",,,,,,,"penthecote"
+672,482,"chaperon","tête","chaperon",,,"1",,,,,,,"penthecote"
+673,483,"doublure de manches de corset","doublure","corset","manche",,,,,,,,,
+678,484,"doublure de corset","doublure","corset",,,"1",,,,,,,
+680,485,"selle","cheval","selle",,,"1",,,,,,,
+682,486,"doublet","ajusté","doublet",,,"2",,,,,,,
+686,487,"doublet","ajusté","doublet",,,"2",,,,,,,
+687,488,"braies","sous-vêtement","braies",,,"4",,,,,,,
+687,489,"linteamentum","mobilier","linteamenta",,,"2",,,,,,,"sert aussi pour pedibus"
+687,490,"pedibus","inconnue","pedibus",,,,,,,,,,"sert aussi pour 2 linteamentis"
+688,491,"chanconibus","inconnue","chanconibus",,,,,,,,,,
+689,492,"cote hardie","extérieur","Cotte-hardie",,,"1",,,,,,,
+689,493,"clamide","intérieur","clamide",,,"1",,,,,,,
+689,494,"couverture","mobilier","couverture",,,"1",,,,,,,
+689,495,"cote hardie","extérieur","Cotte-hardie",,,"2",,,,,,,
+693,496,"?","inconnue","inconnue",,,,,,,,,,"le couturier touche l'ag et ensuite paie ouvrier 4s pou lui et ses valets"
+695,497,"corset","intérieur","corset",,,"1",,,,,,,
+697,498,"bancheriis","mobilier","banc",,,"3",,,,,,,
+701,499,"amica","religieux","amict",,,"1",,,,,,,
+704,500,"palaris","inconnue","palaris",,,,,,,,,,
+706,501,"robe de trois garnements","vêtement","robe","trois garnements",,"1",,,,,,,
+706,502,"robe de deux garnements","vêtement","robe","deux garnements",,"1",,,,,,,
+706,503,"robe de trois garnements","vêtement","robe","trois garnements",,"1",,,,,,,
+706,504,"chausses","chausses","chausses",,,"5 paires",,,,,,,
+707,505,"bonnet de bain","sous-vêtement","bonnet de bain",,,"1",,,,,,,"réparé"
+709,506,"doublure de couverture","doublure","couverture",,,"1",,,,,,,
+710,507,"coussin","mobilier","coussin",,,"3",,,,,,,
+711,508,"gipon","ajusté","gipon",,,"1",,,,,,,
+712,509,"doublure de mantel","doublure","mantel",,,"2",,,,,,,
+714,510,"mala tunica","intérieur","maletunique",,,"2",,,,,,,
+715,511,"mantel","extérieur","mantel",,,"1",,,,,,,"sert aussi pour la male tunica"
+716,512,"tunique","intérieur","tunique",,,"1",,,,,,,"sert aussi pour un mantel"
+716,513,"mantel","extérieur","mantel",,,"1",,,,,,,"sert aussi pour la tunique"
+717,514,"doublure de robe","doublure","robe",,,"1",,,,,,,"facture se fait à rippaille"
+721,515,"doublure de bomba","doublure","bombe",,,"1",,,,,,,
+724,516,"gipon","ajusté","gipon",,,"1",,,,,,,
+728,517,"robe","ajusté","gipon",,,"1",,,,,,,
+729,518,"robe","vêtement","robe",,,"1",,,,,,,
+731,519,"robe","vêtement","robe",,,"1",,,,,,,
+733,520,"robe","vêtement","robe",,,"1",,,,,,,"livrée"
+735,521,"robe","vêtement","robe",,,"1",,,,,,,
+741,522,"doublure de corset","doublure","corset",,,"3",,,,,,,
+744,523,"cloche","extérieur","cloche",,,"1",,,,,,,
+746,524,"malecote","intérieur","malecotte",,,"1",,,,,,,
+751,525,"croix","autre","armoiries","croix",,,,,,,,,
+752,526,"gipon","ajusté","gipon",,,"2",,,,,,,
+759,527,"robe","ajusté","robe",,,,,,,,,,
+760,528,"chausses","chausses","chausses",,,,,,,,,,
+761,529,"tunique","intérieur","tunique",,,"1",,,,,,,
+763,530,"robe de trois garnements","vêtement","robe","trois garnements",,"1",,,,,,,"donné par Eduardi"
+763,531,"doublure de chaperon","doublure","chaperon",,,,,,,,,,"donné par Eduardi"
+773,532,"arnesium","militaire","arnais",,,"plusieurs",,,,,,,
+775,533,"coussin","mobilier","coussin",,,"plusieurs",,,,,,,
+778,534,"robe","vêtement","robe",,,"1",,,,,,,
+779,535,"couverture","mobilier","couverture",,,"3",,,,,,,
+781,536,"couverture","mobilier","couverture",,,"plusieurs",,,,,,,
+782,537,"robe","vêtement","robe",,,"1",,,,,,,
+783,538,"couverture de selle","cheval","couverture","selle",,"1",,,,,,,
+784,539,"chausses","chausses","chausses",,,,,,,,,,
+785,540,"cloche","extérieur","cloche",,,"1",,,,,,,
+786,541,"robe","vêtement","robe",,,"5",,,,,,,
+787,542,"doublure de couverture","doublure","couverture",,,"5",,,,,,,
+788,543,"robe","vêtement","robe",,,"21",,,,,,,
+790,544,"malecote","intérieur","malecotte",,,"2",,,,,,,
+794,545,"malecote","intérieur","malecotte",,,"3",,,,,,,
+795,546,"robe","vêtement","robe",,,"1",,,,,,,
+796,547,"panaillonem","militaire","pavillon",,,,,,,,,,
+797,548,"couverture de cheval","cheval","couverture","de cheval",,"?",,,,,,,
+798,549,"robe","vêtement","robe",,,"2",,,,,,,
+799,550,"bancheriis","mobilier","banc",,,,,,,,,,
+801,551,"bannière","militaire","bannière",,,"?",,,,,,,"sert aussi pour la cote à armer"
+801,552,"cote à armer","militaire","cotte d'armes",,,"1",,,,,,,
+802,553,"surplis","religieux","surplis",,,"1",,,,,,,
+804,554,"robe","vêtement","robe",,,"?",,,,,,,
+805,555,"chausses","chausses","chausses",,,"?",,,,,,,
+811,556,"malecote","intérieur","malecotte",,,"4",,,,,,,
+812,557,"mantel","extérieur","mantel",,,"1",,,,,,,"sert aussi pour une malecote"
+812,558,"malecote","intérieur","malecotte",,,"1",,,,,,,"sert aussi pour un mantel"
+814,559,"chausses","chausses","chausses",,,,,,,,,,
+819,560,"chaperon","tête","chaperon",,,"2",,,,,,,
+819,561,"doublure de mantel","doublure","mantel",,,"1",,,,,,,
+819,562,"chaperon","tête","chaperon",,,"1",,,,,,,
+822,563,"cloche","extérieur","cloche",,,"2",,,,,,,
+822,564,"corset","intérieur","corset",,,"1",,,,,,,
+822,565,"robe","vêtement","robe",,,"1",,,,,,,
+824,566,"courtine de la chapelle d'Eduardi à Chambéry","mobilier","courtine","de chapelle",,"?",,,,,,,
+824,567,"croix de la chapelle d'Eduardi à chambéry","autre","armoiries","croix",,,,,,,,,
+826,568,"robe","vêtement","robe",,,"1",,,,,,,
+826,569,"malecote","intérieur","malecotte",,,"1",,,,,,,"sert aussi pour le mentel double"
+826,570,"mantel double","extérieur","mantel","double",,"1",,,,,,,"sert aussi pour la male cote"
+826,571,"robe","vêtement","robe",,,"1",,,,,,,
+826,572,"mantel","extérieur","mantel",,,"1",,,,,,,
+826,573,"robe","vêtement","robe",,,"1",,,,,,,
+827,574,"doublure de malecote","doublure","malecotte",,,"2",,,,,,,
+828,575,"mantel double","extérieur","mantel","double",,"1",,,,,,,
+828,576,"chausses","chausses","chausses",,,,,,,,,,
+828,577,"chausses","chausses","chausses",,,,,,,,,,
+829,578,"robe","vêtement","robe",,,"1",,,,,,,
+830,579,"mantel double","extérieur","mantel","double",,"1",,,,,,,
+835,580,"doublure de parement pour cheval","doublure","parement","de cheval",,"1",,,,,,,
+835,581,"doublet","ajusté","doublet",,,"1",,,,,,,
+836,582,"doublure de surcot","intérieur","surcot",,,"1",,,,,,,"don D'Eduardi"
+837,583,"chausses","chausses","chausses",,,,,,,,,,
+838,584,"doublure de robe","doublure","robe",,,"2",,,,,,,
+839,585,"fourrure de chaperon","fourrure","chaperon",,,"2",,,,"4S 4D gt","0 4 4","gros tournois",
+841,586,"robes à quatre garnements","vêtement","robe","quatre garnements",,"6",,,,,,,
+843,587,"mantilium","mobilier","mantil",,,"31",,,,,,,
+844,588,"malecote","intérieur","malecotte",,,"1",,,,,,,"sert aussi pour le mantel doublé"
+844,589,"mantel double","extérieur","mantel","double",,"1",,,,,,,"sert aussi pour la male cote"
+850,590,"doublure de robe","doublure","robe",,,,,,,,,,
+851,591,"robe","vêtement","robe",,,"1",,,,,,,
+855,592,"surcot","intérieur","surcot",,,"1",,,,,,,"sert aussi pour chausses et chaussures"
+855,593,"chausses","chausses","chausses",,,,,,,,,,"sert aussi pour surcot et chaussures"
+855,594,"chaussures","chaussure","chaussure",,,,,,,,,,"sert aussi pour chausses et surcot"
+862,595,"couverture","mobilier","couverture",,"Douai","4",,,,,,,
+864,596,"pourpoint","ajusté","pourpoint",,"Paris","1",,,,,,,
+865,597,"pourpoint","ajusté","pourpoint",,"Paris","1",,,,,,,
+866,598,"garnements d'été","vêtement","garnement","d'été","Paris ou Douai","3",,,,,,,
+866,599,"doublure de mantel","doublure","mantel",,"Paris ou Douai","1",,,,,,,
+866,600,"mantel","extérieur","mantel",,"Paris ou Douai","1",,,,,,,
+866,601,"cape à mettre sur arnesium","militaire","cape","à mettre sur arnais","Paris ou Douai","1",,,,,,,"sert aussi pour chaperon"
+866,602,"chaperon à mettre sur arnesium","militaire","chaperon","à mettre sur arnais","Paris ou Douai","1",,,,,,,"sert aussi pour la cape"
+866,603,"doublure de corset","intérieur","corset",,"Paris ou Douai","1",,,,,,,
+866,604,"corset d'été","intérieur","corset","d'été","Paris ou Douai","1",,,,,,,
+866,605,"robe","vêtement","robe",,"Paris ou Douai","1",,,,,,,
+867,606,"doublure de couvre-chef","doublure","couvre-chef",,"Paris ou Cambrais","1",,,,,,,
+867,607,"doublure de mucia","doublure","mucia",,"Paris ou Cambrais","1",,,,,,,
+867,608,"doublure de corset","doublure","corset",,"Paris ou Cambrais","1",,,,,,,
+867,609,"doublure de chaperon","doublure","chaperon",,"Paris ou Cambrais","1",,,,,,,
+867,610,"doublure de corset","doublure","corset",,"Paris ou Cambrais","1",,,,,,,
+867,611,"doublure de corset","doublure","corset",,"Paris ou Cambrais","1",,,,,,,
+870,612,"mantel double","extérieur","mantel","double","Arras","1",,,,,,,
+870,613,"chaperon","tête","chaperon",,"Arras","1",,,,,,,
+870,614,"chausses","chausses","chausses",,"Arras",,,,,,,,
+870,615,"chaperon","tête","chaperon",,"Arras","1",,,,,,,"sert aussi pour les chausses"
+870,616,"chausses","chausses","chausses",,"Arras",,,,,,,,"sert aussi pour le chaperon"
+870,617,"robe","vêtement","robe",,"Arras","1",,,,,,,
+870,618,"cote","intérieur","cotte",,"Arras","1",,,,,,,
+871,619,"doublure de corset","doublure","corset",,"Arras","1",,,,,,,
+873,620,"gipon","ajusté","gipon",,"Arras","2",,,,"72S 2D parisis","0 72 2","parisis",
+874,621,"doublure de surcot","doublure","surcot",,"arras","1",,,,,,,
+874,622,"chausses","chausses","chausses",,"Arras",,,,,,,,
+875,623,"malecote","intérieur","malecotte",,"Arras","1",,,,,,,"sert aussi pour les chausses"
+875,624,"chausses","chausses","chausses",,"arras",,,,,,,,"sert aussi pour la malecote"
+877,625,"chausses","chausses","chausses",,"Douai","4 paires",,,,,,,
+877,626,"doublure de malecote","doublure","malecotte",,"Douai","1",,,,,,,
+886,627,"chape","religieux","chape",,"Paris","1",,,,,,,"sert aussi pour les manches et le chaperon"
+886,628,"manche de chape","religieux","chape","manche","Paris","1 paire",,,,,,,"sert aussi pour la chape et le chaperon"
+886,629,"chaperon","tête","chaperon",,"Paris","1",,,,,,,"sert aussi pour les manches et la chape"
+887,630,"mantel","extérieur","mantel",,"Paris","1",,,,,,,"sert pour des chausses"
+887,631,"chausses","chausses","chausses",,"Paris",,,,,,,,"sert aussi pour le mantel"
+887,632,"robe","vêtement","robe",,"Paris","1",,,,,,,
+887,633,"balle à envelopper","emballage","balle",,"Paris",,,,,,,,
+887,634,"doublure de cote","doublure","cotte",,"Paris","1",,,,,,,
+887,635,"gipon","ajusté","gipon",,"Paris","1",,,,,,,
+887,636,"doublure de chaperon","doublure","chaperon",,"Paris","1",,,,,,,
+887,637,"malecote","intérieur","malecotte",,"Paris","1",,,,,,,
+887,638,"cote ardia de nuit","intérieur","Cotte-hardie","de nuit","Paris","1",,,,,,,
+888,639,"pourfil de mantel","pourfil","mantel",,"Pont d'Ain","1",,,,,,,
+890,640,"doublure de robe","doublure","robe",,,"1",,,,,,,
+895,641,"linteamentum","mobilier","linteamenta",,,,,,,,,,
+902,642,"doublure de chaperon","doublure","chaperon",,,"7",,,,,,,
+904,643,"mappus","mobilier","nappe",,,"21",,,,,,,
+907,644,"sac","emballage","sac",,,,,,,,,,
+908,645,"enveloppe à mappus","emballage","sac",,,,,,,,,,
+909,646,"miniorius","inconnue","miniorius",,,,,,,,,,
+911,647,"linteamentum","mobilier","linteamenta",,,,,,,,,,
+912,648,"linteamentum","mobilier","linteamenta",,,"1",,,,,,,
+917,649,"robe","vêtement","robe",,,"15",,,,,,,
+919,650,"linteamentum","mobilier","linteamenta",,,"2",,,,,,,
+921,651,"robe","vêtement","robe",,,"1",,,,,,,"livrée"
+925,652,"doublure de robe","doublure","robe",,,"1",,,,,,,
+925,653,"doublure de robe","doublure","robe",,,"1",,,,,,,
+925,654,"doublure de corset","intérieur","corset",,,"1",,,,,,,
+926,655,"?","inconnue","inconnue",,,,,,,,,,
+927,656,"doublure de corset","doublure","corset",,,"1",,,,,,,
+929,657,"tunique","intérieur","tunique",,,"1",,,,,,,
+929,658,"garnache","extérieur","garnache",,,"1",,,,,,,
+929,659,"cloche","extérieur","cloche",,,"1",,,,,,,
+930,660,"doublure de robe","doublure","robe",,,"1",,,,,,,
+931,661,"robe","vêtement","robe",,,"1",,,,,,,"sert aussi pour une doublure de chaperon"
+932,662,"doublure de chaperon","doublure","chaperon",,,"1",,,,,,,"sert aussi pour une robe"
+933,663,"décore de robe","broderie","broderie","robe",,,,,,,,,
+936,664,"doublet","ajusté","doublet",,,"plusieurs",,,,,,,
+937,665,"linteamentum","mobilier","linteamenta",,,"5",,,,,,,
+937,666,"oreiller","mobilier","oreiller",,,"8",,,,,,,
+938,667,"chanconetis","inconnue","chanconetis",,,,,,,,,,
+940,668,"robe","vêtement","robe",,,"1",,,,,,,"il est aller de Preysone à Versoyni"
+942,669,"chausses","chausses","chausses",,,,,,,,,,
+944,670,"robe","vêtement","robe",,,"1",,,,,,,"sert aussi pour des chausses"
+944,671,"chausses","chausses","chausses",,,,,,,,,,"sert aussi pour la robe"
+952,672,"doublure de chaperon","doublure","chaperon",,,"2",,,,,,,"sert aussi pour des chausses"
+952,674,"chaperon","tête","chaperon",,,"1",,,,,,,
+952,675,"chausses","chausses","chausses",,,,,,,,,,"sert aussi pour les doublures de chaperons"
+959,676,"corset","intérieur","corset",,,"1",,,,,,,
+959,677,"garnement de robe","vêtement","garnement",,,"40",,,,,,,
+959,678,"mantel","extérieur","mantel",,,"4",,,,,,,
+959,679,"chaperon","tête","chaperon",,,"8",,,,,,,
+959,680,"chemise","sous-vêtement","chemise",,,"6",,,,,,,
+960,681,"accessoire de robe","mercerie","mercerie",,,"4",,,,,,,
+960,682,"pelisse","extérieur","pelisse",,,"2",,,,,,,
+960,683,"accessoire de chaperon","mercerie","mercerie",,,"4",,,,,,,
+960,684,"robe","vêtement","robe",,,"1","6S v esp","0 6 0","viennois à l'éperon","6S v esp","0 6 0","viennois à l'éperon",
+961,685,"couverture de matelas","mobilier","couverture","de matelas",,,,,,,,,"sert aussi pour les coussins"
+961,686,"couverture de coussins","mobilier","couverture","de coussin",,,,,,,,,"sert aussi pour les matelas"
+961,687,"robe entière partitée","vêtement","robe","entier et partité",,"3",,,,,,,
+961,688,"robe entière","vêtement","robe","entier",,"2",,,,,,,
+961,689,"robe entière partitée","vêtement","robe","entier et partité",,"2",,,,,,,"livrée"
+961,690,"robe","vêtement","robe",,,"1",,,,,,,
+961,691,"cote","intérieur","cotte",,,"2",,,,,,,"livrée"
+961,692,"corset","intérieur","corset",,,"2",,,,,,,
+961,693,"cote","intérieur","cotte",,,"2",,,,,,,
+961,694,"cote partitée","intérieur","cotte","partité",,"2",,,,,,,
+961,695,"robe entière","vêtement","robe","partité",,"1",,,,,,,
+961,696,"cote","intérieur","cotte",,,"1",,,,,,,
+961,697,"cote partitée","intérieur","cotte","partité",,"2",,,,,,,
+964,698,"chausses","chausses","chausses",,,,,,,,,,
+965,699,"chausses","chausses","chausses",,,,,,,,,,
+966,700,"chausses","chausses","chausses",,,,,,,,,,
+966,701,"doublure de chaperon","doublure","chaperon",,,"1",,,,,,,
+966,702,"robe entière","vêtement","robe","entier",,"1",,,,,,,
+966,703,"cote","intérieur","cotte",,,"1",,,,,,,
+967,704,"cote","intérieur","cotte",,,"1",,,,,,,
+970,705,"doublure de robe","doublure","robe",,,,,,,,,,"nativité"
+970,706,"cote","intérieur","cotte",,,"2",,,,,,,"nativité"
+970,707,"mantel","extérieur","mantel",,,"2",,,,,,,"nativité"
+970,708,"chaperon doublé","tête","chaperon","doublé",,"2",,,,,,,"nativité"
+970,709,"chaperon doublé","tête","chaperon","doublé",,"2",,,,,,,"nativité"
+970,710,"cote partité","intérieur","cotte","partité",,"3",,,,,,,"nativité"
+970,711,"d'autre chose","inconnue","inconnue",,,,,,,,,,
+974,712,"chausses","chausses","chausses",,,,,,,,,,
+975,713,"couverture de selle","cheval","couverture","de selle",,"1",,,,,,,
+976,714,"chausses","chausses","chausses",,,,,,,,,,
+977,715,"doublet","ajusté","doublet",,,"1",,,,,,,
+980,716,"coussin","mobilier","coussin",,,,,,,,,,
+986,717,"robe","vêtement","robe",,,"plusieurs",,,,,,,
+987,718,"couverture de cheval","cheval","couverture","de cheval",,"plusieurs",,,,,,,
+991,719,"doublure de robe","doublure","robe",,,,,,,,,,
+992,720,"surcot","intérieur","surcot",,,"1",,,,,,,
+993,721,"droderie sur des robes","broderie","broderie","robe",,,,,,,,,
+996,722,"robe","vêtement","robe",,,"?",,,,,,,
+999,723,"panillonum","militaire","pavillon",,,,,,,,,,
+1008,724,"linteamentum","mobilier","linteamenta",,,,,,,,,,
+1011,725,"mantilium","mobilier","mantil",,,,,,,,,,
+1013,726,"mantilium","mobilier","mantil",,,,,,,,,,"baptème du Fils d'Aymon"
+1014,727,"couverture","mobilier","couverture",,,"?",,,,,,,"baptème de fils d'aymon"
+1015,728,"divers choses","inconnue","inconnue",,,,,,,,,,
+1017,729,"linteamentum","mobilier","linteamenta",,,,,,,,,,
+1018,730,"linteamentum","mobilier","linteamenta",,,"?",,,,,,,
+1018,731,"sac","emballage","sac",,,"?",,,,,,,
+1019,732,"robe","vêtement","robe",,"Costa","?",,,,,,,
+1021,733,"malecote","intérieur","malecotte",,,"1",,,,,,,
+1022,734,"robe","vêtement","robe",,,"1",,,,,,,
+1024,735,"doublure de cote","doublure","cotte",,"Aquiam","1",,,,,,,"Helemensini"
+1028,736,"robe","vêtement","robe",,,"1",,,,,,,
+1033,737,"tenture pour la grande salle","mobilier","tenture","grande salle",,,,,,,,,"Adoubement de nouveaux chevaliers à Ripaille"
+1036,738,"courtine","mobilier","courtine",,,,,,,,,,"Adoubement de nouveaux chevaliers à Ripaille"
+1048,739,"cote","intérieur","cotte",,,"1",,,,,,,"Adoubement de nouveaux chevaliers à Ripaille"
+1074,740,"malecote","intérieur","malecotte",,,"1",,,,,,,
+1075,741,"corset","intérieur","corset",,,"2",,,,,,,
+1076,742,"doublure de surcot","doublure","surcot",,,"2",,,,,,,
+1076,743,"doublure de chaperon","doublure","chaperon",,,"2",,,,,,,
+1078,744,"garnache","extérieur","garnache",,,"2",,,,,,,
+1083,745,"robe","vêtement","robe",,,"?",,,,,,,
+1085,746,"robe","vêtement","robe",,,,,,,,,,"ivrée pour sépulture d'Aymon"
