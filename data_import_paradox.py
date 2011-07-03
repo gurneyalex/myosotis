@@ -421,9 +421,14 @@ datasources = ['COMPTE',
                'VENDRPB',
                'VENDRPFA',
                ]
+#XXX monnaies.csv
+separators = {'MAT': ',', 'PBRUT': ',', 'PERSONNE': ',', 'PFACHETE': ',', 'PFFABRIK': ',',
+              'monnaies': ',', }
+
 for data_name in datasources:
     data_file = 'recup/pdox/'+data_name+'.TXT'
-    ctl.data[data_name] = lazytable(ucsvreader_pb(open(data_file), encoding="cp1252", separator=";"))
+    ctl.data[data_name] = lazytable(ucsvreader_pb(open(data_file), encoding="utf-8",
+                                                  separator=separators.get(data_name, ";")))
 
 
 ctl.run()
