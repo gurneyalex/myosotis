@@ -68,21 +68,21 @@ GENERATORS.append((gen_mat, CHK),)
 preexisting_personnes = {}
 occupations = []
 personne_id = {}
-PERSONNE = [('Identité', 'identite', ()),
-            ('Nom', 'nom', ()),
+PERSONNE = [(u'Identité', 'identite', ()),
+            (u'Nom', 'nom', ()),
             #('Qualite', 'titre', ()),
-            ('occupation', 'occupation', (optional,)),
-            ('rattachement', 'rattachement', (optional,)),
-            ('Surnom', 'surnom', (optional,)),
-            ('Diminutif', 'diminutif', (optional,)),
-            ('titre', 'titre', (optional,)),
-            ('sexe', 'sexe', ()),
+            (u'occupation', 'occupation', (optional,)),
+            (u'rattachement', 'rattachement', (optional,)),
+            (u'Surnom', 'surnom', (optional,)),
+            (u'Diminutif', 'diminutif', (optional,)),
+            (u'titre', 'titre', (optional,)),
+            (u'sexe', 'sexe', ()),
             
             ]
 def gen_personne(ctl):
     for i, row in enumerate(ctl.iter_and_commit('PERSONNE')):
-        if row['Identité'] in preexisting_personnes:
-            personne_id[row['CodePersonne']] = preexisting_personnes[row['Identité']]
+        if row[u'Identité'] in preexisting_personnes:
+            personne_id[row['CodePersonne']] = preexisting_personnes[row[u'Identité']]
             continue
         entity = mk_entity(row, PERSONNE)
         entity.update({'base_paradox': True})
