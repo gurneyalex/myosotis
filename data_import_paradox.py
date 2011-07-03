@@ -85,6 +85,8 @@ def gen_personne(ctl):
             personne_id[row['CodePersonne']] = preexisting_personnes[row[u'Identité']]
             continue
         entity = mk_entity(row, PERSONNE)
+        if not entity['sexe']:
+            entity['sexe'] = u'?'
         entity.update({'base_paradox': True})
         if 'occupation' in entity:
             if entity['occupation']:
@@ -99,7 +101,7 @@ def gen_personne(ctl):
         if occupation is not None:
             occupations.append((entity['eid'],)+occupation)
         personne_id[row['CodePersonne']] = entity['eid']
-        preexisting_personnes[entity['identite']] = entity['eid']
+        preexisting_personnes[entity['identite'].lower()] = entity['eid']
     for eid, valeur, rattachement in occupations:
         occupation = {'valeur': valeur}
         if rattachement:
@@ -108,8 +110,8 @@ def gen_personne(ctl):
             occupation['libelle'] = u'occupation' 
         entity = ctl.store.add('Occupation', occupation)
         ctl.store.relate(entity['eid'], 'personne', eid)
-        if rattachement:
-            ctl.store.relate(entity['eid'], 'rattache_a', preexisting_personnes[rattachement])
+        if rattachement and 'cnx' in globals():
+            ctl.store.relate(entity['eid'], 'rattache_a', preexisting_personnes[rattachement.lower()])
 GENERATORS.append((gen_personne, CHK),)
 
 
@@ -391,7 +393,7 @@ GENERATORS.append((gen_pbpfab, CHK),)
 
 
 if 'cnx' in locals():
-    ctl = CWImportController(RQLObjectStore(cnx), askerror=True, commitevery=1000)
+    ctl = CWImportController(RQLObjectStore(cnx), askerror=0, catcherrors=None, commitevery=1000)
 else:
     ctl = CWImportController(ObjectStore())
 ctl.generators = GENERATORS
@@ -399,7 +401,7 @@ ctl.generators = GENERATORS
 if 'cnx' in locals():
     rset = rql('Any P WHERE P is Personne')
     for person in rset.entities():
-        preexisting_personnes[person.identite] = person.eid
+        preexisting_personnes[person.identite.lower()] = person.eid
 
 
 datasources = ['COMPTE',
