@@ -28,9 +28,9 @@ CodeCommande;CodePFF;CodePersonne;Salaire;JoursTravail
 213;147;284;"10S gt";
 213;148;284;"10S gt pour tout l'item";
 228;158;179;"5S gt";
-244;175;338;"compté dans l'item";
+244;175;338;"comptÃ© dans l'item";
 445;369;179;"compris dans l'item";
-472;377;179;"façon incluse dans item";
+472;377;179;"faÃ§on incluse dans item";
 473;378;179;"inclus dans item";
 474;379;179;"inclus dans l'item";
 478;380;179;"4S";

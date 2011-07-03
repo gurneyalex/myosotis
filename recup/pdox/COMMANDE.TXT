@@ -46,7 +46,7 @@ CodeCompte;CodeCommande;CodePersonne;Numero;Prix;DateOrdre
 22;56;14;24;"27l 10s v esp";
 22;57;14;25;"22s v esp";
 22;58;14;26;"22s v esp";
-22;59;14;28;"41L 5S v esp";"vendredi av fête de l' ascension1311"
+22;59;14;28;"41L 5S v esp";"vendredi av fÃªte de l' ascension1311"
 22;60;14;29;"109L v esp   ; 135L par tur";
 22;61;14;30;"32L v esp";
 22;62;14;31;"105S v esp";
@@ -112,7 +112,7 @@ CodeCompte;CodeCommande;CodePersonne;Numero;Prix;DateOrdre
 26;122;14;2;"121 S v tur";
 26;123;14;4;"16L2S 8D v curs";"juillet 1316"
 26;124;14;5;"33L 12S 10D v curs";"mercredi av st Michel 1316"
-26;125;14;6;"19L 6S v curs";"jeudi av st Barthelémi 1316"
+26;125;14;6;"19L 6S v curs";"jeudi av st BarthelÃ©mi 1316"
 26;126;14;7;"110S v curs";"1 juillet 1316"
 27;127;14;1;"11L 17S v curs";
 27;128;14;2;"6L v curs";"1 mai 1317"
@@ -141,7 +141,7 @@ CodeCompte;CodeCommande;CodePersonne;Numero;Prix;DateOrdre
 28;151;14;20;"28S v curs";
 28;152;14;17;"16L 3S v curs";
 28;153;14;18;"8L 15S v curs";
-29;154;14;1;"12???(détérioré)";
+29;154;14;1;"12???(dÃ©tÃ©riorÃ©)";
 29;155;14;2;"10S g?";
 29;156;14;3;"101L ???";
 29;157;14;4;"?";
@@ -157,15 +157,15 @@ CodeCompte;CodeCommande;CodePersonne;Numero;Prix;DateOrdre
 30;167;315;7;"10S ob gt";"22 juin 1330"
 30;168;315;8;"4S4D gt";"23 juillet 1330"
 30;169;315;9;"20S gt";"10 juillet 1330"
-30;170;315;10;"4S 3D gt";"dernier jour d' août 1330"
+30;170;315;10;"4S 3D gt";"dernier jour d' aoÃ»t 1330"
 30;171;315;11;"8S 11D gt";
 30;172;315;13;"53 gt";"12 octobre 1330"
 30;173;315;16;"10S 1D gt";"12 octobre 1330"
 30;174;315;17;"4S 8D gt";"4 novembre 1330"
 30;175;315;18;"2S 10D gt";"18 novenbre 1330"
 30;176;315;19;"31S 2D gt et 92FA deF";"8 octobre 1330"
-30;177;315;22;"6S gt";"22 février 1331"
-30;178;315;23;"72S 10D 3/4 gt et 3FA de F";"25 février 1331"
+30;177;315;22;"6S gt";"22 fÃ©vrier 1331"
+30;178;315;23;"72S 10D 3/4 gt et 3FA de F";"25 fÃ©vrier 1331"
 30;179;315;24;"19S 2D gt";"1 mars 1331"
 30;180;315;26;"20S gt";"8 octobre 1330"
 30;181;315;27;"3S 3D gt";
@@ -187,7 +187,7 @@ CodeCompte;CodeCommande;CodePersonne;Numero;Prix;DateOrdre
 31;197;315;14;"2S 11D gt";
 31;198;315;15;"4S gt";
 31;199;315;16;"2S 3D gt";
-31;200;315;17;"40S gt";"dernier jour d'août 1333"
+31;200;315;17;"40S gt";"dernier jour d'aoÃ»t 1333"
 31;201;315;19;"32S gt";"st Andree 1333"
 31;202;315;22;"10L 14S 10D ob gt";
 31;203;315;23;"8S....?";"20 mai 1334"
@@ -195,8 +195,8 @@ CodeCompte;CodeCommande;CodePersonne;Numero;Prix;DateOrdre
 31;205;315;26;"?";
 31;206;315;27;"2S 6D gt";
 32;207;315;1;"11S 4D gt";
-32;208;283;2;"21L 8S 6D gt";"entre le 3 aôut 1334  et le 23 avril 1335"
-32;209;315;3;"12S gt";"26 août"
+32;208;283;2;"21L 8S 6D gt";"entre le 3 aÃ´ut 1334  et le 23 avril 1335"
+32;209;315;3;"12S gt";"26 aoÃ»t"
 32;210;315;4;"11S 8D gt";"21 janvier 1335"
 32;211;315;5;"18S gt";
 32;212;315;6;"5S gt";
@@ -205,23 +205,23 @@ CodeCompte;CodeCommande;CodePersonne;Numero;Prix;DateOrdre
 32;215;315;9;"32S 3D gt";"3 mai 1335"
 32;216;315;10;"75S 6D gt";"14 janvier 1335"
 32;217;315;11;"10L 15S 9D gt";"14 janvier 1335"
-32;218;315;12;"6L  6S 2D ob gt";"entre le 1 et le 14 février 1335"
+32;218;315;12;"6L  6S 2D ob gt";"entre le 1 et le 14 fÃ©vrier 1335"
 32;219;315;13;"2S 2D gt";"2 janvier 1335"
 32;220;315;14;"13S 4D gt";"27 avril 1335"
 32;221;283;15;"5S 4D gt";"29 avril 1335"
 32;222;315;16;"6S 8D gt";"29 avril 1335"
 33;223;315;1;"8S 3D gt";"11 juin 1335"
 33;224;315;2;"3S gt";"14 mai 1335"
-33;225;315;5;"6 FA deF";"12 août 1335"
-33;226;315;6;"2S 11D gt";"24 août 1335"
+33;225;315;5;"6 FA deF";"12 aoÃ»t 1335"
+33;226;315;6;"2S 11D gt";"24 aoÃ»t 1335"
 33;227;315;7;"19S 4D gt";"11 octobre 1335"
 33;228;315;8;"5S gt";
-33;229;283;9;"11L 17S ?D gt";"10 mai à l'avant dernier jour d'octobre 1335"
+33;229;283;9;"11L 17S ?D gt";"10 mai Ã  l'avant dernier jour d'octobre 1335"
 33;230;315;10;"63S 9D gt";"13 juillet 1335"
 33;231;315;11;"5S 8D gt";"16 juillet 1335"
 33;232;315;17;"50S gt";"4 octobre 1335"
 33;233;315;12;"4L 6S 8D 2/3 gt";"28 octobre 1335"
-33;234;315;13;"4L 11S 6D gt";"5 août 1335"
+33;234;315;13;"4L 11S 6D gt";"5 aoÃ»t 1335"
 33;235;315;14;"10S 2D gt";
 33;236;315;15;"3S 4D gt";
 33;237;315;16;"5S 4D gt";
@@ -239,47 +239,47 @@ CodeCompte;CodeCommande;CodePersonne;Numero;Prix;DateOrdre
 34;249;315;14;"9L 10S parv tur et 44FA de F";"12 septembre 1336"
 34;250;315;15;"12L 13S 1D 1/3 gt";"2 decembre 1336"
 34;251;315;16;"28L 17S 11D gt";"20 avril 1336"
-35;252;316;1;"15FBP";"10 février 1349"
+35;252;316;1;"15FBP";"10 fÃ©vrier 1349"
 35;253;316;2;"6FABP";
 35;254;316;3;"22FABP et 9D gt";
 35;255;316;6;"6L 5S 8D gt";"11 octobre 1348"
 35;256;316;7;"6FBP";"18 juin 1347"
-35;257;316;8;"186FBP et 2/3";"19 aôut 1347"
+35;257;316;8;"186FBP et 2/3";"19 aÃ´ut 1347"
 35;258;316;9;"2FBP";"28 novembre 1347"
-35;259;355;10;"20F parvi pnderi";"23 décembre 1347"
+35;259;355;10;"20F parvi pnderi";"23 dÃ©cembre 1347"
 35;260;316;11;"7S for escu et 6S 2D 3/4 gt";"14 avril 1348"
 35;261;316;12;"14L 14S vien escu";"26 avril 1348"
 35;262;316;13;"26FBP";"26 mai 1348"
 35;263;316;16;"1FBP";
-35;264;316;26;"2S 5D gt";"15 février 1347"
-35;265;316;27;"1S 3D gt";"15 février 1347"
-35;266;316;28;"5S 1D gt";"15 février 1347"
-35;267;316;29;"7S 8D 3/4 gt";"15 février 1347"
-35;268;316;30;"2S 7D gt";"15 février 1347"
-35;270;316;31;"2S 7D gt";"15 février 1347"
-35;271;316;32;"1L 5S 4D ob gt";"15 février 1347"
-35;272;316;33;"8S 2D gt";"15 février 1347"
-35;273;316;34;"4L 5S 6D gt";"15 février 1347"
-35;274;316;35;"18D ob gt";"15 février 1347"
-35;275;316;36;"4L 16S 3D 3/4 gt";"15 février 1347"
-35;276;316;37;"15S gt";"15 février 1347"
-35;277;316;38;"10D ob gt";"15 février 1347"
-35;278;316;39;"?";"15 février 1347"
-35;279;316;40;"4S 2D 2/3 gt";"15 février 1347"
-35;280;316;41;"10S 9D gt";"15 février 1347"
-35;281;316;42;"2S 4D 1/8 gt";"15 février 1347"
-35;282;316;43;"6S 1D ob gt";"15 février 1347"
-35;283;316;44;"1S gt";"15 février 1347"
-35;284;316;45;"7S 9D 1/3 gt";"15 février 1347"
-35;285;316;46;"17S 10 D ob gt";"15 février 1347"
-35;286;316;47;"1S1D ob gt";"15 février 1347"
-35;287;316;48;"2S 6D gt";"15 février 1347"
-35;288;316;49;"12S 4D 2/3 gt";"15 février 1347"
-35;289;316;50;"9S 10D ob gt";"15 février 1347"
-35;290;316;52;"12S 4D gt et 13 FABP";"15 février 1347"
-35;291;316;51;"18D gt";"15 février 1347"
-35;292;316;52;"?";"15 février 1347"
-35;293;316;53;"?";"15 février 1347"
+35;264;316;26;"2S 5D gt";"15 fÃ©vrier 1347"
+35;265;316;27;"1S 3D gt";"15 fÃ©vrier 1347"
+35;266;316;28;"5S 1D gt";"15 fÃ©vrier 1347"
+35;267;316;29;"7S 8D 3/4 gt";"15 fÃ©vrier 1347"
+35;268;316;30;"2S 7D gt";"15 fÃ©vrier 1347"
+35;270;316;31;"2S 7D gt";"15 fÃ©vrier 1347"
+35;271;316;32;"1L 5S 4D ob gt";"15 fÃ©vrier 1347"
+35;272;316;33;"8S 2D gt";"15 fÃ©vrier 1347"
+35;273;316;34;"4L 5S 6D gt";"15 fÃ©vrier 1347"
+35;274;316;35;"18D ob gt";"15 fÃ©vrier 1347"
+35;275;316;36;"4L 16S 3D 3/4 gt";"15 fÃ©vrier 1347"
+35;276;316;37;"15S gt";"15 fÃ©vrier 1347"
+35;277;316;38;"10D ob gt";"15 fÃ©vrier 1347"
+35;278;316;39;"?";"15 fÃ©vrier 1347"
+35;279;316;40;"4S 2D 2/3 gt";"15 fÃ©vrier 1347"
+35;280;316;41;"10S 9D gt";"15 fÃ©vrier 1347"
+35;281;316;42;"2S 4D 1/8 gt";"15 fÃ©vrier 1347"
+35;282;316;43;"6S 1D ob gt";"15 fÃ©vrier 1347"
+35;283;316;44;"1S gt";"15 fÃ©vrier 1347"
+35;284;316;45;"7S 9D 1/3 gt";"15 fÃ©vrier 1347"
+35;285;316;46;"17S 10 D ob gt";"15 fÃ©vrier 1347"
+35;286;316;47;"1S1D ob gt";"15 fÃ©vrier 1347"
+35;287;316;48;"2S 6D gt";"15 fÃ©vrier 1347"
+35;288;316;49;"12S 4D 2/3 gt";"15 fÃ©vrier 1347"
+35;289;316;50;"9S 10D ob gt";"15 fÃ©vrier 1347"
+35;290;316;52;"12S 4D gt et 13 FABP";"15 fÃ©vrier 1347"
+35;291;316;51;"18D gt";"15 fÃ©vrier 1347"
+35;292;316;52;"?";"15 fÃ©vrier 1347"
+35;293;316;53;"?";"15 fÃ©vrier 1347"
 35;294;316;18;"2S 7D gt";"2 mai 1347"
 35;295;316;54;"1S 4D 7/8 gt";"2 mai 1347"
 35;296;316;55;"11D gt";"2 mai 1347"
@@ -297,9 +297,9 @@ CodeCompte;CodeCommande;CodePersonne;Numero;Prix;DateOrdre
 35;308;316;67;"?";"16 juin 1347"
 35;309;316;68;"5S gt";"16 juin 1347"
 35;310;316;69;"?";"16 juin 1347"
-35;311;316;20;"9D 2/5 gt";"17 décembre 1347"
-35;312;316;70;"1L 5S 11D gt";"17 décembre 1347"
-35;313;316;71;"10S 5D 1/3";"17 décembre 1347"
+35;311;316;20;"9D 2/5 gt";"17 dÃ©cembre 1347"
+35;312;316;70;"1L 5S 11D gt";"17 dÃ©cembre 1347"
+35;313;316;71;"10S 5D 1/3";"17 dÃ©cembre 1347"
 35;314;316;72;"12S 11D gt";
 35;315;316;73;"4S 5D ob gt";
 35;316;316;74;"11S 5D 1/4 gt";
@@ -325,7 +325,7 @@ CodeCompte;CodeCommande;CodePersonne;Numero;Prix;DateOrdre
 35;336;316;91;"1S 3D gt";"21 decembre"
 35;337;316;94;"3S 6D gt";"19 janvier 1348"
 35;338;316;95;"2S 6D gt";"26 janvier 1348"
-35;339;316;96;"8D gt";"19 février 1348"
+35;339;316;96;"8D gt";"19 fÃ©vrier 1348"
 35;340;316;97;"3S gt";"3 mars 1348"
 35;341;316;98;"?";"7 mars 1348"
 35;342;316;99;"1S 8D ob gt";"11 mars 1348"
@@ -354,7 +354,7 @@ CodeCompte;CodeCommande;CodePersonne;Numero;Prix;DateOrdre
 35;365;363;122;"7S 2D gt";
 35;366;316;123;"8S 4D gt";"1 juillet 1348"
 35;367;363;124;"?+4S 11D ob gt";"8 juillet 1348"
-35;368;316;125;"1S 6D gt";"7 août 1348"
+35;368;316;125;"1S 6D gt";"7 aoÃ»t 1348"
 35;369;316;126;"12S 2D gt";
 35;370;316;127;"3S 6D gt";"22 novenbre 1348"
 35;371;316;128;"3S 2D ob gt";"5 janvier 1349"
@@ -363,7 +363,7 @@ CodeCompte;CodeCommande;CodePersonne;Numero;Prix;DateOrdre
 35;374;316;131;"4S 9D ob gt";
 35;375;316;22;"10S 6D gt";
 35;376;316;132;"14S 6D gt";
-35;377;316;23;"5S 4D gt";"10 février 1349"
+35;377;316;23;"5S 4D gt";"10 fÃ©vrier 1349"
 35;378;316;24;"1L 3S gt";
 35;379;316;25;"110S 6D gt";"10juin 1349"
 36;380;471;1;"3S 4D gt";"18 juillet 1349"
@@ -791,7 +791,7 @@ CodeCompte;CodeCommande;CodePersonne;Numero;Prix;DateOrdre
 72;802;314;12;"4L v lug";
 72;803;314;10;"6L 12S cv lug";
 72;804;314;13;"20S 6D gt";
-73;805;314;1;"11S 2D gt";"27 février 1327"
+73;805;314;1;"11S 2D gt";"27 fÃ©vrier 1327"
 73;806;314;2;"29S gt";"5 mars 1327"
 73;807;624;3;"4L 13S 2D ob gt";"27 mars 1327"
 73;808;624;4;"6S gt";"9 avril 1327"
@@ -809,7 +809,7 @@ CodeCompte;CodeCommande;CodePersonne;Numero;Prix;DateOrdre
 73;820;314;21;"77S 6D gt";
 73;821;314;11;"46S gt";"16 avril 1328"
 73;822;314;12;"49S 6D gt";"17 mai 1328"
-73;823;314;13;"20S gt";"15 février 1329"
+73;823;314;13;"20S gt";"15 fÃ©vrier 1329"
 73;824;314;14;"5S 8D ob gt";
 73;825;314;22;"5S 10D gt";
 73;826;314;23;"34S 5D gt";
@@ -864,7 +864,7 @@ CodeCompte;CodeCommande;CodePersonne;Numero;Prix;DateOrdre
 79;875;315;31;"4L 14S parisis";
 79;876;315;33;"24S parisis";
 79;877;315;35;"22L 8S  parisis";
-79;878;315;36;"60s parisis";"21 août 1339"
+79;878;315;36;"60s parisis";"21 aoÃ»t 1339"
 79;879;315;37;"2 FA";
 79;880;315;39;"2FA";
 79;881;315;40;"2FA et 5 S parisis";
@@ -1013,7 +1013,7 @@ CodeCompte;CodeCommande;CodePersonne;Numero;Prix;DateOrdre
 97;1024;283;7;"10D gt";
 97;1025;283;8;"9S gt";
 99;1027;315;1;"3S 2D gt";"septembre 1336"
-99;1028;315;2;"3S gt";"février 1337"
+99;1028;315;2;"3S gt";"fÃ©vrier 1337"
 99;1029;315;3;"1L 18S 4D gt";"avril 1337"
 100;1030;315;1;"16S 4D gt";
 100;1031;315;2;"11S 3D gt";
