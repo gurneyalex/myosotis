@@ -85,10 +85,10 @@ def gen_personne(ctl):
             personne_id[row['CodePersonne']] = preexisting_personnes[row['Identité']]
             continue
         entity = mk_entity(row, PERSONNE)
-        entity.update('base_paradox': True})
+        entity.update({'base_paradox': True})
         if 'occupation' in entity:
             if entity['occupation']:
-                occupation = (entity['occupation'], entity.get('rattachement')
+                occupation = (entity['occupation'], entity.get('rattachement'))
             else:
                 occupation = None
             del entity['occupation']
@@ -397,7 +397,7 @@ else:
 ctl.generators = GENERATORS
 
 if 'cnx' in locals():
-    rset = rql('Any P WHERE P is Person')
+    rset = rql('Any P WHERE P is Personne')
     for person in rset.entities():
         preexisting_personnes[person.identite] = person.eid
 
