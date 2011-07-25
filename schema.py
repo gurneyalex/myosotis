@@ -112,6 +112,7 @@ class AchatMateriaux(EntityType):
     date_achat = Date()
     type_mesure = String(maxsize=255, fulltextindexed=True)
     quantite = Float()
+    quantite_plusieurs = Boolean(default=False, required=True, description='True if quantite is "plusieurs"')
     unite = String(maxsize=255, fulltextindexed=True)
     provenance_mesure = String(maxsize=255, fulltextindexed=True)
     conversion = Float()
