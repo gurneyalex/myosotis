@@ -1,4 +1,4 @@
-"CodeCommande","CodePB","CodeMateriaux","BProvenance","BLieuAchat","BQuantite","quantité","unité","BPrixUnitaire","prix unitaire","monnaire prix unitaire","BPrixGlobal","prix global","monnaie prix global","BOccasion"
+"CodeCommande","CodePB","CodeMateriaux","BProvenance","BLieuAchat","BQuantite","quantité","unité","BPrixUnitaire","prix unitaire","monnaie prix unitaire","BPrixGlobal","prix global","monnaie prix global","BOccasion"
 10,18,12,,,"plusieurs","plusieurs",,,,,"66Sv","0 66 0","viennois",
 13,129,22,,"Chambéry","2","2",,,,,,,,
 13,130,36,,"Chambéry","1","1",,,,,,,,
