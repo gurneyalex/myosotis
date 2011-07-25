@@ -2,6 +2,18 @@
 """
 Example of use (run this with `cubicweb-ctl shell instance data_import_paradox.py`):
 """
+
+## TODO: handle manual processing of modified input files
+##
+## * personne -> ok
+## * mat -> ok
+## * monnaies
+## * pbrut
+## * pfachete
+## * pffabrik
+
+    
+
 import warnings
 warnings.simplefilter('ignore', DeprecationWarning)
 
@@ -24,6 +36,16 @@ errors = []
 def date(value):
     return datetime.datetime.strptime(value, '%d/%m/%Y %H:%M:%S').date()
 
+def qty_float(value):
+    if value == "plusieurs":
+        return None
+    else:
+        return float(value)
+
+def qty_plusieurs(value):
+    if value == 'plusieurs':
+        return True
+    return False
 
 COLUMNS = {'ARTISAN': 'CodeCommande CodePFF CodePersonne Salaire JoursTravail',
            'COMMANDE':'CodeCompte CodeCommande CodePersonne Numero Prix DateOrdre',
@@ -56,7 +78,6 @@ MAT = [('nom', 'nom', ()),
        ('carac_facture', 'carac_facture', ()),
        ('type', 'type', ()),
        ('famille', 'famille', ()),
-       
        ]
 def gen_mat(ctl):
     for i, row in enumerate(ctl.iter_and_commit('MAT')):
@@ -77,7 +98,6 @@ PERSONNE = [(u'Identité', 'identite', ()),
             (u'Diminutif', 'diminutif', (optional,)),
             (u'titre', 'titre', (optional,)),
             (u'sexe', 'sexe', ()),
-            
             ]
 def gen_personne(ctl):
     for i, row in enumerate(ctl.iter_and_commit('PERSONNE')):
@@ -152,8 +172,10 @@ GENERATORS.append((gen_commande, CHK),)
 transaction_id = {}
 commande_transactions = {}
 pbrut_id = {}
-PBRUT = [
-    ]
+PBRUT = [('unité', 'unite', (optional,)),
+         ('quantité', 'quantite', (optional, qty_float)),
+         ('quantité', 'quantite_plusieurs', (qty_plusieurs,)),
+         ]
 def gen_pbrut(ctl):
     for i, row in enumerate(ctl.iter_and_commit('PBRUT')):
         if row['CodeCommande'] not in commande_id:
