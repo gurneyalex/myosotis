@@ -172,7 +172,7 @@ class Personne(EntityType):
 class Occupation(EntityType):
     libelle = String(maxsize=255, fulltextindexed=True)
     valeur = String(maxsize=255, fulltextindexed=True)
-    compte = SubjectRelation('Compte', cardinality='1*')
+    compte = SubjectRelation('Compte', cardinality='?*')
     pagination = String(maxsize=64, fulltextindexed=True)
     rattache_a = SubjectRelation('Personne', cardinality='?*')
     occupation = String(maxsize=255, fulltextindexed=True)
