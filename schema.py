@@ -104,6 +104,7 @@ class change(RelationDefinition):
 class AchatFabrication(EntityType):
     date_achat = Date()
     quantite = Int()
+    quantite_plusieurs = Boolean(default=False, required=True, description='True if quantite is "plusieurs"')
     parure = SubjectRelation('Parure', cardinality='1*', inlined=True)
     avec_mat = SubjectRelation('FabriqueAvecMat', cardinality='*1')
     remarques = RichString(fulltextindexed=True, default_format='text/rest')
@@ -122,6 +123,7 @@ class AchatMateriaux(EntityType):
 class AchatPretPorter(EntityType):
     date_achat = Date()
     quantite = Float()
+    quantite_plusieurs = Boolean(default=False, required=True, description='True if quantite is "plusieurs"')
     parure = SubjectRelation('Parure', cardinality='1*', inlined=True)
     remarques = RichString(fulltextindexed=True, default_format='text/rest')
 
