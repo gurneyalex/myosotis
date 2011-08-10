@@ -7,12 +7,12 @@ Example of use (run this with `cubicweb-ctl shell instance data_import_paradox.p
 ##
 ## * personne -> ok
 ## * mat -> ok
-## * monnaies
-## * pbrut
+## * monnaies -> à tester
+## * pbrut -> à tester
 ## * pfachete
 ## * pffabrik
 
-    
+
 
 import warnings
 warnings.simplefilter('ignore', DeprecationWarning)
@@ -33,6 +33,23 @@ GENERATORS = []
 
 errors = []
 
+monnaies = {}
+
+def load_monnaies():
+    data_file = 'recup/pdox/monnaies.csv'
+    reader = ucsvreader_pb(open(data_file), encoding="utf-8",
+                           separator=',')
+    reader.next()
+    pdox2cw = {}
+    cw2pdox = {}
+    for line in reader:
+        cw2pdox[line[0]] = line[1]
+    rset = rql('Any M WHERE M is Monnaie')
+    for monnaie in rset.entities():
+        pdox = cw2pdox[monnaie.nom]
+        pdox2cw[pdox] = (monnaie.eid, monnaie.type)
+    return pdox2cw
+
 def date(value):
     return datetime.datetime.strptime(value, '%d/%m/%Y %H:%M:%S').date()
 
@@ -40,8 +57,11 @@ def qty_float(value):
     if value == "plusieurs":
         return None
     else:
-        return float(value)
-
+        try:
+            return float(value.replace(',', '.'))
+        except ValueError:
+            print "%r" % value
+            raise
 def qty_plusieurs(value):
     if value == 'plusieurs':
         return True
@@ -127,11 +147,14 @@ def gen_personne(ctl):
         if rattachement:
             occupation['libelle'] = u'identité'
         else:
-            occupation['libelle'] = u'occupation' 
+            occupation['libelle'] = u'occupation'
         entity = ctl.store.add('Occupation', occupation)
         ctl.store.relate(entity['eid'], 'personne', eid)
         if rattachement and 'cnx' in globals():
-            ctl.store.relate(entity['eid'], 'rattache_a', preexisting_personnes[rattachement.lower()])
+            if rattachement.lower() not in preexisting_personnes:
+                errors.append('preexisting person %s not found (related to %s)' % (rattachement, entity['eid']))
+            else:
+                ctl.store.relate(entity['eid'], 'rattache_a', preexisting_personnes[rattachement.lower()])
 GENERATORS.append((gen_personne, CHK),)
 
 
@@ -168,13 +191,38 @@ def gen_commande(ctl):
         commande_id[row['CodeCommande']] = entity['eid']
 GENERATORS.append((gen_commande, CHK),)
 
+def make_prix(prix, monnaie):
+    if not (prix and monnaie):
+        return None
+    values = [float(a.replace(',', '.')) for a in prix.split()]
+    print monnaie
+    monnaie_eid, monnaie_type = monnaies.get(monnaie, (0, 'Livre/Sous/Denier'))
+    if not monnaies and 'florin' in monnaie.lower():
+        monnaie_type = 'Florin/Gros'
+    if ' or' in monnaie.lower():
+        monnaie_type = 'Or'
+    if monnaie_type == 'Livre/Sous/Denier':
+        assert len(values) == 3, '%s: %s' % (monnaie, values)
+        entity = dict(livres=values[0], sous=values[1], deniers=values[2],
+                      monnaie=monnaie_eid)
+    elif monnaie_type == 'Florin/Gros':
+        assert len(values) in (1,2), '%s: %s' % (monnaie, values)
+        if len(values) == 1:
+            values.append(0)
+        entity = dict(florins=values[0], gros=values[1], monnaie=monnaie_eid)
+    elif monnaie_type == 'Or':
+        assert len(values) == 1, '%s: %s' % (monnaie, values)
+        entity = dict(monnaie_or=values[0], monnaie=monnaie_eid)
+    else:
+        raise ValueError(monnaie_type)
+    return entity
 
 transaction_id = {}
 commande_transactions = {}
 pbrut_id = {}
-PBRUT = [('unité', 'unite', (optional,)),
-         ('quantité', 'quantite', (optional, qty_float)),
-         ('quantité', 'quantite_plusieurs', (qty_plusieurs,)),
+PBRUT = [(u'unité', 'unite', (optional,)),
+         (u'quantité', 'quantite', (optional, qty_float)),
+         (u'quantité', 'quantite_plusieurs', (qty_plusieurs,)),
          ]
 def gen_pbrut(ctl):
     for i, row in enumerate(ctl.iter_and_commit('PBRUT')):
@@ -183,13 +231,23 @@ def gen_pbrut(ctl):
         entity = mk_entity(row, PBRUT)
         remarks = [u'Provenance Materiaux: %s'%row['BProvenance'],
                    u'LieuAchat: %s' % row['BLieuAchat'],
+                   u'Occasion: %s' % row['BOccasion'],
+                   u'\n',
                    u'Quantite: %s' % row['BQuantite'],
                    u'PrixUnitaire: %s' % row['BPrixUnitaire'],
                    u'PrixGlobal: %s' % row['BPrixGlobal'],
-                   u'Occasion: %s' % row['BOccasion'],
                    ]
         entity['remarques'] = u'\n\n'.join(remarks)
         ctl.store.add('AchatMateriaux', entity)
+        prix_unitaire = make_prix(row['prix unitaire'], row['monnaie prix unitaire'])
+        if prix_unitaire is not None:
+            ctl.store.add('Prix', prix_unitaire)
+            ctl.store.relate(entity['eid'], 'prix_unitaire', prix_unitaire['eid'])
+        prix_global = make_prix(row['prix global'], row['monnaie prix global'])
+        if prix_global is not None:
+            print prix_global
+            ctl.store.add('Prix', prix_global)
+            ctl.store.relate(entity['eid'], 'prix_total', prix_global['eid'])
         transaction = {'base_paradox': True}
         ctl.store.add('Transaction', transaction)
         ctl.store.relate(commande_id[row['CodeCommande']], 'transactions', transaction['eid'])
@@ -211,13 +269,17 @@ GENERATORS.append((gen_pbrut, CHK),)
 pfachete_id = {}
 pfachete_parure = {}
 PFACHETE = [
+         (u'quantite', 'quantite', (optional, qty_float)),
+         (u'quantite', 'quantite_plusieurs', (qty_plusieurs,)),
     ]
 def gen_pfachete(ctl):
     for i, row in enumerate(ctl.iter_and_commit('PFACHETE')):
         if row['CodeCommande'] not in commande_id:
             continue
-        parure = {'type': u'???',
-                  'nature': row['ANature']}
+        parure = {'type': row['Type Parure'],
+                  'nature': row['Nature Parure'],
+                  'caracteristique': row['Carac Parure'],
+                  }
         ctl.store.add('Parure', parure)
         entity = mk_entity(row, PFACHETE)
         remarks = [u'LieuAchat: %s' % row['ALieuAchat'],
@@ -227,7 +289,16 @@ def gen_pfachete(ctl):
                    u'Occasion: %s' % row['AOccasion'],
                    ]
         entity['remarques'] = u'\n\n'.join(remarks)
-        ctl.store.add('AchatFabrication', entity)
+        ctl.store.add('AchatPretPorter', entity)
+        prix_unitaire = make_prix(row['prix unitaire'], row['monnaie prix unitaire'])
+        if prix_unitaire is not None:
+            ctl.store.add('Prix', prix_unitaire)
+            ctl.store.relate(entity['eid'], 'prix_unitaire', prix_unitaire['eid'])
+        prix_global = make_prix(row['prix global'], row['monnaie prix global'])
+        if prix_global is not None:
+            print prix_global
+            ctl.store.add('Prix', prix_global)
+            ctl.store.relate(entity['eid'], 'prix_total', prix_global['eid'])
         transaction = {'base_paradox': True}
         ctl.store.add('Transaction', transaction)
         ctl.store.relate(commande_id[row['CodeCommande']], 'transactions', transaction['eid'])
@@ -249,6 +320,8 @@ GENERATORS.append((gen_pfachete, CHK),)
 pffabrik_id = {}
 pffabrik_parure = {}
 PFFABRIK = [
+         (u'quantite', 'quantite', (optional, qty_float)),
+         (u'quantite', 'quantite_plusieurs', (qty_plusieurs,)),
     ]
 def gen_pffabrik(ctl):
     for i, row in enumerate(ctl.iter_and_commit('PFFABRIK')):
@@ -266,6 +339,15 @@ def gen_pffabrik(ctl):
                    ]
         entity['remarques'] = u'\n\n'.join(remarks)
         ctl.store.add('AchatFabrication', entity)
+        prix_unitaire = make_prix(row['prix unitaire'], row['monnaie prix unitaire'])
+        if prix_unitaire is not None:
+            ctl.store.add('Prix', prix_unitaire)
+            ctl.store.relate(entity['eid'], 'prix_unitaire', prix_unitaire['eid'])
+        prix_global = make_prix(row['prix global'], row['monnaie prix global'])
+        if prix_global is not None:
+            print prix_global
+            ctl.store.add('Prix', prix_global)
+            ctl.store.relate(entity['eid'], 'prix_total', prix_global['eid'])
         transaction = {'base_paradox': True}
         ctl.store.add('Transaction', transaction)
         ctl.store.relate(commande_id[row['CodeCommande']], 'transactions', transaction['eid'])
@@ -424,7 +506,7 @@ if 'cnx' in locals():
     rset = rql('Any P WHERE P is Personne')
     for person in rset.entities():
         preexisting_personnes[person.identite.lower()] = person.eid
-
+    monnaies = load_monnaies()
 
 datasources = ['COMPTE',
                'PERSONNE',
