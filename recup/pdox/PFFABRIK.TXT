@@ -1,4 +1,4 @@
-"CodeCommande","CodePFF","FNature","Type Parure","Nature Parure","Carac Parure","FLieuAchat","FQuantite","quantite","FPrixUnitaire","prix unitaire","monnaire prix unitaire","FPrixGlobal","prix global","monnaie prix global","FOccasion"
+"CodeCommande","CodePFF","FNature","Type Parure","Nature Parure","Carac Parure","FLieuAchat","FQuantite","quantite","FPrixUnitaire","prix unitaire","monnaie prix unitaire","FPrixGlobal","prix global","monnaie prix global","FOccasion"
 11,5,"robe","vêtement","robe",,,1,1,,,,"10 L v","10 0 0","viennois",
 12,6,"robe","vêtement","robe",,,1,1,,,,"100 S v","0 100 0","viennois",
 13,7,"robe","vêtement","robe",,,1,1,,,,"100 S v","0 100 0","viennois",
@@ -242,7 +242,7 @@
 318,249,"cote","intérieur","cotte",,,1,1,,,,,,,
 319,250,"corset à chevaucher","intérieur","corset","à chevaucher",,1,1,,,,,,,
 319,251,"robe courte à parer","vêtement","robe","court à parer",,1,1,,,,,,,
-319,252,"doublure de corset à chevaucher","doublure","corset","à chevaucher",,1,1,,"inconnu","viennois",,,,
+319,252,"doublure de corset à chevaucher","doublure","corset","à chevaucher",,1,1,,,,,,,
 319,253,"cote","intérieur","cotte",,,1,1,,,,,,,
 319,254,"cote","intérieur","cotte",,,1,1,,,,,,,
 319,255,"cote","intérieur","cotte",,,1,1,,,,,,,

@@ -1,4 +1,4 @@
-"CodeCommande","CodePFA","AProvenance","ANature","Type Parure","Nature Parure","Carac Parure","ALieuAchat","AQuantite","quantite","APrixUnitaire","prix unitaire","monnaie prix unitraire","APrixGlobal","prix global","monnaie prix globale","AOccasion"
+"CodeCommande","CodePFA","AProvenance","ANature","Type Parure","Nature Parure","Carac Parure","ALieuAchat","AQuantite","quantite","APrixUnitaire","prix unitaire","monnaie prix unitaire","APrixGlobal","prix global","monnaie prix global","AOccasion"
 10,2,,"monnaie","inconnue","monnaie",,,,,,,,,,,"adoubement"
 18,4,,"robe","vêtement","robe",,,1,1,,,,,,,
 20,5,,"robe","vêtement","robe",,,1,1,,,,,,,
@@ -59,7 +59,7 @@
 257,60,,"vêtement","vêtement","vêtement",,,6,6,,,,,,,
 260,61,,"las","mercerie","lacet",,"Chambéry","?",,,,,,,,
 260,62,,"tresse","mercerie","tresse",,"Chambéry","?",,,,,,,,
-263,63,,"malecote","intérieur","malecotte",,,1,1,"1FBP","12 12 0","florin bon poids",,,,
+263,63,,"malecote","intérieur","malecotte",,,1,1,"1FBP",1,"florin bon poids",,,,
 273,64,,"doublure de chaperon","fourrure","chaperon",,,"2 2 de 30 ventres",2,"3S 9D gt",,,"7S 6D gt","0 7 6","gros tournois","livrée"
 274,65,,"chausses","chausses","chausses",,,"?",,,,,"4D ob gt","0 0 4,5","gros tournois",
 288,66,,"chausses","chausses","chausses",,"Pont d'Ain","?",,,,,"7D ob gt","0 0 7,5","gros tournois",
@@ -105,7 +105,7 @@
 511,106,,"fourrure de chaperon","fourrure","chaperon",,,1,1,,,,,,,
 514,107,,"fourrure de chaperon","fourrure","chaperon",,,1,1,"4L","4 0 0","inconnu","4L","4 0 0","inconnu",
 516,108,,"chaperon","tête","chaperon",,,1,1,"4L","4 0 0","inconnu",,,,
-518,109,,"fourrure de chaperon","fourrure","chaperon",,,"1 furratura de 4 tires",1,"48S","0 48 ","inconnu","48S","0 48 0","inconnu",
+518,109,,"fourrure de chaperon","fourrure","chaperon",,,"1 furratura de 4 tires",1,"48S","0 48 0","inconnu","48S","0 48 0","inconnu",
 528,110,,"couvre-chef","tête","Couvre-chef",,,1,1,"8S","0 8 0","inconnu","8S","0 8 0","inconnu",
 538,111,,"fourrure de chaperon","fourrure","chaperon",,,1,1,"4L parisis","4 0 0","parisis","4L parisis","4 0 0","parisis",
 539,112,,"pelisse","extérieur","pelisse",,,1,1,,,,,,,
