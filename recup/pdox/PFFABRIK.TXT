@@ -3,7 +3,7 @@
 12,6,"robe","vêtement","robe",,,1,1,,,,"100 S v","0 100 0","viennois",
 13,7,"robe","vêtement","robe",,,1,1,,,,"100 S v","0 100 0","viennois",
 14,8,"robe","vêtement","robe",,,1,1,,,,"100 S v","0 100 0","viennois",
-17,9,"robe","vêtement","robe",,,1,1,"4 L 10 S","4 10 0",,"4 L 10 S","4 10 0","inconnu",
+17,9,"robe","vêtement","robe",,,1,1,"4 L 10 S","4 10 0","inconnu","4 L 10 S","4 10 0","inconnu",
 21,10,"robe","vêtement","robe",,,1,1,,,,,,,
 25,11,"robe","vêtement","robe",,,1,1,,,,,,,
 26,12,"cote","intérieur","cotte",,"Chambéry",1,1,,,,,,,

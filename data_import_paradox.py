@@ -3,16 +3,6 @@
 Example of use (run this with `cubicweb-ctl shell instance data_import_paradox.py`):
 """
 
-## TODO: handle manual processing of modified input files
-##
-## * personne -> ok
-## * mat -> ok
-## * monnaies -> à tester
-## * pbrut -> à tester
-## * pfachete
-## * pffabrik
-
-
 
 import warnings
 warnings.simplefilter('ignore', DeprecationWarning)
@@ -35,6 +25,32 @@ errors = []
 
 monnaies = {}
 
+def create_monnaies():
+    missing = [u'viennois de Lyon',
+               u'viennois de Savoie',
+               u'viennois courant de Savoie',
+               u'lyonnais',
+               u'viennois courant',
+               u'tournois',
+               u'sterling',
+               u'petit tournois bon',
+               u'impérial',
+               u'viennois courant de la vallée de Suze',
+               u"viennois d'Aoste",
+               u"viennois du prince",
+               u"monnaie du prince",
+               u'fort blanc',
+               ]
+    for name in missing:
+        ctl.store.add('Monnaie', {'nom': name, 'type': u'Livre/Sous/Denier'})
+    missing_gold = [u"florin d'or de France",
+                    u"florin d'or de Florence",
+                    u"franc or bon poids",
+                    ]
+    for name in missing_gold:
+        ctl.store.add('Monnaie', {'nom': name,
+                                  'type': u'Or'})
+
 def load_monnaies():
     data_file = 'recup/pdox/monnaies.csv'
     reader = ucsvreader_pb(open(data_file), encoding="utf-8",
@@ -43,11 +59,14 @@ def load_monnaies():
     pdox2cw = {}
     cw2pdox = {}
     for line in reader:
-        cw2pdox[line[0]] = line[1]
+        cw2pdox.setdefault(line[0], []).append(line[1])
     rset = rql('Any M WHERE M is Monnaie')
     for monnaie in rset.entities():
         pdox = cw2pdox[monnaie.nom]
-        pdox2cw[pdox] = (monnaie.eid, monnaie.type)
+        for name in pdox:
+            pdox2cw[name.lower()] = (monnaie.eid, monnaie.type)
+    import pprint
+    pprint.pprint(pdox2cw)
     return pdox2cw
 
 def date(value):
@@ -195,12 +214,15 @@ def make_prix(prix, monnaie):
     if not (prix and monnaie):
         return None
     values = [float(a.replace(',', '.')) for a in prix.split()]
-    print monnaie
-    monnaie_eid, monnaie_type = monnaies.get(monnaie, (0, 'Livre/Sous/Denier'))
-    if not monnaies and 'florin' in monnaie.lower():
-        monnaie_type = 'Florin/Gros'
-    if ' or' in monnaie.lower():
-        monnaie_type = 'Or'
+    #print "%r" % monnaie
+    monnaie_eid, monnaie_type = monnaies.get(monnaie.lower(), (0, 'Livre/Sous/Denier'))
+    if not monnaie_eid:
+        errors.append('unkown monnaie %r' % monnaie)
+        raise ValueError('unknown monnaie %s' % monnaie)
+        if  'florin' in monnaie.lower():
+            monnaie_type = 'Florin/Gros'
+        elif ' or' in monnaie.lower():
+            monnaie_type = 'Or'
     if monnaie_type == 'Livre/Sous/Denier':
         assert len(values) == 3, '%s: %s' % (monnaie, values)
         entity = dict(livres=values[0], sous=values[1], deniers=values[2],
@@ -239,13 +261,21 @@ def gen_pbrut(ctl):
                    ]
         entity['remarques'] = u'\n\n'.join(remarks)
         ctl.store.add('AchatMateriaux', entity)
-        prix_unitaire = make_prix(row['prix unitaire'], row['monnaie prix unitaire'])
+        try:
+            prix_unitaire = make_prix(row['prix unitaire'], row['monnaie prix unitaire'])
+        except ValueError, exc:
+            print repr(exc)
+            continue
         if prix_unitaire is not None:
             ctl.store.add('Prix', prix_unitaire)
             ctl.store.relate(entity['eid'], 'prix_unitaire', prix_unitaire['eid'])
-        prix_global = make_prix(row['prix global'], row['monnaie prix global'])
+        try:
+            prix_global = make_prix(row['prix global'], row['monnaie prix global'])
+        except ValueError, exc:
+            print repr(exc)
+            continue
         if prix_global is not None:
-            print prix_global
+            #print prix_global
             ctl.store.add('Prix', prix_global)
             ctl.store.relate(entity['eid'], 'prix_total', prix_global['eid'])
         transaction = {'base_paradox': True}
@@ -290,13 +320,21 @@ def gen_pfachete(ctl):
                    ]
         entity['remarques'] = u'\n\n'.join(remarks)
         ctl.store.add('AchatPretPorter', entity)
-        prix_unitaire = make_prix(row['prix unitaire'], row['monnaie prix unitaire'])
+        try:
+            prix_unitaire = make_prix(row['prix unitaire'], row['monnaie prix unitaire'])
+        except ValueError, exc:
+            print repr(exc)
+            continue
         if prix_unitaire is not None:
             ctl.store.add('Prix', prix_unitaire)
             ctl.store.relate(entity['eid'], 'prix_unitaire', prix_unitaire['eid'])
-        prix_global = make_prix(row['prix global'], row['monnaie prix global'])
+        try:
+            prix_global = make_prix(row['prix global'], row['monnaie prix global'])
+        except ValueError, exc:
+            print repr(exc)
+            continue
         if prix_global is not None:
-            print prix_global
+            #print prix_global
             ctl.store.add('Prix', prix_global)
             ctl.store.relate(entity['eid'], 'prix_total', prix_global['eid'])
         transaction = {'base_paradox': True}
@@ -339,13 +377,21 @@ def gen_pffabrik(ctl):
                    ]
         entity['remarques'] = u'\n\n'.join(remarks)
         ctl.store.add('AchatFabrication', entity)
-        prix_unitaire = make_prix(row['prix unitaire'], row['monnaie prix unitaire'])
+        try:
+            prix_unitaire = make_prix(row['prix unitaire'], row['monnaie prix unitaire'])
+        except ValueError, exc:
+            print repr(exc)
+            continue
         if prix_unitaire is not None:
             ctl.store.add('Prix', prix_unitaire)
             ctl.store.relate(entity['eid'], 'prix_unitaire', prix_unitaire['eid'])
-        prix_global = make_prix(row['prix global'], row['monnaie prix global'])
+        try:
+            prix_global = make_prix(row['prix global'], row['monnaie prix global'])
+        except ValueError, exc:
+            print repr(exc)
+            continue
         if prix_global is not None:
-            print prix_global
+            #print prix_global
             ctl.store.add('Prix', prix_global)
             ctl.store.relate(entity['eid'], 'prix_total', prix_global['eid'])
         transaction = {'base_paradox': True}
@@ -448,7 +494,7 @@ def gen_artisan(ctl):
         entity = mk_entity(row, ARTISAN)
         if not entity['duree']:
             del entity['duree']
-        print entity
+        #print entity
         entity.update({'tache': u'fabrication %s' % pffabrik_id[row['CodePFF']]})
         ctl.store.add('Travail', entity)
         ctl.store.relate(entity['eid'], 'artisan', personne_id[row['CodePersonne']])
@@ -506,6 +552,7 @@ if 'cnx' in locals():
     rset = rql('Any P WHERE P is Personne')
     for person in rset.entities():
         preexisting_personnes[person.identite.lower()] = person.eid
+    create_monnaies()
     monnaies = load_monnaies()
 
 datasources = ['COMPTE',
@@ -541,7 +588,7 @@ ctl.run()
 import codecs
 f = codecs.open('data_import_paradox.errors', 'w', encoding='utf-8')
 for error in errors:
-    print error
+    print repr(error)
     f.write(error)
     f.write('\n')
 f.close()
