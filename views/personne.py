@@ -1,7 +1,11 @@
 # -*- coding: utf-8
 from cubicweb.view import EntityView
-from cubicweb.web.views import tabs
-from cubicweb.selectors import is_instance
+from cubicweb.web.views import tabs, primary, basecontrollers
+from cubicweb.web import uicfg, stdmsgs, component, box, facet
+from cubicweb.selectors import is_instance, one_line_rset
+from cubicweb.web import action, component
+from logilab.common.decorators import monkeypatch
+from logilab.mtconverter import xml_escape
 
 _ = unicode
 class PersonnePrimaryView(tabs.TabbedPrimaryView):
@@ -41,7 +45,7 @@ class PersonneTab(tabs.PrimaryTab):
                             _('occupation'), _('compte'), _('pagination')])
         if len(rset) > 1:
             self.w('<p>voir <a href="%s"> dans le temps</a></p>' % (entity.absolute_url(vid='occupation_timeline')))
-            
+
 class PersonneOccupationTimeline(EntityView):
     __regid__ = 'occupation_timeline'
     __select__ = is_instance('Personne')
@@ -130,7 +134,7 @@ class PersonneRelationsView(dotgraphview.DotGraphView):
                           'rankdir':'LR'
                           },
                       'renderer': 'dot',
-        
+
         }
     def build_visitor(self, entity):
         return PersonneRelationVisitor(self._cw, [entity])
@@ -180,7 +184,7 @@ class PersonneRelationVisitor(object):
                 known.add((p1.eid, title, p2.eid))
                 if title.strip():
                     yield p1.eid, p2.eid, occupation
-                
+
         ## for occupation, p1, p2 in self._edges:
         ##     current = (p1.eid, p2.eid, occupation.dc_title())
         ##     if current not in known:
@@ -201,3 +205,80 @@ class PersonnePropsHandler(dotgraphview.DotPropsHandler):
         props.update({'label': occupation.dc_title(),
                       'fontname': 'sans', 'fontsize': 10})
         return props
+
+
+class MergeComponent(component.EntityCtxComponent):
+    __regid__ = 'mergepersonne'
+    __select__ = (component.EntityCtxComponent.__select__ & one_line_rset &
+                  is_instance('Personne'))
+    context = 'navcontentbottom'
+    title = _('merge personnes')
+
+    def render_body(self, w):
+        self._cw.add_js(('cubes.myosotis.merge.js',
+                         'cubicweb.widgets.js',
+                         #'jquery.autocomplete.js',
+                         'jquery.js',))
+        #self._cw.add_css('jquery.autocomplete.css')
+        entity = self.entity
+        w(u'<div id="personnemergeformholder%s">' % entity.eid)
+        w(u'<h5>%s</h5>' % self._cw._('Identity of the Personne to merge'))
+        w(u'<input  type="hidden" id="personneeid" value="%s"/>' % entity.eid)
+        w(u'<input id="acmergepersonne" type="text" class="widget" cubicweb:dataurl="%s" '
+          u'cubicweb:loadtype="auto" cubicweb:wdgtype="RestrictedSuggestField" />'
+          % xml_escape(self._cw.build_url('json', fname='unrelated_merge_personnes',
+                                          arg=entity.eid)))
+        w(u'<div id="personne_entities_holder"></div>')
+        w(u'<div id="sgformbuttons" class="hidden">')
+        w(u'<input class="validateButton" type="button" value="%s" onclick="javascript:mergePersonnes(%s);"/>'
+               % ( self._cw._('merge (keeping %s)') % xml_escape(entity.dc_title()), entity.eid))
+        w(u'<input class="validateButton" type="button" value="%s" onclick="javascript:cancelSelectedMergePersonne(%s)"/>'
+               % ( self._cw._(stdmsgs.BUTTON_CANCEL[0]), entity.eid))
+        w(u'</div>')
+        w(u'</div>')
+
+#XXX the following needs updating
+
+@monkeypatch(basecontrollers.JSonController)
+@basecontrollers.jsonize
+def js_unrelated_merge_personnes(self, eid):
+    """return personne unrelated to an entity"""
+    rql = 'DISTINCT Any N ORDERBY N WHERE T is Personne, T identite N, NOT T eid %(x)s'
+    print "unrelated", rql, eid
+    return [name for (name,) in self._cw.execute(rql, {'x' : eid})]
+
+@monkeypatch(basecontrollers.JSonController)
+@basecontrollers.xhtmlize
+def js_personne_entity_html(self, name):
+    print "personne entity html", name
+    rset = self._cw.execute('Any P DESC LIMIT 10 WHERE P name %(x)s', {'x': name})
+    print rset
+    html = []
+    if rset:
+        html.append('<div id="personneEntities">')
+        #FIXME - add test to go through select_view
+        view = self._cw.vreg['views'].select('list', self._cw, rset=rset)
+        html.append(view.render(title=self._cw._('Candidates:')))
+        html.append(u'</div>')
+        # html.append(self._cw.view('list', rset))
+    else:
+        html.append('<div>%s</div>' %_('no personne found'))
+        view = self._cw.vreg['views'].select('null', self._cw, rset=rset)
+    return u' '.join(html)
+
+
+@monkeypatch(basecontrollers.JSonController)
+@basecontrollers.xhtmlize
+def js_merge_personnes(self, eid, mergepersonne_name):
+    print "merge_personne"
+    return 
+    mergepersonne_name = mergepersonne_name.strip(',') # XXX
+    self._cw.execute('SET T tags X WHERE T1 tags X, NOT T tags X, '
+                     'T eid %(x)s, T1 name %(name)s',
+                     {'x': eid, 'name': mergepersonne_name})
+    self._cw.execute('DELETE Tag T WHERE T name %(name)s',
+                     {'name': mergepersonne_name})
+    #FIXME - add test to go through select_view
+    view = self._cw.vreg['views'].select('primary', self._cw, 
+                                         rset=self._cw.eid_rset(eid))
+    return view.render()

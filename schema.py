@@ -155,7 +155,7 @@ class lieu(RelationDefinition):
     inlined = True
 
 class Personne(EntityType):
-    identite = String(maxsize=255, required=True, fulltextindexed=True)
+    identite = String(maxsize=255, required=True, fulltextindexed=True, indexed=True)
     nom = String(maxsize=64, fulltextindexed=True)
     surnom = String(maxsize=64, fulltextindexed=True)
     diminutif = String(maxsize=64, fulltextindexed=True)
