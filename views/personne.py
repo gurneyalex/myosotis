@@ -209,7 +209,7 @@ class PersonnePropsHandler(dotgraphview.DotPropsHandler):
 
 class MergeComponent(component.EntityCtxComponent):
     __regid__ = 'mergepersonne'
-    __select__ = (component.EntityCtxComponent.__select__ & one_line_rset &
+    __select__ = (component.EntityCtxComponent.__select__ & one_line_rset() &
                   is_instance('Personne'))
     context = 'navcontentbottom'
     title = _('merge personnes')
