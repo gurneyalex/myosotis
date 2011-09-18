@@ -140,8 +140,9 @@ PERSONNE = [(u'Identité', 'identite', ()),
             ]
 def gen_personne(ctl):
     for i, row in enumerate(ctl.iter_and_commit('PERSONNE')):
-        if row[u'Identité'] in preexisting_personnes:
-            personne_id[row['CodePersonne']] = preexisting_personnes[row[u'Identité']]
+        read_identite = row[u'Identité'].lower()
+        if read_identite in preexisting_personnes:
+            personne_id[row['CodePersonne']] = preexisting_personnes[read_identite]
             continue
         entity = mk_entity(row, PERSONNE)
         if not entity['sexe']:
