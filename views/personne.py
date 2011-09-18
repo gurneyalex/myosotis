@@ -219,13 +219,14 @@ class MergeComponent(component.EntityCtxComponent):
                          'cubicweb.widgets.js',
                          #'jquery.autocomplete.js',
                          'jquery.js',))
+        self._cw.add_onload('initMergePersonnes();')
         #self._cw.add_css('jquery.autocomplete.css')
         entity = self.entity
         w(u'<div id="personnemergeformholder%s">' % entity.eid)
         w(u'<h5>%s</h5>' % self._cw._('Identity of the Personne to merge'))
         w(u'<input  type="hidden" id="personneeid" value="%s"/>' % entity.eid)
         w(u'<input id="acmergepersonne" type="text" class="widget" cubicweb:dataurl="%s" '
-          u'cubicweb:loadtype="auto" cubicweb:wdgtype="RestrictedSuggestField" />'
+          u'cubicweb:loadtype="auto" cubicweb:wdgtype="RestrictedSuggestField" name="selected-personne"/>'
           % xml_escape(self._cw.build_url('json', fname='unrelated_merge_personnes',
                                           arg=entity.eid)))
         w(u'<div id="personne_entities_holder"></div>')
@@ -243,15 +244,20 @@ class MergeComponent(component.EntityCtxComponent):
 @basecontrollers.jsonize
 def js_unrelated_merge_personnes(self, eid):
     """return personne unrelated to an entity"""
-    rql = 'DISTINCT Any N ORDERBY N WHERE T is Personne, T identite N, NOT T eid %(x)s'
-    print "unrelated", rql, eid
-    return [name for (name,) in self._cw.execute(rql, {'x' : eid})]
+    try:
+        rql = 'Any T, N ORDERBY N WHERE T is Personne, T identite N, NOT T eid %(x)s'
+        print "unrelated", rql, eid
+        return [{'value': eid, 'label': identite}  for (eid, identite) in self._cw.execute(rql, {'x' : eid})]
+    except:
+        import traceback
+        traceback.print_exc()
 
 @monkeypatch(basecontrollers.JSonController)
 @basecontrollers.xhtmlize
-def js_personne_entity_html(self, name):
-    print "personne entity html", name
-    rset = self._cw.execute('Any P DESC LIMIT 10 WHERE P name %(x)s', {'x': name})
+def js_personne_entity_html(self, eid, name):
+    print "personne entity html", repr(name)
+    rset = self._cw.execute('Any P WHERE P is Personne, P identite %(x)s, NOT P eid %(eid)s',
+                            {'x': name, 'eid': eid})
     print rset
     html = []
     if rset:
@@ -268,17 +274,23 @@ def js_personne_entity_html(self, name):
 
 
 @monkeypatch(basecontrollers.JSonController)
-@basecontrollers.xhtmlize
-def js_merge_personnes(self, eid, mergepersonne_name):
-    print "merge_personne"
+def js_merge_personnes(self, eid, other_eid):
+    other_eid = int(other_eid)
+    print "merge_personne", eid, other_eid
+    relations = ['receveur',
+                 'rattache_a',
+                 'personne',
+                 'artisan',
+                 'vendeur',
+                 'destinataire',
+                 'intervenant',
+                 ]
+    p1= self._cw.entity_from_eid(eid)
+    p2 = self._cw.entity_from_eid(other_eid)
+    self.info('merging %s with %s (keeping %s)', p1.identite, p2.identite, p1.identite)
+    for rtype in relations:
+        rql = 'SET X %s P1 WHERE X %s P2, P1 eid %%(p1)s, P2 eid %%(p2)s' % (rtype, rtype)
+        rset = self._cw.execute(rql, {'p1': eid, 'p2': other_eid})
+        self.info('merged %d relations %s', len(rset), rtype)
+    self.info('delete %s', p2.identite)
     return 
-    mergepersonne_name = mergepersonne_name.strip(',') # XXX
-    self._cw.execute('SET T tags X WHERE T1 tags X, NOT T tags X, '
-                     'T eid %(x)s, T1 name %(name)s',
-                     {'x': eid, 'name': mergepersonne_name})
-    self._cw.execute('DELETE Tag T WHERE T name %(name)s',
-                     {'name': mergepersonne_name})
-    #FIXME - add test to go through select_view
-    view = self._cw.vreg['views'].select('primary', self._cw, 
-                                         rset=self._cw.eid_rset(eid))
-    return view.render()
