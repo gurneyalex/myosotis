@@ -154,7 +154,6 @@ class PersonneRelationVisitor(object):
         for personne in self.personnes:
             for occupation in personne.reverse_rattache_a:
                 try:
-                    #print 'occ', occupation.eid
                     p = occupation.personne[0]
                     self._edges.append((occupation, p, personne))
                     yield p.eid, p
@@ -244,21 +243,14 @@ class MergeComponent(component.EntityCtxComponent):
 @basecontrollers.jsonize
 def js_unrelated_merge_personnes(self, eid):
     """return personne unrelated to an entity"""
-    try:
-        rql = 'Any T, N ORDERBY N WHERE T is Personne, T identite N, NOT T eid %(x)s'
-        print "unrelated", rql, eid
-        return [{'value': eid, 'label': identite}  for (eid, identite) in self._cw.execute(rql, {'x' : eid})]
-    except:
-        import traceback
-        traceback.print_exc()
+    rql = 'Any T, N ORDERBY N WHERE T is Personne, T identite N, NOT T eid %(x)s'
+    return [{'value': eid, 'label': identite}  for (eid, identite) in self._cw.execute(rql, {'x' : eid})]
 
 @monkeypatch(basecontrollers.JSonController)
 @basecontrollers.xhtmlize
 def js_personne_entity_html(self, eid, name):
-    print "personne entity html", repr(name)
     rset = self._cw.execute('Any P WHERE P is Personne, P identite %(x)s, NOT P eid %(eid)s',
                             {'x': name, 'eid': eid})
-    print rset
     html = []
     if rset:
         html.append('<div id="personneEntities">')
@@ -276,7 +268,6 @@ def js_personne_entity_html(self, eid, name):
 @monkeypatch(basecontrollers.JSonController)
 def js_merge_personnes(self, eid, other_eid):
     other_eid = int(other_eid)
-    print "merge_personne", eid, other_eid
     relations = ['receveur',
                  'rattache_a',
                  'personne',
