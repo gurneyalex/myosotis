@@ -9,9 +9,9 @@ from cubicweb.web.views.tabs import TabbedPrimaryView, PrimaryTab
 
 _ = unicode
 class ComptePrimaryView(TabbedPrimaryView):
-    tabs = ['main_tab', 'transactions_tab', 'occasions_tab', 'changes_tab']
+    tabs = ['main_tab', 'commandes_tab', 'transactions_tab', 'occasions_tab', 'changes_tab']
     __select__ = is_instance('Compte')
-    
+
 class CompteMainTab(PrimaryTab):
     __select__ = primary.PrimaryView.__select__ & is_instance('Compte')
     title = _('Compte')
@@ -22,16 +22,25 @@ class CompteTransactionTab(EntityView):
     title = _('Transactions')
     def cell_call(self, row, col):
         entity = self.cw_rset.complete_entity(row, col)
-        rset = self._cw.execute('Any T where T is Transaction, T compte C, C eid %(eid)s', {'eid': entity.eid})
+        rset = self._cw.execute('Any T ORDERBY P where T is Transaction, T pagination P,  T compte C, C eid %(eid)s', {'eid': entity.eid})
         self.wview('myosotis.transaction.attributestableview', rset)
 
+class CompteCommandesTab(EntityView):
+    __select__ = is_instance('Compte') & rql_condition('T compte X, T is Commande')
+    __regid__ = _('commandes_tab')
+    title = _('Commandes')
+    def cell_call(self, row, col):
+        entity = self.cw_rset.complete_entity(row, col)
+        rset = self._cw.execute('Any T ORDERBY P where T is Commande, T numero P,  T compte C, C eid %(eid)s', {'eid': entity.eid})
+        self.wview('myosotis.commande.attributestableview', rset)
+
 class CompteChangeTab(EntityView):
-    __select__ = is_instance('Compte') & rql_condition('C is Change, C compte X')
+    __select__ = is_instance('Compte') & rql_condition('C is Change, X change C')
     __regid__ = _('changes_tab')
     title = _('Changes')
     def cell_call(self, row, col):
         entity = self.cw_rset.complete_entity(row, col)
-        rset = self._cw.execute('Any T where T is Change, T compte C, C eid %(eid)s', {'eid': entity.eid})
+        rset = self._cw.execute('Any T where T is Change, C change T, C eid %(eid)s', {'eid': entity.eid})
         print len(rset)
         self.wview('myosotis.change.attributestableview', rset)
 

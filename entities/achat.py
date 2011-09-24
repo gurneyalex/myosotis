@@ -36,6 +36,8 @@ class AchatMateriaux(AnyEntity):
 
 class FabriqueAvecMat(AnyEntity):
     __regid__ = 'FabriqueAvecMat'
+    fetch_attrs, fetch_order = fetch_config(['usage', 'type_mesure', 'quantite', 'unite', 'provenance_mesure', 'conversion'])
+    
     def dc_title(self):
         return u'fabrique avec %s' % self.achat_matiere[0].dc_title()
 
@@ -61,7 +63,7 @@ class Materiaux(AnyEntity):
     __regid__ = 'Materiaux'
     fetch_attrs, _ = fetch_config(['type', 'famille', 'nom', 'couleur', 'carac_couleur', 'carac_facture'])
     type_names = {'E': u'étoffe', 'F': u'fourrure', 'M': u'mercerie',
-                  'O': u'orfèvrerie', 'B': u'broderie', 'P': u'peau'}
+                  'O': u'orfèvrerie', 'B': u'broderie', 'P': u'peau', '?': u'inconnu'}
         
     def dc_title(self):
         if self.provenance:
