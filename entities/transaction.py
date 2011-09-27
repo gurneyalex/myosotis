@@ -20,3 +20,15 @@ class Transaction(AnyEntity):
             return self.date_recette
         compte = self.compte[0]
         return compte.debut
+
+class Intervenant(AnyEntity):
+    __regid__ = 'Intervenant'
+    fetch_attrs, fetch_order = fetch_config(('intervenant',))
+    def dc_title(self):
+        return self.intervenant[0].dc_title()
+
+class Vendeur(AnyEntity):
+    __regid__ = 'Vendeur'
+    fetch_attrs, fetch_order = fetch_config(('vendeur', 'expression'))
+    def dc_title(self):
+        return self.vendeur[0].dc_title()

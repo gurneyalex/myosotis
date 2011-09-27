@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: myosotis-2.0\n"
-"PO-Revision-Date: 2011-03-01 22:46+0100\n"
+"PO-Revision-Date: 2011-09-27 09:18+0200\n"
 "Last-Translator: Alexandre Fayolle <alexandre.fayolle@free.fr>\n"
 "Language-Team: French <FR@li.org>\n"
 "Language: fr\n"
@@ -734,7 +734,7 @@ msgstr "destinataires"
 
 msgctxt "Transaction"
 msgid "destinataires"
-msgstr "transaction"
+msgstr "destinataires"
 
 msgid "destinataires_object"
 msgstr "transaction"
