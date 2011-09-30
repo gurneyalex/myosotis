@@ -22,7 +22,8 @@ class CompteTransactionTab(EntityView):
     title = _('Transactions')
     def cell_call(self, row, col):
         entity = self.cw_rset.complete_entity(row, col)
-        rset = self._cw.execute('Any T ORDERBY P where T is Transaction, T pagination P,  T compte C, C eid %(eid)s', {'eid': entity.eid})
+        rql = entity.cw_related_rql('compte', 'object', ('Transaction',),)
+        rset = self._cw.execute(rql, {'x': entity.eid})
         self.wview('myosotis.transaction.attributestableview', rset)
 
 class CompteCommandesTab(EntityView):
