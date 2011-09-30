@@ -108,7 +108,7 @@ class AchatFabrication(EntityType):
     parure = SubjectRelation('Parure', cardinality='1*', inlined=True)
     avec_mat = SubjectRelation('FabriqueAvecMat', cardinality='*1')
     remarques = RichString(fulltextindexed=True, default_format='text/rest')
-    
+
 class AchatMateriaux(EntityType):
     date_achat = Date()
     type_mesure = String(maxsize=255, fulltextindexed=True)
@@ -147,7 +147,7 @@ class Lieu(EntityType):
     ville = String(maxsize=255, required=True, fulltextindexed=True)
     region = String(maxsize=255, fulltextindexed=True)
     remarques = RichString(fulltextindexed=True, default_format='text/rest')
-    
+
 class lieu(RelationDefinition):
     subject = ('Transaction', 'Occasion')
     object= 'Lieu'
