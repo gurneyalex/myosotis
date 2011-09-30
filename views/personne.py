@@ -22,7 +22,7 @@ class PersonnePrimaryView(tabs.TabbedPrimaryView):
 
 class PersonneTab(tabs.PrimaryTab):
     __regid__ = 'tab_personne'
-    __select__ = is_instance('Personne')
+    __select__ = one_line_rset() & is_instance('Personne')
     title = None
     def render_entity_relations(self, entity):
         _ = self._cw._
@@ -56,7 +56,7 @@ class PersonneOccupationTimeline(EntityView):
 
 class TabPersonneIntervention(tabs.EntityRelationView):
     __regid__ = 'tab_personne_intervention'
-    __select__ = tabs.EntityRelationView.__select__ & is_instance('Personne')
+    __select__ = one_line_rset() & tabs.EntityRelationView.__select__ & is_instance('Personne')
     rtype = 'intervenant'
     role = 'object'
     title = None
@@ -70,7 +70,7 @@ class TabPersonneIntervention(tabs.EntityRelationView):
 
 class TabPersonneDestinataire(tabs.EntityRelationView):
     __regid__ = 'tab_personne_destinataire'
-    __select__ = tabs.EntityRelationView.__select__ & is_instance('Personne')
+    __select__ = one_line_rset() & tabs.EntityRelationView.__select__ & is_instance('Personne')
     rtype = 'destinataire'
     role = 'object'
     title=None
@@ -83,7 +83,7 @@ class TabPersonneDestinataire(tabs.EntityRelationView):
 
 class TabPersonneArtisan(tabs.EntityRelationView):
     __regid__ = 'tab_personne_artisan'
-    __select__ = tabs.EntityRelationView.__select__ & is_instance('Personne')
+    __select__ = one_line_rset() & tabs.EntityRelationView.__select__ & is_instance('Personne')
     title=None
     rtype = 'artisan'
     role = 'object'
@@ -96,7 +96,7 @@ class TabPersonneArtisan(tabs.EntityRelationView):
 
 class TabPersonneVendeur(tabs.EntityRelationView):
     __regid__ = 'tab_personne_vendeur'
-    __select__ = tabs.EntityRelationView.__select__ & is_instance('Personne')
+    __select__ = one_line_rset() & tabs.EntityRelationView.__select__ & is_instance('Personne')
     title=None
     rtype = 'vendeur'
     role = 'object'
@@ -110,7 +110,7 @@ class TabPersonneVendeur(tabs.EntityRelationView):
 
 class TabPersonneRattachement(tabs.EntityRelationView):
     __regid__ = 'tab_personne_rattachement'
-    __select__ = tabs.EntityRelationView.__select__ & is_instance('Personne')
+    __select__ = one_line_rset() & tabs.EntityRelationView.__select__ & is_instance('Personne')
     title=None
     rtype = 'rattache_a'
     role = 'object'
@@ -208,7 +208,7 @@ class PersonnePropsHandler(dotgraphview.DotPropsHandler):
 
 class MergeComponent(component.EntityCtxComponent):
     __regid__ = 'mergepersonne'
-    __select__ = (component.EntityCtxComponent.__select__ & one_line_rset() &
+    __select__ = (one_line_rset() & component.EntityCtxComponent.__select__ &
                   is_instance('Personne'))
     context = 'navcontentbottom'
     title = _('merge personnes')
