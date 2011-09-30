@@ -6,6 +6,7 @@ class Prix(AnyEntity):
     fetch_attrs, fetch_order = fetch_config(('livres', 'sous', 'deniers', 'florins', 'gros', 'sous_florins', 'denier_florins'))
 
     def dc_title(self):
+        self.complete()
         monnaie = self.monnaie[0]
 #        return u'%s %s' % (self.float_value, monnaie.nom)
         if monnaie.type == u'Livre/Sous/Denier':

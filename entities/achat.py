@@ -6,6 +6,11 @@ _ = unicode
 class AchatFabrication(AnyEntity):
     __regid__ = 'AchatFabrication'
     def dc_title(self):
+        self.complete()
+        quantite = self.quantite or 1
+        parure = self.parure[0].dc_title()
+        return u'%d %s' % (quantite, parure)
+    def dc_long_title(self):
         quantite = self.quantite or 1
         parure = self.parure[0].dc_title()
         return u'Fabrication %d %s' % (quantite, parure)
@@ -20,11 +25,16 @@ class AchatPretPorter(AnyEntity):
 class AchatMateriaux(AnyEntity):
     __regid__ = 'AchatMateriaux'
     def dc_title(self):
+        self.complete()
         if self.quantite is not None:
             unite = self.unite
             quantite = self.quantite
             if self.provenance_mesure:
                 unite = '%s de %s' % (unite, self.provenance_mesure)
+            if unite is not None:
+                unite += ' de '
+            else:
+                unite = ''
         else:
             unite = u''
             quantite = u''
@@ -32,14 +42,21 @@ class AchatMateriaux(AnyEntity):
             flag = '*'
         else:
             flag = ''
-        return u'Achat %s %s %s%s' % (quantite, unite, self.materiaux[0].dc_title(), flag)
+        return u'%s %s %s%s' % (quantite, unite, self.materiaux[0].dc_title(), flag)
 
+    def dc_long_title(self):
+        return u'Achat %s' % self.dc_title()
+    
 class FabriqueAvecMat(AnyEntity):
     __regid__ = 'FabriqueAvecMat'
     fetch_attrs, fetch_order = fetch_config(['usage', 'type_mesure', 'quantite', 'unite', 'provenance_mesure', 'conversion'])
     
     def dc_title(self):
-        return u'fabrique avec %s' % self.achat_matiere[0].dc_title()
+        return self.achat_matiere[0].dc_title()
+    def dc_long_title(self):
+        fabrique = [fab.dc_title() for fab in self.reverse_avec_mat]
+        return u'fabrique avec %s: %s' % (self.achat_matiere[0].dc_long_title(),
+                                          u', '.join(fabrique))
 
 class MateriauxParure(AnyEntity):
     __regid__ = 'MateriauxParure'
@@ -53,6 +70,7 @@ class Parure(AnyEntity):
     fetch_attrs, fetch_order = fetch_config(['type', 'nature', 'caracteristique'])
     
     def dc_title(self):
+        self.complete()
         title = u'%s %s' % (self.nature, self.caracteristique)
         if title.strip():
             return title
@@ -66,6 +84,17 @@ class Materiaux(AnyEntity):
                   'O': u'orfèvrerie', 'B': u'broderie', 'P': u'peau', '?': u'inconnu'}
         
     def dc_title(self):
+        self.complete()
+        if self.provenance:
+            prov = u' de %s' % self.provenance[0].dc_title()
+        else:
+            prov = '' 
+        title = u'%s %s%s' % (self.nom, self.couleur,
+                              prov)
+        return title
+    
+    def dc_long_title(self):
+        self.complete()
         if self.provenance:
             prov = u' de %s' % self.provenance[0].dc_title()
         else:
