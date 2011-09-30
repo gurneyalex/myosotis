@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: myosotis-2.0\n"
-"PO-Revision-Date: 2011-09-27 09:18+0200\n"
+"PO-Revision-Date: 2011-09-28 20:27+0200\n"
 "Last-Translator: Alexandre Fayolle <alexandre.fayolle@free.fr>\n"
 "Language-Team: French <FR@li.org>\n"
 "Language: fr\n"
@@ -38,6 +38,9 @@ msgstr "Achats de Prêts à porter"
 msgid "Artisan pour"
 msgstr "Artisan pour"
 
+msgid "Candidates:"
+msgstr ""
+
 msgid "Change"
 msgstr "Change"
 
@@ -52,6 +55,9 @@ msgstr "Commande"
 
 msgid "Commande_plural"
 msgstr "Commandes"
+
+msgid "Commandes"
+msgstr ""
 
 msgid "Compte"
 msgstr "Compte"
@@ -73,6 +79,9 @@ msgstr "Fabriqué avec Matériaux"
 
 msgid "FabriqueAvecMat_plural"
 msgstr "Fabriqués avec Matériaux"
+
+msgid "Identity of the Personne to merge"
+msgstr ""
 
 msgid "Intervenant"
 msgstr "Intervenant"
@@ -314,6 +323,9 @@ msgstr "Travail"
 msgid "Travail_plural"
 msgstr "Travaux"
 
+msgid "True if quantite is \"plusieurs\""
+msgstr ""
+
 msgid "Vendeur"
 msgstr "Vendeur"
 
@@ -414,19 +426,22 @@ msgctxt "Personne"
 msgid "artisan_object"
 msgstr "travail"
 
+msgid "attributes table view"
+msgstr ""
+
 msgid "avec_mat"
 msgstr "avec matériaux"
 
 msgctxt "AchatFabrication"
 msgid "avec_mat"
-msgstr "avec matériaux"
+msgstr "Fabriqué avec"
 
 msgid "avec_mat_object"
 msgstr "fabrication"
 
 msgctxt "FabriqueAvecMat"
 msgid "avec_mat_object"
-msgstr "fabrication"
+msgstr "sert à fabriquer"
 
 msgid "base_paradox"
 msgstr "base Paradox"
@@ -442,18 +457,6 @@ msgstr "base Paradox"
 msgctxt "Transaction"
 msgid "base_paradox"
 msgstr "base Paradox"
-
-msgid "boxes_myosotis.similar_materiaux"
-msgstr ""
-
-msgid "boxes_myosotis.similar_materiaux_description"
-msgstr ""
-
-msgid "boxes_myosotis.similar_parures"
-msgstr ""
-
-msgid "boxes_myosotis.similar_parures_description"
-msgstr ""
 
 msgid "carac_couleur"
 msgstr "carac. couleur"
@@ -510,6 +513,9 @@ msgstr "commandement"
 msgctxt "Intervenant"
 msgid "commandement"
 msgstr "commandement"
+
+msgid "commandes_tab"
+msgstr ""
 
 msgid "composee_de"
 msgstr "composée de"
@@ -616,6 +622,24 @@ msgid "creating Vendeur (Transaction %(linkto)s vendeurs Vendeur)"
 msgstr ""
 
 msgid "creating Vendeur (Vendeur vendeur Personne %(linkto)s)"
+msgstr ""
+
+msgid "ctxcomponents_mergepersonne"
+msgstr ""
+
+msgid "ctxcomponents_mergepersonne_description"
+msgstr ""
+
+msgid "ctxcomponents_myosotis.similar_materiaux"
+msgstr ""
+
+msgid "ctxcomponents_myosotis.similar_materiaux_description"
+msgstr ""
+
+msgid "ctxcomponents_myosotis.similar_parures"
+msgstr ""
+
+msgid "ctxcomponents_myosotis.similar_parures_description"
 msgstr ""
 
 msgid "date"
@@ -951,6 +975,13 @@ msgctxt "Materiaux"
 msgid "materiaux_object"
 msgstr "parure"
 
+#, python-format
+msgid "merge (keeping %s)"
+msgstr ""
+
+msgid "merge personnes"
+msgstr ""
+
 msgid "monnaie"
 msgstr "monnaie"
 
@@ -992,6 +1023,9 @@ msgstr "nombre de moyen de transport"
 msgctxt "Intervenant"
 msgid "nb_moyen_transport"
 msgstr "nombre de moyen de transport"
+
+msgid "no personne found"
+msgstr ""
 
 msgid "nom"
 msgstr "nom"
@@ -1316,6 +1350,21 @@ msgstr "quantité"
 msgctxt "MateriauxParure"
 msgid "quantite"
 msgstr "quantité"
+
+msgid "quantite_plusieurs"
+msgstr ""
+
+msgctxt "AchatFabrication"
+msgid "quantite_plusieurs"
+msgstr ""
+
+msgctxt "AchatMateriaux"
+msgid "quantite_plusieurs"
+msgstr ""
+
+msgctxt "AchatPretPorter"
+msgid "quantite_plusieurs"
+msgstr ""
 
 msgid "rattache_a"
 msgstr "rattaché à"
@@ -1674,6 +1723,9 @@ msgstr "transaction"
 msgctxt "Vendeur"
 msgid "vendeurs_object"
 msgstr "transaction"
+
+msgid "vient de la base Paradox"
+msgstr ""
 
 msgid "ville"
 msgstr "ville"

@@ -30,6 +30,9 @@ msgstr ""
 msgid "Artisan pour"
 msgstr ""
 
+msgid "Candidates:"
+msgstr ""
+
 msgid "Change"
 msgstr ""
 
@@ -43,6 +46,9 @@ msgid "Commande"
 msgstr ""
 
 msgid "Commande_plural"
+msgstr ""
+
+msgid "Commandes"
 msgstr ""
 
 msgid "Compte"
@@ -64,6 +70,9 @@ msgid "FabriqueAvecMat"
 msgstr ""
 
 msgid "FabriqueAvecMat_plural"
+msgstr ""
+
+msgid "Identity of the Personne to merge"
 msgstr ""
 
 msgid "Intervenant"
@@ -306,6 +315,9 @@ msgstr ""
 msgid "Travail_plural"
 msgstr ""
 
+msgid "True if quantite is \"plusieurs\""
+msgstr ""
+
 msgid "Vendeur"
 msgstr ""
 
@@ -406,6 +418,9 @@ msgctxt "Personne"
 msgid "artisan_object"
 msgstr ""
 
+msgid "attributes table view"
+msgstr ""
+
 msgid "avec_mat"
 msgstr ""
 
@@ -433,18 +448,6 @@ msgstr ""
 
 msgctxt "Transaction"
 msgid "base_paradox"
-msgstr ""
-
-msgid "boxes_myosotis.similar_materiaux"
-msgstr ""
-
-msgid "boxes_myosotis.similar_materiaux_description"
-msgstr ""
-
-msgid "boxes_myosotis.similar_parures"
-msgstr ""
-
-msgid "boxes_myosotis.similar_parures_description"
 msgstr ""
 
 msgid "carac_couleur"
@@ -501,6 +504,9 @@ msgstr ""
 
 msgctxt "Intervenant"
 msgid "commandement"
+msgstr ""
+
+msgid "commandes_tab"
 msgstr ""
 
 msgid "composee_de"
@@ -608,6 +614,24 @@ msgid "creating Vendeur (Transaction %(linkto)s vendeurs Vendeur)"
 msgstr ""
 
 msgid "creating Vendeur (Vendeur vendeur Personne %(linkto)s)"
+msgstr ""
+
+msgid "ctxcomponents_mergepersonne"
+msgstr ""
+
+msgid "ctxcomponents_mergepersonne_description"
+msgstr ""
+
+msgid "ctxcomponents_myosotis.similar_materiaux"
+msgstr ""
+
+msgid "ctxcomponents_myosotis.similar_materiaux_description"
+msgstr ""
+
+msgid "ctxcomponents_myosotis.similar_parures"
+msgstr ""
+
+msgid "ctxcomponents_myosotis.similar_parures_description"
 msgstr ""
 
 msgid "date"
@@ -943,6 +967,13 @@ msgctxt "Materiaux"
 msgid "materiaux_object"
 msgstr ""
 
+#, python-format
+msgid "merge (keeping %s)"
+msgstr ""
+
+msgid "merge personnes"
+msgstr ""
+
 msgid "monnaie"
 msgstr ""
 
@@ -983,6 +1014,9 @@ msgstr ""
 
 msgctxt "Intervenant"
 msgid "nb_moyen_transport"
+msgstr ""
+
+msgid "no personne found"
 msgstr ""
 
 msgid "nom"
@@ -1307,6 +1341,21 @@ msgstr ""
 
 msgctxt "MateriauxParure"
 msgid "quantite"
+msgstr ""
+
+msgid "quantite_plusieurs"
+msgstr ""
+
+msgctxt "AchatFabrication"
+msgid "quantite_plusieurs"
+msgstr ""
+
+msgctxt "AchatMateriaux"
+msgid "quantite_plusieurs"
+msgstr ""
+
+msgctxt "AchatPretPorter"
+msgid "quantite_plusieurs"
 msgstr ""
 
 msgid "rattache_a"
@@ -1665,6 +1714,9 @@ msgstr ""
 
 msgctxt "Vendeur"
 msgid "vendeurs_object"
+msgstr ""
+
+msgid "vient de la base Paradox"
 msgstr ""
 
 msgid "ville"
