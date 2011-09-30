@@ -17,6 +17,7 @@ class PersonnePrimaryView(tabs.TabbedPrimaryView):
             _('tab_personne_vendeur'),
             _('tab_personne_rattachement'),
             _('personne_relations'),
+            _('tab_personne_codest'),
             ]
     default_tab='tab_personne'
 
@@ -54,6 +55,17 @@ class PersonneOccupationTimeline(EntityView):
         subst = {'eid': entity.eid}
         self.wview('myosotis.timeline', self._cw.execute('Any X where X is Occupation, X personne P, P eid %(eid)s', subst))
 
+class TabPersonneCodest(EntityView):
+    __regid__ = 'tab_personne_codest'
+    __select__ = one_line_rset & is_instance('Personne')
+
+    def cell_call(self, row, col):
+        entity = self.cw_rset.get_entity(row, col)
+        rql = 'Any P, COUNT(T) GROUPBY P ORDERBY 2 DESC WHERE T destinataires D, D destinataire P1, T destinataires D2, D2 destinataire P, NOT P identity P1, P1 eid %(eid)s'
+        rset = self._cw.execute(rql, {'eid': entity.eid})
+        self.wview('table', rset, 'null')
+        
+
 class TabPersonneIntervention(tabs.EntityRelationView):
     __regid__ = 'tab_personne_intervention'
     __select__ = one_line_rset() & tabs.EntityRelationView.__select__ & is_instance('Personne')
@@ -63,9 +75,9 @@ class TabPersonneIntervention(tabs.EntityRelationView):
     def cell_call(self, row, col):
         entity = self.cw_rset.get_entity(row, col)
         subst = {'eid': entity.eid}
-        rql = ('Any T, G, H, J, K, L, M, N, O, P  WHERE T intervenants I, I intervenant X, X eid %(eid)s, I payeur G, I pris H, I commandement J, I relation_de K, I donne_par L, I par_la_main M, I present N, I delivre_a O, I fait_compte_avec P')
+        rql = ('Any T, I  WHERE T intervenants I, I intervenant X, X eid %(eid)s')
         rset = self._cw.execute(rql, subst)
-        self.wview('table', rset, 'null', title=_('Intervient sur'),
+        self.wview('table', rset, 'null', cellvids={0:'incontext', 1:'intervenant_flags'}, title=_('Intervient sur'),
                    )
 
 class TabPersonneDestinataire(tabs.EntityRelationView):
@@ -77,7 +89,7 @@ class TabPersonneDestinataire(tabs.EntityRelationView):
     def cell_call(self, row, col):
         entity = self.cw_rset.get_entity(row, col)
         subst = {'eid': entity.eid}
-        rql = 'Any D, T WHERE T destinataires D, D destinataire P, P eid %(eid)s'
+        rql = 'Any T, A WHERE T destinataires D, T achat A, D destinataire P, P eid %(eid)s'
         rset = self._cw.execute(rql, subst)
         self.wview('table', rset, 'null', title=_('Destinataire de'),)
 
