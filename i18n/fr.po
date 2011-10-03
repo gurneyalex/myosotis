@@ -2,11 +2,10 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: myosotis-2.0\n"
-"PO-Revision-Date: 2011-09-28 20:27+0200\n"
+"PO-Revision-Date: 2011-10-03 08:30+0200\n"
 "Last-Translator: Alexandre Fayolle <alexandre.fayolle@free.fr>\n"
 "Language-Team: French <FR@li.org>\n"
 "Language: fr\n"
@@ -39,7 +38,7 @@ msgid "Artisan pour"
 msgstr "Artisan pour"
 
 msgid "Candidates:"
-msgstr ""
+msgstr "Candidats :"
 
 msgid "Change"
 msgstr "Change"
@@ -57,7 +56,7 @@ msgid "Commande_plural"
 msgstr "Commandes"
 
 msgid "Commandes"
-msgstr ""
+msgstr "Commandes"
 
 msgid "Compte"
 msgstr "Compte"
@@ -81,7 +80,7 @@ msgid "FabriqueAvecMat_plural"
 msgstr "Fabriqués avec Matériaux"
 
 msgid "Identity of the Personne to merge"
-msgstr ""
+msgstr "Identité de la personne à fusionner"
 
 msgid "Intervenant"
 msgstr "Intervenant"
@@ -324,7 +323,7 @@ msgid "Travail_plural"
 msgstr "Travaux"
 
 msgid "True if quantite is \"plusieurs\""
-msgstr ""
+msgstr "Vrai si la quantité est \"plusieurs\""
 
 msgid "Vendeur"
 msgstr "Vendeur"
@@ -427,7 +426,7 @@ msgid "artisan_object"
 msgstr "travail"
 
 msgid "attributes table view"
-msgstr ""
+msgstr "vue table d'attributs"
 
 msgid "avec_mat"
 msgstr "avec matériaux"
@@ -515,7 +514,7 @@ msgid "commandement"
 msgstr "commandement"
 
 msgid "commandes_tab"
-msgstr ""
+msgstr "Commandes"
 
 msgid "composee_de"
 msgstr "composée de"
@@ -625,19 +624,19 @@ msgid "creating Vendeur (Vendeur vendeur Personne %(linkto)s)"
 msgstr ""
 
 msgid "ctxcomponents_mergepersonne"
-msgstr ""
+msgstr "fusion personnes"
 
 msgid "ctxcomponents_mergepersonne_description"
 msgstr ""
 
 msgid "ctxcomponents_myosotis.similar_materiaux"
-msgstr ""
+msgstr "matériaux similaires"
 
 msgid "ctxcomponents_myosotis.similar_materiaux_description"
 msgstr ""
 
 msgid "ctxcomponents_myosotis.similar_parures"
-msgstr ""
+msgstr "parures similaires"
 
 msgid "ctxcomponents_myosotis.similar_parures_description"
 msgstr ""
@@ -793,7 +792,7 @@ msgid "duree"
 msgstr "durée"
 
 msgid "excel entities export"
-msgstr ""
+msgstr "export excel"
 
 msgctxt "Vendeur"
 msgid "expression"
@@ -977,10 +976,10 @@ msgstr "parure"
 
 #, python-format
 msgid "merge (keeping %s)"
-msgstr ""
+msgstr "fusionner (en gardant %s)"
 
 msgid "merge personnes"
-msgstr ""
+msgstr "fusion"
 
 msgid "monnaie"
 msgstr "monnaie"
@@ -1025,7 +1024,7 @@ msgid "nb_moyen_transport"
 msgstr "nombre de moyen de transport"
 
 msgid "no personne found"
-msgstr ""
+msgstr "aucune personne trouvée"
 
 msgid "nom"
 msgstr "nom"
@@ -1352,19 +1351,19 @@ msgid "quantite"
 msgstr "quantité"
 
 msgid "quantite_plusieurs"
-msgstr ""
+msgstr "quantité vaut \"plusieurs\""
 
 msgctxt "AchatFabrication"
 msgid "quantite_plusieurs"
-msgstr ""
+msgstr "quantité vaut \"plusieurs\""
 
 msgctxt "AchatMateriaux"
 msgid "quantite_plusieurs"
-msgstr ""
+msgstr "quantité vaut \"plusieurs\""
 
 msgctxt "AchatPretPorter"
 msgid "quantite_plusieurs"
-msgstr ""
+msgstr "quantité vaut \"plusieurs\""
 
 msgid "rattache_a"
 msgstr "rattaché à"
@@ -1725,7 +1724,7 @@ msgid "vendeurs_object"
 msgstr "transaction"
 
 msgid "vient de la base Paradox"
-msgstr ""
+msgstr "vient de la base Paradox"
 
 msgid "ville"
 msgstr "ville"
