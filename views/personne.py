@@ -295,5 +295,6 @@ def js_merge_personnes(self, eid, other_eid):
         rql = 'SET X %s P1 WHERE X %s P2, P1 eid %%(p1)s, P2 eid %%(p2)s' % (rtype, rtype)
         rset = self._cw.execute(rql, {'p1': eid, 'p2': other_eid})
         self.info('merged %d relations %s', len(rset), rtype)
-    self.info('delete %s', p2.identite)
+    self.info('delete %s (%s)', p2.identite, p2.eid)
+    self._cw.execute('DELETE Personne P WHERE P eid %(eid)s', {'eid': p2.eid})
     return 
