@@ -77,7 +77,7 @@ class TabPersonneIntervention(tabs.EntityRelationView):
         subst = {'eid': entity.eid}
         rql = ('Any T, I  WHERE T intervenants I, I intervenant X, X eid %(eid)s')
         rset = self._cw.execute(rql, subst)
-        self.wview('table', rset, 'null', cellvids={0:'incontext', 1:'intervenant_flags'}, title=_('Intervient sur'),
+        self.wview('table', rset, 'null', cellvids={0:'outofcontext', 1:'intervenant_flags'}, title=_('Intervient sur'),
                    )
 
 class TabPersonneDestinataire(tabs.EntityRelationView):
@@ -91,7 +91,7 @@ class TabPersonneDestinataire(tabs.EntityRelationView):
         subst = {'eid': entity.eid}
         rql = 'Any T, A WHERE T destinataires D, T achat A, D destinataire P, P eid %(eid)s'
         rset = self._cw.execute(rql, subst)
-        self.wview('table', rset, 'null', title=_('Destinataire de'),)
+        self.wview('table', rset, 'null', title=_('Destinataire de'), cellvids={0: 'outofcontext'})
 
 class TabPersonneArtisan(tabs.EntityRelationView):
     __regid__ = 'tab_personne_artisan'
@@ -102,9 +102,9 @@ class TabPersonneArtisan(tabs.EntityRelationView):
     def cell_call(self, row, col):
         entity = self.cw_rset.get_entity(row, col)
         subst = {'eid': entity.eid}
-        rql = 'Any D, T WHERE T travaux D, D tache I, D artisan P, P eid %(eid)s'
+        rql = 'Any T, I, PRIX, T WHERE T travaux D, D tache I, D salaire_argent PRIX?, D artisan P, P eid %(eid)s'
         rset = self._cw.execute(rql, subst)
-        self.wview('table', rset, 'null', title=_('Artisan pour'),)
+        self.wview('table', rset, 'null', title=_('Artisan pour'), cellvids={0: 'outofcontext', 3: 'transaction_achats'})
 
 class TabPersonneVendeur(tabs.EntityRelationView):
     __regid__ = 'tab_personne_vendeur'
@@ -115,9 +115,9 @@ class TabPersonneVendeur(tabs.EntityRelationView):
     def cell_call(self, row, col):
         entity = self.cw_rset.get_entity(row, col)
         subst = {'eid': entity.eid}
-        rql = 'Any V, T WHERE T vendeurs V, V vendeur P, P eid %(eid)s'
+        rql = 'Any T, A WHERE T vendeurs V, V vendeur P, P eid %(eid)s, T achat A'
         rset = self._cw.execute(rql, subst)
-        self.wview('table', rset, 'null', title=_('Vendeur'),)
+        self.wview('table', rset, 'null', title=_('Vendeur'), cellvids={0: 'outofcontext'})
 
 
 class TabPersonneRattachement(tabs.EntityRelationView):
@@ -237,7 +237,7 @@ class MergeComponent(component.EntityCtxComponent):
         w(u'<h5>%s</h5>' % self._cw._('Identity of the Personne to merge'))
         w(u'<input  type="hidden" id="personneeid" value="%s"/>' % entity.eid)
         w(u'<input id="acmergepersonne" type="text" class="widget" cubicweb:dataurl="%s" '
-          u'cubicweb:loadtype="auto" cubicweb:wdgtype="RestrictedSuggestField" name="selected-personne"/>'
+          u'cubicweb:loadtype="auto" cubicweb:wdgtype="LazySuggestField" name="selected-personne"/>'
           % xml_escape(self._cw.build_url('json', fname='unrelated_merge_personnes',
                                           arg=entity.eid)))
         w(u'<div id="personne_entities_holder"></div>')

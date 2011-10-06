@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 from cubicweb.view import EntityView
 from cubicweb.web.views import tabs, primary, basecontrollers
-from cubicweb.selectors import is_instance, one_line_rset
-from cubicweb.web.views.tableview import EntityAttributesTableView
+from cubicweb.selectors import is_instance, one_line_rset, multi_columns_rset
+from cubicweb.web.views.tableview import EntityAttributesTableView, TableView
 
 class TransactionPrimaryView(primary.PrimaryView):
     __select__ = primary.PrimaryView.__select__ & is_instance('Transaction')
@@ -11,26 +11,52 @@ class TransactionTableView(EntityAttributesTableView):
     __select__ = EntityAttributesTableView.__select__ & is_instance('Transaction')
     title = 'table transaction'
     __regid__ = 'myosotis.transaction.attributestableview'
-    columns = ('transaction', 'achats', 'destinataires', 'prix', 'date', 'pagination', 'date_ordre', 'date_recette', )
+    columns = ('transaction', 'occasion', 'achats', 'destinataires', 'prix', 'date', 'pagination', 'date_ordre', 'date_recette', )
 
     def build_transaction_cell(self, entity):
         return entity.view('incontext')
+    def build_occasion_cell(self, entity):
+        return self._cw.view('incontext',
+                             entity.related('occasion'), 'null')
 
     def build_achats_cell(self, entity):
         return self._cw.view('list', entity.related('achat'), 'null')
         #return u', '.join([e.view('incontext') for e in entity.achat])
 
     def build_prix_cell(self, entity):
-        prix = entity.prix_ensemble
-        if prix:
-            return prix[0].dc_title()
-        return u''
+        return self._cw.view('textincontext',
+                             entity.related('prix_ensemble'), 'null')
+        ## prix = entity.prix_ensemble
+        ## if prix:
+        ##     return prix[0].dc_title()
+        ## return u''
 
     def build_destinataires_cell(self, entity):
         return self._cw.view('list', entity.related('destinataires'), 'null')
 
+class TransactionAchatsView(EntityView):
+    __select__ = one_line_rset & EntityView.__select__ & is_instance('Transaction')
+    __regid__ = 'transaction_achats'
+    def entity_call(self, entity):
+        return self.wview('list', entity.related('achat'), 'null')
+
+class TransactionDestinatairesView(EntityView):
+    __select__ = one_line_rset & EntityView.__select__ & is_instance('Transaction')
+    __regid__ = 'transaction_destinataires'
+    def entity_call(self, entity):
+        return self.wview('list', entity.related('destinataires'), 'null')
+    
+
+## class TransactionTableView2(EntityView):
+##     __select__ = EntityView.__select__ & is_instance('Transaction') & multi_columns_rset(1)
+##     title = 'table transaction2'
+##     __regid__ = 'myosotis.transaction.tableview'
+
+##     def call(self, **kwargs):
+##         self.wview('table'
+
 class VendeurTableView(EntityAttributesTableView):
-    __select__ = EntityAttributesTableView.__select__ & is_instance('Vendeur')
+    __select__ = EntityAttributesTableView.__select__ & is_instance('Vendeur') 
     __regid__ = 'attributestableview'
     columns = ('vendeur', 'expression')
 
