@@ -3,16 +3,16 @@ from cubicweb.entities import AnyEntity, fetch_config
 _ = unicode
 class Transaction(AnyEntity):
     __regid__ = 'Transaction'
-    fetch_attrs, fetch_order = fetch_config(('pagination','date', 'date_ordre', 'date_recette'))
+    fetch_attrs, fetch_order = fetch_config(('pagination','date', 'date_ordre', 'date_recette', 'occasion', 'lieu', 'prix_ensemble', ))
     def dc_title(self):
-        self.complete()
+        #self.complete()
         if self.date is None:
             date = _('pas de date')
         else:
             date = self.date
         return u'p. %s [n° %d, %s]' % (self.pagination, self.eid, date,)
     def dc_long_title(self):
-        self.complete()
+        #self.complete()
         if self.date is None:
             date = _('pas de date')
         else:
@@ -46,7 +46,8 @@ class Intervenant(AnyEntity):
                                              'par_la_main',
                                              'present',
                                              'delivre_a',
-                                             'fait_compte_avec'))
+                                             'fait_compte_avec',
+                                             'intervenant'))
     def dc_title(self):
         return self.intervenant[0].dc_title()
 

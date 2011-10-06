@@ -1,12 +1,16 @@
 # -*- coding: utf-8 -*-
 from cubicweb.entities import AnyEntity, fetch_config
 
+class Monnaie(AnyEntity):
+    __regid__ = 'Monnaie'
+    fetch_attrs, fetch_order = fetch_config(['nom', 'type'])
+
 class Prix(AnyEntity):
     __regid__ = 'Prix'
-    fetch_attrs, fetch_order = fetch_config(('livres', 'sous', 'deniers', 'florins', 'gros', 'sous_florins', 'denier_florins'))
+    fetch_attrs, fetch_order = fetch_config(('livres', 'sous', 'deniers', 'florins', 'gros', 'sous_florins', 'denier_florins', 'monnaie'))
 
     def dc_title(self):
-        self.complete()
+#        self.complete()
         monnaie = self.monnaie[0]
 #        return u'%s %s' % (self.float_value, monnaie.nom)
         if monnaie.type == u'Livre/Sous/Denier':
