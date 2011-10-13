@@ -33,7 +33,7 @@ class PersonneTab(tabs.PrimaryTab):
                'X is Occupation, '
                'X personne P, '
                'P eid %(eid)s, '
-               'X compte C, '
+               'X compte C?, '
                'X pagination F, '
                'X libelle L, '
                'X valeur V, '
