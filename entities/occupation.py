@@ -3,4 +3,4 @@ _ = unicode
 class Occupation(AnyEntity):
     __regid__ = 'Occupation'
     def dc_title(self):
-        return '%s : %s' % (self.libelle or '?' , self.valeur or '')
+        return u'%s : %s' % (self.libelle or '?' , self.valeur or '')
