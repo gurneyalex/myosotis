@@ -1,6 +1,45 @@
 # -*- coding: utf-8 -*-
-from cubicweb.web.facet import RelationFacet, RQLPathFacet
+from cubicweb.web.facet import RelationFacet, RQLPathFacet, AttributeFacet, DateRangeFacet
 from cubicweb.selectors import is_instance
+
+class CompteType(AttributeFacet):
+    __regid__ = 'compte-type'
+    __select__ = AttributeFacet.__select__ & is_instance('Compte')
+    rtype = 'type_compte'
+    order = 1
+
+class CompteStart(DateRangeFacet):
+    __regid__ = 'compte-start'
+    __select__ = AttributeFacet.__select__ & is_instance('Compte')
+    rtype = 'debut'
+    order = 2
+class CompteEnd(DateRangeFacet):
+    __regid__ = 'compte-end'
+    __select__ = AttributeFacet.__select__ & is_instance('Compte')
+    rtype = 'fin'
+    order = 3 
+
+class MateriauxType(AttributeFacet):
+    __regid__ = 'materiaux-type'
+    __select__ = AttributeFacet.__select__ & is_instance('Materiaux')
+    rtype = 'type'
+
+class MateriauxFamille(AttributeFacet):
+    __regid__ = 'materiaux-famille'
+    __select__ = AttributeFacet.__select__ & is_instance('Materiaux')
+    rtype = 'famille'
+
+class ParureType(AttributeFacet):
+    __regid__ = 'parure-type'
+    __select__ = AttributeFacet.__select__ & is_instance('Parure')
+    rtype = 'type'
+    order=1
+
+class ParureNature(AttributeFacet):
+    __regid__ = 'parure-nature'
+    __select__ = AttributeFacet.__select__ & is_instance('Parure')
+    rtype = 'nature'
+    order=2
 
 class PersonneSexe(RQLPathFacet):
     __regid__ = 'personne-sexe'
@@ -26,7 +65,7 @@ class PersonneTitre(RQLPathFacet):
 ##     __select__  = RQLPathFacet.__select__ & is_instance('Personne')
 ##     path = ['O personne X', 'O libelle "occupation"', 'O valeur N']
 ##     filter_variable = 'N'
-    
+
 class TransactionInCompte(RelationFacet):
     __regid__ = 'transaction-compte'
     target_type = 'Compte'
