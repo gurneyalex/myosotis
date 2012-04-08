@@ -4,19 +4,26 @@ _ = unicode
 class Transaction(AnyEntity):
     __regid__ = 'Transaction'
     fetch_attrs, fetch_order = fetch_config(('pagination','date', 'date_ordre', 'date_recette', 'occasion', 'lieu', 'prix_ensemble', ))
-    def dc_title(self):
-        #self.complete()
+
+    @property
+    def _date(self):
         if self.date is None:
-            date = _('pas de date')
+            if self.date_ordre is None:
+                if self.date_recette is None:
+                    date = _('pas de date')
+                else:
+                    date = self.date_recette
+            else:
+                date = self.date_ordre
         else:
             date = self.date
+        return date
+    
+    def dc_title(self):
+        date = self._date
         return u'p. %s [n° %d, %s]' % (self.pagination, self.eid, date,)
     def dc_long_title(self):
-        #self.complete()
-        if self.date is None:
-            date = _('pas de date')
-        else:
-            date = self.date
+        date = self._date
         return u'%s p. %s [n° %d, %s]' % ( self.compte[0].inventaire, self.pagination, self.eid, date,)
 
     def get_best_date(self):
