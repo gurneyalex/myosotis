@@ -1,5 +1,5 @@
 from logilab.mtconverter import xml_escape
-
+import datetime as dt
 from cubicweb.view import EntityView
 from cubicweb.web.views import primary
 from cubicweb.web.views import baseviews
@@ -138,11 +138,11 @@ class CompteICalendarableAdapter(EntityAdapter):
 
     @property
     def start(self):
-        return self.entity.debut
+        return self.entity.debut or dt.date(1297,1,1)
 
     @property
     def stop(self):
-        return self.entity.fin
+        return self.entity.fin or dt.date(1297,1,1)
 
 ## class CompteTimeline(timeline.TimelineView):
 ##     __regid__ = 'compte.timeline'
