@@ -30,3 +30,10 @@ class Prix(AnyEntity):
         else:
             return self.monnaie_or or 0
 
+
+class Change(AnyEntity):
+    __regid__ = 'Change'
+    def dc_title(self):
+        prix_depart = self.prix_depart[0]
+        prix_converti = self.prix_converti[0]
+        return u"%s -> %s" % (prix_depart.monnaie[0].dc_title(), prix_converti.monnaie[0].dc_title())

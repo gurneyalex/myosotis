@@ -130,8 +130,8 @@ class AchatPretPorter(EntityType):
 class Change(EntityType):
     #dans_compte = String(maxsize=255, fulltextindexed=True) # dummy, to help data import
     #compte = SubjectRelation('Compte', cardinality='?*')
-    prix_depart = SubjectRelation('Prix', cardinality='??')
-    prix_converti = SubjectRelation('Prix', cardinality='??')
+    prix_depart = SubjectRelation('Prix', cardinality='1?', composite="subject")
+    prix_converti = SubjectRelation('Prix', cardinality='1?', composite="subject")
 
 
 class FabriqueAvecMat(EntityType):
