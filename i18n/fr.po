@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: myosotis-2.0\n"
-"PO-Revision-Date: 2011-10-03 08:30+0200\n"
+"PO-Revision-Date: 2012-05-18 15:30+0200\n"
 "Last-Translator: Alexandre Fayolle <alexandre.fayolle@free.fr>\n"
 "Language-Team: French <FR@li.org>\n"
 "Language: fr\n"
@@ -370,7 +370,7 @@ msgid "achat_object"
 msgstr "transaction"
 
 msgid "add Compte change Change subject"
-msgstr ""
+msgstr "Change"
 
 msgid "add Destinataire destinataire Personne object"
 msgstr ""
@@ -382,28 +382,28 @@ msgid "add Parure composee_de MateriauxParure subject"
 msgstr ""
 
 msgid "add Transaction achat AchatFabrication subject"
-msgstr ""
+msgstr "Achat Fabrication"
 
 msgid "add Transaction achat AchatMateriaux subject"
-msgstr ""
+msgstr "Achat Matériaux"
 
 msgid "add Transaction achat AchatPretPorter subject"
-msgstr ""
+msgstr "Achat Prêt à Porter"
 
 msgid "add Transaction change Change subject"
-msgstr ""
+msgstr "Change"
 
 msgid "add Transaction destinataires Destinataire subject"
-msgstr ""
+msgstr "Destinataire"
 
 msgid "add Transaction intervenants Intervenant subject"
-msgstr ""
+msgstr "Intervenant"
 
 msgid "add Transaction travaux Travail subject"
-msgstr ""
+msgstr "Travail"
 
 msgid "add Transaction vendeurs Vendeur subject"
-msgstr ""
+msgstr "Vendeur"
 
 msgid "add Travail artisan Personne object"
 msgstr ""
