@@ -20,6 +20,8 @@
 from yams.buildobjs import (EntityType, String, RichString, Float, SubjectRelation,
                             Int, Boolean, Bytes, Datetime, Date,
                             RichString, RelationDefinition)  #pylint:disable-msg=E0611
+
+_ = unicode
 from cubicweb.schema import RQLVocabularyConstraint
 # TODO:
 # * vérifier les cardinalites
@@ -258,6 +260,7 @@ class Occasion(EntityType):
     remarques = RichString(fulltextindexed=True, default_format='text/rest')
 
 
+
 class Prix(EntityType):
     monnaie = SubjectRelation('Monnaie', cardinality='1*', inlined=True)
     livres = Int()
@@ -269,4 +272,6 @@ class Prix(EntityType):
     denier_florins = Float()
     monnaie_or = Float()
     conversion = Float()
+    source = String(vocabulary=[_('direct'), _('conv_transaction'),
+                                _('conv_compte'), _('conv_voisin'), _('conv_externe')])
 
