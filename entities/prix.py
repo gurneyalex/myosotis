@@ -133,3 +133,12 @@ class Change(AnyEntity):
             return prix_float / ratio, self.eid_monnaie_depart
         else:
             raise ValueError(u'Bad Monnaie %s' % monnaie)
+
+    @property
+    def ratio(self):
+        p1 = self.prix_converti[0].float_value
+        p2 = self.prix_depart[0].float_value
+        if p2 == 0:
+            return -1
+        ratio = p1 / p2
+        return ratio
