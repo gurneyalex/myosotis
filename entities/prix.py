@@ -59,6 +59,7 @@ class Prix(AnyEntity):
     def calcule_conversion(self, monnaie_cible, update=False):
         mode = None
         conversion = None
+        used_changes = []
         if self.monnaie[0].nom == monnaie_cible.nom:
             mode = u'direct'
             conversion = self.float_value
@@ -71,6 +72,7 @@ class Prix(AnyEntity):
                     monnaie = self._get_monnaie()
                     for comp in path:
                         change = comp[-1][-1] # comp is (monn1_eid, monn2_eid, (monn1_eid, monn2_eid, change))
+                        used_changes.append(change)
                         conversion, monnaie = change.change(conversion, monnaie)
                     break
             else:
@@ -78,6 +80,10 @@ class Prix(AnyEntity):
                 conversion = None
         if update:
             self.set_attributes(conversion=conversion, source=mode)
+            if used_changes:
+                self.set_relations(changes=used_changes)
+            else:
+                self.set_relations(changes=None)
         return mode, conversion
 
     def _search_changes(self):

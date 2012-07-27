@@ -275,3 +275,4 @@ class Prix(EntityType):
     source = String(vocabulary=[_('direct'), _('conv_transaction'),
                                 _('conv_compte'), _('conv_voisin'), _('conv_externe')])
 
+    changes = SubjectRelation('Change', cardinality='**')
