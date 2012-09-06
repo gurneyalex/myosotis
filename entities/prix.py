@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import pprint
+import codecs
 
 from cubicweb.entities import AnyEntity, fetch_config
 
@@ -42,8 +43,8 @@ class Prix(AnyEntity):
         OR EXISTS(T intervenants I1, I1 prix_valet P) OR EXISTS(T intervenants I2, I2 prix_transport P)'''
         rset = self._cw.execute(rql, {'eid': self.eid})
         if len(rset) == 0:
-            with open('prix_transaction.err', 'a') as f:
-                f.write('no transaction found for prix %s\n' % (self.eid))
+            with codecs.open('prix_transaction.err', 'a', 'utf-8') as f:
+                f.write(u'no transaction found for prix %s\n' % (self.eid))
             return None
         elif len(rset) == 1:
             return rset.get_entity(0, 0)
@@ -51,8 +52,8 @@ class Prix(AnyEntity):
             transactions = list(rset.entities())
             comptes = set(trans.compte[0].eid for trans in transactions)
             if len(comptes) != 1:
-                with open('prix_transaction.err', 'a') as f:
-                    f.write("multiple comptes found for prix %s:  %s\n" % (self.eid, list(comptes)))
+                with codecs.open('prix_transaction.err', 'a', 'utf-8') as f:
+                    f.write(u"multiple comptes found for prix %s:  %s\n" % (self.eid, list(comptes)))
             return transactions[0]
              #raise ValueError('too many transactions found for prix %s: %s' % (self.eid, [t.eid for t in rset.entities()]))
 
@@ -101,9 +102,42 @@ class Prix(AnyEntity):
 
     def _get_change_path(self, changes, monnaie_cible):
         monnaie_depart = self._get_monnaie()
+        # XXX what happens if several different changes for the same moneys are available
         arcs = [(change.eid_monnaie_depart, change.eid_monnaie_converti, change) for change in changes]
+        arc_count = {}
+        for eid1, eid2, change in arcs:
+            if eid1 > eid2:
+                eid1, eid2 = eid2, eid1
+                ratio = change.ratio
+            else:
+                ratio = 1. / change.ratio
+            arc_count.setdefault((eid1, eid2), {}).setdefault(ratio, []).append(change)
+        #pprint.pprint(arc_count)
         path = dijkstra(arcs, monnaie_depart, monnaie_cible)
+        for comp in path:
+            eid1, eid2, change = comp[-1]# comp is (monn1_eid, monn2_eid, (monn1_eid, monn2_eid, change))
+            if eid1 > eid2:
+                eid1, eid2 = eid2, eid1
+            changes = arc_count[(eid1, eid2)]
+            if len(changes) > 1:
+                self.warning('different changes for %s -> %s : %s', eid1, eid2, changes)
+                with codecs.open('multichanges.txt', 'a', 'utf-8') as f:
+                    f.write(u'Prix %s:\n' % self.eid)
+                    ratios = []
+                    for _changes in changes.itervalues():
+                        for c in _changes:
+                            ratio, _eid = c.change(1., eid2)
+                            monnaie1 = self._cw.entity_from_eid(eid1)
+                            monnaie2 = self._cw.entity_from_eid(eid2)
+                            msg = u'1 %s -> %f %s' % (monnaie1.dc_title(),
+                                                     ratio,
+                                                     monnaie2.dc_title())
+                            f.write(u'%d %s\n' % (c.eid, msg))
+                            ratios.append(ratio)
+                    f.write(u'ratio max/min: %.2f\n\n' % (max(ratios) / min(ratios)))
+                print 'Prix %d %.2f' % (self.eid, max(ratios) / min(ratios))
         return path
+
     def _get_monnaie(self):
         return self.monnaie[0].eid
 
@@ -114,6 +148,11 @@ class Change(AnyEntity):
         prix_depart = self.prix_depart[0]
         prix_converti = self.prix_converti[0]
         return u"%s -> %s" % (prix_depart.monnaie[0].dc_title(), prix_converti.monnaie[0].dc_title())
+
+    def dc_long_title(self):
+        prix_depart = self.prix_depart[0]
+        prix_converti = self.prix_converti[0]
+        return u"1 %s -> %f %s" % (prix_depart.monnaie[0].dc_title(), self.ratio, prix_converti.monnaie[0].dc_title())
 
     @property
     def eid_monnaie_depart(self):

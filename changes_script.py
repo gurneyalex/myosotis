@@ -1,6 +1,11 @@
 
 import pprint
 import codecs
+
+query = 'DELETE P changes C WHERE P is Prix'
+rql(query)
+commit()
+
 def find_invalid_changes(logfile_name):
     changes = rql('Any C WHERE C is Change')
     with codecs.open(logfile_name, 'w', 'utf-8') as log:
