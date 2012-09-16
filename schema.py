@@ -253,6 +253,7 @@ class Materiaux(EntityType):
 class Monnaie(EntityType):
     nom = String(maxsize=255, required=True, fulltextindexed=True)
     type = String(required=True, vocabulary=['Livre/Sous/Denier', 'Florin/Gros', 'Or'])
+    nb_gros = Float()
 
 class Occasion(EntityType):
     type = String(maxsize=255, required=True, fulltextindexed=True)
@@ -267,6 +268,7 @@ class Prix(EntityType):
     sous = Int()
     deniers = Float()
     florins = Float()
+    florin_ad = Float(description="nombre de deniers(?) dans un 'florin'")
     gros = Float()
     sous_florins = Int()
     denier_florins = Float()

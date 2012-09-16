@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
+from __future__ import division
 import pprint
 import codecs
+import math
 
 from cubicweb.entities import AnyEntity, fetch_config
 
@@ -19,23 +21,38 @@ class Prix(AnyEntity):
         monnaie = self.monnaie[0]
 #        return u'%s %s' % (self.float_value, monnaie.nom)
         if monnaie.type == u'Livre/Sous/Denier':
-            return u'%s£ %ss %sd %s' % (self.livres or 0 , self.sous or 0, self.deniers or 0, monnaie.nom)
+            return u'%s£ %ss %.2fd %s' % (self.livres or 0 , self.sous or 0, self.deniers or 0, monnaie.nom)
         elif monnaie.type == u'Florin/Gros':
-            return u'%sf %sg %ss %sd %s' % (self.florins or 0, self.gros or 0, self.sous_florins or 0, self.denier_florins or 0, monnaie.nom)
+            if self.florin_ad:
+                ad = u' ad %.1f' % self.florin_ad
+            else:
+                ad = u''
+            return u'%sf %sg %ss %.2fd %s%s' % (self.florins or 0, 
+                                                self.gros or 0, 
+                                                self.sous_florins or 0, 
+                                                self.denier_florins or 0, 
+                                                monnaie.nom, 
+                                                ad)
         else:
-            return u'%s %s' % (self.monnaie_or, monnaie.nom)
+            return u'%.2f %s' % (self.monnaie_or, monnaie.nom)
 
     @property
     def float_value(self):
         monnaie = self.monnaie[0]
         if monnaie.type == u'Livre/Sous/Denier':
-            return (self.deniers or 0) + 12*((self.sous or 0) + 20*(self.livres or 0))
+            return (self.deniers or 0.) + 12.*((self.sous or 0.) + 20.*(self.livres or 0))
         elif monnaie.type == u'Florin/Gros': # XXX
-            return ((self.denier_florins or 0)/20. + (self.sous_florins or 0) + (self.gros or 0))/12. + (self.florins or 0)
+            if not (self.denier_florins or self.sous_florins or self.gros):
+                return self.florins or 0.
+            elif self.florin_ad:
+                ad = self.florin_ad
+            else:
+                ad = self.monnaie[0].nb_gros
+            return self.florins or 0. + ((self.gros or 0.) + (self.denier_florins or 0.) + (self.sous_florins or 0.)*12) / ad
         else:
-            return self.monnaie_or or 0
+            return self.monnaie_or or 0.
 
-    def get_transaction(self):
+    def get_transaction(self, allow_multi=False):
         rql = '''Any T WHERE T is Transaction, P eid %(eid)s,
         EXISTS(T prix_ensemble P) OR EXISTS(T achat A1, A1 prix_unitaire P)
         OR EXISTS(T achat A2, A2 prix_total P)
@@ -45,16 +62,25 @@ class Prix(AnyEntity):
         if len(rset) == 0:
             with codecs.open('prix_transaction.err', 'a', 'utf-8') as f:
                 f.write(u'no transaction found for prix %s\n' % (self.eid))
-            return None
+            if allow_multi:
+                return []
+            else:
+                return None
         elif len(rset) == 1:
-            return rset.get_entity(0, 0)
+            if allow_multi:
+                return [rset.get_entity(0, 0)]
+            else:
+                return rset.get_entity(0, 0)
         else:
             transactions = list(rset.entities())
             comptes = set(trans.compte[0].eid for trans in transactions)
             if len(comptes) != 1:
                 with codecs.open('prix_transaction.err', 'a', 'utf-8') as f:
                     f.write(u"multiple comptes found for prix %s:  %s\n" % (self.eid, list(comptes)))
-            return transactions[0]
+            if allow_multi:
+                return transactions
+            else:
+                return transactions[0]
              #raise ValueError('too many transactions found for prix %s: %s' % (self.eid, [t.eid for t in rset.entities()]))
 
     def calcule_conversion(self, monnaie_cible, update=False):
@@ -120,12 +146,14 @@ class Prix(AnyEntity):
                 eid1, eid2 = eid2, eid1
             changes = arc_count[(eid1, eid2)]
             if len(changes) > 1:
+                change_list = []
                 self.warning('different changes for %s -> %s : %s', eid1, eid2, changes)
                 with codecs.open('multichanges.txt', 'a', 'utf-8') as f:
                     f.write(u'Prix %s:\n' % self.eid)
                     ratios = []
-                    for _changes in changes.itervalues():
+                    for ratio, _changes in sorted(changes.iteritems()):
                         for c in _changes:
+                            change_list.append((ratio, c))
                             ratio, _eid = c.change(1., eid2)
                             monnaie1 = self._cw.entity_from_eid(eid1)
                             monnaie2 = self._cw.entity_from_eid(eid2)
@@ -136,11 +164,34 @@ class Prix(AnyEntity):
                             ratios.append(ratio)
                     f.write(u'ratio max/min: %.2f\n\n' % (max(ratios) / min(ratios)))
                 print 'Prix %d %.2f' % (self.eid, max(ratios) / min(ratios))
+                # change_list contains the (ratio, change) sorted by increasing ratio
+                # we want to use the median ratio. 
+                nb_changes = len(change_list)
+                middle = nb_changes / 2.
+                index = int(math.floor(middle))
+                if index == middle:
+                    r1 = change_list[index][0]
+                    r2 = change_list[index+1][0]
+                    if r1 != r2:
+                        if len(changes[r2]) > len(change[r1]):
+                            index = index + 1
+                        elif len(changes[r2]) == len(change[r1]):
+                            pass
+
         return path
 
     def _get_monnaie(self):
         return self.monnaie[0].eid
 
+    def equal(self, other):
+        if self._get_monnaie() == other._get_monnaie():
+            for att in ('livres', 'sous', 'deniers', 'florins', 'gros', 'sous_florins', 'denier_florins'):
+                val1 = getattr(self, att) or None
+                val2 = getattr(other, att) or None
+                if val1 != val2:
+                    return False
+            return True
+        return False
 
 class Change(AnyEntity):
     __regid__ = 'Change'
@@ -152,7 +203,25 @@ class Change(AnyEntity):
     def dc_long_title(self):
         prix_depart = self.prix_depart[0]
         prix_converti = self.prix_converti[0]
-        return u"1 %s -> %f %s" % (prix_depart.monnaie[0].dc_title(), self.ratio, prix_converti.monnaie[0].dc_title())
+        return u"1 %s -> %.2f %s" % (prix_depart.monnaie[0].dc_title(), self.ratio, prix_converti.monnaie[0].dc_title())
+
+    def dc_long_title2(self):
+        prix_depart = self.prix_depart[0]
+        prix_converti = self.prix_converti[0]
+        return u"%s -> %s" % (prix_depart.dc_title(), prix_converti.dc_title())
+    
+    @property
+    def date(self):
+        rql = 'Any X WHERE X change C, C eid %(eid)s'
+        rset = self._cw.execute(rql, {'eid': self.eid})
+        if rset:
+            entity = rset.get_entity(0, 0)
+            if entity.__regid__ == 'Transaction':
+                return entity._date
+            elif entity.__regid__ == 'Compte':
+                return entity.fin
+        return None
+                                
 
     @property
     def eid_monnaie_depart(self):
