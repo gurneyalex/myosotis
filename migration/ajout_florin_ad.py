@@ -35,7 +35,7 @@ def compute_ad_from_file(prix):
     for transaction in transactions:
         for ad, monnaie_eid in monnaies_ad.get(transaction.eid, []):
             if monnaie_prix == monnaie_eid:
-                print prix.monnaie[0].dc_title(), ad
+                print prix.monnaie[0].dc_title().encode('utf-8'), ad
                 rql('SET P florin_ad %(ad)s WHERE P eid %(eid)s', {'ad': ad, 'eid': prix.eid})
                 return True
     return False

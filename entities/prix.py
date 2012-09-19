@@ -4,6 +4,7 @@ import pprint
 import codecs
 import math
 
+from logilab.common.decorators import cached
 from cubicweb.entities import AnyEntity, fetch_config
 
 from cubes.myosotis.graph import dijkstra
@@ -11,6 +12,35 @@ from cubes.myosotis.graph import dijkstra
 class Monnaie(AnyEntity):
     __regid__ = 'Monnaie'
     fetch_attrs, fetch_order = fetch_config(['nom', 'type'])
+
+_PRIX_TRANSACTIONS={}
+def get_all_prix_transactions(cw):
+    result = _PRIX_TRANSACTIONS
+    if result:
+        return result
+    print 'get_all_prix_transactions'
+    rql = '''(Any P, T WHERE T is Transaction, P is Prix, T prix_ensemble P)
+             UNION
+             (Any P, T WHERE T is Transaction, P is Prix, T achat A1, A1 prix_unitaire P)
+             UNION
+             (Any P, T WHERE T is Transaction, P is Prix, T achat A2, A2 prix_total P)
+             UNION
+             (Any P, T WHERE T is Transaction, P is Prix, T travaux TR1, TR1 salaire_argent P)
+             UNION
+             (Any P, T WHERE T is Transaction, P is Prix, T travaux TR2, TR2 salaire_aides P)
+             UNION
+             (Any P, T WHERE T is Transaction, P is Prix, T intervenants I1, I1 prix_valet P)
+             UNION
+             (Any P, T WHERE T is Transaction, P is Prix, T intervenants I2, I2 prix_transport P)'''
+    rset = cw.execute(rql)
+    print len(rset)
+    for p_eid, t_eid in rset:
+        if p_eid not in result:
+            result[p_eid] = [t_eid]
+        else:
+            result[p_eid].append(t_eid)
+    print len(result)
+    return result
 
 class Prix(AnyEntity):
     __regid__ = 'Prix'
@@ -24,7 +54,7 @@ class Prix(AnyEntity):
             return u'%s£ %ss %.2fd %s' % (self.livres or 0 , self.sous or 0, self.deniers or 0, monnaie.nom)
         elif monnaie.type == u'Florin/Gros':
             if self.florin_ad:
-                ad = u' ad %.1f' % self.florin_ad
+                ad = u' ad %.1f' % (self.florin_ad or self.monnaie[0].nb_gros)
             else:
                 ad = u''
             return u'%sf %sg %ss %.2fd %s%s' % (self.florins or 0, 
@@ -48,31 +78,39 @@ class Prix(AnyEntity):
                 ad = self.florin_ad
             else:
                 ad = self.monnaie[0].nb_gros
-            return self.florins or 0. + ((self.gros or 0.) + (self.denier_florins or 0.) + (self.sous_florins or 0.)*12) / ad
+            return self.florins or 0. + ((self.gros or 0.) + (self.denier_florins or 0.) + (self.sous_florins or 0.)*12) / (ad or self.monnaie[0].nb_gros)
         else:
             return self.monnaie_or or 0.
 
+    
+
     def get_transaction(self, allow_multi=False):
-        rql = '''Any T WHERE T is Transaction, P eid %(eid)s,
-        EXISTS(T prix_ensemble P) OR EXISTS(T achat A1, A1 prix_unitaire P)
-        OR EXISTS(T achat A2, A2 prix_total P)
-        OR EXISTS(T travaux TR1, TR1 salaire_argent P) OR EXISTS(T travaux TR2, TR2 salaire_aides P)
-        OR EXISTS(T intervenants I1, I1 prix_valet P) OR EXISTS(T intervenants I2, I2 prix_transport P)'''
-        rset = self._cw.execute(rql, {'eid': self.eid})
-        if len(rset) == 0:
+        prix_transactions = get_all_prix_transactions(self._cw)
+        if self.eid not in prix_transactions:
+            rql = '''Any T WHERE T is Transaction, P eid %(eid)s,
+            EXISTS(T prix_ensemble P) OR EXISTS(T achat A1, A1 prix_unitaire P)
+            OR EXISTS(T achat A2, A2 prix_total P)
+            OR EXISTS(T travaux TR1, TR1 salaire_argent P) OR EXISTS(T travaux TR2, TR2 salaire_aides P)
+            OR EXISTS(T intervenants I1, I1 prix_valet P) OR EXISTS(T intervenants I2, I2 prix_transport P)'''
+            rset = self._cw.execute(rql, {'eid': self.eid})
+            for eid, in rset:
+                prix_transactions.setdefault(self.eid, []).append(eid)
+        transaction_eids = prix_transactions.get(self.eid, [])
+        if len(transaction_eids) == 0:
             with codecs.open('prix_transaction.err', 'a', 'utf-8') as f:
                 f.write(u'no transaction found for prix %s\n' % (self.eid))
             if allow_multi:
                 return []
             else:
                 return None
-        elif len(rset) == 1:
+        elif len(transaction_eids) == 1:
             if allow_multi:
-                return [rset.get_entity(0, 0)]
+                return [self._cw.entity_from_eid(transaction_eids[0])]
             else:
-                return rset.get_entity(0, 0)
+                return self._cw.entity_from_eid(transaction_eids[0])
         else:
-            transactions = list(rset.entities())
+            rset = self._cw.execute('Any T WHERE T is Transaction, T eid in (%s)' % (','.join(str(eid) for eid in transaction_eids)))
+            transactions = [trans for trans in rset.entities()]
             comptes = set(trans.compte[0].eid for trans in transactions)
             if len(comptes) != 1:
                 with codecs.open('prix_transaction.err', 'a', 'utf-8') as f:
@@ -128,7 +166,6 @@ class Prix(AnyEntity):
 
     def _get_change_path(self, changes, monnaie_cible):
         monnaie_depart = self._get_monnaie()
-        # XXX what happens if several different changes for the same moneys are available
         arcs = [(change.eid_monnaie_depart, change.eid_monnaie_converti, change) for change in changes]
         arc_count = {}
         for eid1, eid2, change in arcs:
@@ -170,13 +207,13 @@ class Prix(AnyEntity):
                 middle = nb_changes / 2.
                 index = int(math.floor(middle))
                 if index == middle:
-                    r1 = change_list[index][0]
-                    r2 = change_list[index+1][0]
+                    r1 = change_list[index-1][0]
+                    r2 = change_list[index][0]
                     if r1 != r2:
-                        if len(changes[r2]) > len(change[r1]):
+                        if len(changes[r2]) > len(changes[r1]):
                             index = index + 1
-                        elif len(changes[r2]) == len(change[r1]):
-                            pass
+                        elif len(changes[r2]) == len(changes[r1]):
+                            index = index # XXX we should do something smart here
 
         return path
 
