@@ -4,7 +4,7 @@ _ = unicode
 
 class Personne(AnyEntity):
     __regid__ = 'Personne'
-    fetch_attrs, fetch_order = fetch_config(['identite', 'sexe', 'nom'])
+    fetch_attrs, cw_fetch_order = fetch_config(['identite', 'sexe', 'nom'])
 
 class Destinataire(AnyEntity):
     __regid__ = 'Destinataire'

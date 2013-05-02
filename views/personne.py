@@ -1,7 +1,7 @@
 # -*- coding: utf-8
 from cubicweb.view import EntityView
-from cubicweb.web.views import tabs, primary, basecontrollers
-from cubicweb.web import uicfg, stdmsgs, component, box, facet
+from cubicweb.web.views import uicfg, tabs, primary, basecontrollers, ajaxcontroller
+from cubicweb.web import stdmsgs, component, box, facet
 from cubicweb.selectors import is_instance, one_line_rset
 from cubicweb.web import action, component
 from logilab.common.decorators import monkeypatch
@@ -251,15 +251,13 @@ class MergeComponent(component.EntityCtxComponent):
 
 #XXX the following needs updating
 
-@monkeypatch(basecontrollers.JSonController)
-@basecontrollers.jsonize
+@ajaxcontroller.ajaxfunc(output_type='json')
 def js_unrelated_merge_personnes(self, eid):
     """return personne unrelated to an entity"""
     rql = 'Any T, N ORDERBY N WHERE T is Personne, T identite N, NOT T eid %(x)s'
     return [{'value': eid, 'label': identite}  for (eid, identite) in self._cw.execute(rql, {'x' : eid})]
 
-@monkeypatch(basecontrollers.JSonController)
-@basecontrollers.xhtmlize
+@ajaxcontroller.ajaxfunc(output_type='xhtml')
 def js_personne_entity_html(self, eid, name):
     rset = self._cw.execute('Any P WHERE P is Personne, P identite %(x)s, NOT P eid %(eid)s',
                             {'x': name, 'eid': eid})
@@ -277,7 +275,7 @@ def js_personne_entity_html(self, eid, name):
     return u' '.join(html)
 
 
-@monkeypatch(basecontrollers.JSonController)
+@ajaxcontroller.ajaxfunc()
 def js_merge_personnes(self, eid, other_eid):
     other_eid = int(other_eid)
     relations = ['receveur',

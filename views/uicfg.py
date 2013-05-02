@@ -1,4 +1,4 @@
-from cubicweb.web import uicfg
+from cubicweb.web.views import uicfg
 
 def setup_ui(vreg):
     _pvs = uicfg.primaryview_section

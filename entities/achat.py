@@ -62,7 +62,7 @@ class AchatMateriaux(AnyEntity):
 
 class FabriqueAvecMat(AnyEntity):
     __regid__ = 'FabriqueAvecMat'
-    fetch_attrs, fetch_order = fetch_config(['usage', 'type_mesure', 'quantite', 'unite', 'provenance_mesure', 'conversion', 'achat_matiere'])
+    fetch_attrs, cw_fetch_order = fetch_config(['usage', 'type_mesure', 'quantite', 'unite', 'provenance_mesure', 'conversion', 'achat_matiere'])
 
     def dc_title(self):
         return self.achat_matiere[0].dc_title()
@@ -73,7 +73,7 @@ class FabriqueAvecMat(AnyEntity):
 
 class MateriauxParure(AnyEntity):
     __regid__ = 'MateriauxParure'
-    fetch_attrs, fetch_order = fetch_config(['usage', 'type_mesure', 'quantite', 'unite', 'provenance_mesure', 'conversion', 'materiaux_achete' , 'materiaux'])
+    fetch_attrs, cw_fetch_order = fetch_config(['usage', 'type_mesure', 'quantite', 'unite', 'provenance_mesure', 'conversion', 'materiaux_achete' , 'materiaux'])
     def dc_title(self):
         return self.materiaux[0].dc_title()
 
@@ -123,7 +123,6 @@ class Materiaux(AnyEntity):
             return self.provenance[0].dc_title()
         return None
     @classmethod
-    def fetch_order(cls, attr, var):
+    def cw_fetch_order(cls, select, attr, var):
         if attr in ('type', 'famille', 'nom', 'couleur'):
-            return '%s ASC' % var
-        return None
+            select.add_sort_var(var, asc=True)

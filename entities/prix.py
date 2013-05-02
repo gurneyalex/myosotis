@@ -3,11 +3,11 @@ from cubicweb.entities import AnyEntity, fetch_config
 
 class Monnaie(AnyEntity):
     __regid__ = 'Monnaie'
-    fetch_attrs, fetch_order = fetch_config(['nom', 'type'])
+    fetch_attrs, cw_fetch_order = fetch_config(['nom', 'type'])
 
 class Prix(AnyEntity):
     __regid__ = 'Prix'
-    fetch_attrs, fetch_order = fetch_config(('livres', 'sous', 'deniers', 'florins', 'gros', 'sous_florins', 'denier_florins', 'monnaie'))
+    fetch_attrs, cw_fetch_order = fetch_config(('livres', 'sous', 'deniers', 'florins', 'gros', 'sous_florins', 'denier_florins', 'monnaie'))
 
     def dc_title(self):
 #        self.complete()

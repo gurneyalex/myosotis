@@ -4,7 +4,7 @@ from cubicweb.entities import AnyEntity, fetch_config
 
 class Parure(AnyEntity):
     __regid__ = 'Parure'
-    fetch_attrs, fetch_order = fetch_config(['nature', 'type', 'caracteristique'])
+    fetch_attrs, cw_fetch_order = fetch_config(['nature', 'type', 'caracteristique'])
     def dc_title(self):
         #self.complete()
         return u'%s %s'% (self.nature, self.caracteristique or '')
