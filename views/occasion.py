@@ -1,17 +1,15 @@
 from cubicweb.web.views import primary
 from cubicweb.selectors import is_instance
-from cubicweb.web.views.tableview import EntityAttributesTableView
+from cubicweb.web.views.tableview import EntityTableView, MainEntityColRenderer, RelationColRenderer, RelatedEntityColRenderer
 
-class OccasionTableView(EntityAttributesTableView):
-    __select__ = EntityAttributesTableView.__select__ & is_instance('Occasion')
+def get_lieu(e):
+    return e.lieu and e.lieu[0] or None
+
+class OccasionTableView(EntityTableView):
+    __select__ = EntityTableView.__select__ & is_instance('Occasion')
     __regid__ = 'myosotis.occasion.attributestableview'
     columns = ('type', 'date', 'lieu', 'remarques')
-
-    def build_lieu_cell(self, entity):
-        if entity.lieu:
-            return entity.lieu[0].view('incontext')
-        else:
-            return u''
-
-    def build_type_cell(self, entity):
-        return entity.view('incontext')
+    column_renderers = {'lieu': RelatedEntityColRenderer(vid='outofcontext',
+                                                        getrelated=get_lieu),
+                       'type': MainEntityColRenderer(vid='incontext'),
+                       }

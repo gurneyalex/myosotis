@@ -1,13 +1,11 @@
 from cubicweb.web.views import primary
 from cubicweb.selectors import is_instance
-from cubicweb.web.views.tableview import EntityAttributesTableView
+from cubicweb.web.views.tableview import EntityTableView, RelationColRenderer
 
-class ChangeTableView(EntityAttributesTableView):
-    __select__ = EntityAttributesTableView.__select__ & is_instance('Change')
+class ChangeTableView(EntityTableView):
+    __select__ = EntityTableView.__select__ & is_instance('Change')
     __regid__ = 'myosotis.change.attributestableview'
     columns = ('prix_depart', 'prix_converti')
-
-    def build_prix_depart_cell(self, entity):
-        return entity.prix_depart[0].dc_title()
-    def build_prix_converti_cell(self, entity):
-        return entity.prix_converti[0].dc_title()
+    column_renderers = {'prix_depart': RelationColRenderer(),
+                        'prix_converti': RelationColRenderer(),
+                        }

@@ -64,7 +64,7 @@ class TabPersonneCodest(EntityView):
         rql = 'Any P, COUNT(T) GROUPBY P ORDERBY 2 DESC WHERE T destinataires D, D destinataire P1, T destinataires D2, D2 destinataire P, NOT P identity P1, P1 eid %(eid)s'
         rset = self._cw.execute(rql, {'eid': entity.eid})
         self.wview('table', rset, 'null')
-        
+
 
 class TabPersonneIntervention(tabs.EntityRelationView):
     __regid__ = 'tab_personne_intervention'
@@ -295,4 +295,4 @@ def js_merge_personnes(self, eid, other_eid):
         self.info('merged %d relations %s', len(rset), rtype)
     self.info('delete %s (%s)', p2.identite, p2.eid)
     self._cw.execute('DELETE Personne P WHERE P eid %(eid)s', {'eid': p2.eid})
-    return 
+    return
