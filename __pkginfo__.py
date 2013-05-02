@@ -4,7 +4,7 @@
 modname = 'myosotis'
 distname = 'cubicweb-myosotis'
 
-numversion = (0, 2, 1)
+numversion = (0, 2, 2)
 version = '.'.join(str(num) for num in numversion)
 
 license = 'LGPL'
