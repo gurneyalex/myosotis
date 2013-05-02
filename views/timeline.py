@@ -41,5 +41,5 @@ class MyosotisTimelineJson(timeline.TimelineJsonView):
               }
     def build_event(self, entity):
         event =  super(MyosotisTimelineJson, self).build_event(entity)
-        event['color'] = self.colors[entity.type_compte.lower()]
+        event['color'] = self.colors.get(entity.type_compte.lower(), 'red')
         return event
