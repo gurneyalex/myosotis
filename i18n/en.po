@@ -30,6 +30,9 @@ msgstr ""
 msgid "Artisan pour"
 msgstr ""
 
+msgid "Candidates:"
+msgstr ""
+
 msgid "Change"
 msgstr ""
 
@@ -37,6 +40,15 @@ msgid "Change_plural"
 msgstr ""
 
 msgid "Changes"
+msgstr ""
+
+msgid "Commande"
+msgstr ""
+
+msgid "Commande_plural"
+msgstr ""
+
+msgid "Commandes"
 msgstr ""
 
 msgid "Compte"
@@ -60,6 +72,9 @@ msgstr ""
 msgid "FabriqueAvecMat_plural"
 msgstr ""
 
+msgid "Identity of the Personne to merge"
+msgstr ""
+
 msgid "Intervenant"
 msgstr ""
 
@@ -76,6 +91,9 @@ msgid "Lieu_plural"
 msgstr ""
 
 msgid "Materiaux"
+msgstr ""
+
+msgid "Materiaux similaires"
 msgstr ""
 
 msgid "MateriauxParure"
@@ -103,6 +121,9 @@ msgid "New AchatPretPorter"
 msgstr ""
 
 msgid "New Change"
+msgstr ""
+
+msgid "New Commande"
 msgstr ""
 
 msgid "New Compte"
@@ -171,6 +192,9 @@ msgstr ""
 msgid "Parure"
 msgstr ""
 
+msgid "Parure summary"
+msgstr ""
+
 msgid "Parure_plural"
 msgstr ""
 
@@ -195,7 +219,19 @@ msgstr ""
 msgid "Same caracteristique Parures"
 msgstr ""
 
+msgid "Same couleur Materiaux"
+msgstr ""
+
+msgid "Same nature Materiaux"
+msgstr ""
+
 msgid "Same nature Parures"
+msgstr ""
+
+msgid "Same provenance Materiaux"
+msgstr ""
+
+msgid "Same type Materiaux"
 msgstr ""
 
 msgid "Same type Parures"
@@ -211,6 +247,9 @@ msgid "This AchatPretPorter"
 msgstr ""
 
 msgid "This Change"
+msgstr ""
+
+msgid "This Commande"
 msgstr ""
 
 msgid "This Compte"
@@ -276,6 +315,9 @@ msgstr ""
 msgid "Travail_plural"
 msgstr ""
 
+msgid "True if quantite is \"plusieurs\""
+msgstr ""
+
 msgid "Vendeur"
 msgstr ""
 
@@ -320,6 +362,9 @@ msgctxt "AchatPretPorter"
 msgid "achat_object"
 msgstr ""
 
+msgid "add Compte change Change subject"
+msgstr ""
+
 msgid "add Destinataire destinataire Personne object"
 msgstr ""
 
@@ -336,6 +381,9 @@ msgid "add Transaction achat AchatMateriaux subject"
 msgstr ""
 
 msgid "add Transaction achat AchatPretPorter subject"
+msgstr ""
+
+msgid "add Transaction change Change subject"
 msgstr ""
 
 msgid "add Transaction destinataires Destinataire subject"
@@ -370,6 +418,9 @@ msgctxt "Personne"
 msgid "artisan_object"
 msgstr ""
 
+msgid "attributes table view"
+msgstr ""
+
 msgid "avec_mat"
 msgstr ""
 
@@ -384,10 +435,19 @@ msgctxt "FabriqueAvecMat"
 msgid "avec_mat_object"
 msgstr ""
 
-msgid "boxes_myosotis.similar_parures"
+msgid "base_paradox"
 msgstr ""
 
-msgid "boxes_myosotis.similar_parures_description"
+msgctxt "Compte"
+msgid "base_paradox"
+msgstr ""
+
+msgctxt "Personne"
+msgid "base_paradox"
+msgstr ""
+
+msgctxt "Transaction"
+msgid "base_paradox"
 msgstr ""
 
 msgid "carac_couleur"
@@ -418,6 +478,24 @@ msgctxt "Compte"
 msgid "change"
 msgstr ""
 
+msgctxt "Transaction"
+msgid "change"
+msgstr ""
+
+msgid "change_object"
+msgstr ""
+
+msgctxt "Change"
+msgid "change_object"
+msgstr ""
+
+msgid "change_str"
+msgstr ""
+
+msgctxt "Compte"
+msgid "change_str"
+msgstr ""
+
 msgid "changes_tab"
 msgstr ""
 
@@ -426,6 +504,9 @@ msgstr ""
 
 msgctxt "Intervenant"
 msgid "commandement"
+msgstr ""
+
+msgid "commandes_tab"
 msgstr ""
 
 msgid "composee_de"
@@ -445,7 +526,7 @@ msgstr ""
 msgid "compte"
 msgstr ""
 
-msgctxt "Change"
+msgctxt "Commande"
 msgid "compte"
 msgstr ""
 
@@ -500,6 +581,12 @@ msgstr ""
 msgid "creating AchatPretPorter (Transaction %(linkto)s achat AchatPretPorter)"
 msgstr ""
 
+msgid "creating Change (Compte %(linkto)s change Change)"
+msgstr ""
+
+msgid "creating Change (Transaction %(linkto)s change Change)"
+msgstr ""
+
 msgid "creating Destinataire (Destinataire destinataire Personne %(linkto)s)"
 msgstr ""
 
@@ -529,11 +616,22 @@ msgstr ""
 msgid "creating Vendeur (Vendeur vendeur Personne %(linkto)s)"
 msgstr ""
 
-msgid "dans_compte"
+msgid "ctxcomponents_mergepersonne"
 msgstr ""
 
-msgctxt "Change"
-msgid "dans_compte"
+msgid "ctxcomponents_mergepersonne_description"
+msgstr ""
+
+msgid "ctxcomponents_myosotis.similar_materiaux"
+msgstr ""
+
+msgid "ctxcomponents_myosotis.similar_materiaux_description"
+msgstr ""
+
+msgid "ctxcomponents_myosotis.similar_parures"
+msgstr ""
+
+msgid "ctxcomponents_myosotis.similar_parures_description"
 msgstr ""
 
 msgid "date"
@@ -567,6 +665,13 @@ msgstr ""
 
 msgctxt "Transaction"
 msgid "date_ordre"
+msgstr ""
+
+msgid "date_ordre_str"
+msgstr ""
+
+msgctxt "Commande"
+msgid "date_ordre_str"
 msgstr ""
 
 msgid "date_recette"
@@ -677,6 +782,9 @@ msgstr ""
 
 msgctxt "Travail"
 msgid "duree"
+msgstr ""
+
+msgid "excel entities export"
 msgstr ""
 
 msgctxt "Vendeur"
@@ -834,13 +942,6 @@ msgctxt "Prix"
 msgid "livres"
 msgstr ""
 
-msgid "maj_occupation"
-msgstr ""
-
-msgctxt "Personne"
-msgid "maj_occupation"
-msgstr ""
-
 msgid "materiaux"
 msgstr ""
 
@@ -864,6 +965,13 @@ msgstr ""
 
 msgctxt "Materiaux"
 msgid "materiaux_object"
+msgstr ""
+
+#, python-format
+msgid "merge (keeping %s)"
+msgstr ""
+
+msgid "merge personnes"
 msgstr ""
 
 msgid "monnaie"
@@ -908,6 +1016,9 @@ msgctxt "Intervenant"
 msgid "nb_moyen_transport"
 msgstr ""
 
+msgid "no personne found"
+msgstr ""
+
 msgid "nom"
 msgstr ""
 
@@ -944,6 +1055,13 @@ msgctxt "Intervenant"
 msgid "nombre_valets"
 msgstr ""
 
+msgid "numero"
+msgstr ""
+
+msgctxt "Commande"
+msgid "numero"
+msgstr ""
+
 msgid "occasion"
 msgstr ""
 
@@ -965,10 +1083,6 @@ msgid "occupation"
 msgstr ""
 
 msgctxt "Occupation"
-msgid "occupation"
-msgstr ""
-
-msgctxt "Personne"
 msgid "occupation"
 msgstr ""
 
@@ -1032,6 +1146,9 @@ msgctxt "Personne"
 msgid "personne_object"
 msgstr ""
 
+msgid "personne_relations"
+msgstr ""
+
 msgid "present"
 msgstr ""
 
@@ -1093,6 +1210,13 @@ msgstr ""
 
 msgctxt "Transaction"
 msgid "prix_partage"
+msgstr ""
+
+msgid "prix_str"
+msgstr ""
+
+msgctxt "Commande"
+msgid "prix_str"
 msgstr ""
 
 msgid "prix_total"
@@ -1219,6 +1343,21 @@ msgctxt "MateriauxParure"
 msgid "quantite"
 msgstr ""
 
+msgid "quantite_plusieurs"
+msgstr ""
+
+msgctxt "AchatFabrication"
+msgid "quantite_plusieurs"
+msgstr ""
+
+msgctxt "AchatMateriaux"
+msgid "quantite_plusieurs"
+msgstr ""
+
+msgctxt "AchatPretPorter"
+msgid "quantite_plusieurs"
+msgstr ""
+
 msgid "rattache_a"
 msgstr ""
 
@@ -1271,6 +1410,18 @@ msgstr ""
 msgid "remarques"
 msgstr ""
 
+msgctxt "AchatFabrication"
+msgid "remarques"
+msgstr ""
+
+msgctxt "AchatMateriaux"
+msgid "remarques"
+msgstr ""
+
+msgctxt "AchatPretPorter"
+msgid "remarques"
+msgstr ""
+
 msgctxt "Lieu"
 msgid "remarques"
 msgstr ""
@@ -1289,6 +1440,41 @@ msgstr ""
 
 msgctxt "Travail"
 msgid "remarques"
+msgstr ""
+
+msgid "remarques_format"
+msgstr ""
+
+msgctxt "AchatFabrication"
+msgid "remarques_format"
+msgstr ""
+
+msgctxt "AchatMateriaux"
+msgid "remarques_format"
+msgstr ""
+
+msgctxt "AchatPretPorter"
+msgid "remarques_format"
+msgstr ""
+
+msgctxt "Lieu"
+msgid "remarques_format"
+msgstr ""
+
+msgctxt "Occasion"
+msgid "remarques_format"
+msgstr ""
+
+msgctxt "Personne"
+msgid "remarques_format"
+msgstr ""
+
+msgctxt "Transaction"
+msgid "remarques_format"
+msgstr ""
+
+msgctxt "Travail"
+msgid "remarques_format"
 msgstr ""
 
 msgid "salaire_aides"
@@ -1391,6 +1577,20 @@ msgstr ""
 
 msgctxt "Personne"
 msgid "titre"
+msgstr ""
+
+msgid "transactions"
+msgstr ""
+
+msgctxt "Commande"
+msgid "transactions"
+msgstr ""
+
+msgid "transactions_object"
+msgstr ""
+
+msgctxt "Transaction"
+msgid "transactions_object"
 msgstr ""
 
 msgid "transactions_tab"
@@ -1514,6 +1714,9 @@ msgstr ""
 
 msgctxt "Vendeur"
 msgid "vendeurs_object"
+msgstr ""
+
+msgid "vient de la base Paradox"
 msgstr ""
 
 msgid "ville"

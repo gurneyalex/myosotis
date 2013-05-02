@@ -1,1 +1,1 @@
-from cubes.myosotis import monkeypatch
+#from cubes.myosotis import monkeypatch

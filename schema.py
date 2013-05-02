@@ -17,7 +17,7 @@
 # -*- coding: utf-8 -*-
 """cubicweb-myosotis schema"""
 
-from yams.buildobjs import (EntityType, String, Float, SubjectRelation,
+from yams.buildobjs import (EntityType, String, RichString, Float, SubjectRelation,
                             Int, Boolean, Bytes, Datetime, Date,
                             RichString, RelationDefinition)  #pylint:disable-msg=E0611
 from cubicweb.schema import RQLVocabularyConstraint
@@ -30,8 +30,15 @@ class Compte(EntityType):
     inventaire = String(maxsize=255, required=True, fulltextindexed=True)
     debut = Date()
     fin = Date()
-    change = String(maxsize=255, fulltextindexed=True)
+    change_str = String(maxsize=255, fulltextindexed=True) # XXX drop me?
     receveur = SubjectRelation('Personne', cardinality='**')
+    base_paradox = Boolean(default=False,
+                           description='vient de la base Paradox')
+class Commande(EntityType):
+    numero = Int(required=True)
+    prix_str = String(maxsize=100)
+    date_ordre_str = String(maxsize=100)
+    transactions = SubjectRelation('Transaction', cardinality='*?')
 
 class Transaction(EntityType):
     date = Date()
@@ -39,16 +46,17 @@ class Transaction(EntityType):
     pagination = String(maxsize=255, fulltextindexed=True)
     date_ordre = Date()
     date_recette = Date()
-    remarques = String(fulltextindexed=True)
+    remarques = RichString(fulltextindexed=True, default_format='text/rest')
     intervenants = SubjectRelation('Intervenant', composite='subject', cardinality='*1')
     destinataires = SubjectRelation('Destinataire', composite='subject', cardinality='*1')
     travaux = SubjectRelation('Travail', composite='subject', cardinality='**')
     vendeurs = SubjectRelation('Vendeur', composite='subject', cardinality='*1')
     prix_partage = Boolean(required=True, default=False)
+    base_paradox = Boolean(default=False, description='vient de la base Paradox')
 
 class compte(RelationDefinition):
     name = 'compte'
-    subject = ('Transaction',)
+    subject = ('Transaction', 'Commande')
     object = 'Compte'
     cardinality = '1*'
     composite = 'subject'
@@ -86,31 +94,45 @@ class prix_unitaire(RelationDefinition):
     composite = 'subject'
     inlined = True
 
+class change(RelationDefinition):
+    subject = ('Compte', 'Transaction')
+    object = 'Change'
+    cardinality = '*?'
+    composite = 'subject'
+
+
 class AchatFabrication(EntityType):
     date_achat = Date()
     quantite = Int()
+    quantite_plusieurs = Boolean(default=False, required=True, description='True if quantite is "plusieurs"')
     parure = SubjectRelation('Parure', cardinality='1*', inlined=True)
     avec_mat = SubjectRelation('FabriqueAvecMat', cardinality='*1')
+    remarques = RichString(fulltextindexed=True, default_format='text/rest')
 
 class AchatMateriaux(EntityType):
     date_achat = Date()
     type_mesure = String(maxsize=255, fulltextindexed=True)
     quantite = Float()
+    quantite_plusieurs = Boolean(default=False, required=True, description='True if quantite is "plusieurs"')
     unite = String(maxsize=255, fulltextindexed=True)
     provenance_mesure = String(maxsize=255, fulltextindexed=True)
     conversion = Float()
     materiaux = SubjectRelation('Materiaux', cardinality='1*', inlined=True)
+    remarques = RichString(fulltextindexed=True, default_format='text/rest')
 
 class AchatPretPorter(EntityType):
     date_achat = Date()
     quantite = Float()
+    quantite_plusieurs = Boolean(default=False, required=True, description='True if quantite is "plusieurs"')
     parure = SubjectRelation('Parure', cardinality='1*', inlined=True)
+    remarques = RichString(fulltextindexed=True, default_format='text/rest')
 
 class Change(EntityType):
-    dans_compte = String(maxsize=255, fulltextindexed=True) # dummy, to help data import
-    compte = SubjectRelation('Compte', cardinality='?*')
+    #dans_compte = String(maxsize=255, fulltextindexed=True) # dummy, to help data import
+    #compte = SubjectRelation('Compte', cardinality='?*')
     prix_depart = SubjectRelation('Prix', cardinality='??')
     prix_converti = SubjectRelation('Prix', cardinality='??')
+
 
 class FabriqueAvecMat(EntityType):
     type_mesure = String(maxsize=255, fulltextindexed=True)
@@ -124,7 +146,7 @@ class FabriqueAvecMat(EntityType):
 class Lieu(EntityType):
     ville = String(maxsize=255, required=True, fulltextindexed=True)
     region = String(maxsize=255, fulltextindexed=True)
-    remarques = String(fulltextindexed=True)
+    remarques = RichString(fulltextindexed=True, default_format='text/rest')
 
 class lieu(RelationDefinition):
     subject = ('Transaction', 'Occasion')
@@ -133,25 +155,26 @@ class lieu(RelationDefinition):
     inlined = True
 
 class Personne(EntityType):
-    identite = String(maxsize=255, required=True, fulltextindexed=True)
+    identite = String(maxsize=255, required=True, fulltextindexed=True, indexed=True)
     nom = String(maxsize=64, fulltextindexed=True)
     surnom = String(maxsize=64, fulltextindexed=True)
     diminutif = String(maxsize=64, fulltextindexed=True)
-    occupation = String(maxsize=30, default='inconnue', required=True, fulltextindexed=True)
+    #occupation = String(maxsize=30, default='inconnue', required=True, fulltextindexed=True)
     titre = String(maxsize=128, fulltextindexed=True)
-    sexe = String(vocabulary=['M', 'F'], required=True, default='M')
+    sexe = String(vocabulary=['M', 'F', '?'], required=True, default='M')
     ville_domicile = String(maxsize=255, fulltextindexed=True) # XXX
     ville_origine = String(maxsize=255, fulltextindexed=True) # XXX
     lieu_domicile = SubjectRelation('Lieu', cardinality='?*', inlined=True)
     lieu_origine = SubjectRelation('Lieu', cardinality='?*', inlined=True)
-    remarques= String(fulltextindexed=True)
+    remarques= RichString(fulltextindexed=True, default_format='text/rest')
     rattachement = String(maxsize=64, fulltextindexed=True)
-    maj_occupation= Boolean(default=True)
+    #maj_occupation= Boolean(default=True)
+    base_paradox = Boolean(default=False, description='vient de la base Paradox')
 
 class Occupation(EntityType):
     libelle = String(maxsize=255, fulltextindexed=True)
     valeur = String(maxsize=255, fulltextindexed=True)
-    compte = SubjectRelation('Compte', cardinality='1*')
+    compte = SubjectRelation('Compte', cardinality='?*')
     pagination = String(maxsize=64, fulltextindexed=True)
     rattache_a = SubjectRelation('Personne', cardinality='?*')
     occupation = String(maxsize=255, fulltextindexed=True)
@@ -165,10 +188,10 @@ class Travail(EntityType):
     nombre_aides = Int()
     designation_aides = String(maxsize=64, fulltextindexed=True)
     salaire_aides = SubjectRelation('Prix', cardinality='??', inlined=True, composite='subject')
-    tache = String(maxsize=64, fulltextindexed=True)
+    tache = String(maxsize=255, fulltextindexed=True)
     duree = Int()
     date_travail = Date()
-    remarques = String(fulltextindexed=True)
+    remarques = RichString(fulltextindexed=True, default_format='text/rest')
     facon_et_etoffe = Boolean(default=False, required=True)
 
 class Vendeur(EntityType): # MLVendeur
@@ -218,7 +241,7 @@ class MateriauxParure(EntityType):
 
 class Materiaux(EntityType):
     nom = String(maxsize=255, required=True)
-    type = String(vocabulary=['E', 'F', 'M', 'O', 'B', 'P'], required=True)
+    type = String(vocabulary=['E', 'F', 'M', 'O', 'B', 'P', '?'], required=True)
     famille = String(maxsize=255, default=u"laine", required=True, fulltextindexed=True)
     couleur = String(maxsize=255, fulltextindexed=True)
     carac_couleur = String(maxsize=255, fulltextindexed=True)
@@ -232,11 +255,11 @@ class Monnaie(EntityType):
 class Occasion(EntityType):
     type = String(maxsize=255, required=True, fulltextindexed=True)
     date = Date()
-    remarques = String(fulltextindexed=True)
+    remarques = RichString(fulltextindexed=True, default_format='text/rest')
 
 
 class Prix(EntityType):
-    monnaie = SubjectRelation('Monnaie', cardinality='1*')
+    monnaie = SubjectRelation('Monnaie', cardinality='1*', inlined=True)
     livres = Int()
     sous = Int()
     deniers = Float()
