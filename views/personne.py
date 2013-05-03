@@ -2,7 +2,7 @@
 from cubicweb.view import EntityView
 from cubicweb.web.views import uicfg, tabs, primary, basecontrollers, ajaxcontroller
 from cubicweb.web import stdmsgs, component, box, facet
-from cubicweb.selectors import is_instance, one_line_rset
+from cubicweb.predicates import is_instance, one_line_rset
 from cubicweb.web import action, component
 from logilab.common.decorators import monkeypatch
 from logilab.mtconverter import xml_escape

@@ -1,5 +1,5 @@
 from cubicweb.web.views.ibreadcrumbs import IBreadCrumbsAdapter
-from cubicweb.selectors import is_instance, has_related_entities, one_line_rset
+from cubicweb.predicates import is_instance, has_related_entities, one_line_rset
 
 class TransactionBreadCrumbAdapter(IBreadCrumbsAdapter):
     __select__ = one_line_rset() & is_instance('Transaction', 'Commande') & has_related_entities('compte')

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from cubicweb.view import EntityView
 from cubicweb.web.views import baseviews
-from cubicweb.selectors import is_instance
+from cubicweb.predicates import is_instance
 from cubicweb.web.views import primary
 from cubicweb.web.box import EntityBoxTemplate
 from cubicweb.web.htmlwidgets import SideBoxWidget

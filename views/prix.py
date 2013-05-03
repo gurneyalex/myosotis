@@ -1,7 +1,7 @@
 from logilab.mtconverter import xml_escape
 from cubicweb.view import EntityView
 from cubicweb.web.views.tableview import EntityTableView, MainEntityColRenderer, RelationColRenderer, RelatedEntityColRenderer
-from cubicweb.selectors import is_instance
+from cubicweb.predicates import is_instance
 
 class MonnaieTypeView(EntityView):
     __regid__ = 'type_monnaie'

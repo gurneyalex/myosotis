@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from cubicweb.view import EntityView
 from cubicweb.web.views import tabs, primary, basecontrollers
-from cubicweb.selectors import is_instance, one_line_rset, multi_columns_rset
+from cubicweb.predicates import is_instance, one_line_rset, multi_columns_rset
 from cubicweb.web.views.tableview import EntityTableView, MainEntityColRenderer, RelationColRenderer
 
 class TransactionPrimaryView(primary.PrimaryView):

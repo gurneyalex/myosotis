@@ -2,7 +2,7 @@
 from logilab.mtconverter import xml_escape
 
 from cubicweb.web.views import timeline
-from cubicweb.selectors import adaptable, is_instance
+from cubicweb.predicates import is_instance, adaptable
 
 class MyosotisTimeline(timeline.TimelineView):
     __regid__ = 'myosotis.timeline'

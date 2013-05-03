@@ -1,5 +1,5 @@
 from cubicweb.web.views import primary
-from cubicweb.selectors import is_instance
+from cubicweb.predicates import is_instance
 from cubicweb.web.views.tableview import EntityTableView, MainEntityColRenderer, RelationColRenderer, RelatedEntityColRenderer
 
 def get_lieu(e):
