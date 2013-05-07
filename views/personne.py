@@ -252,13 +252,13 @@ class MergeComponent(component.EntityCtxComponent):
 #XXX the following needs updating
 
 @ajaxcontroller.ajaxfunc(output_type='json')
-def js_unrelated_merge_personnes(self, eid):
+def unrelated_merge_personnes(self, eid):
     """return personne unrelated to an entity"""
     rql = 'Any T, N ORDERBY N WHERE T is Personne, T identite N, NOT T eid %(x)s'
     return [{'value': eid, 'label': identite}  for (eid, identite) in self._cw.execute(rql, {'x' : eid})]
 
 @ajaxcontroller.ajaxfunc(output_type='xhtml')
-def js_personne_entity_html(self, eid, name):
+def personne_entity_html(self, eid, name):
     rset = self._cw.execute('Any P WHERE P is Personne, P identite %(x)s, NOT P eid %(eid)s',
                             {'x': name, 'eid': eid})
     html = []
@@ -276,7 +276,7 @@ def js_personne_entity_html(self, eid, name):
 
 
 @ajaxcontroller.ajaxfunc()
-def js_merge_personnes(self, eid, other_eid):
+def merge_personnes(self, eid, other_eid):
     other_eid = int(other_eid)
     relations = ['receveur',
                  'rattache_a',
