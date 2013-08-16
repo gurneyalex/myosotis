@@ -41,6 +41,27 @@ def setup_ui(vreg):
     _pvs.tag_subject_of(('AchatFabrication', 'avec_mat', '*'), 'relations')
     _pdc.tag_subject_of(('AchatFabrication', 'avec_mat', '*'), {'vid': 'list', 'limit': None})
     _pvs.tag_subject_of(('Occupation', 'personne', 'Personne'), 'attributes')
+    inline_relations()
+
+def inline_relations():
+    _afs = uicfg.autoform_section
+    to_inline = {'AchatPretPorter': ('parure',
+                                     'prix_unitaire',
+                                     'prix_total'),
+                 'AchatFabrication': ('parure',
+                                      'prix_unitaire',
+                                      'prix_total'),
+                 'AchatMateriaux': ('materiaux',
+                                    'prix_unitaire',
+                                    'prix_total'),
+                 'Travail': ('salaire_aide', 'salaire_argent'),
+                 'Change': ('prix_converti', 'prix_depart'),
+                 'Transaction': ('prix_ensemble',),
+                 'Intervenant': ('prix_valet', 'prix_transport'),
+                 }
+    for etype, rtypes in to_inline.iteritems():
+        for rtype in rtypes:
+            _afs.tag_subject_of((etype, rtype, '*'), 'main', 'inlined')
 
 def registration_callback(vreg):
     setup_ui(vreg)
