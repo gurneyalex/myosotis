@@ -242,7 +242,14 @@ class MateriauxParure(EntityType):
 class Materiaux(EntityType):
     nom = String(maxsize=255, required=True)
     type = String(vocabulary=['E', 'F', 'M', 'O', 'B', 'P', '?'], required=True)
-    famille = String(maxsize=255, default=u"laine", required=True, fulltextindexed=True)
+    famille = String(vocabulary=[u'laine',
+                                 u'toile',
+                                 u'mélangé',
+                                 u'NA',
+                                 u'soie'],
+                     default=u"laine",
+                     required=True,
+                     fulltextindexed=True)
     couleur = String(maxsize=255, fulltextindexed=True)
     carac_couleur = String(maxsize=255, fulltextindexed=True)
     carac_facture = String(maxsize=255, fulltextindexed=True)
