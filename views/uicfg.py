@@ -8,7 +8,6 @@ def setup_ui(vreg):
     _pvs.tag_subject_of(('*', 'prix_converti', 'Prix'), 'attributes')
     _pvs.tag_subject_of(('*', 'salaire_argent', 'Prix'), 'attributes')
     _pvs.tag_subject_of(('*', 'salaire_aides', 'Prix'), 'attributes')
-    _pvs.tag_subject_of(('*', 'prix_transports', 'Prix'), 'attributes')
     _pvs.tag_subject_of(('*', 'prix_valet', 'Prix'), 'attributes')
     _pvs.tag_subject_of(('*', 'prix_transport', 'Prix'), 'attributes')
     _pvs.tag_subject_of(('*', 'prix_total', 'Prix'), 'attributes')
