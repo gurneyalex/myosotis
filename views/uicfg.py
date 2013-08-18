@@ -42,6 +42,8 @@ def setup_ui(vreg):
     _pdc.tag_subject_of(('AchatFabrication', 'avec_mat', '*'), {'vid': 'list', 'limit': None})
     _pvs.tag_subject_of(('Occupation', 'personne', 'Personne'), 'attributes')
     inline_relations()
+    _aaa = uicfg.actionbox_appearsin_addmenu
+    _aaa.tag_object_of(('Transaction', 'compte', 'Compte'), True)
 
 def inline_relations():
     _afs = uicfg.autoform_section
