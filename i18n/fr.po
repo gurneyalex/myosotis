@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: myosotis-2.0\n"
-"PO-Revision-Date: 2013-08-16 19:29+0200\n"
+"PO-Revision-Date: 2013-08-16 20:02+0200\n"
 "Last-Translator: Alexandre Fayolle <alexandre.fayolle@free.fr>\n"
 "Language-Team: French <FR@li.org>\n"
 "Language: fr\n"
@@ -92,6 +92,10 @@ msgstr "Destinataires"
 msgid "FabriqueAvecMat"
 msgstr "Fabriqué avec Matériaux"
 
+msgctxt "inlined:AchatFabrication.avec_mat.subject"
+msgid "FabriqueAvecMat"
+msgstr "Avec l'Achat de Matériaux"
+
 msgid "FabriqueAvecMat_plural"
 msgstr "Fabriqués avec Matériaux"
 
@@ -120,11 +124,19 @@ msgctxt "inlined:AchatMateriaux.materiaux.subject"
 msgid "Materiaux"
 msgstr "Matériaux"
 
+msgctxt "inlined:MateriauxParure.materiaux.subject"
+msgid "Materiaux"
+msgstr "Matériaux"
+
 msgid "Materiaux similaires"
 msgstr "Matériaux similaires"
 
 msgid "MateriauxParure"
 msgstr "Matériaux de Parure"
+
+msgctxt "inlined:Parure.composee_de.subject"
+msgid "MateriauxParure"
+msgstr "Matériaux utilisés"
 
 msgid "MateriauxParure_plural"
 msgstr "Matériaux de Parures"
@@ -490,9 +502,21 @@ msgstr ""
 msgid "add Vendeur vendeur Personne object"
 msgstr ""
 
+msgctxt "inlined:AchatFabrication.avec_mat.subject"
+msgid "add a FabriqueAvecMat"
+msgstr "Ajout d'un Achat Matériaux utilisé pour la Fabrication"
+
 msgctxt "inlined:AchatMateriaux.materiaux.subject"
 msgid "add a Materiaux"
 msgstr "Ajouter un Matériaux"
+
+msgctxt "inlined:MateriauxParure.materiaux.subject"
+msgid "add a Materiaux"
+msgstr "Ajouter un Matériaux"
+
+msgctxt "inlined:Parure.composee_de.subject"
+msgid "add a MateriauxParure"
+msgstr "Ajouter un Matériaux de Parure"
 
 msgctxt "inlined:AchatFabrication.parure.subject"
 msgid "add a Parure"

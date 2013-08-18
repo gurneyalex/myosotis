@@ -50,7 +50,8 @@ def inline_relations():
                                      'prix_total'),
                  'AchatFabrication': ('parure',
                                       'prix_unitaire',
-                                      'prix_total'),
+                                      'prix_total',
+                                      'avec_mat'),
                  'AchatMateriaux': ('materiaux',
                                     'prix_unitaire',
                                     'prix_total'),
@@ -58,6 +59,8 @@ def inline_relations():
                  'Change': ('prix_converti', 'prix_depart'),
                  'Transaction': ('prix_ensemble',),
                  'Intervenant': ('prix_valet', 'prix_transport'),
+                 'Parure': ('composee_de',),
+                 'MateriauxParure': ('materiaux',),
                  }
     for etype, rtypes in to_inline.iteritems():
         for rtype in rtypes:

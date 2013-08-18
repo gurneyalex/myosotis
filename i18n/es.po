@@ -85,6 +85,10 @@ msgstr ""
 msgid "FabriqueAvecMat"
 msgstr ""
 
+msgctxt "inlined:AchatFabrication.avec_mat.subject"
+msgid "FabriqueAvecMat"
+msgstr ""
+
 msgid "FabriqueAvecMat_plural"
 msgstr ""
 
@@ -113,9 +117,17 @@ msgctxt "inlined:AchatMateriaux.materiaux.subject"
 msgid "Materiaux"
 msgstr ""
 
+msgctxt "inlined:MateriauxParure.materiaux.subject"
+msgid "Materiaux"
+msgstr ""
+
 msgid "Materiaux similaires"
 msgstr ""
 
+msgid "MateriauxParure"
+msgstr ""
+
+msgctxt "inlined:Parure.composee_de.subject"
 msgid "MateriauxParure"
 msgstr ""
 
@@ -483,8 +495,20 @@ msgstr ""
 msgid "add Vendeur vendeur Personne object"
 msgstr ""
 
+msgctxt "inlined:AchatFabrication.avec_mat.subject"
+msgid "add a FabriqueAvecMat"
+msgstr ""
+
 msgctxt "inlined:AchatMateriaux.materiaux.subject"
 msgid "add a Materiaux"
+msgstr ""
+
+msgctxt "inlined:MateriauxParure.materiaux.subject"
+msgid "add a Materiaux"
+msgstr ""
+
+msgctxt "inlined:Parure.composee_de.subject"
+msgid "add a MateriauxParure"
 msgstr ""
 
 msgctxt "inlined:AchatFabrication.parure.subject"
