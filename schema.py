@@ -25,6 +25,14 @@ from cubicweb.schema import RQLVocabularyConstraint
 # * vérifier les cardinalites
 # * renommer les relations 'personne'
 
+_TYPES_MESURE = [u'pelleterie',
+                 u'longueur',
+                 u'unité',
+                 u'poids',
+                 u'longeur',
+                 u'',
+                 ]
+
 class Compte(EntityType):
     type_compte = String(maxsize=255, required=True)
     inventaire = String(maxsize=255, required=True, fulltextindexed=True)
@@ -111,7 +119,8 @@ class AchatFabrication(EntityType):
 
 class AchatMateriaux(EntityType):
     date_achat = Date()
-    type_mesure = String(maxsize=255, fulltextindexed=True)
+    type_mesure = String(vocabulary=_TYPES_MESURE,
+                         fulltextindexed=True)
     quantite = Float()
     quantite_plusieurs = Boolean(default=False, required=True, description='True if quantite is "plusieurs"')
     unite = String(maxsize=255, fulltextindexed=True)
@@ -135,7 +144,8 @@ class Change(EntityType):
 
 
 class FabriqueAvecMat(EntityType):
-    type_mesure = String(maxsize=255, fulltextindexed=True)
+    type_mesure = String(vocabulary=_TYPES_MESURE,
+                         fulltextindexed=True)
     quantite = Float()
     unite = String(maxsize=255, fulltextindexed=True)
     provenance_mesure = String(maxsize=255, fulltextindexed=True)
@@ -229,7 +239,8 @@ class Parure(EntityType):
     composee_de = SubjectRelation('MateriauxParure', cardinality='*1', composite='subject')
 
 class MateriauxParure(EntityType):
-    type_mesure = String(maxsize=255)
+    type_mesure = String(vocabulary=_TYPES_MESURE,
+                         fulltextindexed=True)
     quantite = Float()
     unite = String(maxsize=255, fulltextindexed=True)
     provenance_mesure = String(maxsize=255, fulltextindexed=True)
