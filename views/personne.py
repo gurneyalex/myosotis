@@ -115,7 +115,7 @@ class TabPersonneVendeur(tabs.EntityRelationView):
     def cell_call(self, row, col):
         entity = self.cw_rset.get_entity(row, col)
         subst = {'eid': entity.eid}
-        rql = 'Any T, A WHERE T vendeurs V, V vendeur P, P eid %(eid)s, T achat A'
+        rql = 'Any T, A ORDERBY CI, T WHERE T vendeurs V, V vendeur P, P eid %(eid)s, T achat A, T compte C, C inventaire CI'
         rset = self._cw.execute(rql, subst)
         self.wview('table', rset, 'null', title=_('Vendeur'), cellvids={0: 'outofcontext'})
 
