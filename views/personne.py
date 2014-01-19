@@ -29,7 +29,7 @@ class PersonneTab(tabs.PrimaryTab):
         _ = self._cw._
         super(PersonneTab, self).render_entity_relations(entity)
         subst = {'eid': entity.eid}
-        rql = ('Any X, L, V, R, O, C, F WHERE '
+        rql = ('Any X, L, V, R, O, C, F ORDERBY C WHERE '
                'X is Occupation, '
                'X personne P, '
                'P eid %(eid)s, '
@@ -75,7 +75,7 @@ class TabPersonneIntervention(tabs.EntityRelationView):
     def cell_call(self, row, col):
         entity = self.cw_rset.get_entity(row, col)
         subst = {'eid': entity.eid}
-        rql = ('Any T, I  WHERE T intervenants I, I intervenant X, X eid %(eid)s')
+        rql = ('Any T, I ORDERBY CI, T WHERE T intervenants I, I intervenant X, X eid %(eid)s, T compte C, C inventaire CI')
         rset = self._cw.execute(rql, subst)
         self.wview('table', rset, 'null', cellvids={0:'outofcontext', 1:'intervenant_flags'}, title=_('Intervient sur'),
                    )
@@ -89,7 +89,7 @@ class TabPersonneDestinataire(tabs.EntityRelationView):
     def cell_call(self, row, col):
         entity = self.cw_rset.get_entity(row, col)
         subst = {'eid': entity.eid}
-        rql = 'Any T, A WHERE T destinataires D, T achat A, D destinataire P, P eid %(eid)s'
+        rql = 'Any T, A ORDERBY CI, T WHERE T destinataires D, T achat A, D destinataire P, P eid %(eid)s, T compte C, C inventaire CI'
         rset = self._cw.execute(rql, subst)
         self.wview('table', rset, 'null', title=_('Destinataire de'), cellvids={0: 'outofcontext'})
 
@@ -102,7 +102,7 @@ class TabPersonneArtisan(tabs.EntityRelationView):
     def cell_call(self, row, col):
         entity = self.cw_rset.get_entity(row, col)
         subst = {'eid': entity.eid}
-        rql = 'Any T, I, PRIX, T WHERE T travaux D, D tache I, D salaire_argent PRIX?, D artisan P, P eid %(eid)s'
+        rql = 'Any T, I, PRIX, T  ORDERBY CI, T WHERE T travaux D, D tache I, D salaire_argent PRIX?, D artisan P, P eid %(eid)s, T compte C, C inventaire CI'
         rset = self._cw.execute(rql, subst)
         self.wview('table', rset, 'null', title=_('Artisan pour'), cellvids={0: 'outofcontext', 3: 'transaction_achats'})
 
