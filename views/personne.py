@@ -91,7 +91,10 @@ class TabPersonneDestinataire(tabs.EntityRelationView):
         subst = {'eid': entity.eid}
         rql = 'Any T, A ORDERBY CI, T WHERE T destinataires D, T achat A, D destinataire P, P eid %(eid)s, T compte C, C inventaire CI'
         rset = self._cw.execute(rql, subst)
-        self.wview('table', rset, 'null', title=_('Destinataire de'), cellvids={0: 'outofcontext'})
+        self.wview('table', rset, 'null',
+                   title=_('Destinataire de'),
+                   cellvids={0: 'outofcontext',
+                             1: 'achat_nbdest'})
 
 class TabPersonneArtisan(tabs.EntityRelationView):
     __regid__ = 'tab_personne_artisan'
