@@ -85,10 +85,6 @@ msgstr ""
 msgid "FabriqueAvecMat"
 msgstr ""
 
-msgctxt "inlined:AchatFabrication.avec_mat.subject"
-msgid "FabriqueAvecMat"
-msgstr ""
-
 msgid "FabriqueAvecMat_plural"
 msgstr ""
 
@@ -477,6 +473,9 @@ msgstr ""
 msgid "add Transaction change Change subject"
 msgstr ""
 
+msgid "add Transaction compte Compte object"
+msgstr ""
+
 msgid "add Transaction destinataires Destinataire subject"
 msgstr ""
 
@@ -493,10 +492,6 @@ msgid "add Travail artisan Personne object"
 msgstr ""
 
 msgid "add Vendeur vendeur Personne object"
-msgstr ""
-
-msgctxt "inlined:AchatFabrication.avec_mat.subject"
-msgid "add a FabriqueAvecMat"
 msgstr ""
 
 msgctxt "inlined:AchatMateriaux.materiaux.subject"
@@ -765,6 +760,9 @@ msgstr ""
 
 msgid ""
 "creating MateriauxParure (Parure %(linkto)s composee_de MateriauxParure)"
+msgstr ""
+
+msgid "creating Transaction (Transaction compte Compte %(linkto)s)"
 msgstr ""
 
 msgid "creating Travail (Transaction %(linkto)s travaux Travail)"

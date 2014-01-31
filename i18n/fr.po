@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: myosotis-2.0\n"
-"PO-Revision-Date: 2013-08-16 20:02+0200\n"
+"PO-Revision-Date: 2013-08-18 20:11+0200\n"
 "Last-Translator: Alexandre Fayolle <alexandre.fayolle@free.fr>\n"
 "Language-Team: French <FR@li.org>\n"
 "Language: fr\n"
@@ -90,14 +90,10 @@ msgid "Destinataires"
 msgstr "Destinataires"
 
 msgid "FabriqueAvecMat"
-msgstr "Fabriqué avec Matériaux"
-
-msgctxt "inlined:AchatFabrication.avec_mat.subject"
-msgid "FabriqueAvecMat"
-msgstr "Avec l'Achat de Matériaux"
+msgstr "Fabrication avec Matériaux acheté"
 
 msgid "FabriqueAvecMat_plural"
-msgstr "Fabriqués avec Matériaux"
+msgstr "Fabrications avec Matériaux acheté"
 
 msgid "Identity of the Personne to merge"
 msgstr "Identité de la personne à fusionner"
@@ -464,13 +460,13 @@ msgid "add Compte change Change subject"
 msgstr "Change"
 
 msgid "add Destinataire destinataire Personne object"
-msgstr ""
+msgstr "Destinataire"
 
 msgid "add Intervenant intervenant Personne object"
-msgstr ""
+msgstr "Intervenant"
 
 msgid "add Parure composee_de MateriauxParure subject"
-msgstr ""
+msgstr "Materiaux"
 
 msgid "add Transaction achat AchatFabrication subject"
 msgstr "Achat Fabrication"
@@ -483,6 +479,9 @@ msgstr "Achat Prêt à Porter"
 
 msgid "add Transaction change Change subject"
 msgstr "Change"
+
+msgid "add Transaction compte Compte object"
+msgstr "Transaction"
 
 msgid "add Transaction destinataires Destinataire subject"
 msgstr "Destinataire"
@@ -497,14 +496,10 @@ msgid "add Transaction vendeurs Vendeur subject"
 msgstr "Vendeur"
 
 msgid "add Travail artisan Personne object"
-msgstr ""
+msgstr "Travail"
 
 msgid "add Vendeur vendeur Personne object"
-msgstr ""
-
-msgctxt "inlined:AchatFabrication.avec_mat.subject"
-msgid "add a FabriqueAvecMat"
-msgstr "Ajout d'un Achat Matériaux utilisé pour la Fabrication"
+msgstr "Vendeur"
 
 msgctxt "inlined:AchatMateriaux.materiaux.subject"
 msgid "add a Materiaux"
@@ -773,6 +768,9 @@ msgstr "Création d'un Intervenant (pour la Transaction %(linkto)s)"
 msgid ""
 "creating MateriauxParure (Parure %(linkto)s composee_de MateriauxParure)"
 msgstr "Création d'un Matériaux Parure (pour la Parure %(linkto)s)"
+
+msgid "creating Transaction (Transaction compte Compte %(linkto)s)"
+msgstr "Création d'une Transaction (pour le compte %(linkto)s)"
 
 msgid "creating Travail (Transaction %(linkto)s travaux Travail)"
 msgstr "Création d'un Travail (pour la Transaction %(linkto)s)"
@@ -1988,6 +1986,14 @@ msgstr "origine"
 msgctxt "Personne"
 msgid "ville_origine"
 msgstr "origine"
+
+#~ msgctxt "inlined:AchatFabrication.avec_mat.subject"
+#~ msgid "FabriqueAvecMat"
+#~ msgstr "Avec l'Achat de Matériaux"
+
+#~ msgctxt "inlined:AchatFabrication.avec_mat.subject"
+#~ msgid "add a FabriqueAvecMat"
+#~ msgstr "Ajout d'un Achat Matériaux utilisé pour la Fabrication"
 
 #~ msgid "destinataire %s"
 #~ msgstr "destinataire %s"
