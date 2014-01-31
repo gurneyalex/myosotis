@@ -254,7 +254,7 @@ class MateriauxParure(EntityType):
 
 
 class Materiaux(EntityType):
-    nom = String(maxsize=255, required=True)
+    nom = String(maxsize=255, required=True, fulltextindexed=True)
     type = String(vocabulary=['E', 'F', 'M', 'O', 'B', 'P', '?'], required=True)
     famille = String(vocabulary=[u'laine',
                                  u'toile',
