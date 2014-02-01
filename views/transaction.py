@@ -7,6 +7,7 @@ from cubicweb.web.views.tableview import EntityTableView, MainEntityColRenderer,
 class TransactionPrimaryView(primary.PrimaryView):
     __select__ = primary.PrimaryView.__select__ & is_instance('Transaction')
 
+
 class TransactionTableView(EntityTableView):
     __select__ = EntityTableView.__select__ & is_instance('Transaction')
     title = 'table transaction'
@@ -19,21 +20,27 @@ class TransactionTableView(EntityTableView):
                         'destinataires': RelationColRenderer(vid='list'),
                         }
 
+
 class TransactionAchatsView(EntityView):
     __select__ = one_line_rset & EntityView.__select__ & is_instance('Transaction')
     __regid__ = 'transaction_achats'
+
     def entity_call(self, entity):
         return self.wview('list', entity.related('achat'), 'null')
+
 
 class TransactionDestinatairesView(EntityView):
     __select__ = one_line_rset & EntityView.__select__ & is_instance('Transaction')
     __regid__ = 'transaction_destinataires'
+
     def entity_call(self, entity):
         return self.wview('list', entity.related('destinataires'), 'null')
+
 
 class TransactionVendeursView(EntityView):
     __select__ = one_line_rset & EntityView.__select__ & is_instance('Transaction')
     __regid__ = 'transaction_vendeurs'
+
     def entity_call(self, entity):
         return self.wview('list', entity.related('vendeurs'), 'null')
 
@@ -45,9 +52,11 @@ class VendeurTableView(EntityTableView):
     column_renderers = {'vendeur': RelationColRenderer(subvid='incontext'),
                         }
 
+
 class IntervenantFlagsView(EntityView):
     __regid__ = 'intervenant_flags'
     __select__ = is_instance('Intervenant')
+
     def entity_call(self, entity):
         infos = []
         for attr in ('payeur', 'pris', 'commandement', 'relation_de', 'donne_par', 'par_la_main',
@@ -55,6 +64,7 @@ class IntervenantFlagsView(EntityView):
             if getattr(entity, attr):
                 infos.append(self._cw._(attr))
         self.w(u', '.join(infos))
+
 
 class IntervenantTableView(EntityTableView):
     __select__ = EntityTableView.__select__ & is_instance('Intervenant')
