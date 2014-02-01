@@ -17,7 +17,7 @@ class AchatFabrication(AnyEntity):
     def dc_long_title(self):
         self.complete()
         quantite = self.quantite or 1
-        parure = self.parure[0].dc_title()
+        parure = self.parure[0].dc_long_title()
         return u'Fabrication %d %s' % (quantite, parure)
 
     @property
@@ -35,7 +35,7 @@ class AchatPretPorter(AnyEntity):
     def dc_title(self):
         self.complete()
         quantite = self.quantite or 1
-        parure = self.parure[0].dc_title()
+        parure = self.parure[0].dc_long_title()
         return u'Prêt à Porter %d %s' % (quantite, parure)
 
     @property

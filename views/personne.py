@@ -132,7 +132,8 @@ class TabPersonneVendeur(tabs.EntityRelationView):
         rset = self._cw.execute(rql, subst)
         self.wview('table', rset, 'null',
                    title=_('Vendeur'),
-                   cellvids={0: 'outofcontext'})
+                   cellvids={0: 'outofcontext',
+                             1: 'outofcontext'})
 
 
 class TabPersonneRattachement(tabs.EntityRelationView):
