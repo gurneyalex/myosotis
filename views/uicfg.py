@@ -23,6 +23,7 @@ def setup_ui(vreg):
     _pvs.tag_object_of(('*', 'intervenant', 'Personne'), 'hidden')
     _pvs.tag_object_of(('*', 'destinataire', 'Personne'), 'hidden')
     _pvs.tag_subject_of(('Transaction', 'travaux', 'Travail'), 'relations')
+    _pdc.tag_subject_of(('Transaction', 'travaux', 'Travail'), {'vid': 'attributestableview', 'limit': None})
     _pvs.tag_subject_of(('Transaction', 'vendeurs', 'Vendeur'), 'relations')
     _pdc.tag_subject_of(('Transaction', 'vendeurs', 'Vendeur'), {'vid': 'attributestableview', 'limit': None})
     _pvs.tag_subject_of(('Transaction', 'destinataires', 'Destinataire'), 'relations')
@@ -62,7 +63,7 @@ def inline_relations():
                  'AchatMateriaux': ('materiaux',
                                     'prix_unitaire',
                                     'prix_total'),
-                 'Travail': ('salaire_aide', 'salaire_argent'),
+                 'Travail': ('salaire_aides', 'salaire_argent'),
                  'Change': ('prix_converti', 'prix_depart'),
                  'Transaction': ('prix_ensemble',),
                  'Intervenant': ('prix_valet', 'prix_transport'),

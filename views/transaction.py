@@ -52,6 +52,16 @@ class VendeurTableView(EntityTableView):
     column_renderers = {'vendeur': RelationColRenderer(subvid='incontext'),
                         }
 
+class TravauxTableView(EntityTableView):
+    __select__ = EntityTableView.__select__ & is_instance('Travail') 
+    __regid__ = 'attributestableview'
+    columns = ('artisan', 'tache', 'salaire_argent')
+    column_renderers = {'tache': MainEntityColRenderer(),
+                        'artisan': RelationColRenderer(subvid='incontext'),
+                        'salaire_argent': RelationColRenderer(subvid='incontext'),
+                        }
+
+
 
 class IntervenantFlagsView(EntityView):
     __regid__ = 'intervenant_flags'

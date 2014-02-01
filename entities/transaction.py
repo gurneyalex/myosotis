@@ -63,3 +63,7 @@ class Vendeur(AnyEntity):
     fetch_attrs, cw_fetch_order = fetch_config(('vendeur', 'expression'))
     def dc_title(self):
         return self.vendeur[0].dc_title()
+
+class Travail(AnyEntity):
+    __regid__ = 'Travail'
+    fetch_attrs, cw_fetch_order = fetch_config(('tache', 'artisan', 'salaire_argent'))
