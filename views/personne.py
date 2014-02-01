@@ -8,6 +8,8 @@ from logilab.common.decorators import monkeypatch
 from logilab.mtconverter import xml_escape
 
 _ = unicode
+
+
 class PersonnePrimaryView(tabs.TabbedPrimaryView):
     __select__ = tabs.PrimaryTab.__select__ & is_instance('Personne')
     tabs = [_('tab_personne'),
@@ -21,10 +23,12 @@ class PersonnePrimaryView(tabs.TabbedPrimaryView):
             ]
     default_tab='tab_personne'
 
+
 class PersonneTab(tabs.PrimaryTab):
     __regid__ = 'tab_personne'
     __select__ = one_line_rset() & is_instance('Personne')
     title = None
+
     def render_entity_relations(self, entity):
         _ = self._cw._
         super(PersonneTab, self).render_entity_relations(entity)
@@ -47,13 +51,16 @@ class PersonneTab(tabs.PrimaryTab):
         if len(rset) > 1:
             self.w('<p>voir <a href="%s"> dans le temps</a></p>' % (entity.absolute_url(vid='occupation_timeline')))
 
+
 class PersonneOccupationTimeline(EntityView):
     __regid__ = 'occupation_timeline'
     __select__ = is_instance('Personne')
+
     def cell_call(self, row, col):
         entity = self.cw_rset.get_entity(row, col)
         subst = {'eid': entity.eid}
         self.wview('myosotis.timeline', self._cw.execute('Any X where X is Occupation, X personne P, P eid %(eid)s', subst))
+
 
 class TabPersonneCodest(EntityView):
     __regid__ = 'tab_personne_codest'
@@ -72,6 +79,7 @@ class TabPersonneIntervention(tabs.EntityRelationView):
     rtype = 'intervenant'
     role = 'object'
     title = None
+
     def cell_call(self, row, col):
         entity = self.cw_rset.get_entity(row, col)
         subst = {'eid': entity.eid}
@@ -91,6 +99,7 @@ class TabPersonneDestinataire(tabs.EntityRelationView):
     rtype = 'destinataire'
     role = 'object'
     title=None
+
     def cell_call(self, row, col):
         entity = self.cw_rset.get_entity(row, col)
         subst = {'eid': entity.eid}
@@ -101,6 +110,7 @@ class TabPersonneDestinataire(tabs.EntityRelationView):
                    headers=('Transaction', 'Achat'),
                    cellvids={0: 'outofcontext',
                              1: 'achat_nbdest'})
+
 
 class TabPersonneArtisan(tabs.EntityRelationView):
     __regid__ = 'tab_personne_artisan'
@@ -119,12 +129,14 @@ class TabPersonneArtisan(tabs.EntityRelationView):
                              3: 'transaction_achats',
                              4: 'transaction_destinataires'})
 
+
 class TabPersonneVendeur(tabs.EntityRelationView):
     __regid__ = 'tab_personne_vendeur'
     __select__ = one_line_rset() & tabs.EntityRelationView.__select__ & is_instance('Personne')
     title=None
     rtype = 'vendeur'
     role = 'object'
+
     def cell_call(self, row, col):
         entity = self.cw_rset.get_entity(row, col)
         subst = {'eid': entity.eid}
@@ -152,6 +164,7 @@ class TabPersonneRattachement(tabs.EntityRelationView):
 
 from cubicweb.web.views import dotgraphview
 
+
 class PersonneRelationsView(dotgraphview.DotGraphView):
     __regid__ = 'personne_relations'
     __select__ = is_instance('Personne')
@@ -168,6 +181,7 @@ class PersonneRelationsView(dotgraphview.DotGraphView):
         return PersonneRelationVisitor(self._cw, [entity])
     def build_dotpropshandler(self):
         return PersonnePropsHandler(self._cw)
+
 
 class PersonneRelationVisitor(object):
     def __init__(self, cw, personnes):
@@ -217,6 +231,7 @@ class PersonneRelationVisitor(object):
         ##     if current not in known:
         ##         known.add(current)
         ##         yield p1.eid, p2.eid, occupation
+
 
 class PersonnePropsHandler(dotgraphview.DotPropsHandler):
     def node_properties(self, personne):
