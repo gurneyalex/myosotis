@@ -31,6 +31,12 @@ class TransactionDestinatairesView(EntityView):
     def entity_call(self, entity):
         return self.wview('list', entity.related('destinataires'), 'null')
 
+class TransactionVendeursView(EntityView):
+    __select__ = one_line_rset & EntityView.__select__ & is_instance('Transaction')
+    __regid__ = 'transaction_vendeurs'
+    def entity_call(self, entity):
+        return self.wview('list', entity.related('vendeurs'), 'null')
+
 
 class VendeurTableView(EntityTableView):
     __select__ = EntityTableView.__select__ & is_instance('Vendeur') 

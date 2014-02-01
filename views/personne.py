@@ -75,9 +75,9 @@ class TabPersonneIntervention(tabs.EntityRelationView):
     def cell_call(self, row, col):
         entity = self.cw_rset.get_entity(row, col)
         subst = {'eid': entity.eid}
-        rql = ('Any T, I ORDERBY CI, T WHERE T intervenants I, I intervenant X, X eid %(eid)s, T compte C, C inventaire CI')
+        rql = ('Any T, I, T ORDERBY CI, T WHERE T intervenants I, I intervenant X, X eid %(eid)s, T compte C, C inventaire CI')
         rset = self._cw.execute(rql, subst)
-        self.wview('table', rset, 'null', cellvids={0:'outofcontext', 1:'intervenant_flags'}, title=_('Intervient sur'),
+        self.wview('table', rset, 'null', cellvids={0:'outofcontext', 1:'intervenant_flags', 2: 'transaction_vendeurs'}, title=_('Intervient sur'),
                    )
 
 class TabPersonneDestinataire(tabs.EntityRelationView):
