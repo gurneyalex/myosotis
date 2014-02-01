@@ -77,7 +77,12 @@ class TabPersonneIntervention(tabs.EntityRelationView):
         subst = {'eid': entity.eid}
         rql = ('Any T, I, T ORDERBY CI, T WHERE T intervenants I, I intervenant X, X eid %(eid)s, T compte C, C inventaire CI')
         rset = self._cw.execute(rql, subst)
-        self.wview('table', rset, 'null', cellvids={0:'outofcontext', 1:'intervenant_flags', 2: 'transaction_vendeurs'}, title=_('Intervient sur'),
+        self.wview('table', rset, 'null',
+                   headers=('Transaction', 'Interventions', 'Vendeurs'),
+                   cellvids={0: 'outofcontext',
+                             1: 'intervenant_flags',
+                             2: 'transaction_vendeurs'},
+                   title=_('Intervient sur'),
                    )
 
 class TabPersonneDestinataire(tabs.EntityRelationView):
@@ -93,6 +98,7 @@ class TabPersonneDestinataire(tabs.EntityRelationView):
         rset = self._cw.execute(rql, subst)
         self.wview('table', rset, 'null',
                    title=_('Destinataire de'),
+                   headers=('Transaction', 'Achat'),
                    cellvids={0: 'outofcontext',
                              1: 'achat_nbdest'})
 
@@ -105,9 +111,13 @@ class TabPersonneArtisan(tabs.EntityRelationView):
     def cell_call(self, row, col):
         entity = self.cw_rset.get_entity(row, col)
         subst = {'eid': entity.eid}
-        rql = 'Any T, I, PRIX, T  ORDERBY CI, T WHERE T travaux D, D tache I, D salaire_argent PRIX?, D artisan P, P eid %(eid)s, T compte C, C inventaire CI'
+        rql = 'Any T, I, PRIX, T, T  ORDERBY CI, T WHERE T travaux D, D tache I, D salaire_argent PRIX?, D artisan P, P eid %(eid)s, T compte C, C inventaire CI'
         rset = self._cw.execute(rql, subst)
-        self.wview('table', rset, 'null', title=_('Artisan pour'), cellvids={0: 'outofcontext', 3: 'transaction_achats'})
+        self.wview('table', rset, 'null', title=_('Artisan pour'),
+                   headers=('Transaction', 'Intervention', 'Prix', 'Achats', 'Destinataires'),
+                   cellvids={0: 'outofcontext',
+                             3: 'transaction_achats',
+                             4: 'transaction_destinataires'})
 
 class TabPersonneVendeur(tabs.EntityRelationView):
     __regid__ = 'tab_personne_vendeur'
@@ -120,7 +130,9 @@ class TabPersonneVendeur(tabs.EntityRelationView):
         subst = {'eid': entity.eid}
         rql = 'Any T, A ORDERBY CI, T WHERE T vendeurs V, V vendeur P, P eid %(eid)s, T achat A, T compte C, C inventaire CI'
         rset = self._cw.execute(rql, subst)
-        self.wview('table', rset, 'null', title=_('Vendeur'), cellvids={0: 'outofcontext'})
+        self.wview('table', rset, 'null',
+                   title=_('Vendeur'),
+                   cellvids={0: 'outofcontext'})
 
 
 class TabPersonneRattachement(tabs.EntityRelationView):
