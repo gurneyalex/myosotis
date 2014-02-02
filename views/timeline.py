@@ -2,7 +2,7 @@
 from logilab.mtconverter import xml_escape
 
 from cubicweb.web.views import timeline
-from cubicweb.selectors import adaptable, is_instance
+from cubicweb.predicates import is_instance, adaptable
 
 class MyosotisTimeline(timeline.TimelineView):
     __regid__ = 'myosotis.timeline'
@@ -41,5 +41,5 @@ class MyosotisTimelineJson(timeline.TimelineJsonView):
               }
     def build_event(self, entity):
         event =  super(MyosotisTimelineJson, self).build_event(entity)
-        event['color'] = self.colors[entity.type_compte.lower()]
+        event['color'] = self.colors.get(entity.type_compte.lower(), 'red')
         return event

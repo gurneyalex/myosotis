@@ -4,10 +4,19 @@ from cubicweb.entities import AnyEntity, fetch_config
 
 class Parure(AnyEntity):
     __regid__ = 'Parure'
-    fetch_attrs, fetch_order = fetch_config(['nature', 'type', 'caracteristique'])
+    fetch_attrs, cw_fetch_order = fetch_config(['nature', 'type', 'caracteristique'])
     def dc_title(self):
         #self.complete()
         return u'%s %s'% (self.nature, self.caracteristique or '')
+
+    def dc_long_title(self):
+        title = self.dc_title()
+        materiaux = self.materiaux()
+        mat_str = u', '.join(mat[0].dc_title().strip() for mat in materiaux)
+        if mat_str:
+            return u'%s [%s]' % (title, mat_str)
+        else:
+            return title
 
     def quantite(self):
         if self.reverse_parure:
@@ -54,6 +63,7 @@ class Parure(AnyEntity):
                                      quantite,
                                      usage))
         return materiaux
+
     def date(self):
         try:
             achat = self.reverse_parure[0]

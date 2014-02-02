@@ -1,4 +1,4 @@
-from cubicweb.selectors import is_instance
+from cubicweb.predicates import is_instance
 from cubicweb.web.box import EntityBoxTemplate
 from cubicweb.web.htmlwidgets import SideBoxWidget
 _ = unicode

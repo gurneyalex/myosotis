@@ -5,13 +5,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: myosotis-2.0\n"
-"PO-Revision-Date: 2012-05-18 15:30+0200\n"
+"PO-Revision-Date: 2013-08-18 20:11+0200\n"
 "Last-Translator: Alexandre Fayolle <alexandre.fayolle@free.fr>\n"
 "Language-Team: French <FR@li.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#, python-format
+msgid "%s %s"
+msgstr "%s %s"
 
 # schema pot file, generated on 2010-08-22 15:26:07
 #
@@ -37,6 +41,9 @@ msgstr "Achats de Prêts à porter"
 msgid "Artisan pour"
 msgstr "Artisan pour"
 
+msgid "Artisans"
+msgstr "Artisans"
+
 msgid "Candidates:"
 msgstr "Candidats :"
 
@@ -58,11 +65,17 @@ msgstr "Commandes"
 msgid "Commandes"
 msgstr "Commandes"
 
+msgid "Commanditaires"
+msgstr "Commanditaires"
+
 msgid "Compte"
 msgstr "Compte"
 
 msgid "Compte_plural"
 msgstr "Comptes"
+
+msgid "Coursier"
+msgstr "Coursier"
 
 msgid "Destinataire"
 msgstr "Destinataire"
@@ -73,11 +86,14 @@ msgstr "Destinataire de"
 msgid "Destinataire_plural"
 msgstr "Destinataires"
 
+msgid "Destinataires"
+msgstr "Destinataires"
+
 msgid "FabriqueAvecMat"
-msgstr "Fabriqué avec Matériaux"
+msgstr "Fabrication avec Matériaux acheté"
 
 msgid "FabriqueAvecMat_plural"
-msgstr "Fabriqués avec Matériaux"
+msgstr "Fabrications avec Matériaux acheté"
 
 msgid "Identity of the Personne to merge"
 msgstr "Identité de la personne à fusionner"
@@ -100,11 +116,23 @@ msgstr "Lieux"
 msgid "Materiaux"
 msgstr "Matériaux"
 
+msgctxt "inlined:AchatMateriaux.materiaux.subject"
+msgid "Materiaux"
+msgstr "Matériaux"
+
+msgctxt "inlined:MateriauxParure.materiaux.subject"
+msgid "Materiaux"
+msgstr "Matériaux"
+
 msgid "Materiaux similaires"
 msgstr "Matériaux similaires"
 
 msgid "MateriauxParure"
 msgstr "Matériaux de Parure"
+
+msgctxt "inlined:Parure.composee_de.subject"
+msgid "MateriauxParure"
+msgstr "Matériaux utilisés"
 
 msgid "MateriauxParure_plural"
 msgstr "Matériaux de Parures"
@@ -119,67 +147,67 @@ msgid "Monnaie_plural"
 msgstr "Monnaies"
 
 msgid "New AchatFabrication"
-msgstr ""
+msgstr "Nouvel Achat Fabrication"
 
 msgid "New AchatMateriaux"
-msgstr ""
+msgstr "Nouvel Achat Matériaux"
 
 msgid "New AchatPretPorter"
-msgstr ""
+msgstr "Nouvel Achat Prêt à Porter"
 
 msgid "New Change"
-msgstr ""
+msgstr "Nouveau Change"
 
 msgid "New Commande"
-msgstr ""
+msgstr "Nouvelle Commande"
 
 msgid "New Compte"
-msgstr ""
+msgstr "Nouveau Compte"
 
 msgid "New Destinataire"
-msgstr ""
+msgstr "Nouveau Destinataire"
 
 msgid "New FabriqueAvecMat"
-msgstr ""
+msgstr "Nouvelle Fabrication avec Matériaux"
 
 msgid "New Intervenant"
-msgstr ""
+msgstr "Nouvel Intervenant"
 
 msgid "New Lieu"
-msgstr ""
+msgstr "Nouveau Lieu"
 
 msgid "New Materiaux"
-msgstr ""
+msgstr "Nouveau Matériaux"
 
 msgid "New MateriauxParure"
-msgstr ""
+msgstr "Nouveau Matériaux de Parure"
 
 msgid "New Monnaie"
-msgstr ""
+msgstr "Nouvelle Monnaie"
 
 msgid "New Occasion"
-msgstr ""
+msgstr "Nouvelle Occasion"
 
 msgid "New Occupation"
-msgstr ""
+msgstr "Nouvelle Occupation"
 
 msgid "New Parure"
-msgstr ""
+msgstr "Nouvelle Parure"
 
 msgid "New Personne"
-msgstr ""
+msgstr "Nouvelle Personne"
 
 msgid "New Prix"
-msgstr ""
+msgstr "Nouveau Prix"
 
 msgid "New Transaction"
-msgstr ""
+msgstr "Nouvelle Transaction"
 
 msgid "New Travail"
-msgstr ""
+msgstr "Nouveau Travail"
 
 msgid "New Vendeur"
-msgstr ""
+msgstr "Nouveau Vendeur"
 
 msgid "Occasion"
 msgstr "Occasion"
@@ -196,6 +224,14 @@ msgstr "Occupations"
 msgid "Occupations"
 msgstr "Occupations"
 
+msgid "Parure"
+msgstr "Parure"
+
+msgctxt "inlined:AchatFabrication.parure.subject"
+msgid "Parure"
+msgstr "Parure"
+
+msgctxt "inlined:AchatPretPorter.parure.subject"
 msgid "Parure"
 msgstr "Parure"
 
@@ -216,6 +252,54 @@ msgstr "Personnes"
 
 msgid "Prix"
 msgstr "Prix"
+
+msgctxt "inlined:AchatFabrication.prix_total.subject"
+msgid "Prix"
+msgstr "Prix Total"
+
+msgctxt "inlined:AchatFabrication.prix_unitaire.subject"
+msgid "Prix"
+msgstr "Prix Unitaire"
+
+msgctxt "inlined:AchatMateriaux.prix_total.subject"
+msgid "Prix"
+msgstr "Prix Total"
+
+msgctxt "inlined:AchatMateriaux.prix_unitaire.subject"
+msgid "Prix"
+msgstr "Prix Unitaire"
+
+msgctxt "inlined:AchatPretPorter.prix_total.subject"
+msgid "Prix"
+msgstr "Prix Total"
+
+msgctxt "inlined:AchatPretPorter.prix_unitaire.subject"
+msgid "Prix"
+msgstr "Prix Unitaire"
+
+msgctxt "inlined:Change.prix_converti.subject"
+msgid "Prix"
+msgstr "Prix Converti"
+
+msgctxt "inlined:Change.prix_depart.subject"
+msgid "Prix"
+msgstr "Prix Départ"
+
+msgctxt "inlined:Intervenant.prix_transport.subject"
+msgid "Prix"
+msgstr "Prix Transport"
+
+msgctxt "inlined:Intervenant.prix_valet.subject"
+msgid "Prix"
+msgstr "Prix Valet"
+
+msgctxt "inlined:Transaction.prix_ensemble.subject"
+msgid "Prix"
+msgstr "Prix Ensemble"
+
+msgctxt "inlined:Travail.salaire_argent.subject"
+msgid "Prix"
+msgstr "Salaire Argent"
 
 msgid "Prix_plural"
 msgstr "Prix"
@@ -245,67 +329,67 @@ msgid "Same type Parures"
 msgstr "même type"
 
 msgid "This AchatFabrication"
-msgstr ""
+msgstr "Cet Achat Fabrication"
 
 msgid "This AchatMateriaux"
-msgstr ""
+msgstr "Cet Achat Matériaux"
 
 msgid "This AchatPretPorter"
-msgstr ""
+msgstr "Cet Achat Prêt à Porter"
 
 msgid "This Change"
-msgstr ""
+msgstr "Ce Change"
 
 msgid "This Commande"
-msgstr ""
+msgstr "Cette Commande"
 
 msgid "This Compte"
-msgstr ""
+msgstr "Ce Compte"
 
 msgid "This Destinataire"
-msgstr ""
+msgstr "Ce Destinataire"
 
 msgid "This FabriqueAvecMat"
-msgstr ""
+msgstr "Cette Fabrication avec Matériaux"
 
 msgid "This Intervenant"
-msgstr ""
+msgstr "Cet Intervenant"
 
 msgid "This Lieu"
-msgstr ""
+msgstr "Ce Lieu"
 
 msgid "This Materiaux"
-msgstr ""
+msgstr "Ce Matériaux"
 
 msgid "This MateriauxParure"
-msgstr ""
+msgstr "Ce Matériaux de Parure"
 
 msgid "This Monnaie"
-msgstr ""
+msgstr "Cette Monnaie"
 
 msgid "This Occasion"
-msgstr ""
+msgstr "Cette Occasion"
 
 msgid "This Occupation"
-msgstr ""
+msgstr "Cette Occupation"
 
 msgid "This Parure"
-msgstr ""
+msgstr "Cette Parure"
 
 msgid "This Personne"
-msgstr ""
+msgstr "Cette Personne"
 
 msgid "This Prix"
-msgstr ""
+msgstr "Ce Prix"
 
 msgid "This Transaction"
-msgstr ""
+msgstr "Cette Transaction"
 
 msgid "This Travail"
-msgstr ""
+msgstr "Ce Travail"
 
 msgid "This Vendeur"
-msgstr ""
+msgstr "Ce Vendeur"
 
 msgid "Transaction"
 msgstr "Transaction"
@@ -329,6 +413,9 @@ msgid "Vendeur"
 msgstr "Vendeur"
 
 msgid "Vendeur_plural"
+msgstr "Vendeurs"
+
+msgid "Vendeurs"
 msgstr "Vendeurs"
 
 # subject and object forms for each relation type
@@ -373,13 +460,13 @@ msgid "add Compte change Change subject"
 msgstr "Change"
 
 msgid "add Destinataire destinataire Personne object"
-msgstr ""
+msgstr "Destinataire"
 
 msgid "add Intervenant intervenant Personne object"
-msgstr ""
+msgstr "Intervenant"
 
 msgid "add Parure composee_de MateriauxParure subject"
-msgstr ""
+msgstr "Materiaux"
 
 msgid "add Transaction achat AchatFabrication subject"
 msgstr "Achat Fabrication"
@@ -392,6 +479,9 @@ msgstr "Achat Prêt à Porter"
 
 msgid "add Transaction change Change subject"
 msgstr "Change"
+
+msgid "add Transaction compte Compte object"
+msgstr "Transaction"
 
 msgid "add Transaction destinataires Destinataire subject"
 msgstr "Destinataire"
@@ -406,10 +496,78 @@ msgid "add Transaction vendeurs Vendeur subject"
 msgstr "Vendeur"
 
 msgid "add Travail artisan Personne object"
-msgstr ""
+msgstr "Travail"
 
 msgid "add Vendeur vendeur Personne object"
-msgstr ""
+msgstr "Vendeur"
+
+msgctxt "inlined:AchatMateriaux.materiaux.subject"
+msgid "add a Materiaux"
+msgstr "Ajouter un Matériaux"
+
+msgctxt "inlined:MateriauxParure.materiaux.subject"
+msgid "add a Materiaux"
+msgstr "Ajouter un Matériaux"
+
+msgctxt "inlined:Parure.composee_de.subject"
+msgid "add a MateriauxParure"
+msgstr "Ajouter un Matériaux de Parure"
+
+msgctxt "inlined:AchatFabrication.parure.subject"
+msgid "add a Parure"
+msgstr "Ajouter une Parure"
+
+msgctxt "inlined:AchatPretPorter.parure.subject"
+msgid "add a Parure"
+msgstr "Ajouter une Parure"
+
+msgctxt "inlined:AchatFabrication.prix_total.subject"
+msgid "add a Prix"
+msgstr "Ajouter un Prix Total"
+
+msgctxt "inlined:AchatFabrication.prix_unitaire.subject"
+msgid "add a Prix"
+msgstr "Ajouter un Prix Unitaire"
+
+msgctxt "inlined:AchatMateriaux.prix_total.subject"
+msgid "add a Prix"
+msgstr "Ajouter un Prix Total"
+
+msgctxt "inlined:AchatMateriaux.prix_unitaire.subject"
+msgid "add a Prix"
+msgstr "Ajouter un Prix Unitaire"
+
+msgctxt "inlined:AchatPretPorter.prix_total.subject"
+msgid "add a Prix"
+msgstr "Ajouter un Prix Total"
+
+msgctxt "inlined:AchatPretPorter.prix_unitaire.subject"
+msgid "add a Prix"
+msgstr "Ajouter un Prix Unitaire"
+
+msgctxt "inlined:Change.prix_converti.subject"
+msgid "add a Prix"
+msgstr "Ajouter le Prix Converti"
+
+msgctxt "inlined:Change.prix_depart.subject"
+msgid "add a Prix"
+msgstr "Ajouter le prix de Départ"
+
+msgctxt "inlined:Intervenant.prix_transport.subject"
+msgid "add a Prix"
+msgstr "Ajouter le Prix de Transport"
+
+msgctxt "inlined:Intervenant.prix_valet.subject"
+msgid "add a Prix"
+msgstr "Ajouter le Prix Valets"
+
+msgctxt "inlined:Transaction.prix_ensemble.subject"
+msgid "add a Prix"
+msgstr "Ajouter le Prix d'ensemble"
+
+msgctxt "inlined:Travail.salaire_argent.subject"
+msgid "add a Prix"
+msgstr "Ajouter le Salaire Argent"
 
 msgid "artisan"
 msgstr "artisan"
@@ -580,48 +738,51 @@ msgstr "couleur"
 
 msgid ""
 "creating AchatFabrication (Transaction %(linkto)s achat AchatFabrication)"
-msgstr ""
+msgstr "Création d'un Achat Fabrication (pour la Transaction %(linkto)s)"
 
 msgid "creating AchatMateriaux (Transaction %(linkto)s achat AchatMateriaux)"
-msgstr ""
+msgstr "Création d'un Achat Matériaux (pour la Transaction %(linkto)s)"
 
 msgid "creating AchatPretPorter (Transaction %(linkto)s achat AchatPretPorter)"
-msgstr ""
+msgstr "Création d'un Achat Prêt à Porter (pour la Transaction %(linkto)s)"
 
 msgid "creating Change (Compte %(linkto)s change Change)"
-msgstr ""
+msgstr "Création d'un Change (pour le compte %(linkto)s)"
 
 msgid "creating Change (Transaction %(linkto)s change Change)"
-msgstr ""
+msgstr "Création d'un Change (pour la Transaction %(linkto)s)"
 
 msgid "creating Destinataire (Destinataire destinataire Personne %(linkto)s)"
-msgstr ""
+msgstr "Création d'un Destinataire (pour la Personne %(linkto)s)"
 
 msgid ""
 "creating Destinataire (Transaction %(linkto)s destinataires Destinataire)"
-msgstr ""
+msgstr "Création d'un Destinataire (pour la Transaction %(linkto)s)"
 
 msgid "creating Intervenant (Intervenant intervenant Personne %(linkto)s)"
-msgstr ""
+msgstr "Création d'un Intervenant (pour la Personne %(linkto)s)"
 
 msgid "creating Intervenant (Transaction %(linkto)s intervenants Intervenant)"
-msgstr ""
+msgstr "Création d'un Intervenant (pour la Transaction %(linkto)s)"
 
 msgid ""
 "creating MateriauxParure (Parure %(linkto)s composee_de MateriauxParure)"
-msgstr ""
+msgstr "Création d'un Matériaux Parure (pour la Parure %(linkto)s)"
+
+msgid "creating Transaction (Transaction compte Compte %(linkto)s)"
+msgstr "Création d'une Transaction (pour le compte %(linkto)s)"
 
 msgid "creating Travail (Transaction %(linkto)s travaux Travail)"
-msgstr ""
+msgstr "Création d'un Travail (pour la Transaction %(linkto)s)"
 
 msgid "creating Travail (Travail artisan Personne %(linkto)s)"
-msgstr ""
+msgstr "Création d'un Travail (pour la Personne %(linkto)s)"
 
 msgid "creating Vendeur (Transaction %(linkto)s vendeurs Vendeur)"
-msgstr ""
+msgstr "Création d'un Vendeur (pour la Transaction %(linkto)s)"
 
 msgid "creating Vendeur (Vendeur vendeur Personne %(linkto)s)"
-msgstr ""
+msgstr "Création d'un Vendeur (pour la Personne %(linkto)s)"
 
 msgid "ctxcomponents_mergepersonne"
 msgstr "fusion personnes"
@@ -737,14 +898,6 @@ msgctxt "Destinataire"
 msgid "destinataire"
 msgstr "destinataire"
 
-#, python-format
-msgid "destinataire %s"
-msgstr "destinataire %s"
-
-#, python-format
-msgid "destinataire %s %s"
-msgstr "destinataire %s %s"
-
 msgid "destinataire_object"
 msgstr "transaction"
 
@@ -797,6 +950,90 @@ msgstr "export excel"
 msgctxt "Vendeur"
 msgid "expression"
 msgstr "expression"
+
+msgid "facets_compte-end"
+msgstr ""
+
+msgid "facets_compte-end_description"
+msgstr ""
+
+msgid "facets_compte-start"
+msgstr ""
+
+msgid "facets_compte-start_description"
+msgstr ""
+
+msgid "facets_compte-type"
+msgstr ""
+
+msgid "facets_compte-type_description"
+msgstr ""
+
+msgid "facets_materiaux-famille"
+msgstr ""
+
+msgid "facets_materiaux-famille_description"
+msgstr ""
+
+msgid "facets_materiaux-type"
+msgstr ""
+
+msgid "facets_materiaux-type_description"
+msgstr ""
+
+msgid "facets_parure-nature"
+msgstr ""
+
+msgid "facets_parure-nature_description"
+msgstr ""
+
+msgid "facets_parure-type"
+msgstr ""
+
+msgid "facets_parure-type_description"
+msgstr ""
+
+msgid "facets_personne-sexe"
+msgstr ""
+
+msgid "facets_personne-sexe_description"
+msgstr ""
+
+msgid "facets_personne-titre"
+msgstr ""
+
+msgid "facets_personne-titre_description"
+msgstr ""
+
+msgid "facets_transaction-compte"
+msgstr ""
+
+msgid "facets_transaction-compte_description"
+msgstr ""
+
+msgid "facets_transaction-dest"
+msgstr ""
+
+msgid "facets_transaction-dest-sexe"
+msgstr ""
+
+msgid "facets_transaction-dest-sexe_description"
+msgstr ""
+
+msgid "facets_transaction-dest-titre"
+msgstr ""
+
+msgid "facets_transaction-dest-titre_description"
+msgstr ""
+
+msgid "facets_transaction-dest_description"
+msgstr ""
+
+msgid "facets_transaction-occasion"
+msgstr ""
+
+msgid "facets_transaction-occasion_description"
+msgstr ""
 
 msgid "facon_et_etoffe"
 msgstr "façon et étoffe"
@@ -1560,6 +1797,9 @@ msgstr "Personne"
 msgid "tab_personne_artisan"
 msgstr "Artisan"
 
+msgid "tab_personne_codest"
+msgstr "Co-Destinataires"
+
 msgid "tab_personne_destinataire"
 msgstr "Destinataire"
 
@@ -1573,11 +1813,11 @@ msgid "tab_personne_vendeur"
 msgstr "Vendeur"
 
 msgid "tache"
-msgstr "tache"
+msgstr "tâche"
 
 msgctxt "Travail"
 msgid "tache"
-msgstr "tache"
+msgstr "tâche"
 
 msgid "titre"
 msgstr "titre"
@@ -1746,3 +1986,17 @@ msgstr "origine"
 msgctxt "Personne"
 msgid "ville_origine"
 msgstr "origine"
+
+#~ msgctxt "inlined:AchatFabrication.avec_mat.subject"
+#~ msgid "FabriqueAvecMat"
+#~ msgstr "Avec l'Achat de Matériaux"
+
+#~ msgctxt "inlined:AchatFabrication.avec_mat.subject"
+#~ msgid "add a FabriqueAvecMat"
+#~ msgstr "Ajout d'un Achat Matériaux utilisé pour la Fabrication"
+
+#~ msgid "destinataire %s"
+#~ msgstr "destinataire %s"
+
+#~ msgid "destinataire %s %s"
+#~ msgstr "destinataire %s %s"

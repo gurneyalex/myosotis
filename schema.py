@@ -27,6 +27,14 @@ from cubicweb.schema import RQLVocabularyConstraint
 # * vérifier les cardinalites
 # * renommer les relations 'personne'
 
+_TYPES_MESURE = [u'pelleterie',
+                 u'longueur',
+                 u'unité',
+                 u'poids',
+                 u'longeur',
+                 u'',
+                 ]
+
 class Compte(EntityType):
     type_compte = String(maxsize=255, required=True)
     inventaire = String(maxsize=255, required=True, fulltextindexed=True)
@@ -113,7 +121,8 @@ class AchatFabrication(EntityType):
 
 class AchatMateriaux(EntityType):
     date_achat = Date()
-    type_mesure = String(maxsize=255, fulltextindexed=True)
+    type_mesure = String(vocabulary=_TYPES_MESURE,
+                         fulltextindexed=True)
     quantite = Float()
     quantite_plusieurs = Boolean(default=False, required=True, description='True if quantite is "plusieurs"')
     unite = String(maxsize=255, fulltextindexed=True)
@@ -137,13 +146,17 @@ class Change(EntityType):
 
 
 class FabriqueAvecMat(EntityType):
-    type_mesure = String(maxsize=255, fulltextindexed=True)
+    type_mesure = String(vocabulary=_TYPES_MESURE,
+                         fulltextindexed=True)
     quantite = Float()
     unite = String(maxsize=255, fulltextindexed=True)
     provenance_mesure = String(maxsize=255, fulltextindexed=True)
     conversion = Float()
     usage = String(fulltextindexed=True)
-    achat_matiere = SubjectRelation('AchatMateriaux', cardinality='1*')
+    achat_matiere = SubjectRelation('AchatMateriaux', cardinality='1*',
+                                    #constraints=[RQLVocabularyConstraint('T1 achat S, T2 achat O, T1 compte C, T2 compte C', mainvars=('O',))]
+                                    constraints = [RQLVocabularyConstraint('T1 achat O, AF avec_mat S, T2 achat AF, T1 compte C1, T2 compte C2, C1 identity C2')]
+                                    )
 
 class Lieu(EntityType):
     ville = String(maxsize=255, required=True, fulltextindexed=True)
@@ -231,7 +244,8 @@ class Parure(EntityType):
     composee_de = SubjectRelation('MateriauxParure', cardinality='*1', composite='subject')
 
 class MateriauxParure(EntityType):
-    type_mesure = String(maxsize=255)
+    type_mesure = String(vocabulary=_TYPES_MESURE,
+                         fulltextindexed=True)
     quantite = Float()
     unite = String(maxsize=255, fulltextindexed=True)
     provenance_mesure = String(maxsize=255, fulltextindexed=True)
@@ -242,9 +256,16 @@ class MateriauxParure(EntityType):
 
 
 class Materiaux(EntityType):
-    nom = String(maxsize=255, required=True)
+    nom = String(maxsize=255, required=True, fulltextindexed=True)
     type = String(vocabulary=['E', 'F', 'M', 'O', 'B', 'P', '?'], required=True)
-    famille = String(maxsize=255, default=u"laine", required=True, fulltextindexed=True)
+    famille = String(vocabulary=[u'laine',
+                                 u'toile',
+                                 u'mélangé',
+                                 u'NA',
+                                 u'soie'],
+                     default=u"laine",
+                     required=True,
+                     fulltextindexed=True)
     couleur = String(maxsize=255, fulltextindexed=True)
     carac_couleur = String(maxsize=255, fulltextindexed=True)
     carac_facture = String(maxsize=255, fulltextindexed=True)

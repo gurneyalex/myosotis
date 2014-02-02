@@ -1,3 +1,5 @@
+import os.path as osp
+migr_dir = osp.dirname(__file__)
 target_monnaie = rql('Any M WHERE M is Monnaie, M nom "Gros tournois"').get_entity(0, 0)
 
 print "init transactions"
@@ -11,7 +13,7 @@ for m in rql('Any M WHERE M is Monnaie').entities():
 print "read csv file"
 import csv
 import codecs
-f=open('migration/florin_ad.csv', 'r')
+f=open(osp.join(migr_dir, 'florin_ad.csv'), 'r')
 dialect = csv.Sniffer().sniff(f.read(1024), ';')
 f.seek(0)
 reader = csv.DictReader(f, dialect=dialect)

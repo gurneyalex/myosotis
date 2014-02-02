@@ -13,22 +13,36 @@ class AchatFabrication(AnyEntity):
         quantite = self.quantite or 1
         parure = self.parure[0].dc_title()
         return u'%d %s' % (quantite, parure)
+
     def dc_long_title(self):
         self.complete()
         quantite = self.quantite or 1
-        parure = self.parure[0].dc_title()
+        parure = self.parure[0].dc_long_title()
         return u'Fabrication %d %s' % (quantite, parure)
 
+    @property
+    def nb_dest(self):
+        rql = 'Any COUNT(D) WHERE T achat A, A eid %(eid)s, T destinataires D'
+        rset = self._cw.execute(rql, {'eid': self.eid})
+        return rset[0][0]
+    
 class AchatPretPorter(AnyEntity):
     __regid__ = 'AchatPretPorter'
     fetch_attrs = ['date_achat', 'quantite', 'quantite_plusieurs', 'parure', 'remarques',
                    #'prix_total', 'prix_unitaire'
                    ]
+
     def dc_title(self):
         self.complete()
         quantite = self.quantite or 1
-        parure = self.parure[0].dc_title()
+        parure = self.parure[0].dc_long_title()
         return u'Prêt à Porter %d %s' % (quantite, parure)
+
+    @property
+    def nb_dest(self):
+        rql = 'Any COUNT(D) WHERE T achat A, A eid %(eid)s, T destinataires D'
+        rset = self._cw.execute(rql, {'eid': self.eid})
+        return rset[0][0]
 
 class AchatMateriaux(AnyEntity):
     __regid__ = 'AchatMateriaux'
@@ -36,6 +50,7 @@ class AchatMateriaux(AnyEntity):
                    'provenance_mesure', 'conversion', 'materiaux', 'remarques',
                    #'prix_total', 'prix_unitaire'
                    ]
+
     def dc_title(self):
         self.complete()
         if self.quantite is not None:
@@ -50,7 +65,8 @@ class AchatMateriaux(AnyEntity):
         else:
             unite = u''
             quantite = u''
-        count = self._cw.execute('Any COUNT(AM) WHERE AM achat_matiere X, X eid %(eid)s', {'eid': self.eid})[0][0]
+        count = self._cw.execute('Any COUNT(AM) WHERE AM achat_matiere X, X eid %(eid)s',
+                                 {'eid': self.eid})[0][0]
         if count>1:
             flag = '*'
         else:
@@ -60,12 +76,21 @@ class AchatMateriaux(AnyEntity):
     def dc_long_title(self):
         return u'Achat %s' % self.dc_title()
 
+    @property
+    def nb_dest(self):
+        rql = 'Any COUNT(D) WHERE T achat A, A eid %(eid)s, T destinataires D'
+        rset = self._cw.execute(rql, {'eid': self.eid})
+        return rset[0][0]
+
 class FabriqueAvecMat(AnyEntity):
     __regid__ = 'FabriqueAvecMat'
-    fetch_attrs, fetch_order = fetch_config(['usage', 'type_mesure', 'quantite', 'unite', 'provenance_mesure', 'conversion', 'achat_matiere'])
+    fetch_attrs, cw_fetch_order = fetch_config(['usage', 'type_mesure', 'quantite', 'unite', 'provenance_mesure', 'conversion',
+                                                #'achat_matiere',
+                                                ])
 
     def dc_title(self):
         return self.achat_matiere[0].dc_title()
+
     def dc_long_title(self):
         fabrique = [fab.dc_title() for fab in self.reverse_avec_mat]
         return u'fabrique avec %s: %s' % (self.achat_matiere[0].dc_long_title(),
@@ -73,7 +98,8 @@ class FabriqueAvecMat(AnyEntity):
 
 class MateriauxParure(AnyEntity):
     __regid__ = 'MateriauxParure'
-    fetch_attrs, fetch_order = fetch_config(['usage', 'type_mesure', 'quantite', 'unite', 'provenance_mesure', 'conversion', 'materiaux_achete' , 'materiaux'])
+    fetch_attrs, cw_fetch_order = fetch_config(['usage', 'type_mesure', 'quantite', 'unite', 'provenance_mesure', 'conversion', 'materiaux_achete' , 'materiaux'])
+
     def dc_title(self):
         return self.materiaux[0].dc_title()
 
@@ -123,7 +149,6 @@ class Materiaux(AnyEntity):
             return self.provenance[0].dc_title()
         return None
     @classmethod
-    def fetch_order(cls, attr, var):
+    def cw_fetch_order(cls, select, attr, var):
         if attr in ('type', 'famille', 'nom', 'couleur'):
-            return '%s ASC' % var
-        return None
+            select.add_sort_var(var, asc=True)

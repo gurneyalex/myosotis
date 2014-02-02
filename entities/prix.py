@@ -11,7 +11,7 @@ from cubes.myosotis.graph import dijkstra
 
 class Monnaie(AnyEntity):
     __regid__ = 'Monnaie'
-    fetch_attrs, fetch_order = fetch_config(['nom', 'type'])
+    fetch_attrs, cw_fetch_order = fetch_config(['nom', 'type'])
 
 _PRIX_TRANSACTIONS={}
 def get_all_prix_transactions(cw):
@@ -44,9 +44,14 @@ def get_all_prix_transactions(cw):
 
 class Prix(AnyEntity):
     __regid__ = 'Prix'
-    fetch_attrs, fetch_order = fetch_config(('livres', 'sous', 'deniers', 'florins', 'gros', 'sous_florins', 'denier_florins', 'monnaie'))
+    fetch_attrs, cw_fetch_order = fetch_config(('conversion', 'livres', 'sous', 'deniers', 'florins', 'gros', 'sous_florins', 'denier_florins', 'monnaie'))
 
     def dc_title(self):
+        if self.conversion:
+            return u'%.2f' % self.conversion
+        return self.raw_title()
+    
+    def raw_title(self):
 #        self.complete()
         monnaie = self.monnaie[0]
 #        return u'%s %s' % (self.float_value, monnaie.nom)
@@ -57,11 +62,11 @@ class Prix(AnyEntity):
                 ad = u' ad %.1f' % (self.florin_ad or self.monnaie[0].nb_gros)
             else:
                 ad = u''
-            return u'%sf %sg %ss %.2fd %s%s' % (self.florins or 0, 
-                                                self.gros or 0, 
-                                                self.sous_florins or 0, 
-                                                self.denier_florins or 0, 
-                                                monnaie.nom, 
+            return u'%sf %sg %ss %.2fd %s%s' % (self.florins or 0,
+                                                self.gros or 0,
+                                                self.sous_florins or 0,
+                                                self.denier_florins or 0,
+                                                monnaie.nom,
                                                 ad)
         else:
             return u'%.2f %s' % (self.monnaie_or, monnaie.nom)
@@ -82,7 +87,7 @@ class Prix(AnyEntity):
         else:
             return self.monnaie_or or 0.
 
-    
+
 
     def get_transaction(self, allow_multi=False):
         prix_transactions = get_all_prix_transactions(self._cw)
@@ -202,7 +207,7 @@ class Prix(AnyEntity):
                     f.write(u'ratio max/min: %.2f\n\n' % (max(ratios) / min(ratios)))
                 print 'Prix %d %.2f' % (self.eid, max(ratios) / min(ratios))
                 # change_list contains the (ratio, change) sorted by increasing ratio
-                # we want to use the median ratio. 
+                # we want to use the median ratio.
                 nb_changes = len(change_list)
                 middle = nb_changes / 2.
                 index = int(math.floor(middle))
@@ -246,7 +251,7 @@ class Change(AnyEntity):
         prix_depart = self.prix_depart[0]
         prix_converti = self.prix_converti[0]
         return u"%s -> %s" % (prix_depart.dc_title(), prix_converti.dc_title())
-    
+
     @property
     def date(self):
         rql = 'Any X WHERE X change C, C eid %(eid)s'
@@ -258,7 +263,7 @@ class Change(AnyEntity):
             elif entity.__regid__ == 'Compte':
                 return entity.fin
         return None
-                                
+
 
     @property
     def eid_monnaie_depart(self):

@@ -3,8 +3,7 @@ import datetime as dt
 from cubicweb.view import EntityView
 from cubicweb.web.views import primary
 from cubicweb.web.views import baseviews
-from cubicweb.selectors import is_instance, rql_condition
-from cubicweb.web.views.tableview import EntityAttributesTableView
+from cubicweb.predicates import is_instance, rql_condition
 from cubicweb.web.views.tabs import TabbedPrimaryView, PrimaryTab
 from cubicweb.tags import h2
 _ = unicode

@@ -6,6 +6,10 @@ msgstr ""
 "Generated-By: pygettext.py 1.5\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
+#, python-format
+msgid "%s %s"
+msgstr ""
+
 # schema pot file, generated on 2010-08-22 15:26:07
 #
 # singular and plural forms for each entity type
@@ -30,6 +34,9 @@ msgstr ""
 msgid "Artisan pour"
 msgstr ""
 
+msgid "Artisans"
+msgstr ""
+
 msgid "Candidates:"
 msgstr ""
 
@@ -51,10 +58,16 @@ msgstr ""
 msgid "Commandes"
 msgstr ""
 
+msgid "Commanditaires"
+msgstr ""
+
 msgid "Compte"
 msgstr ""
 
 msgid "Compte_plural"
+msgstr ""
+
+msgid "Coursier"
 msgstr ""
 
 msgid "Destinataire"
@@ -64,6 +77,9 @@ msgid "Destinataire de"
 msgstr ""
 
 msgid "Destinataire_plural"
+msgstr ""
+
+msgid "Destinataires"
 msgstr ""
 
 msgid "FabriqueAvecMat"
@@ -93,9 +109,21 @@ msgstr ""
 msgid "Materiaux"
 msgstr ""
 
+msgctxt "inlined:AchatMateriaux.materiaux.subject"
+msgid "Materiaux"
+msgstr ""
+
+msgctxt "inlined:MateriauxParure.materiaux.subject"
+msgid "Materiaux"
+msgstr ""
+
 msgid "Materiaux similaires"
 msgstr ""
 
+msgid "MateriauxParure"
+msgstr ""
+
+msgctxt "inlined:Parure.composee_de.subject"
 msgid "MateriauxParure"
 msgstr ""
 
@@ -192,6 +220,14 @@ msgstr ""
 msgid "Parure"
 msgstr ""
 
+msgctxt "inlined:AchatFabrication.parure.subject"
+msgid "Parure"
+msgstr ""
+
+msgctxt "inlined:AchatPretPorter.parure.subject"
+msgid "Parure"
+msgstr ""
+
 msgid "Parure summary"
 msgstr ""
 
@@ -207,6 +243,54 @@ msgstr ""
 msgid "Personne_plural"
 msgstr ""
 
+msgid "Prix"
+msgstr ""
+
+msgctxt "inlined:AchatFabrication.prix_total.subject"
+msgid "Prix"
+msgstr ""
+
+msgctxt "inlined:AchatFabrication.prix_unitaire.subject"
+msgid "Prix"
+msgstr ""
+
+msgctxt "inlined:AchatMateriaux.prix_total.subject"
+msgid "Prix"
+msgstr ""
+
+msgctxt "inlined:AchatMateriaux.prix_unitaire.subject"
+msgid "Prix"
+msgstr ""
+
+msgctxt "inlined:AchatPretPorter.prix_total.subject"
+msgid "Prix"
+msgstr ""
+
+msgctxt "inlined:AchatPretPorter.prix_unitaire.subject"
+msgid "Prix"
+msgstr ""
+
+msgctxt "inlined:Change.prix_converti.subject"
+msgid "Prix"
+msgstr ""
+
+msgctxt "inlined:Change.prix_depart.subject"
+msgid "Prix"
+msgstr ""
+
+msgctxt "inlined:Intervenant.prix_transport.subject"
+msgid "Prix"
+msgstr ""
+
+msgctxt "inlined:Intervenant.prix_valet.subject"
+msgid "Prix"
+msgstr ""
+
+msgctxt "inlined:Transaction.prix_ensemble.subject"
+msgid "Prix"
+msgstr ""
+
+msgctxt "inlined:Travail.salaire_argent.subject"
 msgid "Prix"
 msgstr ""
 
@@ -324,6 +408,9 @@ msgstr ""
 msgid "Vendeur_plural"
 msgstr ""
 
+msgid "Vendeurs"
+msgstr ""
+
 # subject and object forms for each relation type
 # (no object form for final or symmetric relation types)
 msgid "achat"
@@ -386,6 +473,9 @@ msgstr ""
 msgid "add Transaction change Change subject"
 msgstr ""
 
+msgid "add Transaction compte Compte object"
+msgstr ""
+
 msgid "add Transaction destinataires Destinataire subject"
 msgstr ""
 
@@ -402,6 +492,74 @@ msgid "add Travail artisan Personne object"
 msgstr ""
 
 msgid "add Vendeur vendeur Personne object"
+msgstr ""
+
+msgctxt "inlined:AchatMateriaux.materiaux.subject"
+msgid "add a Materiaux"
+msgstr ""
+
+msgctxt "inlined:MateriauxParure.materiaux.subject"
+msgid "add a Materiaux"
+msgstr ""
+
+msgctxt "inlined:Parure.composee_de.subject"
+msgid "add a MateriauxParure"
+msgstr ""
+
+msgctxt "inlined:AchatFabrication.parure.subject"
+msgid "add a Parure"
+msgstr ""
+
+msgctxt "inlined:AchatPretPorter.parure.subject"
+msgid "add a Parure"
+msgstr ""
+
+msgctxt "inlined:AchatFabrication.prix_total.subject"
+msgid "add a Prix"
+msgstr ""
+
+msgctxt "inlined:AchatFabrication.prix_unitaire.subject"
+msgid "add a Prix"
+msgstr ""
+
+msgctxt "inlined:AchatMateriaux.prix_total.subject"
+msgid "add a Prix"
+msgstr ""
+
+msgctxt "inlined:AchatMateriaux.prix_unitaire.subject"
+msgid "add a Prix"
+msgstr ""
+
+msgctxt "inlined:AchatPretPorter.prix_total.subject"
+msgid "add a Prix"
+msgstr ""
+
+msgctxt "inlined:AchatPretPorter.prix_unitaire.subject"
+msgid "add a Prix"
+msgstr ""
+
+msgctxt "inlined:Change.prix_converti.subject"
+msgid "add a Prix"
+msgstr ""
+
+msgctxt "inlined:Change.prix_depart.subject"
+msgid "add a Prix"
+msgstr ""
+
+msgctxt "inlined:Intervenant.prix_transport.subject"
+msgid "add a Prix"
+msgstr ""
+
+msgctxt "inlined:Intervenant.prix_valet.subject"
+msgid "add a Prix"
+msgstr ""
+
+msgctxt "inlined:Transaction.prix_ensemble.subject"
+msgid "add a Prix"
+msgstr ""
+
+msgctxt "inlined:Travail.salaire_argent.subject"
+msgid "add a Prix"
 msgstr ""
 
 msgid "artisan"
@@ -604,6 +762,9 @@ msgid ""
 "creating MateriauxParure (Parure %(linkto)s composee_de MateriauxParure)"
 msgstr ""
 
+msgid "creating Transaction (Transaction compte Compte %(linkto)s)"
+msgstr ""
+
 msgid "creating Travail (Transaction %(linkto)s travaux Travail)"
 msgstr ""
 
@@ -730,14 +891,6 @@ msgctxt "Destinataire"
 msgid "destinataire"
 msgstr ""
 
-#, python-format
-msgid "destinataire %s"
-msgstr ""
-
-#, python-format
-msgid "destinataire %s %s"
-msgstr ""
-
 msgid "destinataire_object"
 msgstr ""
 
@@ -789,6 +942,90 @@ msgstr ""
 
 msgctxt "Vendeur"
 msgid "expression"
+msgstr ""
+
+msgid "facets_compte-end"
+msgstr ""
+
+msgid "facets_compte-end_description"
+msgstr ""
+
+msgid "facets_compte-start"
+msgstr ""
+
+msgid "facets_compte-start_description"
+msgstr ""
+
+msgid "facets_compte-type"
+msgstr ""
+
+msgid "facets_compte-type_description"
+msgstr ""
+
+msgid "facets_materiaux-famille"
+msgstr ""
+
+msgid "facets_materiaux-famille_description"
+msgstr ""
+
+msgid "facets_materiaux-type"
+msgstr ""
+
+msgid "facets_materiaux-type_description"
+msgstr ""
+
+msgid "facets_parure-nature"
+msgstr ""
+
+msgid "facets_parure-nature_description"
+msgstr ""
+
+msgid "facets_parure-type"
+msgstr ""
+
+msgid "facets_parure-type_description"
+msgstr ""
+
+msgid "facets_personne-sexe"
+msgstr ""
+
+msgid "facets_personne-sexe_description"
+msgstr ""
+
+msgid "facets_personne-titre"
+msgstr ""
+
+msgid "facets_personne-titre_description"
+msgstr ""
+
+msgid "facets_transaction-compte"
+msgstr ""
+
+msgid "facets_transaction-compte_description"
+msgstr ""
+
+msgid "facets_transaction-dest"
+msgstr ""
+
+msgid "facets_transaction-dest-sexe"
+msgstr ""
+
+msgid "facets_transaction-dest-sexe_description"
+msgstr ""
+
+msgid "facets_transaction-dest-titre"
+msgstr ""
+
+msgid "facets_transaction-dest-titre_description"
+msgstr ""
+
+msgid "facets_transaction-dest_description"
+msgstr ""
+
+msgid "facets_transaction-occasion"
+msgstr ""
+
+msgid "facets_transaction-occasion_description"
 msgstr ""
 
 msgid "facon_et_etoffe"
@@ -1551,6 +1788,9 @@ msgid "tab_personne"
 msgstr ""
 
 msgid "tab_personne_artisan"
+msgstr ""
+
+msgid "tab_personne_codest"
 msgstr ""
 
 msgid "tab_personne_destinataire"

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from cubicweb.web.facet import RelationFacet, RQLPathFacet, AttributeFacet, DateRangeFacet
-from cubicweb.selectors import is_instance
+from cubicweb.predicates import is_instance
 
 class CompteType(AttributeFacet):
     __regid__ = 'compte-type'

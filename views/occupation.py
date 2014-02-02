@@ -1,5 +1,5 @@
 from cubicweb.view import EntityAdapter
-from cubicweb.selectors import is_instance
+from cubicweb.predicates import is_instance
 
 class OccupationICalendarableAdapter(EntityAdapter):
     __regid__ = 'ICalendarable'

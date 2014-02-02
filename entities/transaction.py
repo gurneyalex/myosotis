@@ -3,7 +3,7 @@ from cubicweb.entities import AnyEntity, fetch_config
 _ = unicode
 class Transaction(AnyEntity):
     __regid__ = 'Transaction'
-    fetch_attrs, fetch_order = fetch_config(('pagination','date', 'date_ordre', 'date_recette', 'occasion', 'lieu', 'prix_ensemble', ))
+    fetch_attrs, cw_fetch_order = fetch_config(('pagination','date', 'date_ordre', 'date_recette', 'occasion', 'lieu', 'prix_ensemble', ))
 
     @property
     def _date(self):
@@ -38,7 +38,7 @@ class Transaction(AnyEntity):
 
 class Intervenant(AnyEntity):
     __regid__ = 'Intervenant'
-    fetch_attrs, fetch_order = fetch_config(('indemnite',
+    fetch_attrs, cw_fetch_order = fetch_config(('indemnite',
                                              #'nb_moyen_transport',
                                              #'moyen_transport',
                                              #'prix_transport',
@@ -60,6 +60,10 @@ class Intervenant(AnyEntity):
 
 class Vendeur(AnyEntity):
     __regid__ = 'Vendeur'
-    fetch_attrs, fetch_order = fetch_config(('vendeur', 'expression'))
+    fetch_attrs, cw_fetch_order = fetch_config(('vendeur', 'expression'))
     def dc_title(self):
         return self.vendeur[0].dc_title()
+
+class Travail(AnyEntity):
+    __regid__ = 'Travail'
+    fetch_attrs, cw_fetch_order = fetch_config(('tache', 'artisan', 'salaire_argent'))

@@ -1,13 +1,15 @@
 # -*- coding: utf-8
 from cubicweb.view import EntityView
-from cubicweb.web.views import tabs, primary, basecontrollers
-from cubicweb.web import uicfg, stdmsgs, component, box, facet
-from cubicweb.selectors import is_instance, one_line_rset
+from cubicweb.web.views import uicfg, tabs, primary, basecontrollers, ajaxcontroller
+from cubicweb.web import stdmsgs, component, box, facet
+from cubicweb.predicates import is_instance, one_line_rset
 from cubicweb.web import action, component
 from logilab.common.decorators import monkeypatch
 from logilab.mtconverter import xml_escape
 
 _ = unicode
+
+
 class PersonnePrimaryView(tabs.TabbedPrimaryView):
     __select__ = tabs.PrimaryTab.__select__ & is_instance('Personne')
     tabs = [_('tab_personne'),
@@ -21,15 +23,17 @@ class PersonnePrimaryView(tabs.TabbedPrimaryView):
             ]
     default_tab='tab_personne'
 
+
 class PersonneTab(tabs.PrimaryTab):
     __regid__ = 'tab_personne'
     __select__ = one_line_rset() & is_instance('Personne')
     title = None
+
     def render_entity_relations(self, entity):
         _ = self._cw._
         super(PersonneTab, self).render_entity_relations(entity)
         subst = {'eid': entity.eid}
-        rql = ('Any X, L, V, R, O, C, F WHERE '
+        rql = ('Any X, L, V, R, O, C, F ORDERBY C WHERE '
                'X is Occupation, '
                'X personne P, '
                'P eid %(eid)s, '
@@ -47,13 +51,16 @@ class PersonneTab(tabs.PrimaryTab):
         if len(rset) > 1:
             self.w('<p>voir <a href="%s"> dans le temps</a></p>' % (entity.absolute_url(vid='occupation_timeline')))
 
+
 class PersonneOccupationTimeline(EntityView):
     __regid__ = 'occupation_timeline'
     __select__ = is_instance('Personne')
+
     def cell_call(self, row, col):
         entity = self.cw_rset.get_entity(row, col)
         subst = {'eid': entity.eid}
         self.wview('myosotis.timeline', self._cw.execute('Any X where X is Occupation, X personne P, P eid %(eid)s', subst))
+
 
 class TabPersonneCodest(EntityView):
     __regid__ = 'tab_personne_codest'
@@ -64,7 +71,7 @@ class TabPersonneCodest(EntityView):
         rql = 'Any P, COUNT(T) GROUPBY P ORDERBY 2 DESC WHERE T destinataires D, D destinataire P1, T destinataires D2, D2 destinataire P, NOT P identity P1, P1 eid %(eid)s'
         rset = self._cw.execute(rql, {'eid': entity.eid})
         self.wview('table', rset, 'null')
-        
+
 
 class TabPersonneIntervention(tabs.EntityRelationView):
     __regid__ = 'tab_personne_intervention'
@@ -72,12 +79,18 @@ class TabPersonneIntervention(tabs.EntityRelationView):
     rtype = 'intervenant'
     role = 'object'
     title = None
+
     def cell_call(self, row, col):
         entity = self.cw_rset.get_entity(row, col)
         subst = {'eid': entity.eid}
-        rql = ('Any T, I  WHERE T intervenants I, I intervenant X, X eid %(eid)s')
+        rql = ('Any T, I, T ORDERBY CI, T WHERE T intervenants I, I intervenant X, X eid %(eid)s, T compte C, C inventaire CI')
         rset = self._cw.execute(rql, subst)
-        self.wview('table', rset, 'null', cellvids={0:'outofcontext', 1:'intervenant_flags'}, title=_('Intervient sur'),
+        self.wview('table', rset, 'null',
+                   headers=('Transaction', 'Interventions', 'Vendeurs'),
+                   cellvids={0: 'outofcontext',
+                             1: 'intervenant_flags',
+                             2: 'transaction_vendeurs'},
+                   title=_('Intervient sur'),
                    )
 
 class TabPersonneDestinataire(tabs.EntityRelationView):
@@ -86,12 +99,18 @@ class TabPersonneDestinataire(tabs.EntityRelationView):
     rtype = 'destinataire'
     role = 'object'
     title=None
+
     def cell_call(self, row, col):
         entity = self.cw_rset.get_entity(row, col)
         subst = {'eid': entity.eid}
-        rql = 'Any T, A WHERE T destinataires D, T achat A, D destinataire P, P eid %(eid)s'
+        rql = 'Any T, A ORDERBY CI, T WHERE T destinataires D, T achat A, D destinataire P, P eid %(eid)s, T compte C, C inventaire CI'
         rset = self._cw.execute(rql, subst)
-        self.wview('table', rset, 'null', title=_('Destinataire de'), cellvids={0: 'outofcontext'})
+        self.wview('table', rset, 'null',
+                   title=_('Destinataire de'),
+                   headers=('Transaction', 'Achat'),
+                   cellvids={0: 'outofcontext',
+                             1: 'achat_nbdest'})
+
 
 class TabPersonneArtisan(tabs.EntityRelationView):
     __regid__ = 'tab_personne_artisan'
@@ -102,9 +121,14 @@ class TabPersonneArtisan(tabs.EntityRelationView):
     def cell_call(self, row, col):
         entity = self.cw_rset.get_entity(row, col)
         subst = {'eid': entity.eid}
-        rql = 'Any T, I, PRIX, T WHERE T travaux D, D tache I, D salaire_argent PRIX?, D artisan P, P eid %(eid)s'
+        rql = 'Any T, I, PRIX, T, T  ORDERBY CI, T WHERE T travaux D, D tache I, D salaire_argent PRIX?, D artisan P, P eid %(eid)s, T compte C, C inventaire CI'
         rset = self._cw.execute(rql, subst)
-        self.wview('table', rset, 'null', title=_('Artisan pour'), cellvids={0: 'outofcontext', 3: 'transaction_achats'})
+        self.wview('table', rset, 'null', title=_('Artisan pour'),
+                   headers=('Transaction', 'Intervention', 'Prix', 'Achats', 'Destinataires'),
+                   cellvids={0: 'outofcontext',
+                             3: 'transaction_achats',
+                             4: 'transaction_destinataires'})
+
 
 class TabPersonneVendeur(tabs.EntityRelationView):
     __regid__ = 'tab_personne_vendeur'
@@ -112,12 +136,16 @@ class TabPersonneVendeur(tabs.EntityRelationView):
     title=None
     rtype = 'vendeur'
     role = 'object'
+
     def cell_call(self, row, col):
         entity = self.cw_rset.get_entity(row, col)
         subst = {'eid': entity.eid}
-        rql = 'Any T, A WHERE T vendeurs V, V vendeur P, P eid %(eid)s, T achat A'
+        rql = 'Any T, A ORDERBY CI, T WHERE T vendeurs V, V vendeur P, P eid %(eid)s, T achat A, T compte C, C inventaire CI'
         rset = self._cw.execute(rql, subst)
-        self.wview('table', rset, 'null', title=_('Vendeur'), cellvids={0: 'outofcontext'})
+        self.wview('table', rset, 'null',
+                   title=_('Vendeur'),
+                   cellvids={0: 'outofcontext',
+                             1: 'outofcontext'})
 
 
 class TabPersonneRattachement(tabs.EntityRelationView):
@@ -136,6 +164,7 @@ class TabPersonneRattachement(tabs.EntityRelationView):
 
 from cubicweb.web.views import dotgraphview
 
+
 class PersonneRelationsView(dotgraphview.DotGraphView):
     __regid__ = 'personne_relations'
     __select__ = is_instance('Personne')
@@ -152,6 +181,7 @@ class PersonneRelationsView(dotgraphview.DotGraphView):
         return PersonneRelationVisitor(self._cw, [entity])
     def build_dotpropshandler(self):
         return PersonnePropsHandler(self._cw)
+
 
 class PersonneRelationVisitor(object):
     def __init__(self, cw, personnes):
@@ -202,6 +232,7 @@ class PersonneRelationVisitor(object):
         ##         known.add(current)
         ##         yield p1.eid, p2.eid, occupation
 
+
 class PersonnePropsHandler(dotgraphview.DotPropsHandler):
     def node_properties(self, personne):
         """return default DOT drawing options for a personne"""
@@ -251,16 +282,14 @@ class MergeComponent(component.EntityCtxComponent):
 
 #XXX the following needs updating
 
-@monkeypatch(basecontrollers.JSonController)
-@basecontrollers.jsonize
-def js_unrelated_merge_personnes(self, eid):
+@ajaxcontroller.ajaxfunc(output_type='json')
+def unrelated_merge_personnes(self, eid):
     """return personne unrelated to an entity"""
     rql = 'Any T, N ORDERBY N WHERE T is Personne, T identite N, NOT T eid %(x)s'
     return [{'value': eid, 'label': identite}  for (eid, identite) in self._cw.execute(rql, {'x' : eid})]
 
-@monkeypatch(basecontrollers.JSonController)
-@basecontrollers.xhtmlize
-def js_personne_entity_html(self, eid, name):
+@ajaxcontroller.ajaxfunc(output_type='xhtml')
+def personne_entity_html(self, eid, name):
     rset = self._cw.execute('Any P WHERE P is Personne, P identite %(x)s, NOT P eid %(eid)s',
                             {'x': name, 'eid': eid})
     html = []
@@ -277,8 +306,8 @@ def js_personne_entity_html(self, eid, name):
     return u' '.join(html)
 
 
-@monkeypatch(basecontrollers.JSonController)
-def js_merge_personnes(self, eid, other_eid):
+@ajaxcontroller.ajaxfunc()
+def merge_personnes(self, eid, other_eid):
     other_eid = int(other_eid)
     relations = ['receveur',
                  'rattache_a',
@@ -297,4 +326,4 @@ def js_merge_personnes(self, eid, other_eid):
         self.info('merged %d relations %s', len(rset), rtype)
     self.info('delete %s (%s)', p2.identite, p2.eid)
     self._cw.execute('DELETE Personne P WHERE P eid %(eid)s', {'eid': p2.eid})
-    return 
+    return
