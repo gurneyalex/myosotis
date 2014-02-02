@@ -18,7 +18,11 @@ class AchatFabrication(AnyEntity):
         self.complete()
         quantite = self.quantite or 1
         parure = self.parure[0].dc_long_title()
-        return u'Fabrication %d %s' % (quantite, parure)
+        if self.prix_total:
+            prix = self.prix_total[0].dc_title()
+        else:
+            prix = u'?'
+        return u'Fabrication %d %s : %s' % (quantite, parure, prix)
 
     @property
     def nb_dest(self):
@@ -37,6 +41,14 @@ class AchatPretPorter(AnyEntity):
         quantite = self.quantite or 1
         parure = self.parure[0].dc_long_title()
         return u'Prêt à Porter %d %s' % (quantite, parure)
+
+    def dc_long_title(self):
+        title = self.dc_title()
+        if self.prix_total:
+            prix = self.prix_total[0].dc_title()
+        else:
+            prix = u'?'
+        return u'%s : %s' % (title, prix)
 
     @property
     def nb_dest(self):
@@ -74,7 +86,11 @@ class AchatMateriaux(AnyEntity):
         return u'%s %s %s%s' % (quantite, unite, self.materiaux[0].dc_title(), flag)
 
     def dc_long_title(self):
-        return u'Achat %s' % self.dc_title()
+        if self.prix_total:
+            prix = self.prix_total[0].dc_title()
+        else:
+            prix = u'?'
+        return u'Achat %s : %s' % (self.dc_title(), prix)
 
     @property
     def nb_dest(self):

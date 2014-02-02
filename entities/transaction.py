@@ -67,3 +67,12 @@ class Vendeur(AnyEntity):
 class Travail(AnyEntity):
     __regid__ = 'Travail'
     fetch_attrs, cw_fetch_order = fetch_config(('tache', 'artisan', 'salaire_argent'))
+
+    def dc_title(self):
+        title = self.tache
+        multi_artisans = self._cw.execute('Any COUNT(Y) WHERE X eid %(eid)s, T travaux X, T travaux Y',
+                                          {'eid': self.eid})[0][0]
+        if multi_artisans > 1:
+            title += u' (+)'
+        return title
+        
