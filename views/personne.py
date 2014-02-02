@@ -141,12 +141,14 @@ class TabPersonneVendeur(tabs.EntityRelationView):
     def cell_call(self, row, col):
         entity = self.cw_rset.get_entity(row, col)
         subst = {'eid': entity.eid}
-        rql = 'Any T, A ORDERBY CI, T WHERE T vendeurs V, V vendeur P, P eid %(eid)s, T achat A, T compte C, C inventaire CI'
+        rql = 'Any T, A, PRIXTRANS ORDERBY CI, T WHERE T vendeurs V, V vendeur P, P eid %(eid)s, T achat A, T prix_ensemble PRIXTRANS?, T compte C, C inventaire CI'
         rset = self._cw.execute(rql, subst)
         self.wview('table', rset, 'null',
                    title=_('Vendeur'),
+                   headers = (u'Transaction', u'Achats', u'Prix (transaction)'),
                    cellvids={0: 'outofcontext',
-                             1: 'outofcontext'})
+                             1: 'outofcontext',
+                             2: 'incontext'})
 
 
 class TabPersonneRattachement(tabs.EntityRelationView):
