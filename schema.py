@@ -190,6 +190,7 @@ class Occupation(EntityType):
     libelle = String(maxsize=255, fulltextindexed=True)
     valeur = String(maxsize=255, fulltextindexed=True)
     compte = SubjectRelation('Compte', cardinality='?*')
+    annee = Int()
     pagination = String(maxsize=64, fulltextindexed=True)
     rattache_a = SubjectRelation('Personne', cardinality='?*')
     occupation = String(maxsize=255, fulltextindexed=True)

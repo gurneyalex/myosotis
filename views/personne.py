@@ -33,8 +33,9 @@ class PersonneTab(tabs.PrimaryTab):
         _ = self._cw._
         super(PersonneTab, self).render_entity_relations(entity)
         subst = {'eid': entity.eid}
-        rql = ('Any X, L, V, R, O, C, F ORDERBY C WHERE '
+        rql = ('Any X, A, L, V, R, O, C, F ORDERBY C WHERE '
                'X is Occupation, '
+               'X annee A, '
                'X personne P, '
                'P eid %(eid)s, '
                'X compte C?, '
@@ -46,7 +47,7 @@ class PersonneTab(tabs.PrimaryTab):
                )
         rset = self._cw.execute(rql, subst)
         self.wview('editable-table', rset, 'null', title=_('Occupations'),
-                   headers=[_('Occupation'), _('libelle'), _('valeur'), _('rattache_a'),
+                   headers=[_('Occupation'), _('Annee'), _('libelle'), _('valeur'), _('rattache_a'),
                             _('occupation'), _('compte'), _('pagination')])
         if len(rset) > 1:
             self.w('<p>voir <a href="%s"> dans le temps</a></p>' % (entity.absolute_url(vid='occupation_timeline')))
