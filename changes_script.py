@@ -19,7 +19,7 @@ def find_invalid_changes(logfile_name):
 find_invalid_changes('invalid_changes.txt')
 print "done finding invalid changes"
 
-target = rql('Any M WHERE M is Monnaie, M nom "Gros tournois"').get_entity(0, 0)
+target = rql('Any M WHERE M is Monnaie, M nom "g. t. p. p."').get_entity(0, 0)
 query = 'Any P ORDERBY P WHERE P is Prix, NOT EXISTS(C prix_depart P), NOT EXISTS (C2 prix_converti P)'
 args = {}
 
