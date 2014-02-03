@@ -54,6 +54,8 @@ class TabChanges(EntityView):
 
             values.sort()
             all_values += values
+        if not all_values:
+            all_values.append([_('no changes')])
         self.wview('pyvaltable', None, 'null', pyvalue=all_values)
 
 # TODO

@@ -44,6 +44,11 @@ class Compte(EntityType):
     receveur = SubjectRelation('Personne', cardinality='**')
     base_paradox = Boolean(default=False,
                            description='vient de la base Paradox')
+    historic = Boolean(default=True,
+                       description=u"vrai si le compte est historique, "
+                       "faux s'il s'agit d'un compte technique utilise "
+                       "par exemple pour la gestion des changes")
+
 class Commande(EntityType):
     numero = Int(required=True)
     prix_str = String(maxsize=100)

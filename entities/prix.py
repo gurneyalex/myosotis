@@ -44,7 +44,10 @@ def get_all_prix_transactions(cw):
 
 class Prix(AnyEntity):
     __regid__ = 'Prix'
-    fetch_attrs, cw_fetch_order = fetch_config(('conversion', 'livres', 'sous', 'deniers', 'florins', 'gros', 'sous_florins', 'denier_florins', 'monnaie'))
+    fetch_attrs, cw_fetch_order = fetch_config(('conversion',
+                                                'livres', 'sous', 'deniers',
+                                                'florins', 'gros', 'sous_florins', 'denier_florins',
+                                                'monnaie'))
 
     def dc_title(self):
         if self.conversion:
@@ -168,6 +171,9 @@ class Prix(AnyEntity):
         rs = self._cw.execute('Any CH WHERE C is Compte, C change CH, C debut <= %(fin)s, C fin >= %(debut)s', {'debut': compte.debut, 'fin': compte.fin})
         changes = [change for change in rs.entities() if change.is_valid]
         yield u'conv_voisin', changes
+        rs = self._cw.execute('Any CH WHERE C is Compte, C historic False, C change CH')
+        changes = [change for change in rs.entities() if change.is_valid]
+        yield u'conv_externe', changes
 
     def _get_change_path(self, changes, monnaie_cible):
         monnaie_depart = self._get_monnaie()
