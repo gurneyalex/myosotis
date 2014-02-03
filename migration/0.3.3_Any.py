@@ -33,4 +33,10 @@ if (monnaies["Florin d'or petit poids"], monnaies['g. t. p. p.']) not in std_cha
     change = create_entity('Change', prix_depart=p1.eid, prix_converti=p2, reverse_change=nulcompte.eid)
 
 
+# corrections des prix en Franc Or renseignes comme si cette monnaie était une monnaie or (c'est un Florin Gros)
+prix_franc_or = rql('Any P WHERE P is Prix, P monnaie M, M nom "franc or", P monnaie_or > 0')
+for prix in prix_franc_or.entities():
+    rql('SET P florins %(f)s, P monnaie_or NULL WHERE P eid %(eid)s',
+        {'eid': prix.eid, 'f': prix.monnaie_or})
+
 commit()
