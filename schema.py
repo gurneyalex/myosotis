@@ -301,7 +301,12 @@ class Prix(EntityType):
     denier_florins = Float()
     monnaie_or = Float()
     conversion = Float()
-    source = String(vocabulary=[_('direct'), _('conv_transaction'),
-                                _('conv_compte'), _('conv_voisin'), _('conv_externe')])
+    source = String(vocabulary=[_('direct'),
+                                _('conv_transaction'),
+                                _('conv_compte'),
+                                _('conv_voisin'),
+                                _('conv_voisin 2'),
+                                _('conv_externe'),
+                                _('no_transaction'),])
 
     changes = SubjectRelation('Change', cardinality='**')

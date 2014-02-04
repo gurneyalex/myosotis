@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 add_attribute('Occupation', 'annee')
 add_attribute('Compte', 'historic')
+sync_schema_props_perms('Prix')
+commit()
 
 rql('SET C historic True WHERE C is Compte')
 rql('SET C historic False WHERE C is Compte, C inventaire "nul"')
