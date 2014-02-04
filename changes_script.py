@@ -1,12 +1,17 @@
 
 import pprint
 import codecs
-
+print 'delete P changes C WHERE P is Prix'
 query = 'DELETE P changes C WHERE P is Prix'
 rql(query)
 commit()
+print 'done'
 
 rql('DELETE Change C WHERE NOT EXISTS (C prix_depart P1)')
+print 'set conversion null'
+rql('SET P conversion NULL, P source NULL WHERE P is Prix, NOT P conversion NULL OR NOT P source NULL')
+commit()
+print "done"
 
 def find_invalid_changes(logfile_name):
     changes = rql('Any C WHERE C is Change')
@@ -42,3 +47,5 @@ for prix in list(rql(query, args).entities()):
 print
 pprint.pprint(result)
 commit()
+
+print list(rql('Any S, COUNT(P) GROUPBY S WHERE P is Prix, P source S'))

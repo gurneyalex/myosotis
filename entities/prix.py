@@ -3,11 +3,14 @@ from __future__ import division
 import pprint
 import codecs
 import math
+from datetime import timedelta
 
 from logilab.common.decorators import cached
 from cubicweb.entities import AnyEntity, fetch_config
 
 from cubes.myosotis.graph import dijkstra
+
+FIVE_YEARS = timedelta(365*5)
 
 class Monnaie(AnyEntity):
     __regid__ = 'Monnaie'
@@ -107,6 +110,7 @@ class Prix(AnyEntity):
         if len(transaction_eids) == 0:
             with codecs.open('prix_transaction.err', 'a', 'utf-8') as f:
                 f.write(u'no transaction found for prix %s\n' % (self.eid))
+                self.set_attributes(source=u'no_transaction')
             if allow_multi:
                 return []
             else:
@@ -167,12 +171,28 @@ class Prix(AnyEntity):
             yield u'conv_transaction', [change for change in transaction.change if change.is_valid]
         compte = transaction.compte[0]
         if compte.change:
-            yield u'conv_compte', [change for change in compte.change if change.is_valid]
-        rs = self._cw.execute('Any CH WHERE C is Compte, C change CH, C debut <= %(fin)s, C fin >= %(debut)s', {'debut': compte.debut, 'fin': compte.fin})
+            changes = [change for change in compte.change if change.is_valid]
+            #print "compte\t", len(changes)
+            yield u'conv_compte', changes
+        rs = self._cw.execute('Any CH WHERE C is Compte, C change CH, C debut <= %(fin)s, C fin >= %(debut)s',
+                              {'debut': compte.debut,
+                               'fin': compte.fin})
         changes = [change for change in rs.entities() if change.is_valid]
+        #print "voisins\t", len(changes)
         yield u'conv_voisin', changes
-        rs = self._cw.execute('Any CH WHERE C is Compte, C historic False, C change CH')
+        rs = self._cw.execute('Any CH WHERE C is Compte, C change CH, C debut <= %(fin)s, C fin >= %(debut)s',
+                              {'debut': compte.debut - FIVE_YEARS,
+                               'fin': compte.fin + FIVE_YEARS})
         changes = [change for change in rs.entities() if change.is_valid]
+        #print "voisins 2\t", len(changes)
+        yield u'conv_voisin 2', changes
+        rs = self._cw.execute('Any CH WHERE C is Compte, C historic False, C change CH')
+        changes_externes = [change for change in rs.entities() if change.is_valid]
+        changes_ids = frozenset([ch.set_eid_monnaies for ch in changes])
+        for chg in changes_externes:
+            if chg.set_eid_monnaies not in changes_ids:
+                changes.append(chg)
+        #print "externe\t", len(changes)
         yield u'conv_externe', changes
 
     def _get_change_path(self, changes, monnaie_cible):
@@ -277,6 +297,9 @@ class Change(AnyEntity):
     @property
     def eid_monnaie_converti(self):
         return self.prix_converti[0]._get_monnaie()
+    @property
+    def set_eid_monnaies(self):
+        return frozenset([self.eid_monnaie_depart, self.eid_monnaie_converti])
 
     @property
     def is_valid(self):
