@@ -92,6 +92,7 @@ class TransactionDestinataireSexe(RQLPathFacet):
     path = ['X destinataires D', 'D destinataire P', 'P sexe N']
     filter_variable = 'N'
     order = 3
+
 class TransactionDestinataire(RQLPathFacet):
     __regid__ = 'transaction-dest'
     title = 'destinataire'
@@ -100,6 +101,7 @@ class TransactionDestinataire(RQLPathFacet):
     filter_variable = 'P'
     label_variable = 'I'
     order = 4
+
 class TransactionDestinataireTitre(RQLPathFacet):
     __regid__ = 'transaction-dest-titre'
     title = 'sexe destinataire'
@@ -107,3 +109,31 @@ class TransactionDestinataireTitre(RQLPathFacet):
     path = ['X destinataires D', 'D destinataire P', 'P titre N']
     filter_variable = 'N'
     order = 5
+
+class PrixSource(AttributeFacet):
+    __regid__ = 'prix-source'
+    __select__ = AttributeFacet.__select__ & is_instance('Prix')
+    rtype = 'source'
+
+class PrixTypeMonnaie(RQLPathFacet):
+    __regid__ = 'prix-monnaie-type'
+    title = 'Type monnaie'
+    __select__  = RQLPathFacet.__select__ & is_instance('Prix')
+    path = ['X monnaie M', 'M type T']
+    filter_variable = 'T'
+    order = 5
+
+class PrixMonnaie(RelationFacet):
+    __regid__ = 'prix-monnaie'
+    target_type = 'Monnaie'
+    role = 'subject'
+    rtype = 'monnaie'
+    label_vid = 'textincontext'
+    __select__  = RelationFacet.__select__ & is_instance('Prix')
+    order = 1
+
+class TypeMonnaie(AttributeFacet):
+    __regid__ = 'monnaie-type'
+    __select__ = AttributeFacet.__select__ & is_instance('Monnaie')
+    rtype = 'type'
+
