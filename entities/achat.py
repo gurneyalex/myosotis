@@ -56,6 +56,7 @@ class AchatPretPorter(AnyEntity):
         rset = self._cw.execute(rql, {'eid': self.eid})
         return rset[0][0]
 
+
 class AchatMateriaux(AnyEntity):
     __regid__ = 'AchatMateriaux'
     fetch_attrs = ['date_achat', 'type_mesure', 'quantite', 'quantite_plusieurs', 'unite',
@@ -64,7 +65,6 @@ class AchatMateriaux(AnyEntity):
                    ]
 
     def dc_title(self):
-        self.complete()
         if self.quantite is not None:
             unite = self.unite
             quantite = self.quantite
@@ -98,6 +98,7 @@ class AchatMateriaux(AnyEntity):
         rset = self._cw.execute(rql, {'eid': self.eid})
         return rset[0][0]
 
+
 class FabriqueAvecMat(AnyEntity):
     __regid__ = 'FabriqueAvecMat'
     fetch_attrs, cw_fetch_order = fetch_config(['usage', 'type_mesure', 'quantite', 'unite', 'provenance_mesure', 'conversion',
@@ -112,13 +113,13 @@ class FabriqueAvecMat(AnyEntity):
         return u'fabrique avec %s: %s' % (self.achat_matiere[0].dc_long_title(),
                                           u', '.join(fabrique))
 
+
 class MateriauxParure(AnyEntity):
     __regid__ = 'MateriauxParure'
     fetch_attrs, cw_fetch_order = fetch_config(['usage', 'type_mesure', 'quantite', 'unite', 'provenance_mesure', 'conversion', 'materiaux_achete' , 'materiaux'])
 
     def dc_title(self):
         return self.materiaux[0].dc_title()
-
 
 
 class Materiaux(AnyEntity):

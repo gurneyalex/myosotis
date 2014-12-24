@@ -159,7 +159,6 @@ class FabriqueAvecMat(EntityType):
     conversion = Float()
     usage = String(fulltextindexed=True)
     achat_matiere = SubjectRelation('AchatMateriaux', cardinality='1*',
-                                    #constraints=[RQLVocabularyConstraint('T1 achat S, T2 achat O, T1 compte C, T2 compte C', mainvars=('O',))]
                                     constraints = [RQLVocabularyConstraint('T1 achat O, AF avec_mat S, T2 achat AF, T1 compte C1, T2 compte C2, C1 identity C2')]
                                     )
 
