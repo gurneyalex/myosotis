@@ -1,6 +1,6 @@
 import os.path as osp
 migr_dir = osp.dirname(__file__)
-target_monnaie = rql('Any M WHERE M is Monnaie, M nom "Gros tournois"').get_entity(0, 0)
+target_monnaie = rql('Any M WHERE M is Monnaie, M nom "g. t. p. p."').get_entity(0, 0)
 
 print "init transactions"
 transactions = {}
